@@ -114,27 +114,27 @@ void cuadro(){
 
 void mostrarTitulo(int x, int y)
 {
-    // Se muestra un titulo y se posiciona con gotoxy()
+    system("cls");
     gotoxy(x, y);
-    puts("============================================");
-    
-    gotoxy(x,y+1);
-    puts("|                                          |");
-
-    gotoxy(x,y+2);
-    puts("|              EL AHORCADO                 |");
-
-    gotoxy(x,y+3);
-    puts("|                                          |");
-
-    gotoxy(x,y+4);
-    puts("============================================");
+    printf("######## ##             ###    ##     ##  #######  ########   ######     ###    ########   #######  ");
+    gotoxy(x, y + 1);
+    printf("##       ##            ## ##   ##     ## ##     ## ##     ## ##    ##   ## ##   ##     ## ##     ## ");
+    gotoxy(x, y + 2);
+    printf("##       ##           ##   ##  ##     ## ##     ## ##     ## ##        ##   ##  ##     ## ##     ## ");
+    gotoxy(x, y + 3);
+    printf("######   ##          ##     ## ######### ##     ## ########  ##       ##     ## ##     ## ##     ## ");
+    gotoxy(x, y + 4);
+    printf("##       ##          ######### ##     ## ##     ## ##   ##   ##       ######### ##     ## ##     ## ");
+    gotoxy(x, y + 5);
+    printf("##       ##          ##     ## ##     ## ##     ## ##    ##  ##    ## ##     ## ##     ## ##     ## ");
+    gotoxy(x, y + 6);
+    printf("######## ########    ##     ## ##     ##  #######  ##     ##  ######  ##     ## ########   #######  ");
 }
 
 // Función para mostrar el menú
 void mostrarMenu(int opcionSeleccionada) {
     system("cls"); // Limpiar la pantalla
-    mostrarTitulo(17, 6);
+    mostrarTitulo(0, 2);
     gotoxy(30, 12);
     printf("%s Agregar Palabra Aleatoria", (opcionSeleccionada == 1) ? "->" : "  ");
     gotoxy(30, 13);
@@ -232,7 +232,7 @@ void agregarPalabraAleatoria(Jugador *jugador)
 
             // Mostrar Palabra agregada
             system("cls");
-            mostrarTitulo(17, 6);
+            mostrarTitulo(0, 2);
             gotoxy(30, 12);
             printf("Palabra agregada: %s", palabra->palabra);
             gotoxy(30, 13);
@@ -256,7 +256,7 @@ void seleccionarNivel(Jugador *jugador)
     do{
         // Se muestra el menú de niveles
         system("cls");
-        mostrarTitulo(17, 6);
+        mostrarTitulo(0, 2);
         gotoxy(30, 12);
         printf("%s Nivel 3", (jugador->nivel == 3) ? "->" : "  ");
         gotoxy(30, 13);
@@ -330,7 +330,7 @@ int main(int argc, const char * argv[])
     //==================== MENU INTERACTIVO ====================
 
     // Se define el tamaño de la pantalla
-    system("mode con: cols=80 lines=25");
+    system("mode con: cols=100 lines=30");
 
     do{
         mostrarMenu(opcionSeleccionada);
