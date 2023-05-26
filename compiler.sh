@@ -6,7 +6,7 @@
 read -p "Ingrese el nombre del ejecutable: " executable
 
 # Archivos a compilar
-FILES="avance.c Struct/struct.h Map/Map.c ArrayList/arraylist.c List/list.c"
+FILES="avance.c Struct/struct.h FrontEnd/frontend.c Map/Map.c ArrayList/arraylist.c List/list.c"
 
 # Compilacion con gcc
 gcc -g $FILES -o $executable
