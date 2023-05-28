@@ -1,8 +1,8 @@
 #ifndef STRUCTS_H
 #define STRUCTS_H
 
-#include "../Map/Map.h"
-#include "../List/list.h"
+#include "../DataStructures/List/list.h"
+#include "../DataStructures/Map/Map.h"
 
 typedef struct {
     char palabra[50];

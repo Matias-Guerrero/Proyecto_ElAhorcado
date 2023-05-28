@@ -5,15 +5,21 @@
 #include <ctype.h>
 #include <unistd.h>
 #include <windows.h>
-#include <conio.h> // Libreria para el uso de getch()
+#include <time.h> // Para generar números aleatorios
 
-// Libreria para generar numeros aleatorios
-#include <time.h>
+//====================================================================================================
+// Importar librerias de las estructuras de datos
+//====================================================================================================
+
+#include "DataStructures/ArrayList/arraylist.h"
+#include "DataStructures/List/list.h"
+#include "DataStructures/Map/Map.h"
+
+//====================================================================================================
+// Importar structs, funciones de frontend y backend
+//====================================================================================================
 
 #include "Struct/struct.h"
-#include "Map/Map.h"
-#include "List/list.h"
-#include "ArrayList/arraylist.h"
 #include "FrontEnd/frontend.h"
 
 char* quitar_tildes(char* cadena)
