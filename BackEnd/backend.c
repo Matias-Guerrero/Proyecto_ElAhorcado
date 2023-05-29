@@ -166,18 +166,6 @@ void agregarPalabraAleatoria(Jugador *jugador)
 
             // Se agrega la palabra al mapa
             insertMap(jugador->palabrasJugadas, palabra->palabra, palabra);
-
-            // Mostrar Palabra agregada
-            system("cls");
-            mostrarTitulo(0, 2);
-            gotoxy(30, 12);
-            printf("Palabra agregada: %s", palabra->palabra);
-            gotoxy(30, 13);
-            printf("Nivel: %d", palabra->nivel);
-            gotoxy(30, 14);
-            printf("Presione cualquier tecla para continuar...");
-            getch();
-            break;
         }
     }
 

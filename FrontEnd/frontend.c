@@ -8,26 +8,6 @@
 
 #include "frontend.h"
 
-// //FUNCION QUE REALIZA EL RECUADRO DEL JUEGO
-// void cuadro(){ 
-// 	int i,v;
-	
-// 	for(i=2; i < 78; i++){
-// 		gotoxy (i, 4); printf ("%c", 205);
-//  		gotoxy(i, 23); printf ("%c", 205); 
-// 	}
-
-// 	for(v=4; v < 23; v++){
-//  		gotoxy (2,v); printf ("%c", 186);
-//  		gotoxy(77,v); printf ("%c", 186); 
-// 	}
-	
-//  	gotoxy (2,4); printf ("%c", 201);
-//  	gotoxy (2,23); printf ("%c", 200);
-//  	gotoxy (77,4); printf ("%c", 187);
-//  	gotoxy(77,23); printf ("%c", 188); 
-// }
-
 /*La función recibe los parámetros x, y
 * y situa el cursor en esa posicción */
 void gotoxy(int x, int y){
@@ -69,14 +49,14 @@ void mostrarTitulo(int x, int y)
 
 // Función para mostrar el menú
 void mostrarMenu(int opcionSeleccionada) {
-    gotoxy(30, 12); printf("%s Agregar Palabra Aleatoria", (opcionSeleccionada == 1) ? "->" : "  ");
-    gotoxy(30, 13); printf("%s Elegir Nivel", (opcionSeleccionada == 2) ? "->" : "  ");
-    gotoxy(30, 14); printf("%s Mostrar Mapa de Palabras", (opcionSeleccionada == 3) ? "->" : "  ");
+    gotoxy(30, 12); printf("%s JUGAR", (opcionSeleccionada == 1) ? "->" : "  ");
+    gotoxy(30, 13); printf("%s Ver Puntuaciones", (opcionSeleccionada == 2) ? "->" : "  ");
+    gotoxy(30, 14); printf("%s Elegir Idioma", (opcionSeleccionada == 3) ? "->" : "  ");
 }
 
 bool cambiarOpcion(int * opcion)
 {
-    Sleep(250);
+    Sleep(150);
     if( GetAsyncKeyState(VK_UP) ){
         *opcion -= 1;
 
@@ -99,12 +79,18 @@ bool cambiarOpcion(int * opcion)
     return false;
 }
 
+// Función para mostrar el submenú de jugar
+void subMenuJugar()
+{
+    
+}
+
 void menu()
 {
     int opcionSeleccionada = 1;
 
     system("cls"); // Limpiar la pantalla
-    mostrarTitulo(0, 2);
+    mostrarTitulo(10, 2);
 
     while(true)
     {
@@ -116,13 +102,9 @@ void menu()
         switch(opcionSeleccionada)
         {
             case 1:
-                // Se llama a la funcion para obtener una palabra aleatoria
-                // agregarPalabraAleatoria(jugador);
+                // Se llama a la funcion subMenuJugar
+                subMenuJugar();
 
-                // Lógica para la opción 1
-                gotoxy(30, 20);
-                printf("Se ha obtenido una palabra aleatoria.");
-                sleep(2);
                 break;
             case 2:
                 // Se llama a la funcion para seleccionar el nivel
@@ -131,7 +113,10 @@ void menu()
                 // Lógica para la opción 2
                 gotoxy(30, 20);
                 printf("Ha seleccionado cambiar el nivel.");
-                sleep(2);
+
+                gotoxy(30, 22);
+                system("pause");
+
                 break;
             case 3:
                 // Se llama a la funcion para mostrar el mapa de palabras
@@ -140,59 +125,18 @@ void menu()
                 // Lógica para la opción 3
                 gotoxy(30, 20);
                 printf("Ha seleccionado mostrar el mapa de palabras.");
-                sleep(2);
+
+                gotoxy(30, 22);
+                system("pause");
+
                 break;
         }
 
         // Se borra las ultima linea de la pantalla
         gotoxy(30, 20);
         printf("                                                        ");
+        gotoxy(30, 22);
+        printf("                                                        ");
 
     }
 }
-
-
-
-
-
-// do{
-//         mostrarMenu(opcionSeleccionada);
-
-        
-
-//         switch (opcionActual) {
-//             case 13: // Tecla Enter
-//                 switch (opcionSeleccionada) {
-//                     case 1:
-//                         // Se llama a la funcion para obtener una palabra aleatoria
-//                         agregarPalabraAleatoria(jugador);
-
-//                         // Lógica para la opción 1
-//                         gotoxy(30, 20);
-//                         printf("Se ha obtenido una palabra aleatoria.");
-//                         getch();
-//                         break;
-//                     case 2:
-//                         // Se llama a la funcion para seleccionar el nivel
-//                         seleccionarNivel(jugador);
-
-//                         // Lógica para la opción 2
-//                         gotoxy(30, 20);
-//                         printf("Ha seleccionado la Opción 2.");
-//                         getch();
-//                         break;
-//                     case 3:
-//                         // Se llama a la funcion para mostrar el mapa de palabras
-//                         mostrarMapa(jugador->palabrasJugadas);
-
-//                         // Lógica para la opción 3
-//                         gotoxy(30, 20);
-//                         printf("Ha seleccionado la Opción 3.");
-//                         getch();
-//                         break;
-//                 }
-
-//                 break;
-//         }
-
-//     }while(opcionActual != 27); // 27 = ESC

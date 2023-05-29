@@ -115,7 +115,7 @@ int main(int argc, const char * argv[])
     //==================== MENU INTERACTIVO ====================
 
     // Se define el tamaño de la pantalla
-    system("mode con: cols=100 lines=30");
+    system("mode con: cols=120 lines=35");
 
     ocultarCursor();
 
