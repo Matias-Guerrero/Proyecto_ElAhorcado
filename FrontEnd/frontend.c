@@ -41,7 +41,6 @@ void ocultarCursor(){
 // Función para mostrar el título
 void mostrarTitulo(int x, int y)
 {
-    system("cls");
     // Se imprime el titulo en rojo
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
     gotoxy(x, y); printf("######## ##             ###    ##     ##  #######  ########   ######     ###    ########   #######  ");
@@ -54,6 +53,29 @@ void mostrarTitulo(int x, int y)
 
     // Se restablece el color de la consola
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+}
+
+void cuadro(int x1, int y1, int x2, int y2)
+{
+    int i;
+
+    // Se dibuja el cuadro
+    for (i = x1; i < x2; i++) // Lineas horizontales
+    {
+        gotoxy(i, y1); printf("%c", 205);
+        gotoxy(i, y2 - 1); printf("%c", 205);
+    }
+
+    for (i = y1; i < y2; i++) // Lineas verticales
+    {
+        gotoxy(x1, i); printf("%c", 186);
+        gotoxy(x2 - 1, i); printf("%c", 186);
+    }
+
+    gotoxy(x1, y1); printf("%c", 201);
+    gotoxy(x1, y2 - 1); printf("%c", 200);
+    gotoxy(x2 - 1, y1); printf("%c", 187);
+    gotoxy(x2 - 1, y2 - 1); printf("%c", 188);
 }
 
 // Función para mostrar el menú
@@ -102,8 +124,8 @@ void limpiarLinea(int y)
 {
     int i;
 
-    gotoxy(1, y);
-    for (i = 0; i < 120; i++)
+    gotoxy(2, y);
+    for (i = 0; i < 116; i++)
     {
         printf(" ");
     }
@@ -171,6 +193,7 @@ void menu()
     int opcionSeleccionada = 1;
 
     system("cls"); // Limpiar la pantalla
+    cuadro(1, 0, 119, 25); // Se dibuja el cuadro
     mostrarTitulo(10, 2);
 
     while(true)
