@@ -88,28 +88,28 @@ void agregarPalabraAleatoria(Jugador *jugador)
     // Se verifica el nivel seleccionado
     switch(jugador->nivel)
     {
-        case 3:
+        case 1:
             strcpy(archivo, "../DataBase/03.txt");
             break;
-        case 4:
+        case 2:
             strcpy(archivo, "../DataBase/04.txt");
             break;
-        case 5:
+        case 3:
             strcpy(archivo, "../DataBase/05.txt");
             break;
-        case 6:
+        case 4:
             strcpy(archivo, "../DataBase/06.txt");
             break;
-        case 7:
+        case 5:
             strcpy(archivo, "../DataBase/07.txt");
             break;
-        case 8:
+        case 6:
             strcpy(archivo, "../DataBase/08.txt");
             break;
-        case 9:
+        case 7:
             strcpy(archivo, "../DataBase/09.txt");
             break;
-        case 10:
+        case 8:
             strcpy(archivo, "../DataBase/10.txt");
             break;
     }
