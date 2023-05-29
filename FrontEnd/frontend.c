@@ -8,6 +8,15 @@
 
 #include "frontend.h"
 
+// Funcion para resetear teclas presionadas
+void resetearTeclas()
+{
+    while(GetAsyncKeyState(VK_UP) || GetAsyncKeyState(VK_DOWN) || GetAsyncKeyState(VK_RETURN))
+    {
+        Sleep(150);
+    }
+}
+
 /*La función recibe los parámetros x, y
 * y situa el cursor en esa posicción */
 void gotoxy(int x, int y){
@@ -48,13 +57,23 @@ void mostrarTitulo(int x, int y)
 }
 
 // Función para mostrar el menú
-void mostrarMenu(int opcionSeleccionada) {
-    gotoxy(30, 12); printf("%s JUGAR", (opcionSeleccionada == 1) ? "->" : "  ");
-    gotoxy(30, 13); printf("%s Ver Puntuaciones", (opcionSeleccionada == 2) ? "->" : "  ");
-    gotoxy(30, 14); printf("%s Elegir Idioma", (opcionSeleccionada == 3) ? "->" : "  ");
+void mostrarMenu(int opcionSeleccionada, int maxOpcion)
+{
+    if(maxOpcion == 3)
+    {
+        gotoxy(30, 12); printf("%s JUGAR", (opcionSeleccionada == 1) ? "->" : "  ");
+        gotoxy(30, 13); printf("%s Ver Puntuaciones", (opcionSeleccionada == 2) ? "->" : "  ");
+        gotoxy(30, 14); printf("%s Elegir Idioma", (opcionSeleccionada == 3) ? "->" : "  ");
+    }
+
+    if(maxOpcion == 2)
+    {
+        gotoxy(30, 12); printf("%s Nueva Partida", (opcionSeleccionada == 1) ? "->" : "  ");
+        gotoxy(30, 13); printf("%s Cargar Partida", (opcionSeleccionada == 2) ? "->" : "  ");
+    }
 }
 
-bool cambiarOpcion(int * opcion)
+bool cambiarOpcion(int * opcion, int maxOpcion)
 {
     Sleep(150);
     if( GetAsyncKeyState(VK_UP) ){
@@ -66,23 +85,85 @@ bool cambiarOpcion(int * opcion)
     if( GetAsyncKeyState(VK_DOWN) ){
         *opcion += 1;
 
-        if(*opcion > 3)
-            *opcion = 3;
+        if(*opcion > maxOpcion)
+            *opcion = maxOpcion;
     }
     if( GetAsyncKeyState(VK_RETURN) ){
         return true;
     }
-    if( GetAsyncKeyState(VK_ESCAPE) ){
+    if( GetAsyncKeyState(VK_ESCAPE) && maxOpcion == 3){
         exit(0);
     }
 
     return false;
 }
 
+void limpiarLinea(int y)
+{
+    int i;
+
+    gotoxy(1, y);
+    for (i = 0; i < 120; i++)
+    {
+        printf(" ");
+    }
+}
+
 // Función para mostrar el submenú de jugar
 void subMenuJugar()
 {
-    
+    int opcionSeleccionada = 1;
+
+    // Se limpia la pantalla del menú
+    limpiarLinea(12);
+    limpiarLinea(13);
+    limpiarLinea(14);
+
+    while(true)
+    {
+        while(!cambiarOpcion(&opcionSeleccionada, 2))
+        {
+            mostrarMenu(opcionSeleccionada, 2);
+        }
+
+        switch(opcionSeleccionada)
+        {
+            case 1:
+                // Se llama a la funcion para jugar
+                // jugar(jugador);
+
+                // Lógica para la opción 1
+                gotoxy(30, 20);
+                printf("Ha seleccionado jugar.");
+
+                break;
+            case 2:
+                // Se llama a la funcion para cargar partida
+                // cargarPartida(jugador);
+
+                // Lógica para la opción 2
+                gotoxy(30, 20);
+                printf("Ha seleccionado cargar partida.");
+
+                break;
+        }
+
+        // Limpiar teclas presionadas
+        resetearTeclas();
+
+        // Mensaje de pausa
+        while(!GetAsyncKeyState(VK_RETURN))
+        {
+            gotoxy(30, 22);
+            printf("Presione ENTER para continuar...");
+        }
+
+        // Se limpia las lineas
+        limpiarLinea(20);
+        limpiarLinea(22);
+
+        break;
+    }    
 }
 
 void menu()
@@ -94,9 +175,9 @@ void menu()
 
     while(true)
     {
-        while(!cambiarOpcion(&opcionSeleccionada))
+        while(!cambiarOpcion(&opcionSeleccionada, 3))
         {
-            mostrarMenu(opcionSeleccionada);
+            mostrarMenu(opcionSeleccionada, 3);
         }
 
         switch(opcionSeleccionada)
@@ -107,36 +188,9 @@ void menu()
 
                 break;
             case 2:
-                // Se llama a la funcion para seleccionar el nivel
-                // seleccionarNivel(jugador);
-
-                // Lógica para la opción 2
-                gotoxy(30, 20);
-                printf("Ha seleccionado cambiar el nivel.");
-
-                gotoxy(30, 22);
-                system("pause");
-
                 break;
             case 3:
-                // Se llama a la funcion para mostrar el mapa de palabras
-                // mostrarMapaPalabras(jugador);
-
-                // Lógica para la opción 3
-                gotoxy(30, 20);
-                printf("Ha seleccionado mostrar el mapa de palabras.");
-
-                gotoxy(30, 22);
-                system("pause");
-
                 break;
         }
-
-        // Se borra las ultima linea de la pantalla
-        gotoxy(30, 20);
-        printf("                                                        ");
-        gotoxy(30, 22);
-        printf("                                                        ");
-
     }
 }
