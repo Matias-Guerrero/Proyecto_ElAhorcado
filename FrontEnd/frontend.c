@@ -284,14 +284,6 @@ void jugar(Jugador *jugador)
     // Se muestra el cuadro
     cuadro(1, 0, 119, 25);
 
-    // Se muestra el ahorcado con la palabra con guiones
-    // for(int i = 0; i < 7; i++)
-    // {
-    //     mostrarAhorcado(i);
-        
-    //     Sleep(100);
-    // }
-
     while(jugador->nivel < 5)
     {
         mostrarAhorcado(7);
@@ -327,31 +319,36 @@ void nuevoJuego(Jugador *jugador)
     // Se crea una variable para guardar el nombre del jugador
     char nombre[50];
 
-    // // Se obtiene el nombre del jugador
-    // gotoxy(30, 12); printf("Ingrese su nombre: ");
+    // Se obtiene el nombre del jugador
+    gotoxy(20, 17); printf("Ingrese su nombre: ");
 
-    // // Se guarda el nombre del jugador
-    // scanf("%s", nombre);
-
-    // // Se limpia la linea anterior
-    // limpiarLinea(12);
+    // Se mueve el cursor a la posicion 48, 12
+    system("pause>nul");
 
     // Se guarda el nombre del jugador
-    strcpy(jugador->nombre, "Jugador Prueba");
+    scanf("%s", nombre);
+
+    // Se guarda el nombre del jugador
+    strcpy(jugador->nombre, nombre);
+
+    // Se limpia la linea anterior
+    limpiarLinea(20, 17, 30);
 
     // Se inicializa el nivel y los puntos del jugador
     jugador->nivel = 1;
     jugador->puntos = 0;
 
+    // Se cambia el color de la consola a amarillo
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 14);
+
     // Se muestra el mensaje de bienvenida
-    gotoxy(30, 14); printf("Bienvenido %s", jugador->nombre);
-    
-    // Mostramos los datos del jugador
-    gotoxy(30, 16); printf("Nivel: %d", jugador->nivel);
-    gotoxy(30, 17); printf("Puntos: %d", jugador->puntos);
+    gotoxy(30, 17); printf("BIENVENIDO %s!!!!!!!", jugador->nombre);
 
     // Se muestra el mensaje de pausa
-    pause(30, 19, "Presione enter para continuar...");
+    pause(30, 19, "Presione enter para comenzar...");
+
+    // Se restaura el color de la consola
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 
     cargando(2);
 
@@ -409,6 +406,9 @@ void subMenuJugar(Jugador *jugador)
 
 void menu(Jugador *jugador)
 {
+    // Se inicia un booleano para inicio de juego
+    bool inicioJuego = true;
+
     while(true)
     {
         int opcionSeleccionada = 1;
@@ -420,7 +420,25 @@ void menu(Jugador *jugador)
 
         mostrarTitulo(15,3);
 
-        pause(35, 18, "Presione ENTER para iniciar juego...");
+        if(inicioJuego)
+        {
+            // Se cambia el color de la consola a verde
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
+
+            // Se muestra el mensaje de bienvenida
+            gotoxy(35, 16); printf("Bienvenido al juego del ahorcado");
+
+            // Se muestra el mensaje de pausa
+            pause(35, 18, "Presione ENTER para iniciar juego...");
+
+            // Limpiar linea anterior
+            limpiarLinea(35, 16, 35);
+
+            inicioJuego = false;
+
+            // Se restablece el color de la consola
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+        }
 
         // Resetear teclas presionadas
         resetearTeclas();
