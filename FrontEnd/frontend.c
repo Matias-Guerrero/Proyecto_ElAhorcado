@@ -46,11 +46,11 @@ void ocultarCursor(){
     SetConsoleCursorInfo( consola, &cursInfo);
 }
 
-void limpiarLinea(int x, int y)
+void limpiarLinea(int x, int y, int n)
 {
     gotoxy(x, y);
  
-    for(int i = 0 + x; i < 115; i++)
+    for(int i = 0; i < n; i++)
     {
         printf(" ");
     }
@@ -68,8 +68,11 @@ void pause(int x, int y, char *mensaje)
         printf("%s", mensaje);
     }
 
+    // Largo del mensaje
+    int largo = strlen(mensaje);
+
     // Se limpia la linea anterior
-    limpiarLinea(x, y);
+    limpiarLinea(x, y, largo);
 }
 
 // Función para mostrar el título
@@ -88,13 +91,42 @@ void mostrarTitulo(int x, int y)
      *                                                                     
      */
 
-    gotoxy(x, y);     printf(" _____  _    ___   _                                    _        ");
-    gotoxy(x, y + 1); printf("|  ___|| |  / _ \\ | |                                  | |       ");
-    gotoxy(x, y + 2); printf("| |__  | | / /_\\ \\| |__    ___   _ __   ___   __ _   __| |  ___  ");
-    gotoxy(x, y + 3); printf("|  __| | | |  _  || '_ \\  / _ \\ | '__| / __| / _` | / _` | / _ \\ ");
-    gotoxy(x, y + 4); printf("| |___ | | | | | || | | || (_) || |   | (__ | (_| || (_| || (_) |");
-    gotoxy(x, y + 5); printf("\\____/ |_| \\_| |_/|_| |_| \\___/ |_|    \\___| \\__,_| \\__,_| \\___/ ");
-    gotoxy(x, y + 6); printf("                                                                 ");
+    // gotoxy(x, y);     printf(" _____  _    ___   _                                    _        ");
+    // gotoxy(x, y + 1); printf("|  ___|| |  / _ \\ | |                                  | |       ");
+    // gotoxy(x, y + 2); printf("| |__  | | / /_\\ \\| |__    ___   _ __   ___   __ _   __| |  ___  ");
+    // gotoxy(x, y + 3); printf("|  __| | | |  _  || '_ \\  / _ \\ | '__| / __| / _` | / _` | / _ \\ ");
+    // gotoxy(x, y + 4); printf("| |___ | | | | | || | | || (_) || |   | (__ | (_| || (_| || (_) |");
+    // gotoxy(x, y + 5); printf("\\____/ |_| \\_| |_/|_| |_| \\___/ |_|    \\___| \\__,_| \\__,_| \\___/ ");
+    // gotoxy(x, y + 6); printf("                                                                 ");
+
+    /***
+     *   _______________________________
+     *  |    _____  _    ___   _        |                           _        
+     *  |   |  ___|| |  / _ \ | |       |                          | |       
+     *  |   | |__  | | / /_\ \| |__    _|_   _ __   ___   __ _   __| |  ___  
+     *  |   |  __| | | |  _  || '_ \  / _ \ | '__| / __| / _` | / _` | / _ \ 
+     *  |   | |___ | | | | | || | | || (_) || |   | (__ | (_| || (_| || (_) |
+     *  |   \____/ |_| \_| |_/|_| |_| \___/ |_|    \___| \__,_| \__,_| \___/ 
+     *  |                               |                                     
+     * _|_________                     /|\                                       
+     *                                / | \
+     *			                       / \
+     *				                  /   \
+     */
+
+    gotoxy(x, y);     printf("   _______________________________");
+    gotoxy(x, y + 1); printf("  |    _____  _    ___   _        |                           _        ");
+    gotoxy(x, y + 2); printf("  |   |  ___|| |  / _ \\ | |       |                          | |       ");
+    gotoxy(x, y + 3); printf("  |   | |__  | | / /_\\ \\| |__    _|_   _ __   ___   __ _   __| |  ___  ");
+    gotoxy(x, y + 4); printf("  |   |  __| | | |  _  || '_ \\  / _ \\ | '__| / __| / _` | / _` | / _ \\ ");
+    gotoxy(x, y + 5); printf("  |   | |___ | | | | | || | | || (_) || |   | (__ | (_| || (_| || (_) |");
+    gotoxy(x, y + 6); printf("  |   \\____/ |_| \\_| |_/|_| |_| \\___/ |_|    \\___| \\__,_| \\__,_| \\___/ ");
+    gotoxy(x, y + 7); printf("  |                               |                                     ");
+    gotoxy(x, y + 8); printf(" _|_________                     /|\\");
+    gotoxy(x, y + 9); printf("                                / | \\");
+    gotoxy(x, y + 10); printf("			                / \\");
+    gotoxy(x, y + 11); printf("				       /   \\");
+
 
     // Se restablece el color de la consola
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
@@ -124,19 +156,19 @@ void cuadro(int x1, int y1, int x2, int y2)
 }
 
 // Función para mostrar el menú
-void mostrarMenu(int opcionSeleccionada, int maxOpcion)
+void mostrarMenu(int x, int y, int opcionSeleccionada, int maxOpcion)
 {
     if(maxOpcion == 3)
     {
-        gotoxy(30, 12); printf("%s JUGAR", (opcionSeleccionada == 1) ? "->" : "  ");
-        gotoxy(30, 13); printf("%s Ver Puntuaciones", (opcionSeleccionada == 2) ? "->" : "  ");
-        gotoxy(30, 14); printf("%s Elegir Idioma", (opcionSeleccionada == 3) ? "->" : "  ");
+        gotoxy(x, y); printf("%s JUGAR", (opcionSeleccionada == 1) ? "->" : "  ");
+        gotoxy(x, y + 1); printf("%s Ver Puntuaciones", (opcionSeleccionada == 2) ? "->" : "  ");
+        gotoxy(x, y + 2); printf("%s Elegir Idioma", (opcionSeleccionada == 3) ? "->" : "  ");
     }
 
     if(maxOpcion == 2)
     {
-        gotoxy(30, 12); printf("%s Nueva Partida", (opcionSeleccionada == 1) ? "->" : "  ");
-        gotoxy(30, 13); printf("%s Cargar Partida", (opcionSeleccionada == 2) ? "->" : "  ");
+        gotoxy(x, y); printf("%s Nueva Partida", (opcionSeleccionada == 1) ? "->" : "  ");
+        gotoxy(x, y + 1); printf("%s Cargar Partida", (opcionSeleccionada == 2) ? "->" : "  ");
     }
 }
 
@@ -216,7 +248,7 @@ void cargando(int duracion)
         Sleep(milisegundos);
 
         // Se limpia la linea anterior
-        limpiarLinea(30, 12);
+        limpiarLinea(30, 12, 10);
     }
 }
 
@@ -276,9 +308,6 @@ void jugar(Jugador *jugador)
         // Se muestra el mensaje de pausa
         pause(30, 14, "Presione enter para continuar...");
 
-        // Se limpia la linea anterior
-        limpiarLinea(30, 12);
-
         // Aumento de nivel del jugador
         jugador->nivel++;
         nivel->nivel = jugador->nivel;
@@ -292,8 +321,8 @@ void jugar(Jugador *jugador)
 void nuevoJuego(Jugador *jugador)
 {
     // Se limpia la pantalla del menú
-    limpiarLinea(30, 12);
-    limpiarLinea(30, 13);
+    limpiarLinea(20, 14, 20);
+    limpiarLinea(20, 15, 20);
 
     // Se crea una variable para guardar el nombre del jugador
     char nombre[50];
@@ -336,15 +365,18 @@ void subMenuJugar(Jugador *jugador)
     int opcionSeleccionada = 1;
 
     // Se limpia la pantalla del menú
-    limpiarLinea(30, 12);
-    limpiarLinea(30, 13);
-    limpiarLinea(30, 14);
+    limpiarLinea(20, 14, 20);
+    limpiarLinea(20, 15, 20);
+    limpiarLinea(20, 16, 20);
 
     while(true)
     {
+        // Resetear teclas presionadas
+        resetearTeclas();
+
         while(!cambiarOpcion(&opcionSeleccionada, 2))
         {
-            mostrarMenu(opcionSeleccionada, 2);
+            mostrarMenu(20, 14, opcionSeleccionada, 2);
         }
 
         switch(opcionSeleccionada)
@@ -368,8 +400,8 @@ void subMenuJugar(Jugador *jugador)
         }
 
         // Se limpia las lineas
-        limpiarLinea(30, 20);
-        limpiarLinea(30, 22);
+        limpiarLinea(30, 20, 35);
+        limpiarLinea(30, 22, 35);
 
         break;
     }    
@@ -383,12 +415,19 @@ void menu(Jugador *jugador)
 
         system("cls"); // Limpiar la pantalla
         cuadro(1, 0, 119, 25); // Se dibuja el cuadro
-        mostrarAhorcado(7); // Se muestra el ahorcado
-        mostrarTitulo(22, 4);
+        // mostrarAhorcado(7); // Se muestra el ahorcado
+        // mostrarTitulo(22, 4);
+
+        mostrarTitulo(15,3);
+
+        pause(35, 18, "Presione ENTER para iniciar juego...");
+
+        // Resetear teclas presionadas
+        resetearTeclas();
 
         while(!cambiarOpcion(&opcionSeleccionada, 3))
         {
-            mostrarMenu(opcionSeleccionada, 3);
+            mostrarMenu(20, 14, opcionSeleccionada, 3);
         }
 
         switch(opcionSeleccionada)
