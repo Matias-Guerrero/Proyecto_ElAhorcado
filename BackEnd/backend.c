@@ -86,20 +86,26 @@ void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
 {   
     char archivo[20];
 
+    int totalPalabras = 100;
+
     // Se verifica el nivel seleccionado
     switch(jugador->nivel)
     {
         case 1:
             strcpy(archivo, "DataBase/03.txt");
+            totalPalabras = 104;
             break;
         case 2:
             strcpy(archivo, "DataBase/04.txt");
+            totalPalabras = 407;
             break;
         case 3:
             strcpy(archivo, "DataBase/05.txt");
+            totalPalabras = 1007;
             break;
         case 4:
             strcpy(archivo, "DataBase/06.txt");
+            totalPalabras = 766;
             break;
         case 5:
             strcpy(archivo, "DataBase/07.txt");
@@ -136,7 +142,7 @@ void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
     while(fgets(buffer, 100, file))
     {
         // Se obtiene un número aleatorio
-        int aleatorio = rand() % 100;
+        int aleatorio = rand() % totalPalabras;
 
         // Se saltan las palabras hasta llegar al número aleatorio
         for(int i = 0; i < aleatorio; i++)
@@ -147,14 +153,11 @@ void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
         // Se elimina el salto de linea
         buffer[strlen(buffer) - 1] = '\0';
 
-        // Se quita el tilde de la palabra
-        char *palabraSinTilde = quitar_tildes(buffer);
-
         // Se crea una struct para almacenar la palabra
         Palabra *palabra = (Palabra *) malloc(sizeof(Palabra));
 
         // Se asigna la palabra a la struct
-        strcpy(palabra->palabra, palabraSinTilde);
+        strcpy(palabra->palabra, buffer);
 
         // Se asigna el nivel a la struct
         palabra->nivel = jugador->nivel;
@@ -163,7 +166,7 @@ void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
         insertMap(jugador->palabrasJugadas, palabra->palabra, palabra);
 
         // Se asigna la palabra secreta
-        strcpy(nivel->palabraSecreta, palabraSinTilde);
+        strcpy(nivel->palabraSecreta, buffer);
 
         break;
     }

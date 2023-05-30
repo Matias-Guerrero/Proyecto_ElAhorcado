@@ -46,19 +46,6 @@ void ocultarCursor(){
     SetConsoleCursorInfo( consola, &cursInfo);
 }
 
-void continuar()
-{
-    // Limpiar teclas presionadas
-    resetearTeclas();
-
-    // Mensaje de pausa
-    while(!GetAsyncKeyState(VK_RETURN))
-    {
-        gotoxy(30, 22);
-        printf("Presione ENTER para continuar...");
-    }
-}
-
 void limpiarLinea(int x, int y)
 {
     gotoxy(x, y);
@@ -67,6 +54,22 @@ void limpiarLinea(int x, int y)
     {
         printf(" ");
     }
+}
+
+void pause(int x, int y, char *mensaje)
+{
+    // Limpiar teclas presionadas
+    resetearTeclas();
+
+    // Mensaje de pausa
+    while(!GetAsyncKeyState(VK_RETURN))
+    {
+        gotoxy(x, y);
+        printf("%s", mensaje);
+    }
+
+    // Se limpia la linea anterior
+    limpiarLinea(x, y);
 }
 
 // Función para mostrar el título
@@ -217,7 +220,7 @@ void cargando(int duracion)
     }
 }
 
-void mostrarJuego(int x, int y)
+void mostrarLetras(int x, int y, Nivel *nivel)
 {
     gotoxy(x, y); printf("  Letras usadas ");
     gotoxy(x, y + 1); printf(" ___________________");
@@ -225,6 +228,12 @@ void mostrarJuego(int x, int y)
     gotoxy(x, y + 3); printf("|                   |");
     gotoxy(x, y + 4); printf("|___________________|");
 
+}
+
+void mostrarNivel(int x,  int y, Nivel *nivel)
+{    
+    gotoxy(x, y); printf("Nivel Actual: %d", nivel->nivel);
+    gotoxy(x, y + 1); printf("===============");
 }
 
 // Funcion Jugar
@@ -235,9 +244,7 @@ void jugar(Jugador *jugador)
 
     // Se inicializa el nivel
     nivel->nivel = jugador->nivel;
-
-    // Se llama a la funcion para agregar una palabra aleatoria
-    agregarPalabraAleatoria(jugador, nivel);
+    nivel->letrasJugadas = createList();
 
     // Se limpia la pantalla
     system("cls");
@@ -253,18 +260,32 @@ void jugar(Jugador *jugador)
     //     Sleep(100);
     // }
 
-    mostrarAhorcado(7);
+    while(jugador->nivel < 5)
+    {
+        mostrarAhorcado(7);
 
-    mostrarJuego(70, 10);
+        // Se llama a la funcion para agregar una palabra aleatoria
+        agregarPalabraAleatoria(jugador, nivel);
 
-    // Se muestra la palabra secreta
-    gotoxy(30, 12); printf("La palabra secreta es: %s", nivel->palabraSecreta);
+        mostrarNivel(30, 3, nivel);
+        mostrarLetras(70, 10, nivel);
 
-    // Se muestra la palabra del mapa del jugador
-    
+        // Se muestra la palabra secreta
+        gotoxy(30, 12); printf("La palabra secreta es: %s", nivel->palabraSecreta);    
 
-    // Se muestra el mensaje de pausa
-    continuar();
+        // Se muestra el mensaje de pausa
+        pause(30, 14, "Presione enter para continuar...");
+
+        // Se limpia la linea anterior
+        limpiarLinea(30, 12);
+
+        // Aumento de nivel del jugador
+        jugador->nivel++;
+        nivel->nivel = jugador->nivel;
+    }
+
+    pause(30, 16, "Presione enter para salir...");
+    exit(0); // Se sale del juego
 }
 
 // Funcion para nuevo juego
@@ -301,7 +322,7 @@ void nuevoJuego(Jugador *jugador)
     gotoxy(30, 17); printf("Puntos: %d", jugador->puntos);
 
     // Se muestra el mensaje de pausa
-    continuar();
+    pause(30, 19, "Presione enter para continuar...");
 
     cargando(2);
 
@@ -341,7 +362,7 @@ void subMenuJugar(Jugador *jugador)
                 printf("Ha seleccionado cargar partida.");
 
                 // Se muestra el mensaje de pausa
-                continuar();
+                pause(30, 22, "Presione enter para continuar...");
 
                 break;
         }
