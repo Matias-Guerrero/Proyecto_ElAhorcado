@@ -1,6 +1,8 @@
 #ifndef BACKEND_H
 #define BACKEND_H
 
-void agregarPalabraAleatoria(Jugador *jugador);
+#include "../Struct/struct.h"
+
+void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel);
 
 #endif // BACKEND_H

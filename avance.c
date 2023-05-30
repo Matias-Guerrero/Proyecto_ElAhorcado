@@ -14,6 +14,7 @@
 #include "DataStructures/ArrayList/arraylist.h"
 #include "DataStructures/List/list.h"
 #include "DataStructures/Map/Map.h"
+#include "DataStructures/TreeMap/treemap.h"
 
 //====================================================================================================
 // Importar structs, funciones de frontend y backend
@@ -98,28 +99,25 @@ int is_equal_string(void * key1, void * key2) {
 
 int main(int argc, const char * argv[])
 {
+    //====================================================================================================
+    // SE INICIA UN JUGADOR
+    //====================================================================================================
 
-    //==================== JUGADOR Y MAPA DE PALABRAS ====================
+    Jugador *jugador = (Jugador *)malloc(sizeof(Jugador));
 
-    // Se crea una struct para almacenar el jugador
-    Jugador *jugador = (Jugador *) malloc(sizeof(Jugador));
-
-    // Se inicializa el jugador
-    jugador->puntos = 0;
-    jugador->nivel = 5;
-    strcpy(jugador->nombre, "JugadorPrueba");
-
-    // Se crea un mapa para almacenar las palabras del jugador
+    // Se inicializa el mapa de palabras jugadas
     jugador->palabrasJugadas = createMap(is_equal_string);
 
-    //==================== MENU INTERACTIVO ====================
+    //====================================================================================================
+    // MENU INTERACTIVO
+    //====================================================================================================
 
     // Se define el tamaño de la pantalla
-    system("mode con: cols=100 lines=30");
+    system("mode con: cols=120 lines=25");
 
     ocultarCursor();
 
-    menu();
+    menu(jugador);
 
     return 0;
 }
