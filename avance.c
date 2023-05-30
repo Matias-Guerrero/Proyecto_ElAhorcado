@@ -105,6 +105,9 @@ int main(int argc, const char * argv[])
 
     Jugador *jugador = (Jugador *)malloc(sizeof(Jugador));
 
+    // Se inicializa el mapa de palabras jugadas
+    jugador->palabrasJugadas = createMap(is_equal_string);
+
     //====================================================================================================
     // MENU INTERACTIVO
     //====================================================================================================
@@ -113,8 +116,6 @@ int main(int argc, const char * argv[])
     system("mode con: cols=120 lines=25");
 
     ocultarCursor();
-
-    cargando(2);
 
     menu(jugador);
 

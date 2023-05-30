@@ -3,6 +3,6 @@
 
 #include "../Struct/struct.h"
 
-void agregarPalabraAleatoria(Jugador *jugador);
+void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel);
 
 #endif // BACKEND_H

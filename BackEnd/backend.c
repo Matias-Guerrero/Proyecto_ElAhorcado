@@ -19,6 +19,7 @@
 #include "../DataStructures/ArrayList/arraylist.h"
 #include "../DataStructures/List/list.h"
 #include "../DataStructures/Map/Map.h"
+#include "../FrontEnd/frontend.h"
 
 //====================================================================================================
 // Importar structs, funciones de frontend y backend
@@ -81,36 +82,36 @@ char* quitar_tildes(char* cadena)
 }
 
 // Función para buscar una palabra aleatoria
-void agregarPalabraAleatoria(Jugador *jugador)
-{
+void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
+{   
     char archivo[20];
 
     // Se verifica el nivel seleccionado
     switch(jugador->nivel)
     {
         case 1:
-            strcpy(archivo, "../DataBase/03.txt");
+            strcpy(archivo, "DataBase/03.txt");
             break;
         case 2:
-            strcpy(archivo, "../DataBase/04.txt");
+            strcpy(archivo, "DataBase/04.txt");
             break;
         case 3:
-            strcpy(archivo, "../DataBase/05.txt");
+            strcpy(archivo, "DataBase/05.txt");
             break;
         case 4:
-            strcpy(archivo, "../DataBase/06.txt");
+            strcpy(archivo, "DataBase/06.txt");
             break;
         case 5:
-            strcpy(archivo, "../DataBase/07.txt");
+            strcpy(archivo, "DataBase/07.txt");
             break;
         case 6:
-            strcpy(archivo, "../DataBase/08.txt");
+            strcpy(archivo, "DataBase/08.txt");
             break;
         case 7:
-            strcpy(archivo, "../DataBase/09.txt");
+            strcpy(archivo, "DataBase/09.txt");
             break;
         case 8:
-            strcpy(archivo, "../DataBase/10.txt");
+            strcpy(archivo, "DataBase/10.txt");
             break;
     }
 
@@ -135,7 +136,7 @@ void agregarPalabraAleatoria(Jugador *jugador)
     while(fgets(buffer, 100, file))
     {
         // Se obtiene un número aleatorio
-        int aleatorio = rand() % 1000;
+        int aleatorio = rand() % 100;
 
         // Se saltan las palabras hasta llegar al número aleatorio
         for(int i = 0; i < aleatorio; i++)
@@ -146,27 +147,25 @@ void agregarPalabraAleatoria(Jugador *jugador)
         // Se elimina el salto de linea
         buffer[strlen(buffer) - 1] = '\0';
 
-        // Se obtiene la longitud de la palabra
-        int longitud = strlen(buffer);
+        // Se quita el tilde de la palabra
+        char *palabraSinTilde = quitar_tildes(buffer);
 
-        // Se verifica que la longitud de la palabra sea igual al nivel seleccionado
-        if(longitud == jugador->nivel)
-        {
-            // Se quita el tilde de la palabra
-            char *palabraSinTilde = quitar_tildes(buffer);
+        // Se crea una struct para almacenar la palabra
+        Palabra *palabra = (Palabra *) malloc(sizeof(Palabra));
 
-            // Se crea una struct para almacenar la palabra
-            Palabra *palabra = (Palabra *) malloc(sizeof(Palabra));
+        // Se asigna la palabra a la struct
+        strcpy(palabra->palabra, palabraSinTilde);
 
-            // Se asigna la palabra a la struct
-            strcpy(palabra->palabra, palabraSinTilde);
+        // Se asigna el nivel a la struct
+        palabra->nivel = jugador->nivel;
 
-            // Se asigna el nivel a la struct
-            palabra->nivel = jugador->nivel;
+        // Se agrega la palabra al mapa
+        insertMap(jugador->palabrasJugadas, palabra->palabra, palabra);
 
-            // Se agrega la palabra al mapa
-            insertMap(jugador->palabrasJugadas, palabra->palabra, palabra);
-        }
+        // Se asigna la palabra secreta
+        strcpy(nivel->palabraSecreta, palabraSinTilde);
+
+        break;
     }
 
     // Se cierra el archivo

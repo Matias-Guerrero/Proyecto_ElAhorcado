@@ -12,6 +12,8 @@ void ocultarCursor();
 
 void cargando(int duracion);
 
+void continuar();
+
 // void cuadro();
 
 void menu(Jugador *jugador);

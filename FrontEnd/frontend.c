@@ -5,6 +5,7 @@
 #include <unistd.h>
 #include <conio.h>
 #include <windows.h>
+#include <time.h>
 
 #include "frontend.h"
 #include "../BackEnd/backend.h"
@@ -43,6 +44,19 @@ void ocultarCursor(){
     cursInfo.dwSize = 2;
     cursInfo.bVisible = FALSE;
     SetConsoleCursorInfo( consola, &cursInfo);
+}
+
+void continuar()
+{
+    // Limpiar teclas presionadas
+    resetearTeclas();
+
+    // Mensaje de pausa
+    while(!GetAsyncKeyState(VK_RETURN))
+    {
+        gotoxy(30, 22);
+        printf("Presione ENTER para continuar...");
+    }
 }
 
 void limpiarLinea(int x, int y)
@@ -203,20 +217,54 @@ void cargando(int duracion)
     }
 }
 
+void mostrarJuego(int x, int y)
+{
+    gotoxy(x, y); printf("  Letras usadas ");
+    gotoxy(x, y + 1); printf(" ___________________");
+    gotoxy(x, y + 2); printf("|                   |");
+    gotoxy(x, y + 3); printf("|                   |");
+    gotoxy(x, y + 4); printf("|___________________|");
+
+}
+
 // Funcion Jugar
 void jugar(Jugador *jugador)
 {
+    // Se crea una estructura para guardar el nivel
+    Nivel *nivel = (Nivel *)malloc(sizeof(Nivel));
+
+    // Se inicializa el nivel
+    nivel->nivel = jugador->nivel;
+
+    // Se llama a la funcion para agregar una palabra aleatoria
+    agregarPalabraAleatoria(jugador, nivel);
+
     // Se limpia la pantalla
     system("cls");
 
     // Se muestra el cuadro
     cuadro(1, 0, 119, 25);
 
-    for(int i = 0; i < 7; i++)
-    {
-        mostrarAhorcado(i);
-        Sleep(100);
-    }
+    // Se muestra el ahorcado con la palabra con guiones
+    // for(int i = 0; i < 7; i++)
+    // {
+    //     mostrarAhorcado(i);
+        
+    //     Sleep(100);
+    // }
+
+    mostrarAhorcado(7);
+
+    mostrarJuego(70, 10);
+
+    // Se muestra la palabra secreta
+    gotoxy(30, 12); printf("La palabra secreta es: %s", nivel->palabraSecreta);
+
+    // Se muestra la palabra del mapa del jugador
+    
+
+    // Se muestra el mensaje de pausa
+    continuar();
 }
 
 // Funcion para nuevo juego
@@ -252,15 +300,10 @@ void nuevoJuego(Jugador *jugador)
     gotoxy(30, 16); printf("Nivel: %d", jugador->nivel);
     gotoxy(30, 17); printf("Puntos: %d", jugador->puntos);
 
-    // Limpiar teclas presionadas
-    resetearTeclas();
+    // Se muestra el mensaje de pausa
+    continuar();
 
-    // Mensaje de pausa
-    while(!GetAsyncKeyState(VK_RETURN))
-    {
-        gotoxy(30, 22);
-        printf("Presione ENTER para continuar...");
-    }
+    cargando(2);
 
     jugar(jugador);
 
@@ -297,17 +340,10 @@ void subMenuJugar(Jugador *jugador)
                 gotoxy(30, 20);
                 printf("Ha seleccionado cargar partida.");
 
+                // Se muestra el mensaje de pausa
+                continuar();
+
                 break;
-        }
-
-        // Limpiar teclas presionadas
-        resetearTeclas();
-
-        // Mensaje de pausa
-        while(!GetAsyncKeyState(VK_RETURN))
-        {
-            gotoxy(30, 22);
-            printf("Presione ENTER para continuar...");
         }
 
         // Se limpia las lineas
@@ -320,15 +356,15 @@ void subMenuJugar(Jugador *jugador)
 
 void menu(Jugador *jugador)
 {
-    int opcionSeleccionada = 1;
-
-    system("cls"); // Limpiar la pantalla
-    cuadro(1, 0, 119, 25); // Se dibuja el cuadro
-    mostrarAhorcado(7); // Se muestra el ahorcado
-    mostrarTitulo(22, 4);
-
     while(true)
     {
+        int opcionSeleccionada = 1;
+
+        system("cls"); // Limpiar la pantalla
+        cuadro(1, 0, 119, 25); // Se dibuja el cuadro
+        mostrarAhorcado(7); // Se muestra el ahorcado
+        mostrarTitulo(22, 4);
+
         while(!cambiarOpcion(&opcionSeleccionada, 3))
         {
             mostrarMenu(opcionSeleccionada, 3);
