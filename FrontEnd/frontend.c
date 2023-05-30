@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
+#include <ctype.h>
 #include <unistd.h>
 #include <conio.h>
 #include <windows.h>
@@ -14,8 +15,12 @@
 // Funcion para resetear teclas presionadas
 void resetearTeclas()
 {
-    while(GetAsyncKeyState(VK_UP) || GetAsyncKeyState(VK_DOWN) || GetAsyncKeyState(VK_RETURN))
+    while (GetAsyncKeyState(VK_UP) || GetAsyncKeyState(VK_DOWN) || GetAsyncKeyState(VK_RETURN))
     {
+        for (int i = 0x41; i <= 0x5A; i++) {
+            GetAsyncKeyState(i);
+        }
+
         Sleep(150);
     }
 }
@@ -203,9 +208,9 @@ void mostrarAhorcado(int intentos)
     gotoxy(2, 3); printf("     ___________");
     gotoxy(2, 4); printf("     |         |");
     gotoxy(2, 5); printf("     |         |");
-    gotoxy(2, 6); printf("     |         %c", (intentos > 0) ? 'O' : ' ');
-    gotoxy(2, 7); printf("     |        %c%c%c", (intentos > 1) ? '/' : ' ', (intentos > 2) ? '|' : ' ', (intentos > 3) ? '\\' : ' ');
-    gotoxy(2, 8); printf("     |        %c %c", (intentos > 4) ? '/' : ' ', (intentos > 5) ? '\\' : ' ');
+    gotoxy(2, 6); printf("     |         %c", (intentos < 6) ? 'O' : ' ');
+    gotoxy(2, 7); printf("     |        %c%c%c", (intentos < 5) ? '/' : ' ', (intentos < 4) ? '|' : ' ', (intentos < 3) ? '\\' : ' ');
+    gotoxy(2, 8); printf("     |        %c %c", (intentos < 2) ? '/' : ' ', (intentos < 1) ? '\\' : ' ');
     gotoxy(2, 9); printf("     |");
     gotoxy(2, 10); printf("     |");
     gotoxy(2, 11); printf("     |");
@@ -266,6 +271,70 @@ void mostrarNivel(int x,  int y, Nivel *nivel)
 {    
     gotoxy(x, y); printf("Nivel Actual: %d", nivel->nivel);
     gotoxy(x, y + 1); printf("===============");
+
+}
+
+void mostrarPuntos(int x, int y, Jugador *jugador)
+{
+    gotoxy(x, y); printf("Puntos: %d", jugador->puntos);
+    gotoxy(x, y + 1); printf("===============");
+}
+
+void procesarLetra(Nivel *nivel, char letra)
+{
+    int aciertos = 0;
+
+    // Se recorre la palabra secreta
+    for(int i = 0; i < strlen(nivel->palabraSecreta); i++)
+    {
+        // Se compara la letra ingresada con la letra de la palabra secreta
+        if(nivel->palabraSecreta[i] == letra)
+        {
+            // Se agrega la letra a la palabra actual
+            nivel->palabraActual[i] = letra;
+
+            // Se aumenta el contador de aciertos
+            aciertos++;
+        }
+    }
+
+    // Se verifica si se ha acertado alguna letra
+    if(aciertos > 0)
+    {
+        // Se muestra el mensaje de acierto
+        gotoxy(30, 20); printf("Has acertado %d letras", aciertos);
+
+        // Se muestra el mensaje de pausa
+        pause(30, 22, "Presione enter para continuar...");
+    }
+    else
+    {
+        // Se muestra el mensaje de error
+        gotoxy(30, 20); printf("La letra ingresada no se encuentra en la palabra");
+
+        // Se muestra el mensaje de pausa
+        pause(30, 22, "Presione enter para continuar...");
+
+        // Se resta un intento
+        nivel->intentosRestantes--;
+    }
+}
+
+// Se verifica las teclas presionadas con la funcion GetAsyncKeyState
+void teclaPresionada(char* letra)
+{
+    bool tecla = false;
+
+    while (!tecla)
+    {
+        for (int i = 0x41; i <= 0x5A; i++) {
+            if (GetAsyncKeyState(i)) {
+                *letra = i + 32; // Convertir a minúscula
+                tecla = true;
+                break;
+            }
+        }
+    }
 }
 
 // Funcion Jugar
@@ -277,36 +346,112 @@ void jugar(Jugador *jugador)
     // Se inicializa el nivel
     nivel->nivel = jugador->nivel;
     nivel->letrasJugadas = createList();
+    nivel->intentosRestantes = 6;
 
-    // Se limpia la pantalla
-    system("cls");
+    // Se llama a la funcion para agregar una palabra aleatoria
+    agregarPalabraAleatoria(jugador, nivel);
 
-    // Se muestra el cuadro
-    cuadro(1, 0, 119, 25);
-
-    while(jugador->nivel < 5)
+    // Se llena de guiones bajos la palabra actual
+    for(int i = 0; i < strlen(nivel->palabraSecreta); i++)
     {
-        mostrarAhorcado(7);
-
-        // Se llama a la funcion para agregar una palabra aleatoria
-        agregarPalabraAleatoria(jugador, nivel);
-
-        mostrarNivel(30, 3, nivel);
-        mostrarLetras(70, 10, nivel);
-
-        // Se muestra la palabra secreta
-        gotoxy(30, 12); printf("La palabra secreta es: %s", nivel->palabraSecreta);    
-
-        // Se muestra el mensaje de pausa
-        pause(30, 14, "Presione enter para continuar...");
-
-        // Aumento de nivel del jugador
-        jugador->nivel++;
-        nivel->nivel = jugador->nivel;
+        nivel->palabraActual[i] = '_';
     }
 
-    pause(30, 16, "Presione enter para salir...");
-    exit(0); // Se sale del juego
+    // Se agrega el caracter nulo al final de la palabra actual
+    nivel->palabraActual[strlen(nivel->palabraSecreta)] = '\0';
+
+    // Se crea un booleano para saber si se ha ganado el juego
+    bool ganar = false;
+
+    // Se crea una variable para guardar la letra ingresada
+    char letra;
+
+    // Se hace el bucle para mostrar el juego
+    while(nivel->intentosRestantes > 0 && !ganar)
+    {
+        // Limpiar teclas presionadas
+        resetearTeclas();
+
+        // Se limpia la pantalla
+        system("cls");
+
+        // Se muestra el cuadro
+        cuadro(1, 0, 119, 25);
+
+        // Se muestra el ahorcado
+        mostrarAhorcado(nivel->intentosRestantes);
+
+        // Se muestra el nivel
+        mostrarNivel(30, 3, nivel);
+
+        // Se muestra las letras usadas
+        mostrarLetras(70, 10, nivel);
+
+        // Se muestra la palabra actual con los guiones bajos saltando un espacion por guion
+        gotoxy(30, 10); printf("Palabra: ");
+        for(int i = 0; nivel->palabraActual[i] != '\0'; i++)
+        {
+            // Se muestra la palabra en mayuscula
+            printf("%c ", toupper(nivel->palabraActual[i]));
+        }
+
+        // Se pregunta por la letra
+        gotoxy(30, 11); printf("Ingrese una letra: ");
+
+        // Se llama a la funcion que verifica que letra se ha ingresado
+        teclaPresionada(&letra);
+
+        // Se imprime la letra ingresada
+        printf("%c", letra);
+
+        sleep(1);
+
+        // Se llama a funcion para validar la letra ingresada
+        procesarLetra(nivel, letra);
+
+        // Se verifica si se ha ganado el juego
+        if(strcmp(nivel->palabraSecreta, nivel->palabraActual) == 0)
+        {
+            // Se cambia el valor de la variable ganar
+            ganar = true;
+        }
+    }
+
+    // Se verifica si se ha ganado el juego
+    if(ganar)
+    {
+        // Se aumenta el nivel del jugador
+        jugador->nivel++;
+
+        // Se aumenta los puntos del jugador
+        jugador->puntos += 100;
+
+        // Se muestra el mensaje de felicitaciones
+        gotoxy(30, 20); printf("FELICITACIONES HAS GANADO!!!!!!!");
+
+        // Se muestra el mensaje de pausa
+        pause(30, 22, "Presione enter para continuar...");
+    }
+    else
+    {
+        // Se muestra el mensaje de perdiste
+        gotoxy(30, 20); printf("PERDISTE!!!!!!!");
+
+        // Se muestra el mensaje de pausa
+        pause(30, 22, "Presione enter para continuar...");
+
+        // Se sale del juego
+        exit(0);
+    }
+
+    // Se libera la memoria de la estructura nivel
+    free(nivel);
+
+    // Se llama a cargar
+    cargando(2);
+
+    // Se llama a la funcion jugar
+    jugar(jugador);
 }
 
 // Funcion para nuevo juego
@@ -327,6 +472,8 @@ void nuevoJuego(Jugador *jugador)
 
     // Se guarda el nombre del jugador
     scanf("%s", nombre);
+
+    while(getchar() != '\n'); // Limpiar buffer
 
     // Se guarda el nombre del jugador
     strcpy(jugador->nombre, nombre);
