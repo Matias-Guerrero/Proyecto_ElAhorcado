@@ -61,6 +61,15 @@ void limpiarLinea(int x, int y, int n)
     }
 }
 
+// Funcion para limpiar la pantalla excepto el cuadro
+void limpiarPantalla()
+{
+    for(int i = 2; i < 24; i++)
+    {
+        gotoxy(2, i); printf("                                                                                                    ");
+    }
+}
+
 void pause(int x, int y, char *mensaje)
 {
     // Limpiar teclas presionadas
@@ -109,9 +118,9 @@ void mostrarTitulo(int x, int y)
      *  |    _____  _    ___   _        |                           _        
      *  |   |  ___|| |  / _ \ | |       |                          | |       
      *  |   | |__  | | / /_\ \| |__    _|_   _ __   ___   __ _   __| |  ___  
-     *  |   |  __| | | |  _  || '_ \  / _ \ | '__| / __| / _` | / _` | / _ \ 
-     *  |   | |___ | | | | | || | | || (_) || |   | (__ | (_| || (_| || (_) |
-     *  |   \____/ |_| \_| |_/|_| |_| \___/ |_|    \___| \__,_| \__,_| \___/ 
+     *  |   |  __| | | |  _  || '_ \  /   \ | '__| / __| / _` | / _` | / _ \ 
+     *  |   | |___ | | | | | || | | || X X || |   | (__ | (_| || (_| || (_) |
+     *  |   \____/ |_| \_| |_/|_| |_| \_-_/ |_|    \___| \__,_| \__,_| \___/ 
      *  |                               |                                     
      * _|_________                     /|\                                       
      *                                / | \
@@ -120,17 +129,18 @@ void mostrarTitulo(int x, int y)
      */
 
     gotoxy(x, y);     printf("   _______________________________");
-    gotoxy(x, y + 1); printf("  |    _____  _    ___   _        |                           _        ");
-    gotoxy(x, y + 2); printf("  |   |  ___|| |  / _ \\ | |       |                          | |       ");
-    gotoxy(x, y + 3); printf("  |   | |__  | | / /_\\ \\| |__    _|_   _ __   ___   __ _   __| |  ___  ");
-    gotoxy(x, y + 4); printf("  |   |  __| | | |  _  || '_ \\  / _ \\ | '__| / __| / _` | / _` | / _ \\ ");
-    gotoxy(x, y + 5); printf("  |   | |___ | | | | | || | | || (_) || |   | (__ | (_| || (_| || (_) |");
-    gotoxy(x, y + 6); printf("  |   \\____/ |_| \\_| |_/|_| |_| \\___/ |_|    \\___| \\__,_| \\__,_| \\___/ ");
-    gotoxy(x, y + 7); printf("  |                               |                                     ");
+    gotoxy(x, y + 1); printf("  |    _____  _    ___   _        |                           _");
+    gotoxy(x, y + 2); printf("  |   |  ___|| |  / _ \\ | |       |                          | |");
+    gotoxy(x, y + 3); printf("  |   | |__  | | / /_\\ \\| |__    _|_   _ __   ___   __ _   __| |  ___");
+    gotoxy(x, y + 4); printf("  |   |  __| | | |  _  || '_ \\  /   \\ | '__| / __| / _` | / _` | / _ \\");
+    gotoxy(x, y + 5); printf("  |   | |___ | | | | | || | | || X X || |   | (__ | (_| || (_| || (_) |");
+    gotoxy(x, y + 6); printf("  |   \\____/ |_| \\_| |_/|_| |_| \\_-_/ |_|    \\___| \\__,_| \\__,_| \\___/");
+    gotoxy(x, y + 7); printf("  |                               |");
     gotoxy(x, y + 8); printf(" _|_________                     /|\\");
     gotoxy(x, y + 9); printf("                                / | \\");
-    gotoxy(x, y + 10); printf("			                / \\");
-    gotoxy(x, y + 11); printf("				       /   \\");
+    gotoxy(x, y + 10); printf("			          / \\");
+    gotoxy(x, y + 11); printf("				 /   \\");
+
 
 
     // Se restablece el color de la consola
@@ -221,10 +231,7 @@ void mostrarAhorcado(int intentos)
 void cargando(int duracion)
 {
     // Se limpia la pantalla
-    system("cls");
-
-    // Se hace el cuadro
-    cuadro(1, 0, 119, 25);
+    limpiarPantalla();
 
     // Se inicializa la variable para mostrar el ahorcado
     int j = 0;
@@ -253,7 +260,7 @@ void cargando(int duracion)
         Sleep(milisegundos);
 
         // Se limpia la linea anterior
-        limpiarLinea(30, 12, 10);
+        limpiarLinea(30, 12, 11);
     }
 }
 
@@ -318,6 +325,9 @@ void procesarLetra(Nivel *nivel, char letra)
         // Se resta un intento
         nivel->intentosRestantes--;
     }
+
+    // Se limpia la linea anterior
+    limpiarLinea(30, 20, 50);
 }
 
 // Se verifica las teclas presionadas con la funcion GetAsyncKeyState
@@ -331,6 +341,25 @@ void teclaPresionada(char* letra)
             if (GetAsyncKeyState(i)) {
                 *letra = i + 32; // Convertir a minúscula
                 tecla = true;
+
+                // Se imprime la letra ingresada en mayuscula
+                gotoxy(49, 11); printf("%c", toupper(*letra));
+
+                while(!GetAsyncKeyState(VK_RETURN) && !GetAsyncKeyState(VK_BACK));
+                {
+                    if(GetAsyncKeyState(VK_BACK))
+                    {
+                        // Se limpia la linea anterior
+                        limpiarLinea(49, 11, 1);
+
+                        // Se limpia la variable letra
+                        *letra = '\0';
+
+                        // Se cambia el valor de la variable tecla
+                        tecla = false;
+                    }
+                }
+
                 break;
             }
         }
@@ -366,17 +395,27 @@ void jugar(Jugador *jugador)
     // Se crea una variable para guardar la letra ingresada
     char letra;
 
+    // Se limpia la pantalla
+    limpiarPantalla();
+
+    // Se crea un booleano para saber cuando limpiar la letra ingresada
+    bool limpiarLetra = false;
+
     // Se hace el bucle para mostrar el juego
     while(nivel->intentosRestantes > 0 && !ganar)
     {
-        // Limpiar teclas presionadas
+        // Se reinician las teclas presionadas
         resetearTeclas();
 
         // Se limpia la pantalla
-        system("cls");
+        if(limpiarLetra)
+        {
+            // Se limpia la linea anterior
+            limpiarLinea(49, 11, 1);
+        }
 
-        // Se muestra el cuadro
-        cuadro(1, 0, 119, 25);
+        // Limpiar teclas presionadas
+        resetearTeclas();
 
         // Se muestra el ahorcado
         mostrarAhorcado(nivel->intentosRestantes);
@@ -401,10 +440,8 @@ void jugar(Jugador *jugador)
         // Se llama a la funcion que verifica que letra se ha ingresado
         teclaPresionada(&letra);
 
-        // Se imprime la letra ingresada
-        printf("%c", letra);
-
-        sleep(1);
+        // Se cambia el valor de la variable limpiarLetra
+        limpiarLetra = true;
 
         // Se llama a funcion para validar la letra ingresada
         procesarLetra(nivel, letra);
@@ -458,18 +495,19 @@ void jugar(Jugador *jugador)
 void nuevoJuego(Jugador *jugador)
 {
     // Se limpia la pantalla del menú
-    limpiarLinea(20, 14, 20);
-    limpiarLinea(20, 15, 20);
+    limpiarLinea(26, 14, 20);
+    limpiarLinea(26, 15, 20);
 
     // Se crea una variable para guardar el nombre del jugador
     char nombre[50];
 
     // Se obtiene el nombre del jugador
-    gotoxy(20, 17); printf("Ingrese su nombre: ");
+    gotoxy(20, 17);
 
-    // Se mueve el cursor a la posicion 48, 12
-    system("pause>nul");
+    // Linea para que el cursor se mantenga en la misma linea
+    system("timeout /t 0 /nobreak >nul");
 
+    printf("Ingrese su nombre: ");
     // Se guarda el nombre del jugador
     scanf("%s", nombre);
 
@@ -509,9 +547,9 @@ void subMenuJugar(Jugador *jugador)
     int opcionSeleccionada = 1;
 
     // Se limpia la pantalla del menú
-    limpiarLinea(20, 14, 20);
-    limpiarLinea(20, 15, 20);
-    limpiarLinea(20, 16, 20);
+    limpiarLinea(26, 14, 20);
+    limpiarLinea(26, 15, 20);
+    limpiarLinea(26, 16, 20);
 
     while(true)
     {
@@ -520,7 +558,7 @@ void subMenuJugar(Jugador *jugador)
 
         while(!cambiarOpcion(&opcionSeleccionada, 2))
         {
-            mostrarMenu(20, 14, opcionSeleccionada, 2);
+            mostrarMenu(26, 14, opcionSeleccionada, 2);
         }
 
         switch(opcionSeleccionada)
@@ -562,24 +600,19 @@ void menu(Jugador *jugador)
 
         system("cls"); // Limpiar la pantalla
         cuadro(1, 0, 119, 25); // Se dibuja el cuadro
-        // mostrarAhorcado(7); // Se muestra el ahorcado
-        // mostrarTitulo(22, 4);
 
-        mostrarTitulo(15,3);
+        mostrarTitulo(25,3);
 
         if(inicioJuego)
         {
             // Se cambia el color de la consola a verde
             SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
 
-            // Se muestra el mensaje de bienvenida
-            gotoxy(35, 16); printf("Bienvenido al juego del ahorcado");
-
             // Se muestra el mensaje de pausa
             pause(35, 18, "Presione ENTER para iniciar juego...");
 
             // Limpiar linea anterior
-            limpiarLinea(35, 16, 35);
+            limpiarLinea(35, 16, strlen("Presione ENTER para iniciar juego..."));
 
             inicioJuego = false;
 
@@ -592,7 +625,7 @@ void menu(Jugador *jugador)
 
         while(!cambiarOpcion(&opcionSeleccionada, 3))
         {
-            mostrarMenu(20, 14, opcionSeleccionada, 3);
+            mostrarMenu(26, 14, opcionSeleccionada, 3);
         }
 
         switch(opcionSeleccionada)
