@@ -73,7 +73,7 @@ void limpiarLinea(int x, int y)
 void mostrarTitulo(int x, int y)
 {
     // Se imprime el titulo en rojo
-    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 13);
     /***
      *     _____  _    ___   _                                    _        
      *    |  ___|| |  / _ \ | |                                  | |       
@@ -85,13 +85,37 @@ void mostrarTitulo(int x, int y)
      *                                                                     
      */
 
-    gotoxy(x, y);     printf(" _____  _    ___   _                                    _        ");
-    gotoxy(x, y + 1); printf("|  ___|| |  / _ \\ | |                                  | |       ");
-    gotoxy(x, y + 2); printf("| |__  | | / /_\\ \\| |__    ___   _ __   ___   __ _   __| |  ___  ");
-    gotoxy(x, y + 3); printf("|  __| | | |  _  || '_ \\  / _ \\ | '__| / __| / _` | / _` | / _ \\ ");
-    gotoxy(x, y + 4); printf("| |___ | | | | | || | | || (_) || |   | (__ | (_| || (_| || (_) |");
-    gotoxy(x, y + 5); printf("\\____/ |_| \\_| |_/|_| |_| \\___/ |_|    \\___| \\__,_| \\__,_| \\___/ ");
-    gotoxy(x, y + 6); printf("                                                                 ");
+    /***
+    *gotoxy(x, y);     printf(" _____  _    ___   _                                    _        ");
+    *gotoxy(x, y + 1); printf("|  ___|| |  / _ \\ | |                                  | |       ");
+    *gotoxy(x, y + 2); printf("| |__  | | / /_\\ \\| |__    ___   _ __   ___   __ _   __| |  ___  ");
+    *gotoxy(x, y + 3); printf("|  __| | | |  _  || '_ \\  / _ \\ | '__| / __| / _` | / _` | / _ \\ ");
+    *gotoxy(x, y + 4); printf("| |___ | | | | | || | | || (_) || |   | (__ | (_| || (_| || (_) |");
+    *gotoxy(x, y + 5); printf("\\____/ |_| \\_| |_/|_| |_| \\___/ |_|    \\___| \\__,_| \\__,_| \\___/ ");
+    *gotoxy(x, y + 6); printf("                                                                 ");
+    */
+
+    /***
+     *#######  ####                ###     ##  ##   #####   ######     ####     ###    #####     #####
+     *##   #   ##                ## ##    ##  ##  ### ###   ##  ##   ##  ##   ## ##    ## ##   ### ###
+     *##       ##               ##   ##   ##  ##  ##   ##   ##  ##  ##       ##   ##   ##  ##  ##   ##
+     *####     ##               ##   ##   ######  ##   ##   #####   ##       ##   ##   ##  ##  ##   ##
+      ##       ##               #######   ##  ##  ##   ##   ## ##   ##       #######   ##  ##  ##   ##
+      ##   #   ##  ##           ##   ##   ##  ##  ### ###   ## ##    ##  ##  ##   ##   ## ##   ### ###
+     #######  #######           ##   ##   ##  ##   #####   #### ##    ####   ##   ##  #####     #####
+
+
+    */
+
+   gotoxy(x, y);     printf("#######  ####             ###     ##  ##   #####   ######    ####     ###    #####    #####");
+   gotoxy(x, y + 1); printf("##   #   ##              ## ##    ##  ##  ### ###  ##  ##   ##  ##   ## ##   ## ##   ### ###");
+   gotoxy(x, y + 2); printf("##       ##             ##   ##   ##  ##  ##   ##  ##  ##  ##       ##   ##  ##  ##  ##   ##");
+   gotoxy(x, y + 3); printf("####     ##             ##   ##   ######  ##   ##  #####   ##       ##   ##  ##  ##  ##   ##");
+   gotoxy(x, y + 4); printf("##       ##             #######   ##  ##  ##   ##  ## ##   ##       #######  ##  ##  ##   ##");
+   gotoxy(x, y + 5); printf("##   #   ##  ##         ##   ##   ##  ##  ### ###  ## ##    ##  ##  ##   ##  ## ##   ### ###");
+   gotoxy(x, y + 6); printf("#######  #######        ##   ##   ##  ##   #####  #### ##    ####   ##   ##  #####    #####");
+    
+
 
     // Se restablece el color de la consola
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
@@ -164,7 +188,7 @@ bool cambiarOpcion(int * opcion, int maxOpcion)
 
 void mostrarAhorcado(int intentos)
 {
-    // Se muestra el ahorcado
+    /* Se muestra el ahorcado
     gotoxy(2, 3); printf("     ___________");
     gotoxy(2, 4); printf("     |         |");
     gotoxy(2, 5); printf("     |         |");
@@ -176,6 +200,37 @@ void mostrarAhorcado(int intentos)
     gotoxy(2, 11); printf("     |");
     gotoxy(2, 12); printf("    _|___");
     gotoxy(2, 13); printf("");
+    */
+    
+/*
+  *    _______
+  *   |/      |
+  *   |      (_)
+  *   |      \|/
+  *   |       |
+  *   |      / \
+  *   |
+  *  _|___
+
+*/
+
+
+//Se muestra el ahorcado
+gotoxy(2, 3); printf("    _______");
+gotoxy(2, 4); printf("   |/      |");
+gotoxy(2, 5); printf("   |      %c%c%c", (intentos > 0) ? '(' : ' ', (intentos > 1) ? '_' : ' ', (intentos > 2) ? ')' : ' ');
+gotoxy(2, 6); printf("   |      %c%c%c", (intentos > 3) ? '\\' : ' ', (intentos > 4) ? '|' : ' ', (intentos > 5) ? '/' : ' ');
+gotoxy(2, 7); printf("   |       %c", (intentos > 6) ? '|' : ' ');
+gotoxy(2, 8); printf("   |      %c %c", (intentos > 7) ? '/' : ' ', (intentos > 8) ? '\\' : ' ');
+gotoxy(2, 9); printf("   |");
+gotoxy(2, 10); printf("   |");
+gotoxy(2, 11); printf("   |");
+gotoxy(2, 12); printf("  _|___");
+
+
+   
+
+
 }
 
 void cargando(int duracion)
@@ -253,7 +308,7 @@ void jugar(Jugador *jugador)
     //     Sleep(100);
     // }
 
-    mostrarAhorcado(7);
+    mostrarAhorcado(9); 
 
     mostrarJuego(70, 10);
 
