@@ -294,6 +294,9 @@ void mostrarMenu(int x, int y, int opcionSeleccionada, int maxOpcion)
 // Función para cambiar la opción del menú
 bool cambiarOpcion(int * opcion, int maxOpcion)
 {
+    // Se limpia el buffer de teclado
+    resetearTeclas();
+
     Sleep(150);
     if( GetAsyncKeyState(VK_UP) ){
         *opcion -= 1;
@@ -368,17 +371,36 @@ void mostrarLetras(int x, int y, Nivel *nivel)
 
 }
 
-void mostrarNivel(int x,  int y, Nivel *nivel)
-{    
-    gotoxy(x, y); printf("Nivel Actual: %d", nivel->nivel);
+void mostrarJugador(int x, int y, Jugador *jugador)
+{
+    // Se crea un cuadro
+    cuadro(x - 2, y - 1, x + 17, y + 7);
+
+    // Se muestra el nombre del jugador
+    gotoxy(x, y); printf("Jugador: %s", jugador->nombre);
     gotoxy(x, y + 1); printf("===============");
 
+    // Se muestra la tabla de Nivel
+    gotoxy(x, y + 2); printf("Nivel Actual: %d", jugador->nivel);
+    gotoxy(x, y + 3); printf("===============");
+    
+    // Se muestra la tabla de puntos
+    gotoxy(x, y + 4); printf("Puntos: %d", jugador->puntos);
+    gotoxy(x, y + 5); printf("===============");
 }
 
-void mostrarPuntos(int x, int y, Jugador *jugador)
+void mostrarPalabra(int x, int y, Nivel *nivel)
 {
-    gotoxy(x, y); printf("Puntos: %d", jugador->puntos);
-    gotoxy(x, y + 1); printf("===============");
+    // Se obtiene el largo de la palabra actual
+    int largo = strlen(nivel->palabraActual);
+    
+    // Se muestra la palabra actual con los guiones bajos saltando un espacion por guion
+    gotoxy(x, y); printf("Palabra a adivinar:");
+    for(int i = 0; nivel->palabraActual[i] != '\0'; i++)
+    {
+        // Se imprime debajo y al centro de la palabra a adivinar
+        gotoxy(x + (10 - largo) + (i * 2), y + 2); printf("%c", toupper(nivel->palabraActual[i]));
+    }
 }
 
 void procesarLetra(Nivel *nivel, char letra)
@@ -425,8 +447,12 @@ void procesarLetra(Nivel *nivel, char letra)
 }
 
 // Se verifica las teclas presionadas con la funcion GetAsyncKeyState
-void teclaPresionada(char* letra)
+void teclaPresionada(int x, int y, char* letra)
 {
+    // Se limpia el buffer de teclado
+    resetearTeclas();
+
+    // Se inicializa la variable tecla
     bool tecla = false;
 
     while (!tecla)
@@ -437,14 +463,17 @@ void teclaPresionada(char* letra)
                 tecla = true;
 
                 // Se imprime la letra ingresada en mayuscula
-                gotoxy(49, 14); printf("%c", toupper(*letra));
+                gotoxy(x, y); printf("%c", toupper(*letra));
+
+                // Se limpia el buffer de teclado
+                resetearTeclas();
 
                 while(!GetAsyncKeyState(VK_RETURN) && !GetAsyncKeyState(VK_BACK));
                 {
                     if(GetAsyncKeyState(VK_BACK))
                     {
                         // Se limpia la linea anterior
-                        limpiarLinea(49, 14, 1);
+                        limpiarLinea(x, y, 1);
 
                         // Se limpia la variable letra
                         *letra = '\0';
@@ -503,9 +532,6 @@ void menu(Jugador *jugador)
             SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
         }
 
-        // Resetear teclas presionadas
-        resetearTeclas();
-
         while(!cambiarOpcion(&opcionSeleccionada, 3))
         {
             mostrarMenu(40, 16, opcionSeleccionada, 3);
@@ -542,9 +568,6 @@ void subMenuJugar(Jugador *jugador)
 
     while(true)
     {
-        // Resetear teclas presionadas
-        resetearTeclas();
-
         while(!cambiarOpcion(&opcionSeleccionada, 2))
         {
             mostrarMenu(40, 16, opcionSeleccionada, 2);
@@ -669,45 +692,34 @@ void jugar(Jugador *jugador)
     // Se hace el bucle para mostrar el juego
     while(nivel->intentosRestantes > 0 && !ganar)
     {
-        // Se reinician las teclas presionadas
-        resetearTeclas();
-
         // Se limpia la pantalla
         if(limpiarLetra)
         {
             // Se limpia la linea anterior
-            limpiarLinea(49, 14, 1);
+            limpiarLinea(75, 16, 1);
         }
 
-        // Limpiar teclas presionadas
-        resetearTeclas();
+        mostrarTitulo(35, 1, 2);
 
-        mostrarTitulo(25, 1, 2);
+        // Se muestra la informacion del jugador
+        mostrarJugador(8, 7, jugador);
 
         // Se muestra el ahorcado
-        mostrarAhorcado(5, 6, nivel->intentosRestantes);
-
-        // Se muestra el nivel
-        mostrarNivel(30, 7, nivel);
+        mostrarAhorcado(30, 6, nivel->intentosRestantes);
 
         // Se muestra las letras usadas
-        mostrarLetras(60, 7, nivel);
+        mostrarLetras(55, 6, nivel);
 
         // Se muestra la palabra actual con los guiones bajos saltando un espacion por guion
-        gotoxy(30, 11); printf("Palabra: ");
-        for(int i = 0; nivel->palabraActual[i] != '\0'; i++)
-        {
-            // Se muestra la palabra en mayuscula
-            printf("%c ", toupper(nivel->palabraActual[i]));
-        }
+        mostrarPalabra(55, 12, nivel);
 
         // Se pregunta por la letra
-        gotoxy(30, 14); printf("Ingrese una letra: ");
+        gotoxy(55, 16); printf("Ingrese una letra:  ");
 
         mostrarCursor();
 
         // Se llama a la funcion que verifica que letra se ha ingresado
-        teclaPresionada(&letra);
+        teclaPresionada(75, 16, &letra);
 
         ocultarCursor();
 
