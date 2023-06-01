@@ -277,11 +277,12 @@ void mostrarTitulo(int x, int y, int opcion)
 // Función para mostrar el menú
 void mostrarMenu(int x, int y, int opcionSeleccionada, int maxOpcion)
 {
-    if(maxOpcion == 3)
+    if(maxOpcion == 4)
     {
         gotoxy(x, y); printf("%s JUGAR", (opcionSeleccionada == 1) ? "->" : "  ");
         gotoxy(x, y + 1); printf("%s Ver Puntuaciones", (opcionSeleccionada == 2) ? "->" : "  ");
         gotoxy(x, y + 2); printf("%s Elegir Idioma", (opcionSeleccionada == 3) ? "->" : "  ");
+        gotoxy(x, y + 3); printf("%s Intrucciones", (opcionSeleccionada == 4) ? "->" : "  ");
     }
 
     if(maxOpcion == 2)
@@ -310,7 +311,7 @@ bool cambiarOpcion(int * opcion, int maxOpcion)
     if( GetAsyncKeyState(VK_RETURN) ){
         return true;
     }
-    if( GetAsyncKeyState(VK_ESCAPE) && maxOpcion == 3){
+    if( GetAsyncKeyState(VK_ESCAPE) && maxOpcion == 4){
         exit(0);
     }
 
@@ -469,6 +470,7 @@ void menu(Jugador *jugador);
 void subMenuJugar(Jugador *jugador);
 void nuevoJuego(Jugador *jugador);
 void jugar(Jugador *jugador);
+void instrucciones();
 
 //================================
 //========MENU PRINCIPAL==========
@@ -487,7 +489,7 @@ void menu(Jugador *jugador)
         system("cls"); // Limpiar la pantalla
         cuadro(1, 0, 119, 25); // Se dibuja el cuadro
 
-        mostrarTitulo(25, 3, 1); // Se muestra el titulo
+        mostrarTitulo(25, 4, 1); // Se muestra el titulo
 
         if(inicioJuego)
         {
@@ -506,9 +508,9 @@ void menu(Jugador *jugador)
         // Resetear teclas presionadas
         resetearTeclas();
 
-        while(!cambiarOpcion(&opcionSeleccionada, 3))
+        while(!cambiarOpcion(&opcionSeleccionada, 4))
         {
-            mostrarMenu(40, 16, opcionSeleccionada, 3);
+            mostrarMenu(40, 16, opcionSeleccionada, 4);
         }
 
         switch(opcionSeleccionada)
@@ -521,6 +523,10 @@ void menu(Jugador *jugador)
             case 2:
                 break;
             case 3:
+                break;
+            case 4:
+                // Se llama a la funcion para leer las instrucciones del juego
+                instrucciones();
                 break;
         }
     }
@@ -539,6 +545,7 @@ void subMenuJugar(Jugador *jugador)
     limpiarLinea(40, 16, 20);
     limpiarLinea(40, 17, 20);
     limpiarLinea(40, 18, 20);
+    limpiarLinea(40, 19, 20);
 
     while(true)
     {
@@ -763,10 +770,10 @@ void jugar(Jugador *jugador)
                 contadorPalabras = 0;
 
                 // Se muestra el mensaje de nivel ascendido
-                gotoxy(30, 24); printf("¡Has ascendido al siguiente nivel! Nivel %d", jugador->nivel);
+                gotoxy(30, 20); printf("¡Pasaste al siguiente nivel! Nivel %d", jugador->nivel);
 
                 // Se muestra el mensaje de pausa
-                pause(30, 26, "Presione enter para continuar...");
+                pause(30, 22, "Presione enter para continuar...");
             }
         }
         else
@@ -779,9 +786,7 @@ void jugar(Jugador *jugador)
 
             // Se sale del juego
             exit(0);
-}
-
-
+        }
 
     }
 
@@ -793,4 +798,71 @@ void jugar(Jugador *jugador)
 
     // Se llama a la función jugar
     jugar(jugador);
+}
+
+void mostrarInstrucciones(int x, int y)
+{
+    /*
+    gotoxy(30, 10); printf("Instrucciones:");
+    gotoxy(30, 12); printf("1. El juego consiste en adivinar palabras.");
+    gotoxy(30, 13); printf("2. Cada palabra adivinada suma 100 puntos.");
+    gotoxy(30, 14); printf("3. Si adivinas 5 palabras del mismo largo, subes de nivel.");
+    gotoxy(30, 15); printf("4. Si fallas 6 veces, pierdes el juego.");
+    gotoxy(30, 16); printf("5. Si pierdes, se acaba el juego.");
+    gotoxy(30, 17); printf("6. Si ganas, se acaba el juego.");
+    gotoxy(30, 18); printf("7. Si quieres salir del juego, presiona ESC.");
+    
+
+   Adivina la palabra oculta en el menor número de intentos posible.
+
+    Cada nivel tiene una palabra de longitud específica, aumentando en un carácter por nivel.
+
+    Necesitas alcanzar 1000 puntos por nivel para avanzar.
+
+    Cada intento fallido disminuye tu puntaje base.
+
+    Selecciona la opción correspondiente para adivinar una letra de la palabra oculta.
+
+    Si adivinas correctamente, se revelarán las apariciones de la letra en la palabra.
+
+    Completa el nivel antes de agotar los intentos para obtener puntos adicionales; de lo contrario, no ganas puntos y pierdes el nivel.
+    */
+
+    gotoxy(x, y); printf("Instrucciones:");
+    gotoxy(x, y+2); printf("1. Adivina la palabra oculta en el menor numero de intentos posible.");
+    gotoxy(x, y+3); printf("2. Cada nivel tiene una palabra de longitud especifica, aumentando en un caracter por nivel.");
+    gotoxy(x, y+4); printf("3. Necesitas alcanzar 1000 puntos por nivel para avanzar.");
+    gotoxy(x, y+5); printf("4. Cada intento fallido disminuye tu puntaje base.");
+    gotoxy(x, y+6); printf("5. Selecciona la opcion correspondiente para adivinar una letra de la palabra oculta.");
+    gotoxy(x, y+7); printf("6. Si adivinas correctamente, se revelaran las apariciones de la letra en la palabra.");
+    gotoxy(x, y+8); printf("7. Completa el nivel antes de agotar los intentos para obtener puntos adicionales; de lo contrario,");
+    gotoxy(x, y+9); printf("   no ganas puntos y pierdes el nivel.");
+
+
+   
+
+}
+
+
+//  Funcion instrucciones
+void instrucciones()
+{
+    // Se limpia la pantalla
+    limpiarPantalla();
+
+    // Se muestra el titulo
+    mostrarTitulo(30, 1, 2);
+
+    // Se muestra el mensaje de instrucciones
+    mostrarInstrucciones(7, 6);
+
+
+    // Se llama a la función pause
+    pause(30, 23, "Presione enter para continuar...");
+
+    // Se llama a cargar
+    cargando(2);
+
+   
+ 
 }
