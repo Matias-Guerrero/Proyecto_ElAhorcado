@@ -86,20 +86,26 @@ void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
 {   
     char archivo[20];
 
+    int totalPalabras = 100;
+
     // Se verifica el nivel seleccionado
     switch(jugador->nivel)
     {
         case 1:
             strcpy(archivo, "DataBase/03.txt");
+            totalPalabras = 104;
             break;
         case 2:
             strcpy(archivo, "DataBase/04.txt");
+            totalPalabras = 407;
             break;
         case 3:
             strcpy(archivo, "DataBase/05.txt");
+            totalPalabras = 1007;
             break;
         case 4:
             strcpy(archivo, "DataBase/06.txt");
+            totalPalabras = 766;
             break;
         case 5:
             strcpy(archivo, "DataBase/07.txt");
@@ -136,7 +142,7 @@ void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
     while(fgets(buffer, 100, file))
     {
         // Se obtiene un número aleatorio
-        int aleatorio = rand() % 100;
+        int aleatorio = rand() % totalPalabras;
 
         // Se saltan las palabras hasta llegar al número aleatorio
         for(int i = 0; i < aleatorio; i++)
@@ -147,27 +153,138 @@ void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
         // Se elimina el salto de linea
         buffer[strlen(buffer) - 1] = '\0';
 
-        // Se quita el tilde de la palabra
-        char *palabraSinTilde = quitar_tildes(buffer);
-
         // Se crea una struct para almacenar la palabra
         Palabra *palabra = (Palabra *) malloc(sizeof(Palabra));
 
         // Se asigna la palabra a la struct
-        strcpy(palabra->palabra, palabraSinTilde);
+        strcpy(palabra->palabra, buffer);
 
         // Se asigna el nivel a la struct
         palabra->nivel = jugador->nivel;
 
-        // Se agrega la palabra al mapa
-        insertMap(jugador->palabrasJugadas, palabra->palabra, palabra);
+        // Se verifica que la palabra no haya sido jugada
+        if(searchMap(jugador->palabrasJugadas, palabra->palabra) == NULL)
+        {
+            // Se agrega la palabra al mapa
+            insertMap(jugador->palabrasJugadas, palabra->palabra, palabra);
 
-        // Se asigna la palabra secreta
-        strcpy(nivel->palabraSecreta, palabraSinTilde);
+            // Se asigna la palabra secreta
+            strcpy(nivel->palabraSecreta, buffer);
 
-        break;
+            break;
+        }
+        else
+        {
+            // Se vuelven al inicio del archivo
+            rewind(file);
+        }
     }
 
     // Se cierra el archivo
     fclose(file);
+}
+
+void guardarPartida(Jugador *jugador, int x, int y)
+{
+    // Abrir el archivo de guardado
+    FILE *archivo = fopen("partida_guardada.txt", "r");
+
+    // Verificar si el archivo existe
+    if (archivo != NULL)
+    {
+        // El archivo existe, verificar si el jugador ya existe
+        char nombre[50];
+
+        // Recorrer el archivo
+        while (fgets(nombre, sizeof(nombre), archivo))
+        {
+            // Si el nombre del jugador es igual al nombre del archivo, el jugador ya existe
+            if (strcmp(nombre, jugador->nombre) == 0)
+            {
+                // Se cierra el archivo
+                fclose(archivo);
+
+                // Se abre el archivo en modo escritura al inicio
+                archivo = fopen("partida_guardada.txt", "w");
+
+                break;
+            }
+        }
+    }
+    else // El archivo no existe
+    {
+        // Se abre el archivo en modo escritura al final
+        archivo = fopen("partida_guardada.txt", "a");
+    }
+
+    // Verificar si se pudo abrir el archivo
+    if (archivo == NULL)
+    {
+        printf("Error al abrir el archivo de guardado.\n");
+        return;
+    }
+
+    fprintf(archivo, "Nombre: %s\n", jugador->nombre);
+    fprintf(archivo, "Puntos: %d\n", jugador->puntos);
+    fprintf(archivo, "Nivel: %d\n", jugador->nivel);
+    fprintf(archivo, "\n");  // Agregar un salto de línea para separar los datos del siguiente jugador
+
+    fclose(archivo);
+
+    // Se muestra un mensaje de confirmación
+    gotoxy(x, y); printf("Partida guardada exitosamente.");
+}
+
+void cargarPartida(const char *nombreJugador, Jugador *jugador, int x, int y)
+{
+    // Abrir el archivo de guardado
+    FILE *archivo = fopen("partida_guardada.txt", "r");
+
+    // Verificar si el archivo existe
+    if (archivo == NULL)
+    {
+        // El archivo no existe, mostrar un mensaje de error
+        gotoxy(x, y); printf("No se encontró ninguna partida guardada.\n");
+        
+        return;
+    }
+
+    // Se crea una variable para almacenar el nombre del jugador y una variable para saber si el jugador fue encontrado
+    char nombre[50];
+    bool encontrado = false;
+
+    // Recorrer el archivo
+    while(fgets(nombre, sizeof(nombre), archivo))
+    {
+        // Eliminar el salto de línea del final
+        nombre[strcspn(nombre, "\n")] = '\0';
+
+        // Verificar si el nombre del jugador es igual al nombre del archivo
+        if(strcmp(nombre, nombreJugador) == 0)
+        {
+            // El jugador fue encontrado, cargar los datos
+            encontrado = true;
+            strcpy(jugador->nombre, nombreJugador);
+
+            // Leer los demás datos del jugador
+            fscanf(archivo, "Puntos: %d\n", &jugador->puntos);
+            fscanf(archivo, "Nivel: %d\n", &jugador->nivel);
+
+            // Saltar la línea vacía
+            fgets(nombre, sizeof(nombre), archivo);
+            break;
+        }
+    }
+
+    // Cerrar el archivo
+    fclose(archivo);
+
+    // Verificar si el jugador fue encontrado
+    if (!encontrado)
+    {
+        // El jugador no fue encontrado, mostrar un mensaje de error
+        gotoxy(x, y); printf("No se encontró ninguna partida para el jugador '%s'.\n", nombreJugador);
+        
+        return;
+    }
 }

@@ -32,7 +32,7 @@ feo
 fin
 fue
 fui
-gas 
+gas
 gel
 gen
 gil
@@ -43,7 +43,7 @@ haz
 iba
 ida
 ira
-lea 
+lea
 lee
 ley
 lio

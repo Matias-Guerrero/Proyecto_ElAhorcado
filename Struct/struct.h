@@ -14,6 +14,7 @@ typedef struct {
     char palabraSecreta[50];
     char palabraActual[50];
     int nivel;
+    int puntosNivel;
     int intentosRestantes;
     List *letrasJugadas;
 } Nivel;

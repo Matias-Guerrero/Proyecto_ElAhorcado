@@ -12,7 +12,7 @@ void ocultarCursor();
 
 void cargando(int duracion);
 
-void continuar();
+void pause(int x, int y, char *mensaje);
 
 // void cuadro();
 
