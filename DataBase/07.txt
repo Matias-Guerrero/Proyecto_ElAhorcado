@@ -647,7 +647,6 @@ humedad
 mediano
 eclipse
 quebrar
-zeppelin
 mencion
 huracan
 ubicado
@@ -734,12 +733,10 @@ cortejo
 aferrar
 plantar
 fluidez
-alineado
 aclamar
 irritar
 apuesta
 residuo
-cuspidre
 torcido
 imperar
 brujula
