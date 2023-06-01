@@ -162,13 +162,22 @@ void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
         // Se asigna el nivel a la struct
         palabra->nivel = jugador->nivel;
 
-        // Se agrega la palabra al mapa
-        insertMap(jugador->palabrasJugadas, palabra->palabra, palabra);
+        // Se verifica que la palabra no haya sido jugada
+        if(searchMap(jugador->palabrasJugadas, palabra->palabra) == NULL)
+        {
+            // Se agrega la palabra al mapa
+            insertMap(jugador->palabrasJugadas, palabra->palabra, palabra);
 
-        // Se asigna la palabra secreta
-        strcpy(nivel->palabraSecreta, buffer);
+            // Se asigna la palabra secreta
+            strcpy(nivel->palabraSecreta, buffer);
 
-        break;
+            break;
+        }
+        else
+        {
+            // Se vuelven al inicio del archivo
+            rewind(file);
+        }
     }
 
     // Se cierra el archivo
