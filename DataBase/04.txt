@@ -322,7 +322,7 @@ sapa
 sapo
 sebo
 seca
-seco    
+seco
 seda
 sede
 seis

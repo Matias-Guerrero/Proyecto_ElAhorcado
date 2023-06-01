@@ -406,7 +406,7 @@ void mostrarInformacion(int x, int y, Jugador *jugador, Nivel *nivel)
     gotoxy(x + 5, y + 16); printf("===============");
     
     // Se muestra la tabla de puntos
-    gotoxy(x + 5, y + 17); printf("Puntos: %d", nivel->puntosNivel);
+    gotoxy(x + 5, y + 17); printf("Puntos: %5d", nivel->puntosNivel);
     gotoxy(x + 5, y + 18); printf("===============");
 }
 

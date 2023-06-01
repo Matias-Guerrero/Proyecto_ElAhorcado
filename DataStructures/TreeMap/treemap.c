@@ -113,7 +113,6 @@ TreeNode * minimum(TreeNode * x){
 
 }
 
-
 // Funcion para eliminar el nodo del current del arbol
 void eraseTreeMapCurrent(TreeMap * tree) {
     if (tree == NULL || tree->root == NULL || tree->current == NULL) return;
