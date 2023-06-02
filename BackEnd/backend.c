@@ -119,6 +119,45 @@ void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
         case 8:
             strcpy(archivo, "DataBase/10.txt");
             break;
+        case 9:
+            strcpy(archivo, "DataBase/11.txt");
+            break;
+        case 10:
+            strcpy(archivo, "DataBase/12.txt");
+            break;
+        case 11:
+            strcpy(archivo, "DataBase/13.txt");
+            break;
+        case 12:
+            strcpy(archivo, "DataBase/14.txt");
+            break;
+        case 13:
+            strcpy(archivo, "DataBase/15.txt");
+            break;
+        case 14:
+            strcpy(archivo, "DataBase/16.txt");
+            break;
+        case 15:
+            strcpy(archivo, "DataBase/17.txt");
+            break;
+        case 16:
+            strcpy(archivo, "DataBase/18.txt");
+            break;
+        case 17:
+            strcpy(archivo, "DataBase/19.txt");
+            break;
+        case 18:
+            strcpy(archivo, "DataBase/20.txt");
+            break;
+        case 19:
+            strcpy(archivo, "DataBase/21.txt");
+            break;
+        case 20:
+            strcpy(archivo, "DataBase/22.txt");
+            break;
+        case 21:
+            strcpy(archivo, "DataBase/23.txt");
+            break;
     }
 
     // Se abre el archivo

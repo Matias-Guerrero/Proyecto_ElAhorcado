@@ -725,10 +725,10 @@ void menuNivel(Jugador *jugador)
 
     while(true)
     {
-        while(!cambiarOpcion(&opcionSeleccionada, 50))
+        while(!cambiarOpcion(&opcionSeleccionada, 4))
         {
             // Se muestra el menu
-            mostrarMenu(40, 14, opcionSeleccionada, 4);
+            mostrarMenu(40, 14, opcionSeleccionada, 50);
         }
 
         switch(opcionSeleccionada)
