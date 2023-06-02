@@ -138,19 +138,7 @@ void cuadro(int x1, int y1, int x2, int y2)
 // Función para mostrar el dibujo del ahorcado
 void mostrarAhorcado(int x, int y, int intentos)
 {
-    // Se muestra el ahorcado
-    // gotoxy(6, 3); printf("     ___________");
-    // gotoxy(6, 4); printf("     |         |");
-    // gotoxy(6, 5); printf("     |         |");
-    // gotoxy(6, 6); printf("     |         %c", (intentos < 6) ? 'O' : ' ');
-    // gotoxy(6, 7); printf("     |        %c%c%c", (intentos < 5) ? '/' : ' ', (intentos < 4) ? '|' : ' ', (intentos < 3) ? '\\' : ' ');
-    // gotoxy(6, 8); printf("     |        %c %c", (intentos < 2) ? '/' : ' ', (intentos < 1) ? '\\' : ' ');
-    // gotoxy(6, 9); printf("     |");
-    // gotoxy(6, 10); printf("     |");
-    // gotoxy(6, 11); printf("     |");
-    // gotoxy(6, 12); printf("    _|___");
-    // gotoxy(6, 13); printf("");
-
+   
     // Se muestra el ahorcado
     gotoxy(x, y); printf("     ___________");
     gotoxy(x, y + 1); printf("     |         |");
@@ -263,8 +251,6 @@ void mostrarTitulo(int x, int y, int opcion)
         gotoxy(x, y + 2); printf(" )__)  )(__    /(__)\\  ) _ (  )(_)(  )   /( (__  /(__)\\  )(_) ) )(_)( ");
         gotoxy(x, y + 3); printf("(____)(____)  (__)(__)(_) (_)(_____)(_)\\_) \\___)(__)(__)(____/ (_____)");
     }
-
-
 
     // Se restablece el color de la consola
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);

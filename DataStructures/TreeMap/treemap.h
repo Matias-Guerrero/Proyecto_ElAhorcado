@@ -34,6 +34,11 @@ Pair * firstTreeMap(TreeMap * tree); // Funcion actualizada
 
 Pair * nextTreeMap(TreeMap * tree); // Funcion actualizada
 
+Pair* lastTreeMap(TreeMap* tree); //funcion nueva
+
+Pair* prevTreeMap(TreeMap* tree); //funcion nueva
+
+int int treeSize(TreeMap* tree)
 //==============================================================================
 // OTRAS FUNCIONES
 //==============================================================================
