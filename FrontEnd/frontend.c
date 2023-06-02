@@ -305,11 +305,12 @@ void mostrarTitulo(int x, int y, int opcion)
 // Función para mostrar el menú
 void mostrarMenu(int x, int y, int opcionSeleccionada, int maxOpcion)
 {
-    if(maxOpcion == 3)
+    if(maxOpcion == 4)
     {
         gotoxy(x, y); printf("%s JUGAR", (opcionSeleccionada == 1) ? "->" : "  ");
         gotoxy(x, y + 1); printf("%s Ver Puntuaciones", (opcionSeleccionada == 2) ? "->" : "  ");
         gotoxy(x, y + 2); printf("%s Elegir Idioma", (opcionSeleccionada == 3) ? "->" : "  ");
+        gotoxy(x, y + 3); printf("%s Instrucciones", (opcionSeleccionada == 4) ? "->" : "  ");
     }
 
     if(maxOpcion == 2)
@@ -687,6 +688,26 @@ void teclaPresionada(int x, int y, char* letra, Nivel *nivel)
     }
 }
 
+//=====================================
+//========VENTANA INSTRUCCIONES========
+//=====================================
+
+void mostrarInstrucciones(int x, int y)
+{
+    gotoxy(x, y); printf("Instrucciones:");
+    gotoxy(x, y+2); printf("1. Adivina la palabra oculta en el menor numero de intentos posible.");
+    gotoxy(x, y+3); printf("2. Cada nivel tiene una palabra de longitud especifica, aumentando en un caracter por nivel.");
+    gotoxy(x, y+4); printf("3. Necesitas alcanzar 1000 puntos por nivel para avanzar.");
+    gotoxy(x, y+5); printf("4. Cada intento fallido disminuye tu puntaje base.");
+    gotoxy(x, y+6); printf("5. Selecciona la opcion correspondiente para adivinar una letra de la palabra oculta.");
+    gotoxy(x, y+7); printf("6. Si adivinas correctamente, se revelaran las apariciones de la letra en la palabra.");
+    gotoxy(x, y+8); printf("7. Completa el nivel antes de agotar los intentos para obtener puntos adicionales; de lo contrario,");
+    gotoxy(x, y+9); printf("   no ganas puntos y pierdes el nivel.");
+
+}
+
+
+
 // Funcion para mostrar el menu de nivel
 void menuNivel(Jugador *jugador)
 {
@@ -768,6 +789,7 @@ void subMenuJugar(Jugador *jugador);
 void nuevaPartida(Jugador *jugador);
 void cargarPartidaFE(Jugador *jugador);
 void jugar(Jugador *jugador);
+void instrucciones();
 
 //================================
 //========MENU PRINCIPAL==========
@@ -789,7 +811,7 @@ void menu(Jugador *jugador)
         system("cls"); // Limpiar la pantalla
         cuadro(1, 0, 119, 25); // Se dibuja el cuadro
 
-        mostrarTitulo(25, 3, 1); // Se muestra el titulo
+        mostrarTitulo(25, 4, 1); // Se muestra el titulo
 
         if(inicioJuego)
         {
@@ -805,9 +827,9 @@ void menu(Jugador *jugador)
             SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
         }
 
-        while(!cambiarOpcion(&opcionSeleccionada, 3))
+        while(!cambiarOpcion(&opcionSeleccionada, 4))
         {
-            mostrarMenu(40, 16, opcionSeleccionada, 3);
+            mostrarMenu(40, 16, opcionSeleccionada, 4);
         }
 
         switch(opcionSeleccionada)
@@ -820,6 +842,11 @@ void menu(Jugador *jugador)
             case 2:
                 break;
             case 3:
+                break;
+            case 4:
+                // Se llama a la funcion instrucciones
+                instrucciones();
+
                 break;
         }
     }
@@ -838,6 +865,7 @@ void subMenuJugar(Jugador *jugador)
     limpiarLinea(40, 16, 20);
     limpiarLinea(40, 17, 20);
     limpiarLinea(40, 18, 20);
+    limpiarLinea(40, 19, 20);
 
     while(true)
     {
@@ -1152,4 +1180,23 @@ void jugar(Jugador *jugador)
 
     // Se llama a la funcion jugar
     jugar(jugador);
+}
+
+//  Funcion instrucciones
+void instrucciones()
+{
+    // Se limpia la pantalla
+    limpiarPantalla();
+
+    // Se muestra el titulo
+    mostrarTitulo(30, 1, 2);
+
+    // Se muestra el mensaje de instrucciones
+    mostrarInstrucciones(7, 6);
+
+    // Se llama a la función pause
+    pause(30, 23, "Presione enter para continuar...");
+
+    // Se llama a cargar
+    cargando(2);
 }
