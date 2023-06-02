@@ -370,3 +370,53 @@ void cargarPartida(char *nombreJugador, Jugador *jugador, int x, int y)
         return;
     }
 }
+
+// Funcion para obtener todas las partidas guardadas y almacenarlas en un arreglo
+void obtenerJugadores(ArrayList *jugadores)
+{
+    // Abrir el archivo de guardado
+    FILE *archivo = fopen("partida_guardada.txt", "r");
+
+    // Verificar si el archivo existe
+    if (archivo == NULL)
+    {
+        // El archivo no existe, mostrar un mensaje de error
+        printf("No se encontró ninguna partida guardada.\n");
+
+        return;
+    }
+
+    // Crear un buffer para almacenar la línea
+    char linea[50];
+
+    // Recorrer el archivo
+    while (fgets(linea, sizeof(linea), archivo))
+    {
+        // Se separa el nombre del jugador del resto de la línea separada por comas
+        char *nombre = strtok(linea, ",");
+
+        // Se separa el puntaje del resto de la línea separada por comas
+        char *puntaje = strtok(NULL, ",");
+
+        // Se separa el nivel del resto de la línea separada por comas
+        char *nivel = strtok(NULL, ",");
+
+        // Se crea una struct para almacenar el jugador
+        Jugador *jugador = (Jugador *)malloc(sizeof(Jugador));
+
+        // Se asigna el nombre del jugador
+        strcpy(jugador->nombre, nombre);
+
+        // Se asigna el puntaje del jugador
+        jugador->puntos = atoi(puntaje);
+
+        // Se asigna el nivel del jugador
+        jugador->nivel = atoi(nivel);
+
+        // Se agrega el jugador al arreglo
+        append(jugadores, jugador);
+    }
+
+    // Cerrar el archivo
+    fclose(archivo);
+}

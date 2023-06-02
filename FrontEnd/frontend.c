@@ -11,6 +11,16 @@
 #include "frontend.h"
 #include "../BackEnd/backend.h"
 #include "../Struct/struct.h"
+#include "../DataStructures/ArrayList/arraylist.h"
+
+/*
+  función para comparar claves de tipo string
+  retorna 1 si son iguales
+*/
+int is_equal_string(void * key1, void * key2) {
+    if(strcmp((char*)key1, (char*)key2)==0) return 1;
+    return 0;
+}
 
 //====================================================================================================
 // FUNCIONES PARA EL MANEJO DE TECLAS Y CURSOR
@@ -317,6 +327,70 @@ void mostrarMenu(int x, int y, int opcionSeleccionada, int maxOpcion)
     }
 }
 
+// Funcion para mostrar jugadores estilo menu
+void mostrarJugadores(int x, int y, ArrayList *jugadores, int opcionSeleccionada, bool cambioOpcion)
+{
+    // Si cambioOpcion es true, se limpia la pantalla
+    if(cambioOpcion)
+    {
+        // Se limpia dentro del cuadro
+        for(int i = 0; i < 3; i++)
+        {
+            limpiarLinea(x, y + (i * 4), 85);
+            limpiarLinea(x, y + (i * 4) + 1, 85);
+            limpiarLinea(x, y + (i * 4) + 2, 85);
+        }
+    }
+
+    // Se inicializa el contador
+    int contador = 0;
+    int posicion = 0;
+
+    // Si el cursor supera el 9, entonces se debe mostrar los siguientes jugadores desde la posicion inicial
+    if((opcionSeleccionada - 1) > 8)
+    {
+        posicion = posicion + ((opcionSeleccionada - 1) / 9) * 9;
+    }
+
+    while(posicion < get_size(jugadores))
+    {
+        // Se obtiene el jugador del arreglo
+        Jugador *jugadorActual = get(jugadores, posicion);
+
+        // Si contador es mayor a un multiplo de 3, se aumenta el x
+        if(contador > 0 && (contador % 3) == 0)
+        {
+            x += 30;
+            contador = 0;
+        }
+
+        // Si el cursor esta en la posicion actual, se cambia el color
+        if((opcionSeleccionada - 1) == posicion)
+        {
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 14);
+        }
+        else
+        {
+            // Se restablece el color de la consola
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+        }
+
+        // Se muestra el jugador actual
+        gotoxy(x, y + (contador * 4)); printf("%s %s\n", ((opcionSeleccionada - 1) == posicion) ? "->" : "  ", jugadorActual->nombre);
+        gotoxy(x, y + (contador * 4) + 1); printf("   - %d puntos\n", jugadorActual->puntos);
+        gotoxy(x, y + (contador * 4) + 2); printf("   - Nivel %d\n", jugadorActual->nivel);
+
+        // Se aumenta el contador
+        contador++;
+        posicion++;
+
+        if(posicion % 9 == 0 || posicion >= get_size(jugadores))
+        {
+            break;
+        }
+    }
+}
+
 // Función para cambiar la opción del menú
 bool cambiarOpcion(int * opcion, int maxOpcion)
 {
@@ -324,22 +398,54 @@ bool cambiarOpcion(int * opcion, int maxOpcion)
     resetearTeclas();
 
     Sleep(150);
-    if( GetAsyncKeyState(VK_UP) ){
+    if( GetAsyncKeyState(VK_UP) )
+    {
         *opcion -= 1;
 
         if(*opcion < 1)
+        {
             *opcion = 1;
+        }
     }
-    if( GetAsyncKeyState(VK_DOWN) ){
+    if( GetAsyncKeyState(VK_DOWN) )
+    {
         *opcion += 1;
 
         if(*opcion > maxOpcion)
+        {
             *opcion = maxOpcion;
+        }
     }
-    if( GetAsyncKeyState(VK_RETURN) ){
+
+    // Si maxOpcion es mayor a 4, se verifica si se priona derecha o izquierda
+    if(maxOpcion >= 4)
+    {
+        if( GetAsyncKeyState(VK_LEFT) )
+        {
+            *opcion -= 3;
+
+            if(*opcion < 1)
+            {
+                *opcion = 1;
+            }
+        }
+        if( GetAsyncKeyState(VK_RIGHT) )
+        {
+            *opcion += 3;
+
+            if(*opcion > maxOpcion)
+            {
+                *opcion = maxOpcion;
+            }
+        }
+    }
+
+    if( GetAsyncKeyState(VK_RETURN) )
+    {
         return true;
     }
-    if( GetAsyncKeyState(VK_ESCAPE) && maxOpcion == 3){
+    if( GetAsyncKeyState(VK_ESCAPE) && maxOpcion == 3)
+    {
         exit(0);
     }
 
@@ -661,7 +767,8 @@ void menuNivel(Jugador *jugador)
 // Prototipado de funciones
 void menu(Jugador *jugador);
 void subMenuJugar(Jugador *jugador);
-void nuevoJuego(Jugador *jugador);
+void nuevaPartida(Jugador *jugador);
+void cargarPartidaFE(Jugador *jugador);
 void jugar(Jugador *jugador);
 
 //================================
@@ -673,6 +780,9 @@ void menu(Jugador *jugador)
 {
     // Se inicia un booleano para inicio de juego
     bool inicioJuego = true;
+
+    // Se inicializa el mapa de palabras jugadas
+    jugador->palabrasJugadas = createMap(is_equal_string);
 
     while(true)
     {
@@ -741,19 +851,11 @@ void subMenuJugar(Jugador *jugador)
         switch(opcionSeleccionada)
         {
             case 1:
-                nuevoJuego(jugador);               
+                nuevaPartida(jugador);               
 
                 break;
             case 2:
-                // Se llama a la funcion para cargar partida
-                // cargarPartida(jugador);
-
-                // Lógica para la opción 2
-                gotoxy(30, 20);
-                printf("Ha seleccionado cargar partida.");
-
-                // Se muestra el mensaje de pausa
-                pause(30, 22, "Presione enter para continuar...");
+                cargarPartidaFE(jugador);
 
                 break;
         }
@@ -767,7 +869,7 @@ void subMenuJugar(Jugador *jugador)
 }
 
 // Funcion para nuevo juego
-void nuevoJuego(Jugador *jugador)
+void nuevaPartida(Jugador *jugador)
 {
     // Se limpia la pantalla del menú
     limpiarLinea(40, 16, 20);
@@ -816,6 +918,80 @@ void nuevoJuego(Jugador *jugador)
 
     cargando(2);
 
+    jugar(jugador);
+}
+
+void cargarPartidaFE(Jugador *jugador)
+{
+    // Se muestra cargando
+    cargando(2);
+    
+    // Se limpia la pantalla
+    limpiarPantalla();
+
+    // Se muestra el titulo
+    mostrarTitulo(35, 1, 2);
+
+    // Se imprime Seleccione una partida guardada
+    gotoxy(45, 6); printf("Seleccione una partida guardada:");
+
+    // Se crea un cuadro para mostrar las partidas guardadas
+    cuadro(15, 7, 105, 22);
+
+    // Se crea una arreglo para guardar los jugadores
+    ArrayList *jugadores = createArrayList();
+
+    // Se llama a la funcion para obtener los jugadores
+    obtenerJugadores(jugadores);
+
+    // Se crea una variable para guardar la opcion seleccionada
+    int opcionSeleccionada = 1;
+
+    while(true)
+    {
+        // Se crea un booleano para saber si se la opcion seleccionada supero los 9
+        bool cambioOpcion = false;
+
+        // Se crea un entero para saber en que rango se encuentra la opcion seleccionada
+        int rango = (opcionSeleccionada - 1) / 9;
+
+        while(!cambiarOpcion(&opcionSeleccionada, get_size(jugadores)))
+        {
+            // Se comprueba si la opcion seleccionada cambio de rango
+            if(rango != ((opcionSeleccionada - 1) / 9))
+            {
+                // Se cambia el valor de la variable cambioOpcion
+                cambioOpcion = true;
+
+                // Se cambia el valor de la variable rango
+                rango = (opcionSeleccionada - 1) / 9;
+            }
+
+            // Se muestran los jugadores en el cuadro
+            mostrarJugadores(19, 9, jugadores, opcionSeleccionada, cambioOpcion);
+
+            // Se cambia el valor de la variable cambioOpcion
+            cambioOpcion = false;
+        }
+
+        break;
+    }
+
+    // Se obtiene el jugador seleccionado
+    Jugador *jugadorSeleccionado = get(jugadores, opcionSeleccionada - 1);
+
+    // Se copia el jugador seleccionado al jugador actual
+    strcpy(jugador->nombre, jugadorSeleccionado->nombre);
+    jugador->nivel = jugadorSeleccionado->nivel;
+    jugador->puntos = jugadorSeleccionado->puntos;
+
+    // Se hace una pause
+    pause(45, 22, "Presione enter para continuar...");
+
+    // Se muestra cargando
+    cargando(2);
+
+    // Se llama a la funcion jugar
     jugar(jugador);
 }
 
