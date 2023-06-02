@@ -1,14 +1,1 @@
-JohnDoe,3000,4
-JaneSmith,6000,6
-MikeJohnson,9000,9
 TWar,4400,5
-SarahWilliams,8000,8
-ChrisBrown,5000,5
-EmilyDavis,2000,2
-DanielLee,4000,4
-OliviaTaylor,7000,7
-SophiaAnderson,5500,5
-LiamWilson,3500,3
-AvaMartinez,4800,4
-NoahHernandez,7200,7
-IsabellaGarcia,6200,6

@@ -369,11 +369,6 @@ void mostrarJugadores(int x, int y, ArrayList *jugadores, int opcionSeleccionada
         {
             SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 14);
         }
-        else
-        {
-            // Se restablece el color de la consola
-            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-        }
 
         // Se muestra el jugador actual
         gotoxy(x, y + (contador * 4)); printf("%s %s\n", ((opcionSeleccionada - 1) == posicion) ? "->" : "  ", jugadorActual->nombre);
@@ -383,6 +378,9 @@ void mostrarJugadores(int x, int y, ArrayList *jugadores, int opcionSeleccionada
         // Se aumenta el contador
         contador++;
         posicion++;
+
+        // Se restablece el color de la consola
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 
         if(posicion % 9 == 0 || posicion >= get_size(jugadores))
         {
