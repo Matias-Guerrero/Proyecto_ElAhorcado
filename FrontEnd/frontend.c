@@ -319,7 +319,7 @@ void mostrarMenu(int x, int y, int opcionSeleccionada, int maxOpcion)
         gotoxy(x, y + 1); printf("%s Cargar Partida", (opcionSeleccionada == 2) ? "->" : "  ");
     }
 
-    if(maxOpcion == 4)
+    if(maxOpcion == 50)
     {
         gotoxy(x, y); printf("%s Continuar", (opcionSeleccionada == 1) ? "->" : "  ");
         gotoxy(x, y + 1); printf("%s Guardar y Continuar", (opcionSeleccionada == 2) ? "->" : "  ");
@@ -443,7 +443,7 @@ bool cambiarOpcion(int * opcion, int maxOpcion)
     {
         return true;
     }
-    if( GetAsyncKeyState(VK_ESCAPE) && maxOpcion == 3)
+    if( GetAsyncKeyState(VK_ESCAPE) && maxOpcion == 4)
     {
         exit(0);
     }
@@ -725,7 +725,7 @@ void menuNivel(Jugador *jugador)
 
     while(true)
     {
-        while(!cambiarOpcion(&opcionSeleccionada, 4))
+        while(!cambiarOpcion(&opcionSeleccionada, 50))
         {
             // Se muestra el menu
             mostrarMenu(40, 14, opcionSeleccionada, 4);
@@ -1196,7 +1196,4 @@ void instrucciones()
 
     // Se llama a la función pause
     pause(30, 23, "Presione enter para continuar...");
-
-    // Se llama a cargar
-    cargando(2);
 }
