@@ -443,9 +443,19 @@ bool cambiarOpcion(int * opcion, int maxOpcion)
     {
         return true;
     }
-    if( GetAsyncKeyState(VK_ESCAPE) && maxOpcion == 4)
+    if( GetAsyncKeyState(VK_ESCAPE))
     {
-        exit(0);
+        if(maxOpcion == 4)
+        {
+            exit(0);
+        }
+        else if (maxOpcion < 4)
+        {
+            // Se asigna opcion en 0 para volver al menu principal
+            *opcion = 0;
+            return true;
+        }
+        
     }
 
     return false;
@@ -798,6 +808,10 @@ void instrucciones();
 // Función para mostrar el menú
 void menu(Jugador *jugador)
 {
+    system("cls"); // Limpiar la pantalla
+        
+    cuadro(1, 0, 119, 25); // Se dibuja el cuadro
+
     // Se inicia un booleano para inicio de juego
     bool inicioJuego = true;
 
@@ -808,8 +822,7 @@ void menu(Jugador *jugador)
     {
         int opcionSeleccionada = 1;
 
-        system("cls"); // Limpiar la pantalla
-        cuadro(1, 0, 119, 25); // Se dibuja el cuadro
+        limpiarPantalla(); // Se limpia la pantalla
 
         mostrarTitulo(25, 4, 1); // Se muestra el titulo
 
@@ -859,8 +872,6 @@ void menu(Jugador *jugador)
 // Función para mostrar el submenú de jugar
 void subMenuJugar(Jugador *jugador)
 {
-    int opcionSeleccionada = 1;
-
     // Se limpia la pantalla del menú
     limpiarLinea(40, 16, 20);
     limpiarLinea(40, 17, 20);
@@ -869,6 +880,8 @@ void subMenuJugar(Jugador *jugador)
 
     while(true)
     {
+        int opcionSeleccionada = 1;
+
         while(!cambiarOpcion(&opcionSeleccionada, 2))
         {
             mostrarMenu(40, 16, opcionSeleccionada, 2);
@@ -998,6 +1011,11 @@ void cargarPartidaFE(Jugador *jugador)
 
             // Se cambia el valor de la variable cambioOpcion
             cambioOpcion = false;
+        }
+
+        if(opcionSeleccionada == 0)
+        {
+            return;
         }
 
         break;
