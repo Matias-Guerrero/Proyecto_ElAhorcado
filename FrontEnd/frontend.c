@@ -205,8 +205,8 @@ void cargando(int duracion)
 // Función para mostrar el título
 void mostrarTitulo(int x, int y, int opcion)
 {
-    // Se imprime el titulo en rojo
-    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
+    // Se imprime el titulo en rosado
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 13);
 
     /***
      *   _______________________________
@@ -289,6 +289,12 @@ void mostrarMenu(int x, int y, int opcionSeleccionada, int maxOpcion)
     {
         gotoxy(x, y); printf("%s Nueva Partida", (opcionSeleccionada == 1) ? "->" : "  ");
         gotoxy(x, y + 1); printf("%s Cargar Partida", (opcionSeleccionada == 2) ? "->" : "  ");
+    }
+
+    if(maxOpcion == 3)
+    {
+        gotoxy(x, y); printf("%s Espanol", (opcionSeleccionada == 1) ? "->" : "  ");
+        gotoxy(x, y + 1); printf("%s Ingles", (opcionSeleccionada == 2) ? "->" : "  ");
     }
 }
 
@@ -558,6 +564,7 @@ void teclaPresionada(int x, int y, char* letra, Nivel *nivel)
     }
 }
 
+
 //=====================================
 //========VENTANA INSTRUCCIONES========
 //=====================================
@@ -587,6 +594,7 @@ void menu(Jugador *jugador);
 void subMenuJugar(Jugador *jugador);
 void nuevoJuego(Jugador *jugador);
 void jugar(Jugador *jugador);
+void idioma(Jugador *jugador);
 void instrucciones();
 
 //================================
@@ -611,7 +619,7 @@ void menu(Jugador *jugador)
         if(inicioJuego)
         {
             // Se cambia el color de la consola a verde
-            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 11);
 
             // Se muestra el mensaje de pausa
             pause(35, 18, "Presione ENTER para iniciar juego...");
@@ -637,6 +645,9 @@ void menu(Jugador *jugador)
             case 2:
                 break;
             case 3:
+                // Se llama a la funcion idioma
+                idioma(jugador);
+    
                 break;
             case 4:
                 // Se llama a la funcion instrucciones
@@ -903,6 +914,63 @@ void jugar(Jugador *jugador)
     jugar(jugador);
 }
 
+
+// Funcion para seleccionar el idioma
+void idioma(Jugador *jugador)
+{
+    int opcionSeleccionada = 3;
+
+    // Se limpia la pantalla del menú
+    limpiarLinea(40, 16, 20);
+    limpiarLinea(40, 17, 20);
+    limpiarLinea(40, 18, 20);
+    limpiarLinea(40, 19, 20);
+
+    while(true)
+    {
+        while(!cambiarOpcion(&opcionSeleccionada, 3))
+        {
+            mostrarMenu(40, 16, opcionSeleccionada, 3);
+        }
+
+        switch(opcionSeleccionada)
+        {
+            case 1:
+                //idiomaEspanol(jugador);      
+               
+                // Lógica para la opción 2
+                gotoxy(30, 20);
+                printf("Ha seleccionado idioma Espanol.");
+
+                // Se muestra el mensaje de pausa
+                pause(30, 22, "Presione enter para continuar...");
+         
+
+                break;
+            case 2:
+                // Se llama a la funcion para cargar partida
+                // cargarPartida(jugador);
+
+                // Lógica para la opción 2
+                gotoxy(30, 20);
+                printf("Ha seleccionado idioma Ingles.");
+
+                // Se muestra el mensaje de pausa
+                pause(30, 22, "Presione enter para continuar...");
+
+                break;
+        }
+
+        // Se limpia las lineas
+        limpiarLinea(30, 20, 35);
+        limpiarLinea(30, 22, 35);
+
+        break;
+    }    
+}
+
+
+
 //  Funcion instrucciones
 void instrucciones()
 {
@@ -913,11 +981,9 @@ void instrucciones()
     mostrarTitulo(30, 1, 2);
 
     // Se muestra el mensaje de instrucciones
-    mostrarInstrucciones(7, 6);
+    mostrarInstrucciones(20, 25);
 
     // Se llama a la función pause
     pause(30, 23, "Presione enter para continuar...");
 
-    // Se llama a cargar
-    cargando(2);
 }

@@ -23,6 +23,7 @@ typedef struct {
     char nombre[50];
     int puntos;
     int nivel;
+    int idioma;
     Map *palabrasJugadas;
 } Jugador;
 
