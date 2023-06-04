@@ -16,6 +16,6 @@ void pause(int x, int y, char *mensaje);
 
 // void cuadro();
 
-void menu(Jugador *jugador);
+void menu(Jugador *jugador, int idiomaElegido);
 
 #endif // FRONTEND_H
