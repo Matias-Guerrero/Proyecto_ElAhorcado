@@ -1189,7 +1189,7 @@ void jugar(Jugador *jugador, int idiomaElegido)
         nivel->puntosNivel = 600 + (200 * (nivel->nivel - 1));
 
         // Se llama a la funcion para agregar una palabra aleatoria
-        agregarPalabraAleatoria(jugador, nivel);
+        agregarPalabraAleatoria(jugador, nivel, 1);
 
         // Se llena de guiones bajos la palabra actual
         for(int i = 0; i < strlen(nivel->palabraSecreta); i++)
@@ -1340,7 +1340,7 @@ void jugar(Jugador *jugador, int idiomaElegido)
         nivel->puntosNivel = 600 + (200 * (nivel->nivel - 1));
 
         // Se llama a la funcion para agregar una palabra aleatoria
-        agregarPalabraAleatoria(jugador, nivel);
+        agregarPalabraAleatoria(jugador, nivel, 2);
 
         // Se llena de guiones bajos la palabra actual
         for(int i = 0; i < strlen(nivel->palabraSecreta); i++)

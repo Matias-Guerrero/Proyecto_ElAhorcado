@@ -82,106 +82,215 @@ char* quitar_tildes(char* cadena)
 }
 
 // Función para buscar una palabra aleatoria
-void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
+void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel, int idiomaElegido)
 {   
-    char archivo[20];
-
-    int totalPalabras = 100;
-
-    // Se verifica el nivel seleccionado
-    switch(jugador->nivel)
+    if(idiomaElegido == 1)
     {
-        case 1:
-            strcpy(archivo, "DataBase/03.txt");
-            totalPalabras = 104;
-            break;
-        case 2:
-            strcpy(archivo, "DataBase/04.txt");
-            totalPalabras = 407;
-            break;
-        case 3:
-            strcpy(archivo, "DataBase/05.txt");
-            totalPalabras = 1007;
-            break;
-        case 4:
-            strcpy(archivo, "DataBase/06.txt");
-            totalPalabras = 766;
-            break;
-        case 5:
-            strcpy(archivo, "DataBase/07.txt");
-            break;
-        case 6:
-            strcpy(archivo, "DataBase/08.txt");
-            break;
-        case 7:
-            strcpy(archivo, "DataBase/09.txt");
-            break;
-        case 8:
-            strcpy(archivo, "DataBase/10.txt");
-            break;
-    }
+        char archivo[20];
 
-    // Se abre el archivo
-    FILE *file = fopen(archivo, "r");
+        int totalPalabras = 100;
 
-    // Se verifica que el archivo exista
-    if(file == NULL)
-    {
-        printf("No se pudo abrir el archivo\n");
-        system("pause");
-        exit(1);
-    }
-
-    // Se inicializa la semilla para generar números aleatorios
-    srand(time(NULL));
-
-    // Se crea un buffer para almacenar la palabra
-    char buffer[100];
-
-    // Se recorre el archivo
-    while(fgets(buffer, 100, file))
-    {
-        // Se obtiene un número aleatorio
-        int aleatorio = rand() % totalPalabras;
-
-        // Se saltan las palabras hasta llegar al número aleatorio
-        for(int i = 0; i < aleatorio; i++)
+        // Se verifica el nivel seleccionado
+        switch(jugador->nivel)
         {
-            fgets(buffer, 100, file);
+            case 1:
+                strcpy(archivo, "DataBase/03.txt");
+                totalPalabras = 104;
+                break;
+            case 2:
+                strcpy(archivo, "DataBase/04.txt");
+                totalPalabras = 407;
+                break;
+            case 3:
+                strcpy(archivo, "DataBase/05.txt");
+                totalPalabras = 1007;
+                break;
+            case 4:
+                strcpy(archivo, "DataBase/06.txt");
+                totalPalabras = 766;
+                break;
+            case 5:
+                strcpy(archivo, "DataBase/07.txt");
+                break;
+            case 6:
+                strcpy(archivo, "DataBase/08.txt");
+                break;
+            case 7:
+                strcpy(archivo, "DataBase/09.txt");
+                break;
+            case 8:
+                strcpy(archivo, "DataBase/10.txt");
+                break;
         }
 
-        // Se elimina el salto de linea
-        buffer[strlen(buffer) - 1] = '\0';
+        // Se abre el archivo
+        FILE *file = fopen(archivo, "r");
 
-        // Se crea una struct para almacenar la palabra
-        Palabra *palabra = (Palabra *) malloc(sizeof(Palabra));
-
-        // Se asigna la palabra a la struct
-        strcpy(palabra->palabra, buffer);
-
-        // Se asigna el nivel a la struct
-        palabra->nivel = jugador->nivel;
-
-        // Se verifica que la palabra no haya sido jugada
-        if(searchMap(jugador->palabrasJugadas, palabra->palabra) == NULL)
+        // Se verifica que el archivo exista
+        if(file == NULL)
         {
-            // Se agrega la palabra al mapa
-            insertMap(jugador->palabrasJugadas, palabra->palabra, palabra);
-
-            // Se asigna la palabra secreta
-            strcpy(nivel->palabraSecreta, buffer);
-
-            break;
+            printf("No se pudo abrir el archivo\n");
+            system("pause");
+            exit(1);
         }
-        else
+
+        // Se inicializa la semilla para generar números aleatorios
+        srand(time(NULL));
+
+        // Se crea un buffer para almacenar la palabra
+        char buffer[100];
+
+        // Se recorre el archivo
+        while(fgets(buffer, 100, file))
         {
-            // Se vuelven al inicio del archivo
-            rewind(file);
+            // Se obtiene un número aleatorio
+            int aleatorio = rand() % totalPalabras;
+
+            // Se saltan las palabras hasta llegar al número aleatorio
+            for(int i = 0; i < aleatorio; i++)
+            {
+                fgets(buffer, 100, file);
+            }
+
+            // Se elimina el salto de linea
+            buffer[strlen(buffer) - 1] = '\0';
+
+            // Se crea una struct para almacenar la palabra
+            Palabra *palabra = (Palabra *) malloc(sizeof(Palabra));
+
+            // Se asigna la palabra a la struct
+            strcpy(palabra->palabra, buffer);
+
+            // Se asigna el nivel a la struct
+            palabra->nivel = jugador->nivel;
+
+            // Se verifica que la palabra no haya sido jugada
+            if(searchMap(jugador->palabrasJugadas, palabra->palabra) == NULL)
+            {
+                // Se agrega la palabra al mapa
+                insertMap(jugador->palabrasJugadas, palabra->palabra, palabra);
+
+                // Se asigna la palabra secreta
+                strcpy(nivel->palabraSecreta, buffer);
+
+                break;
+            }
+            else
+            {
+                // Se vuelven al inicio del archivo
+                rewind(file);
+            }
         }
+
+        // Se cierra el archivo
+        fclose(file);
     }
+    else if (idiomaElegido == 2)
+    {
+        char archivo[20];
 
-    // Se cierra el archivo
-    fclose(file);
+        int totalPalabras = 100;
+
+        // Se verifica el nivel seleccionado
+        switch(jugador->nivel)
+        {
+            case 1:
+                strcpy(archivo, "WordBank/03_English.txt");
+                totalPalabras = 171;
+                break;
+            case 2:
+                strcpy(archivo, "WordBank/04_English.txt");
+                totalPalabras = 69;
+                break;
+            case 3:
+                strcpy(archivo, "WordBank/05_English.txt");
+                totalPalabras = 488;
+                break;
+            case 4:
+                strcpy(archivo, "WordBank/06_English.txt");
+                totalPalabras = 140;
+                break;
+            case 5:
+                strcpy(archivo, "WordBank/07_English.txt");
+                totalPalabras = 500;
+                break;
+            case 6:
+                strcpy(archivo, "WordBank/08_English.txt");
+                totalPalabras = 500;
+                break;
+            case 7:
+                strcpy(archivo, "WordBank/09_English.txt");
+                totalPalabras = 95;
+                break;
+            case 8:
+                strcpy(archivo, "WordBank/10_English.txt");
+                totalPalabras = 100;
+                break;
+        }
+
+        // Se abre el archivo
+        FILE *file = fopen(archivo, "r");
+
+        // Se verifica que el archivo exista
+        if(file == NULL)
+        {
+            printf("No se pudo abrir el archivo\n");
+            system("pause");
+            exit(1);
+        }
+
+        // Se inicializa la semilla para generar números aleatorios
+        srand(time(NULL));
+
+        // Se crea un buffer para almacenar la palabra
+        char buffer[100];
+
+        // Se recorre el archivo
+        while(fgets(buffer, 100, file))
+        {
+            // Se obtiene un número aleatorio
+            int aleatorio = rand() % totalPalabras;
+
+            // Se saltan las palabras hasta llegar al número aleatorio
+            for(int i = 0; i < aleatorio; i++)
+            {
+                fgets(buffer, 100, file);
+            }
+
+            // Se elimina el salto de linea
+            buffer[strlen(buffer) - 1] = '\0';
+
+            // Se crea una struct para almacenar la palabra
+            Palabra *palabra = (Palabra *) malloc(sizeof(Palabra));
+
+            // Se asigna la palabra a la struct
+            strcpy(palabra->palabra, buffer);
+
+            // Se asigna el nivel a la struct
+            palabra->nivel = jugador->nivel;
+
+            // Se verifica que la palabra no haya sido jugada
+            if(searchMap(jugador->palabrasJugadas, palabra->palabra) == NULL)
+            {
+                // Se agrega la palabra al mapa
+                insertMap(jugador->palabrasJugadas, palabra->palabra, palabra);
+
+                // Se asigna la palabra secreta
+                strcpy(nivel->palabraSecreta, buffer);
+
+                break;
+            }
+            else
+            {
+                // Se vuelven al inicio del archivo
+                rewind(file);
+            }
+        }
+
+        // Se cierra el archivo
+        fclose(file);
+        }
+    
 }
 
 void guardarPartida(Jugador *jugador, int x, int y)

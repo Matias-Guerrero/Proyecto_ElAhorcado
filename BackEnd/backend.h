@@ -3,7 +3,7 @@
 
 #include "../Struct/struct.h"
 
-void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel);
+void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel, int idiomaElegido);
 
 void guardarPartida(Jugador *jugador, int x, int y);
 
