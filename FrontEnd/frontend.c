@@ -285,6 +285,9 @@ void mostrarTitulo(int x, int y, int opcion)
 
     if(opcion == 4)
     {
+        // Se establece el color en amarillo
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 14);
+
         gotoxy(x, y); printf("     _    _              _____       _     _     _             _        _   _ _           _");
         gotoxy(x, y + 1); printf("    | |  | |            / ____|     | |   (_)   | |           | |      | \\ | (_)         | |");
         gotoxy(x, y + 2); printf("    | |__| | __ _ ___  | (___  _   _| |__  _  __| | ___     __| | ___  |  \\| |___   _____| |");
@@ -604,7 +607,7 @@ void procesarLetra(int x, int y, Nivel *nivel, char letra)
         nivel->intentosRestantes--;
 
         // Se restan 100 puntos
-        nivel->puntosNivel -= 100;
+        nivel->puntosNivel -= 100 * nivel->nivel;
     }
 
     // Se limpia la linea anterior
@@ -624,7 +627,8 @@ void teclaPresionada(int x, int y, char* letra, Nivel *nivel)
     {
         for (int i = 0x41; i <= 0x5A; i++)
         {
-            if (GetAsyncKeyState(i)) {
+            if (GetAsyncKeyState(i))
+            {
                 *letra = i + 32; // Convertir a minúscula
                 tecla = true;
 
@@ -669,8 +673,6 @@ void teclaPresionada(int x, int y, char* letra, Nivel *nivel)
 
                 if(tecla == false)
                 {
-                    // Se limpia el buffer de teclado
-                    resetearTeclas();
                     break;
                 }
 
@@ -1055,7 +1057,7 @@ void jugar(Jugador *jugador)
     nivel->intentosRestantes = 6;
 
     // Se inicializa los puntos del nivel segun el nivel del jugador
-    nivel->puntosNivel = 600 + (200 * (nivel->nivel - 1));
+    nivel->puntosNivel = 600 * nivel->nivel;
 
     // Se llama a la funcion para agregar una palabra aleatoria
     agregarPalabraAleatoria(jugador, nivel);
@@ -1156,7 +1158,7 @@ void jugar(Jugador *jugador)
         pause(50, 22, "Presione enter para continuar...");
 
         // Se verifica la cantidad de puntos del jugador para subir de nivel
-        if(jugador->puntos >= 1000 * jugador->nivel)
+        if(jugador->puntos >= 1000 * jugador->nivel + (500 * (jugador->nivel - 1)))
         {
             // Se aumenta el nivel del jugador
             jugador->nivel++;

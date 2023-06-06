@@ -320,6 +320,7 @@ void guardarPartida(Jugador *jugador, int x, int y)
     {
         // Abrir el archivo en modo escritura al final
         archivo = fopen("partida_guardada.txt", "a");
+        
         if (archivo == NULL)
         {
             printf("No se pudo abrir el archivo.\n");
