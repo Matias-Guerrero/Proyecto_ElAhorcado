@@ -203,10 +203,10 @@ void cargando(int duracion)
 }
 
 // Función para mostrar el título
-void mostrarTitulo(int x, int y, int opcion, int idiomaElegido)
+void mostrarTitulo(int x, int y, int opcion, Jugador* jugador)
 {
     // Juego en Español
-    if(idiomaElegido == 1)
+    if(jugador->idioma == 1)
     {
         // Se imprime el titulo en rosado
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 13);
@@ -272,7 +272,7 @@ void mostrarTitulo(int x, int y, int opcion, int idiomaElegido)
         // Se restablece el color de la consola
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
     }
-    else if (idiomaElegido == 2)
+    else if (jugador->idioma == 2)
     {
         // Se imprime el titulo en rosado
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 13);
@@ -358,10 +358,10 @@ void mostrarTitulo(int x, int y, int opcion, int idiomaElegido)
 //================================
 
 // Función para mostrar el menú
-void mostrarMenu(int x, int y, int opcionSeleccionada, int maxOpcion, int idiomaElegido)
+void mostrarMenu(int x, int y, int opcionSeleccionada, int maxOpcion, Jugador *jugador)
 {
     // Menu en Español
-    if(idiomaElegido == 1)
+    if(jugador->idioma == 1)
     {
         if(maxOpcion == 4)
         {
@@ -383,13 +383,13 @@ void mostrarMenu(int x, int y, int opcionSeleccionada, int maxOpcion, int idioma
             gotoxy(x, y + 1); printf("%s Ingles", (opcionSeleccionada == 2) ? "->" : "  ");
         }
     }
-    else if (idiomaElegido == 2) // Menu en Ingles
+    else if (jugador->idioma == 2) // Menu en Ingles
     {
         if(maxOpcion == 4)
         {
             gotoxy(x, y); printf("%s Play", (opcionSeleccionada == 1) ? "->" : "  ");
             gotoxy(x, y + 1); printf("%s Score", (opcionSeleccionada == 2) ? "->" : "  ");
-            gotoxy(x, y + 2); printf("%s  Language", (opcionSeleccionada == 3) ? "->" : "  ");
+            gotoxy(x, y + 2); printf("%s Language", (opcionSeleccionada == 3) ? "->" : "  ");
             gotoxy(x, y + 3); printf("%s Instructions", (opcionSeleccionada == 4) ? "->" : "  ");
         }
 
@@ -442,9 +442,9 @@ bool cambiarOpcion(int * opcion, int maxOpcion)
 //=====================================
 
 // Funcion para mostrar las letras usadas en el nivel
-void mostrarLetras(int x, int y, Nivel *nivel, int idiomaElegido)
+void mostrarLetras(int x, int y, Nivel *nivel, Jugador *jugador)
 {
-    if(idiomaElegido == 1) //Español
+    if(jugador->idioma == 1) //Español
     {
         // Se muestra la tabla de letras usadas
         gotoxy(x, y); printf(" ___Letras usadas___");
@@ -488,7 +488,7 @@ void mostrarLetras(int x, int y, Nivel *nivel, int idiomaElegido)
             contador++;
         }
     }
-    else if (idiomaElegido == 2) //Ingles
+    else if (jugador->idioma == 2) //Ingles
     {
         // Se muestra la tabla de letras usadas
         gotoxy(x, y); printf(" ___Used letters___");
@@ -535,9 +535,9 @@ void mostrarLetras(int x, int y, Nivel *nivel, int idiomaElegido)
     
 }
 
-void mostrarInformacion(int x, int y, Jugador *jugador, Nivel *nivel, int idiomaElegido)
+void mostrarInformacion(int x, int y, Jugador *jugador, Nivel *nivel)
 {
-    if(idiomaElegido == 1) // Español
+    if(jugador->idioma == 1) // Español
     {
         // Se crea un cuadro
         cuadro(x, y, x + 29, y + 20);
@@ -575,7 +575,7 @@ void mostrarInformacion(int x, int y, Jugador *jugador, Nivel *nivel, int idioma
         gotoxy(x + 5, y + 17); printf("Puntos: %5d", nivel->puntosNivel);
         gotoxy(x + 5, y + 18); printf("===============");
     }
-    else if (idiomaElegido == 2) // Ingles
+    else if (jugador->idioma == 2) // Ingles
     {
         // Se crea un cuadro
         cuadro(x, y, x + 29, y + 20);
@@ -616,9 +616,9 @@ void mostrarInformacion(int x, int y, Jugador *jugador, Nivel *nivel, int idioma
     
 }
 
-void mostrarPalabra(int x, int y, Nivel *nivel, int idiomaElegido)
+void mostrarPalabra(int x, int y, Nivel *nivel, Jugador *jugador)
 {
-    if(idiomaElegido == 1) // Español
+    if(jugador->idioma == 1) // Español
     {
         // Se obtiene el largo de la palabra actual
         int largo = strlen(nivel->palabraActual);
@@ -631,7 +631,7 @@ void mostrarPalabra(int x, int y, Nivel *nivel, int idiomaElegido)
             gotoxy(x + (10 - largo) + (i * 2), y + 2); printf("%c", toupper(nivel->palabraActual[i]));
         }
     }
-    else if (idiomaElegido == 2) // Ingles
+    else if (jugador->idioma == 2) // Ingles
     {
         // Se obtiene el largo de la palabra actual
         int largo = strlen(nivel->palabraActual);
@@ -647,9 +647,9 @@ void mostrarPalabra(int x, int y, Nivel *nivel, int idiomaElegido)
     
 }
 
-void procesarLetra(int x, int y, Nivel *nivel, char letra, int idiomaElegido)
+void procesarLetra(int x, int y, Nivel *nivel, char letra, Jugador *jugador)
 {
-    if(idiomaElegido == 1) // Español
+    if(jugador->idioma == 1) // Español
     {
         int aciertos = 0;
 
@@ -694,7 +694,7 @@ void procesarLetra(int x, int y, Nivel *nivel, char letra, int idiomaElegido)
         // Se limpia la linea anterior
         limpiarLinea(x, y, 50);
     }
-    else if (idiomaElegido == 2) // Ingles
+    else if (jugador->idioma == 2) // Ingles
     {
         int aciertos = 0;
 
@@ -743,7 +743,7 @@ void procesarLetra(int x, int y, Nivel *nivel, char letra, int idiomaElegido)
 }
 
 // Se verifica las teclas presionadas con la funcion GetAsyncKeyState
-void teclaPresionada(int x, int y, char* letra, Nivel *nivel, int idiomaElegido)
+void teclaPresionada(int x, int y, char* letra, Nivel *nivel, Jugador *jugador)
 {
     // Se limpia el buffer de teclado
     resetearTeclas();
@@ -773,11 +773,11 @@ void teclaPresionada(int x, int y, char* letra, Nivel *nivel, int idiomaElegido)
                     if(*letraActual == *letra)
                     {
                         // Se muestra el mensaje de error
-                        if(idiomaElegido == 1) // Español
+                        if(jugador->idioma == 1) // Español
                         {
                             gotoxy(50, 20); printf("La letra ingresada ya fue utilizada");
                         }
-                        else if (idiomaElegido == 2) // Ingles
+                        else if (jugador->idioma == 2) // Ingles
                         {
                             gotoxy(50, 20); printf("The letter entered has already been used");
                         }
@@ -786,11 +786,11 @@ void teclaPresionada(int x, int y, char* letra, Nivel *nivel, int idiomaElegido)
                         ocultarCursor();
 
                         // Se muestra el mensaje de pausa
-                        if(idiomaElegido == 1) // Español
+                        if(jugador->idioma == 1) // Español
                         {
                             pause(50, 22, "Presione enter para continuar...");
                         }
-                        else if (idiomaElegido == 2) // Ingles
+                        else if (jugador->idioma == 2) // Ingles
                         {
                             pause(50, 22, "Press enter to continue...");
                         }
@@ -850,9 +850,9 @@ void teclaPresionada(int x, int y, char* letra, Nivel *nivel, int idiomaElegido)
 //========VENTANA INSTRUCCIONES========
 //=====================================
 
-void mostrarInstrucciones(int x, int y, int idiomaElegido)
+void mostrarInstrucciones(int x, int y, Jugador *jugador)
 {
-    if(idiomaElegido == 1)
+    if(jugador->idioma == 1)
     {
         gotoxy(x, y); printf("Instrucciones:");
         gotoxy(x, y+2); printf("1. Adivina la palabra oculta en el menor numero de intentos posible.");
@@ -864,7 +864,7 @@ void mostrarInstrucciones(int x, int y, int idiomaElegido)
         gotoxy(x, y+8); printf("7. Completa el nivel antes de agotar los intentos para obtener puntos adicionales; de lo contrario,");
         gotoxy(x, y+9); printf("   no ganas puntos y pierdes el nivel.");
     }
-    else if (idiomaElegido == 2)
+    else if (jugador->idioma == 2)
     {
         gotoxy(x, y); printf("Instruction:");
     }
@@ -880,21 +880,21 @@ void mostrarInstrucciones(int x, int y, int idiomaElegido)
 //====================================================================================================
 
 // Prototipado de funciones
-void menu(Jugador *jugador, int idiomaElegido);
-void subMenuJugar(Jugador *jugador, int idiomaElegido);
-void nuevoJuego(Jugador *jugador , int idiomaElegido);
-void jugar(Jugador *jugador, int idiomaElegido);
+void menu(Jugador *jugador);
+void subMenuJugar(Jugador *jugador);
+void nuevoJuego(Jugador *jugador);
+void jugar(Jugador *jugador);
 void idioma(Jugador *jugador);
-void instrucciones(int idiomaElegido);
+void instrucciones(Jugador *jugador);
 
 //================================
 //========MENU PRINCIPAL==========
 //================================
 
 // Función para mostrar el menú
-void menu(Jugador *jugador, int idiomaElegido)
+void menu(Jugador *jugador)
 {
-    if(idiomaElegido == 1) // Español
+    if(jugador->idioma == 1) // Español
     {
         // Se inicia un booleano para inicio de juego
         bool inicioJuego = true;
@@ -906,7 +906,7 @@ void menu(Jugador *jugador, int idiomaElegido)
             system("cls"); // Limpiar la pantalla
             cuadro(1, 0, 119, 25); // Se dibuja el cuadro
 
-            mostrarTitulo(25, 4, 1, 1); // Se muestra el titulo
+            mostrarTitulo(25, 4, 1, jugador); // Se muestra el titulo
 
             if(inicioJuego)
             {
@@ -924,14 +924,14 @@ void menu(Jugador *jugador, int idiomaElegido)
 
             while(!cambiarOpcion(&opcionSeleccionada, 4))
             {
-                mostrarMenu(40, 16, opcionSeleccionada, 4, 1);
+                mostrarMenu(40, 16, opcionSeleccionada, 4, jugador);
             }
 
             switch(opcionSeleccionada)
             {
                 case 1:
                     // Se llama a la funcion subMenuJugar
-                    subMenuJugar(jugador, idiomaElegido);
+                    subMenuJugar(jugador);
 
                     break;
                 case 2:
@@ -943,13 +943,13 @@ void menu(Jugador *jugador, int idiomaElegido)
                     break;
                 case 4:
                     // Se llama a la funcion instrucciones
-                    instrucciones(idiomaElegido);
+                    instrucciones(jugador);
 
                     break;
             }
         }
     }
-    else if (idiomaElegido == 2) // Ingles
+    else if (jugador->idioma == 2) // Ingles
     {
         // Se inicia un booleano para inicio de juego
         bool inicioJuego = true;
@@ -961,7 +961,7 @@ void menu(Jugador *jugador, int idiomaElegido)
             system("cls"); // Limpiar la pantalla
             cuadro(1, 0, 119, 25); // Se dibuja el cuadro
 
-            mostrarTitulo(25, 4, 1, 2); // Se muestra el titulo
+            mostrarTitulo(25, 4, 1, jugador); // Se muestra el titulo
 
             if(inicioJuego)
             {
@@ -979,14 +979,14 @@ void menu(Jugador *jugador, int idiomaElegido)
 
             while(!cambiarOpcion(&opcionSeleccionada, 4))
             {
-                mostrarMenu(40, 16, opcionSeleccionada, 4, 2);
+                mostrarMenu(40, 16, opcionSeleccionada, 4, jugador);
             }
 
             switch(opcionSeleccionada)
             {
                 case 1:
                     // Se llama a la funcion subMenuJugar
-                    subMenuJugar(jugador, idiomaElegido);
+                    subMenuJugar(jugador);
 
                     break;
                 case 2:
@@ -998,10 +998,8 @@ void menu(Jugador *jugador, int idiomaElegido)
                     break;
                 case 4:
                     // Se llama a la funcion instrucciones
-                    instrucciones(idiomaElegido);
+                    instrucciones(jugador);
 
-                break;
-                break;
                     break;
             }
         }
@@ -1015,7 +1013,7 @@ void menu(Jugador *jugador, int idiomaElegido)
 //===================================
 
 // Función para mostrar el submenú de jugar
-void subMenuJugar(Jugador *jugador, int idiomaElegido)
+void subMenuJugar(Jugador *jugador)
 {
     int opcionSeleccionada = 1;
 
@@ -1029,13 +1027,13 @@ void subMenuJugar(Jugador *jugador, int idiomaElegido)
     {
         while(!cambiarOpcion(&opcionSeleccionada, 2))
         {
-            mostrarMenu(40, 16, opcionSeleccionada, 2, 1);
+            mostrarMenu(40, 16, opcionSeleccionada, 2, jugador);
         }
 
         switch(opcionSeleccionada)
         {
             case 1:
-                nuevoJuego(jugador, idiomaElegido);               
+                nuevoJuego(jugador);               
 
                 break; 
             case 2:
@@ -1061,9 +1059,9 @@ void subMenuJugar(Jugador *jugador, int idiomaElegido)
 }
 
 // Funcion para nuevo juego
-void nuevoJuego(Jugador *jugador , int idiomaElegido)
+void nuevoJuego(Jugador *jugador)
 {
-    if(idiomaElegido == 1)
+    if(jugador->idioma == 1)
     {
         // Se limpia la pantalla del menú
         limpiarLinea(40, 16, 20);
@@ -1112,9 +1110,9 @@ void nuevoJuego(Jugador *jugador , int idiomaElegido)
 
         cargando(2);
 
-        jugar(jugador, idiomaElegido);
+        jugar(jugador);
     }
-    else if (idiomaElegido == 2)
+    else if (jugador->idioma == 2)
     {
         // Se limpia la pantalla del menú
         limpiarLinea(40, 16, 20);
@@ -1163,15 +1161,15 @@ void nuevoJuego(Jugador *jugador , int idiomaElegido)
 
         cargando(2);
 
-        jugar(jugador, idiomaElegido);
+        jugar(jugador);
     }
     
 }
 
 // Funcion Jugar
-void jugar(Jugador *jugador, int idiomaElegido)
+void jugar(Jugador *jugador)
 {
-    if(idiomaElegido == 1)
+    if(jugador->idioma == 1)
     {
         //================================================================
         //================= BACKEND JUGAR ================================
@@ -1189,7 +1187,7 @@ void jugar(Jugador *jugador, int idiomaElegido)
         nivel->puntosNivel = 600 + (200 * (nivel->nivel - 1));
 
         // Se llama a la funcion para agregar una palabra aleatoria
-        agregarPalabraAleatoria(jugador, nivel, 1);
+        agregarPalabraAleatoria(jugador, nivel);
 
         // Se llena de guiones bajos la palabra actual
         for(int i = 0; i < strlen(nivel->palabraSecreta); i++)
@@ -1221,19 +1219,19 @@ void jugar(Jugador *jugador, int idiomaElegido)
             }
 
             // Se muestra el titulo
-            mostrarTitulo(50, 1, 2, 1);
+            mostrarTitulo(50, 1, 2, jugador);
 
             // Se muestra la informacion del juego actual
-            mostrarInformacion(8, 3, jugador, nivel, 1);
+            mostrarInformacion(8, 3, jugador, nivel);
 
             // Se muestra el ahorcado
             mostrarAhorcado(45, 6, nivel->intentosRestantes);
 
             // Se muestra las letras usadas
-            mostrarLetras(85, 6, nivel, 1);
+            mostrarLetras(85, 6, nivel, jugador);
 
             // Se muestra la palabra actual con los guiones bajos saltando un espacion por guion
-            mostrarPalabra(65, 12, nivel, 1);
+            mostrarPalabra(65, 12, nivel, jugador);
 
             // Se pregunta por la letra
             gotoxy(65, 17); printf("Ingrese una letra:  ");
@@ -1241,7 +1239,7 @@ void jugar(Jugador *jugador, int idiomaElegido)
             mostrarCursor(); // Se muestra el cursor
 
             // Se llama a la funcion que verifica que letra se ha ingresado
-            teclaPresionada(85, 17, &letra, nivel, 1);
+            teclaPresionada(85, 17, &letra, nivel, jugador);
 
             ocultarCursor(); // Se oculta el cursor
 
@@ -1260,7 +1258,7 @@ void jugar(Jugador *jugador, int idiomaElegido)
             limpiarLetra = true;
 
             // Se llama a funcion para validar la letra ingresada
-            procesarLetra(50, 20, nivel, letra, 1);
+            procesarLetra(50, 20, nivel, letra, jugador);
 
             // Se verifica si se ha ganado el juego
             if(strcmp(nivel->palabraSecreta, nivel->palabraActual) == 0)
@@ -1320,9 +1318,9 @@ void jugar(Jugador *jugador, int idiomaElegido)
         cargando(2);
 
         // Se llama a la funcion jugar
-        jugar(jugador, idiomaElegido);
+        jugar(jugador);
     }
-    else if (idiomaElegido == 2)
+    else if (jugador->idioma == 2)
     {
         //================================================================
         //================= BACKEND JUGAR ================================
@@ -1340,7 +1338,7 @@ void jugar(Jugador *jugador, int idiomaElegido)
         nivel->puntosNivel = 600 + (200 * (nivel->nivel - 1));
 
         // Se llama a la funcion para agregar una palabra aleatoria
-        agregarPalabraAleatoria(jugador, nivel, 2);
+        agregarPalabraAleatoria(jugador, nivel);
 
         // Se llena de guiones bajos la palabra actual
         for(int i = 0; i < strlen(nivel->palabraSecreta); i++)
@@ -1372,19 +1370,19 @@ void jugar(Jugador *jugador, int idiomaElegido)
             }
 
             // Se muestra el titulo
-            mostrarTitulo(50, 1, 2, 2);
+            mostrarTitulo(50, 1, 2, jugador);
 
             // Se muestra la informacion del juego actual
-            mostrarInformacion(8, 3, jugador, nivel, 2);
+            mostrarInformacion(8, 3, jugador, nivel);
 
             // Se muestra el ahorcado
             mostrarAhorcado(45, 6, nivel->intentosRestantes);
 
             // Se muestra las letras usadas
-            mostrarLetras(85, 6, nivel, 2);
+            mostrarLetras(85, 6, nivel, jugador);
 
             // Se muestra la palabra actual con los guiones bajos saltando un espacion por guion
-            mostrarPalabra(65, 12, nivel, 2);
+            mostrarPalabra(65, 12, nivel, jugador);
 
             // Se pregunta por la letra
             gotoxy(65, 17); printf("Enter a letter:  ");
@@ -1392,7 +1390,7 @@ void jugar(Jugador *jugador, int idiomaElegido)
             mostrarCursor(); // Se muestra el cursor
 
             // Se llama a la funcion que verifica que letra se ha ingresado
-            teclaPresionada(85, 17, &letra, nivel, 2);
+            teclaPresionada(85, 17, &letra, nivel, jugador);
 
             ocultarCursor(); // Se oculta el cursor
 
@@ -1411,7 +1409,7 @@ void jugar(Jugador *jugador, int idiomaElegido)
             limpiarLetra = true;
 
             // Se llama a funcion para validar la letra ingresada
-            procesarLetra(50, 20, nivel, letra, 2);
+            procesarLetra(50, 20, nivel, letra, jugador);
 
             // Se verifica si se ha ganado el juego
             if(strcmp(nivel->palabraSecreta, nivel->palabraActual) == 0)
@@ -1452,7 +1450,7 @@ void jugar(Jugador *jugador, int idiomaElegido)
         else
         {
             // Se muestra el mensaje de perdiste
-            gotoxy(50, 20); printf("TOU LOST!!!!!!!");
+            gotoxy(50, 20); printf("YOU LOST!!!!!!!");
 
             // Se muestra la palabra secreta
             gotoxy(50, 21); printf("The secret word was: %s", nivel->palabraSecreta);
@@ -1471,16 +1469,15 @@ void jugar(Jugador *jugador, int idiomaElegido)
         cargando(2);
 
         // Se llama a la funcion jugar
-        jugar(jugador, idiomaElegido);
+        jugar(jugador);
     }
     
 }
 
-
 // Funcion para seleccionar el idioma
 void idioma(Jugador *jugador)
 {
-    int opcionSeleccionada = 3;
+    int opcionSeleccionada = 1;
 
     // Se limpia la pantalla del menú 
     limpiarLinea(40, 16, 20);
@@ -1490,27 +1487,24 @@ void idioma(Jugador *jugador)
 
     while(true)
     {
-        while(!cambiarOpcion(&opcionSeleccionada, 3))
+        while(!cambiarOpcion(&opcionSeleccionada, 2))
         {
-            mostrarMenu(40, 16, opcionSeleccionada, 3, 1);
+            mostrarMenu(40, 16, opcionSeleccionada, 3, jugador);
         }
-
-        mostrarCursor();
 
         switch(opcionSeleccionada)
         {
             case 1:
-                // Llamada a la funcion menu
-                menu(jugador,1);    
+                // Se cambia el idioma del jugador
+                jugador->idioma = 1; 
             
                 // Se muestra el mensaje de pausa
                 pause(30, 22, "Presione enter para continuar...");
-         
 
                 break;
             case 2:
-                // Llamada a la funcion menu
-                menu(jugador,2); 
+                // Se cambia el idioma del jugador
+                jugador->idioma = 2;
 
                 // Se muestra el mensaje de pausa
                 pause(30, 22, "Press enter to continue...");
@@ -1518,48 +1512,39 @@ void idioma(Jugador *jugador)
                 break;
         }
 
-        // Se limpia las lineas
-        limpiarLinea(30, 20, 35);
-        limpiarLinea(30, 22, 35);
-
         break;
     }    
 }
 
-
-
 //  Funcion instrucciones
-void instrucciones(int idiomaElegido)
+void instrucciones(Jugador *jugador)
 {
-    if(idiomaElegido == 1)
+    if(jugador->idioma == 1)
     {
         // Se limpia la pantalla
         limpiarPantalla();
 
         // Se muestra el titulo
-        mostrarTitulo(30, 1, 2, 1);
+        mostrarTitulo(30, 1, 2, jugador);
 
         // Se muestra el mensaje de instrucciones
-        mostrarInstrucciones(20, 25, 1);
+        mostrarInstrucciones(20, 25, jugador);
 
         // Se llama a la función pause
         pause(30, 23, "Presione enter para continuar...");
     }
-    else if (idiomaElegido == 2)
+    else if (jugador->idioma == 2)
     {
         // Se limpia la pantalla
         limpiarPantalla();
 
         // Se muestra el titulo
-        mostrarTitulo(30, 1, 2, 2);
+        mostrarTitulo(30, 1, 2, jugador);
 
         // Se muestra el mensaje de instrucciones
-        mostrarInstrucciones(20, 25, 2);
+        mostrarInstrucciones(20, 25, jugador);
 
         // Se llama a la función pause
         pause(30, 23, "Press enter to continue...");
     }
-    
-    
-
 }

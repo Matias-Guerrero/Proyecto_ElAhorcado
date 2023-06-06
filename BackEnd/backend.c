@@ -82,9 +82,9 @@ char* quitar_tildes(char* cadena)
 }
 
 // Función para buscar una palabra aleatoria
-void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel, int idiomaElegido)
+void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
 {   
-    if(idiomaElegido == 1)
+    if(jugador->idioma == 1)
     {
         char archivo[20];
 
@@ -185,7 +185,7 @@ void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel, int idiomaElegido)
         // Se cierra el archivo
         fclose(file);
     }
-    else if (idiomaElegido == 2)
+    else if (jugador->idioma == 2)
     {
         char archivo[20];
 
