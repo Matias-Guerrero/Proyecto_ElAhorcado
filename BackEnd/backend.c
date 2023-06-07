@@ -20,6 +20,7 @@
 #include "../DataStructures/List/list.h"
 #include "../DataStructures/Map/Map.h"
 #include "../FrontEnd/frontend.h"
+#include "../DataStructures/TreeMap/treemap.h"
 
 //====================================================================================================
 // Importar structs, funciones de frontend y backend
@@ -419,4 +420,103 @@ void obtenerJugadores(ArrayList *jugadores)
 
     // Cerrar el archivo
     fclose(archivo);
+}
+
+
+//====================================================================================================
+// Funciones para administracion de los puntajes
+//====================================================================================================
+
+//bool que sirve para verificar si califica para el top 10
+int calificaEnTabla(TreeMap *tree, int puntos)
+{   
+    //conseguimos al ultimo de la lista
+    Pair *aux_pair = firstTreeMap(tree);
+    Jugador *current_last_spot = (Jugador*) aux_pair->value;
+    
+    //verificamos si el puntaje del jugador actual es mayor a el ultimo puesto
+    if(puntos > current_last_spot->puntos)
+    {
+        return 1;
+    }
+
+    return 0;
+}
+
+//verifica si el jugador existe en la tabla para evitar nombres
+int JugadorExisteEnTabla(TreeMap *tree, char* nombre)
+{
+    Pair *aux_pair = firstTreeMap(tree);
+    Jugador *current_spot = (Jugador*) aux_pair->value;
+
+    while(aux_pair != NULL)
+    {
+        if(strcmp(nombre, current_spot->nombre) == 0)
+        {
+            return 1;
+        }
+        else
+        {
+            Pair *aux_pair = nextTreeMap(tree);
+            Jugador *current_spot = (Jugador*) aux_pair->value;
+        }
+    }
+    return 0;
+}
+
+//procesamos el nombre repetido, si el puntaje nuevo es mayor
+void procesarJugadorRepetido(TreeMap *tree, Jugador * player)
+{
+    //tomamos la ultima posicion de la tabla
+    Pair *aux_pair = firstTreeMap(tree);
+    Jugador *current_spot = (Jugador*) aux_pair->value;
+
+    //recorremos la tabla
+    while(aux_pair != NULL)
+    {   
+        //si es el mismo nombre, evaluamos
+        if(strcmp(player->nombre, current_spot->nombre) == 0)
+        {   
+            //si supera los puntos del mismo nombre, se elimina el que existe en la lista y se inserta el con puntaje mas alto
+            if(current_spot->puntos < player->puntos)
+            {
+                eraseTreeMapCurrent(tree);
+                insertTreeMap(tree, player->puntos, player);
+            }
+        }
+        else
+        {   
+            //recorre al siguiente de la lista
+            Pair *aux_pair = nextTreeMap(tree);
+            Jugador *current_spot = (Jugador*) aux_pair->value;
+        }
+    }
+    
+}
+
+//funcion para guardar un puntaje
+void guardarPuntaje(TreeMap *tree, Jugador *player)
+{   
+    //pregunta si es mayor a el top 10 de los puntajes
+    if(calificaEnTabla(tree, player->puntos) == 1)
+    {
+        //si es que existe el jugador en la tabla, se comparan los puntajes de ambos casos
+        if(JugadorExisteEnTabla(tree, player->nombre) == 1)
+        {   
+            //inserta el nuevo puntaje del jugador en la tabla en caso de ser mayor al existente, en caso contrario solo se omite
+            procesarJugadorRepetido(tree, player);
+        }
+        else
+        {   
+            insertTreeMap(tree, player->puntos, player);
+            
+            //al insertar un nuevo jugador, si es que este llega a crear un size de mas de 10 en la tabla, el ultimo dato se elimina.
+            if(treeSize(tree) == 10)
+            {   
+                firstTreeMap(tree);
+                eraseTreeMapCurrent(tree);
+            }
+            
+        }
+    }
 }
