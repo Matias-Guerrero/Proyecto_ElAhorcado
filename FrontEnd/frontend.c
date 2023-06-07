@@ -365,30 +365,36 @@ void mostrarTitulo(int x, int y, int opcion, Jugador* jugador)
         }
         /*  _  _ ____ _  _ ____ _  _ ____ _  _ 
             |__| |__| |\ | | __ |\/| |__| |\ | 
-            |  | |  | | \| |__] |  | |  | | \| 
-                                   
-        
+            |  | |  | | \| |__] |  | |  | | \|                 
         */
+
+       /*
+       ___ _  _ ____    _  _ ____ _  _ ____ _  _ ____ _  _ 
+        |  |__| |___    |__| |__| |\ | | __ |\/| |__| |\ | 
+        |  |  | |___    |  | |  | | \| |__] |  | |  | | \| 
+       */
 
         if(opcion == 2)
         {
-            gotoxy(x, y); printf("_  _ ____ _  _ ____ _  _ ____ _  _ ");
-            gotoxy(x, y + 1); printf("|__| |__| |\\ | | __ |\\/| |__| |\\ | ");
-            gotoxy(x, y + 2); printf("|  | |  | | \\| |__] |  | |  | | \\| ");
+            gotoxy(x, y); printf("___ _  _ ____    _  _ ____ _  _ ____ _  _ ____ _  _ ");
+            gotoxy(x, y + 1); printf(" |  |__| |___    |__| |__| |\\ | | __ |\\/| |__| |\\ | ");
+            gotoxy(x, y + 2); printf(" |  |  | |___    |  | |  | | \\| |__] |  | |  | | \\| ");
+
         }
 
-        /*   _   _    __    _  _  ___  __  __    __    _  _ 
-            ( )_( )  /__\  ( \( )/ __)(  \/  )  /__\  ( \( )
-             ) _ (  /(__)\  )  (( (_-. )    (  /(__)\  )  ( 
-            (_) (_)(__)(__)(_)\_)\___/(_/\/\_)(__)(__)(_)\_)
+        /*  
+         ____  _   _  ____    _   _    __    _  _  ___  __  __    __    _  _ 
+        (_  _)( )_( )( ___)  ( )_( )  /__\  ( \( )/ __)(  \/  )  /__\  ( \( )
+         )(   ) _ (  )__)    ) _ (  /(__)\  )  (( (_-. )    (  /(__)\  )  ( 
+        (__) (_) (_)(____)  (_) (_)(__)(__)(_)\_)\___/(_/\/\_)(__)(__)(_)\_)
          */
 
         if(opcion == 3)
         {
-            gotoxy(x, y); printf("  _   _    __    _  _  ___  __  __    __    _  _ ");
-            gotoxy(x, y + 1); printf(" ( )_( )  /__\\  ( \\( )/ __)(  \\/  )  /__\\  ( \\( )");
-            gotoxy(x, y + 2); printf("  ) _ (  /(__)\\  )  (( (_-. )    (  /(__)\\  )  ( ");
-            gotoxy(x, y + 3); printf(" (_) (_)(__)(__)(_\\_)\\___/(_/\\/\\_)(__)(__)(_\\_)\\");
+            gotoxy(x, y); printf(" ____  _   _  ____    _   _    __    _  _  ___  __  __    __    _  _ ");
+            gotoxy(x, y + 1); printf("(_  _)( )_( )( ___)  ( )_( )  /__\\  ( \\( )/ __)(  \\/  )  /__\\  ( \\( )");
+            gotoxy(x, y + 2); printf(" )(   ) _ (  )__)    ) _ (  /(__)\\  )  (( (_-. )    (  /(__)\\  )  ( ");
+            gotoxy(x, y + 3); printf("(__) (_) (_)(____)  (_) (_)(__)(__)(_)\\_)\\___/(_/\\/\\_)(__)(__)(_)\\_)");
         }
 
         // Se restablece el color de la consola
@@ -911,6 +917,14 @@ void mostrarInstrucciones(int x, int y, Jugador *jugador)
     else if (jugador->idioma == 2)
     {
         gotoxy(x, y); printf("Instruction:");
+        gotoxy(x, y+2); printf("1. Guess the hidden word in the least number of attempts possible.");
+        gotoxy(x, y+3); printf("2. Each level has a word of specific length, increasing by one character per level.");
+        gotoxy(x, y+4); printf("3. You need to reach 1000 points per level to advance.");
+        gotoxy(x, y+5); printf("4. Each failed attempt decreases your base score.");
+        gotoxy(x, y+6); printf("5. Select the corresponding option to guess a letter of the hidden word.");
+        gotoxy(x, y+7); printf("6. If you guess correctly, the appearances of the letter in the word will be revealed.");
+        gotoxy(x, y+8); printf("7. Complete the level before running out of attempts to get additional points; otherwise,");
+        gotoxy(x, y+9); printf("   you do not earn points and lose the level.");
     }
     
     
@@ -1558,6 +1572,7 @@ void idioma(Jugador *jugador)
 
         break;
     }    
+    cargando(2, jugador);
 }
 
 //  Funcion instrucciones
@@ -1572,7 +1587,7 @@ void instrucciones(Jugador *jugador)
         mostrarTitulo(30, 1, 2, jugador);
 
         // Se muestra el mensaje de instrucciones
-        mostrarInstrucciones(20, 25, jugador);
+        mostrarInstrucciones(6, 7, jugador);
 
         // Se llama a la función pause
         pause(30, 23, "Presione enter para continuar...");
@@ -1586,7 +1601,7 @@ void instrucciones(Jugador *jugador)
         mostrarTitulo(30, 1, 2, jugador);
 
         // Se muestra el mensaje de instrucciones
-        mostrarInstrucciones(20, 25, jugador);
+        mostrarInstrucciones(6, 7, jugador);
 
         // Se llama a la función pause
         pause(30, 23, "Press enter to continue...");
