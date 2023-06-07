@@ -166,7 +166,7 @@ void mostrarAhorcado(int x, int y, int intentos)
 }
 
 // Función para mostrar animación de cargando
-void cargando(int duracion)
+void cargando(int duracion, Jugador *jugador)
 {
     // Se limpia la pantalla
     limpiarPantalla();
@@ -177,28 +177,58 @@ void cargando(int duracion)
     // Se inicializa la variable para la duracion de cada mensaje
     int milisegundos = 250;
 
-    // Se hace un bucle para mostrar el mensaje de cargando
-    for(int i = 0; i < duracion; i++)
+    if(jugador->idioma == 1)
     {
-        gotoxy(45, 12); printf("Cargando");
-        mostrarAhorcado(15, 6, j);
-        j++;
-        Sleep(milisegundos);
-        gotoxy(45, 12); printf("Cargando.");
-        mostrarAhorcado(15, 6, j);
-        j++;
-        Sleep(milisegundos);
-        gotoxy(45, 12); printf("Cargando..");
-        mostrarAhorcado(15, 6, j);
-        j++;
-        Sleep(milisegundos);
-        gotoxy(45, 12); printf("Cargando...");
-        mostrarAhorcado(15, 6, j);
-        j++;
-        Sleep(milisegundos);
+        // Se hace un bucle para mostrar el mensaje de cargando
+        for(int i = 0; i < duracion; i++)
+        {
+            gotoxy(45, 12); printf("Cargando");
+            mostrarAhorcado(15, 6, j);
+            j++;
+            Sleep(milisegundos);
+            gotoxy(45, 12); printf("Cargando.");
+            mostrarAhorcado(15, 6, j);
+            j++;
+            Sleep(milisegundos);
+            gotoxy(45, 12); printf("Cargando..");
+            mostrarAhorcado(15, 6, j);
+            j++;
+            Sleep(milisegundos);
+            gotoxy(45, 12); printf("Cargando...");
+            mostrarAhorcado(15, 6, j);
+            j++;
+            Sleep(milisegundos);
 
-        // Se limpia la linea anterior
-        limpiarLinea(45, 12, 11);
+            // Se limpia la linea anterior
+            limpiarLinea(45, 12, 11);
+        }
+
+    }
+    else if (jugador->idioma == 2)
+    {
+        // Se hace un bucle para mostrar el mensaje de cargando
+        for(int i = 0; i < duracion; i++)
+        {
+            gotoxy(45, 12); printf("Loading");
+            mostrarAhorcado(15, 6, j);
+            j++;
+            Sleep(milisegundos);
+            gotoxy(45, 12); printf("Loading.");
+            mostrarAhorcado(15, 6, j);
+            j++;
+            Sleep(milisegundos);
+            gotoxy(45, 12); printf("Loading..");
+            mostrarAhorcado(15, 6, j);
+            j++;
+            Sleep(milisegundos);
+            gotoxy(45, 12); printf("Loading...");
+            mostrarAhorcado(15, 6, j);
+            j++;
+            Sleep(milisegundos);
+
+            // Se limpia la linea anterior
+            limpiarLinea(45, 12, 11);
+        }
     }
 }
 
@@ -1122,7 +1152,7 @@ void nuevoJuego(Jugador *jugador)
         // Se restaura el color de la consola
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 
-        cargando(2);
+        cargando(2, jugador);
 
         jugar(jugador);
     }
@@ -1173,7 +1203,7 @@ void nuevoJuego(Jugador *jugador)
         // Se restaura el color de la consola
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 
-        cargando(2);
+        cargando(2, jugador);
 
         jugar(jugador);
     }
@@ -1329,7 +1359,7 @@ void jugar(Jugador *jugador)
         free(nivel);
 
         // Se llama a cargar
-        cargando(2);
+        cargando(2, jugador);
 
         // Se llama a la funcion jugar
         jugar(jugador);
@@ -1480,7 +1510,7 @@ void jugar(Jugador *jugador)
         free(nivel);
 
         // Se llama a cargar
-        cargando(2);
+        cargando(2, jugador);
 
         // Se llama a la funcion jugar
         jugar(jugador);
