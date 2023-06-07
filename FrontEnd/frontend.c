@@ -300,33 +300,34 @@ void mostrarTitulo(int x, int y, int opcion, Jugador* jugador)
        */
 
        /*
-        *    _____________________________________________________________
-         *  |    _______ _            _    _                              |           
-            |  |__   __| |          | |  | |                              |         
-            |     | |  | |__   ___  | |__| | __ _ _ __   __ _ _ __ ___   __| _ _ __  
-            |    | |  | '_ \ / _ \ |  __  |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
-            |    | |  | | | |  __/ | |  | | (_| | | | | (_| | | | | | | (_| | | | |
-            |   |_|  |_| |_|\___| |_|  |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
-            |                                         __/ |               |        
-            |                                        |___/              /|\\
-         * _|_________                                                 / | \\             
-         *                                                             / \\
-         *                                                            /   \\
+        *      ______________________________________________________________
+            |   _______ _            _    _                                |         
+            |  |__   __| |          | |  | |                               |         
+            |     | |  | |__   ___  | |__| | __ _ _ __   __ _ _ __ ___   __|_ _ __  
+            |     | |  | '_ \ / _ \ |  __  |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+            |     | |  | | | |  __/ | |  | | (_| | | | | (_| | | | | | | (_| | | | |
+            |     |_|  |_| |_|\___| |_|  |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+            |                                            __/ |             |         
+            |                                           |___/  	         /|\\	
+           _|_______						                           / | \\
+                                                                        / \\
+                                                                       /   \\
+         *  
          *			                             
         */
 
         if(opcion == 1)
         {
-            gotoxy(x, y); printf("  _____________________________________________________________");
-            gotoxy(x, y + 1); printf("  |   _______ _            _    _                              |");
-            gotoxy(x, y + 2); printf("  |  |__   __| |          | |  | |                              |");
-            gotoxy(x, y + 3); printf("  |     | |  | |__   ___  | |__| | __ _ _ __   __ _ _ __ ___   __|");
-            gotoxy(x, y + 4); printf("  |     | |  | '_ \\ / _ \\ |  __  |/ _` | '_ \\ / _` | '_ ` _ \\ / _` |");
-            gotoxy(x, y + 5); printf("  |     | |  | | | |  __/ | |  | | (_| | | | | (_| | | | | | | (_| |");
-            gotoxy(x, y + 6); printf("  |     |_|  |_| |_|\\___| |_|  |_|\\__,_|_| |_|\\__, |_| |_| |_|\\__,_|");
-            gotoxy(x, y + 7); printf("  |                                              __ / |               |");
-            gotoxy(x, y + 8); printf("  |                                             |____/              /|\\");
-            gotoxy(x, y + 9); printf(" _|_________                                                       / | \\");
+            gotoxy(x, y); printf("      ______________________________________________________________");
+            gotoxy(x, y + 1); printf("     |   _______ _            _    _                                |");
+            gotoxy(x, y + 2); printf("     |  |__   __| |          | |  | |                               |");
+            gotoxy(x, y + 3); printf("     |     | |  | |__   ___  | |__| | __ _ _ __   __ _ _ __ ___   __|_ _ __");
+            gotoxy(x, y + 4); printf("     |     | |  | '_ \\ / _ \\ |  __  |/ _` | '_ \\ / _` | '_ ` _ \\ / _` | '_ \\");
+            gotoxy(x, y + 5); printf("     |     | |  | | | |  __/ | |  | | (_| | | | | (_| | | | | | | (_| | | | |");
+            gotoxy(x, y + 6); printf("     |     |_|  |_| |_|\\___| |_|  |_|\\__,_|_| |_|\\__, |_| |_| |_|\\__,_|_| |_|");
+            gotoxy(x, y + 7); printf("     |                                            __/ |             |");
+            gotoxy(x, y + 8); printf("     |                                           |___/  	    /|\\");
+            gotoxy(x, y + 9); printf("    _|_______						           / | \\");
             gotoxy(x, y + 10); printf("                                                                   / \\");
             gotoxy(x, y + 11); printf("                                                                  /   \\");
 
@@ -1143,7 +1144,7 @@ void nuevoJuego(Jugador *jugador)
         system("timeout /t 0 /nobreak >nul");
 
         // Se obtiene el nombre del jugador
-        printf("Ingrese su nombre: ");
+        printf("Enter your name: ");
         scanf("%s", nombre);
 
         while(getchar() != '\n'); // Limpiar buffer
@@ -1167,7 +1168,7 @@ void nuevoJuego(Jugador *jugador)
         gotoxy(35, 17); printf("WELCOME %s!!!!!!!", jugador->nombre);
 
         // Se muestra el mensaje de pausa
-        pause(35, 18, "Presione enter para comenzar...");
+        pause(35, 18, "Press enter to start...");
 
         // Se restaura el color de la consola
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
