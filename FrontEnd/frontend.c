@@ -284,11 +284,11 @@ void mostrarTitulo(int x, int y, int opcion)
     if(opcion == 5)
     {
         gotoxy(x, y); printf("__________              __              __               ");
-        gotoxy(x, y + 1); printf("\______   \__ __  _____/  |______      |__| ____   ______");
-        gotoxy(x, y + 2); printf("|     ___/  |  \/    \   __\__  \     |  |/ __ \ /  ___/");
-        gotoxy(x, y + 3); printf("|    |   |  |  /   |  \  |  / __ \_   |  \  ___/ \___ \ ");
-        gotoxy(x, y + 4); printf(" |____|   |____/|___|  /__| (____  /\__|  |\___  >____  >");
-        gotoxy(x, y + 5); printf("                    \/          \/\______|    \/     \/ ");
+        gotoxy(x, y + 1); printf("\\______   \\__ __  _____/  |______      |__| ____   ______");
+        gotoxy(x, y + 2); printf("|     ___/  |  \\/    \\   __\\__  \\     |  |/ __ \\ /  ___/");
+        gotoxy(x, y + 3); printf("|    |   |  |  /   |  \\  |  / __ \\_   |  \\  ___/ \\___ \\ ");
+        gotoxy(x, y + 4); printf(" |____|   |____/|___|  /__| (____  /\\__|  |\\___  >____  >");
+        gotoxy(x, y + 5); printf("                    \\/          \\/\\______|    \\/     \\/ ");
     }
 
     // Se restablece el color de la consola
@@ -738,7 +738,6 @@ void mostrarPuntajes(int x, int y, TreeMap *tabla_puntajes)
             //se imprime el puntaje
             gotoxy(x + 8, y + 2); printf("%d, puntos.", current_spot->puntos);
 
-            
 
             //una vez impreso 4 jugadores en una columna, se procede a correr las x para crear una nueva columna
             if(cont % 4 == 0)
@@ -832,10 +831,10 @@ void menuNivel(Jugador *jugador)
 
 // Prototipado de funciones
 void menu(Jugador *jugador, TreeMap *tree);
-void subMenuJugar(Jugador *jugador);
-void nuevaPartida(Jugador *jugador);
-void cargarPartidaFE(Jugador *jugador);
-void jugar(Jugador *jugador);
+void subMenuJugar(Jugador *jugador, TreeMap* arbol_puntajes);
+void nuevaPartida(Jugador *jugador, TreeMap* arbol_puntajes);
+void cargarPartidaFE(Jugador *jugador, TreeMap* arbol_puntajes);
+void jugar(Jugador *jugador, TreeMap* arbol_puntajes);
 void menuPuntajes(TreeMap *tree);
 void instrucciones();
 
@@ -884,7 +883,7 @@ void menu(Jugador *jugador, TreeMap * arbol_puntajes)
         {
             case 1:
                 // Se llama a la funcion subMenuJugar
-                subMenuJugar(jugador);
+                subMenuJugar(jugador, arbol_puntajes);
 
                 break;
             case 2:
@@ -907,7 +906,7 @@ void menu(Jugador *jugador, TreeMap * arbol_puntajes)
 //===================================
 
 // Función para mostrar el submenú de jugar
-void subMenuJugar(Jugador *jugador)
+void subMenuJugar(Jugador *jugador, TreeMap* arbol_puntajes)
 {
     int opcionSeleccionada = 1;
 
@@ -927,11 +926,11 @@ void subMenuJugar(Jugador *jugador)
         switch(opcionSeleccionada)
         {
             case 1:
-                nuevaPartida(jugador);               
+                nuevaPartida(jugador, arbol_puntajes);               
 
                 break;
             case 2:
-                cargarPartidaFE(jugador);
+                cargarPartidaFE(jugador, arbol_puntajes);
 
                 break;
         }
@@ -952,6 +951,9 @@ void menuPuntajes(TreeMap *arbol_puntajes)
 
     mostrarTitulo(35,1, 5);
 
+    gotoxy(37, 2); printf("PROBANDO SI CRASHEA AQUI");
+    pause(30, 23, "Presione enter para continuar...");
+
     mostrarPuntajes(30, 8, arbol_puntajes);
 
     // Se llama a la función pause
@@ -960,7 +962,7 @@ void menuPuntajes(TreeMap *arbol_puntajes)
 
 
 // Funcion para nuevo juego
-void nuevaPartida(Jugador *jugador)
+void nuevaPartida(Jugador *jugador, TreeMap* arbol_puntajes)
 {
     // Se limpia la pantalla del menú
     limpiarLinea(40, 16, 20);
@@ -1009,10 +1011,10 @@ void nuevaPartida(Jugador *jugador)
 
     cargando(2);
 
-    jugar(jugador);
+    jugar(jugador, arbol_puntajes);
 }
 
-void cargarPartidaFE(Jugador *jugador)
+void cargarPartidaFE(Jugador *jugador, TreeMap* arbol_puntajes)
 {
     // Se muestra cargando
     cargando(2);
@@ -1083,11 +1085,11 @@ void cargarPartidaFE(Jugador *jugador)
     cargando(2);
 
     // Se llama a la funcion jugar
-    jugar(jugador);
+    jugar(jugador, arbol_puntajes);
 }
 
 // Funcion Jugar
-void jugar(Jugador *jugador)
+void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
 {
     //================================================================
     //================= BACKEND JUGAR ================================
@@ -1226,6 +1228,9 @@ void jugar(Jugador *jugador)
         // Se muestra el mensaje de pausa
         pause(50, 22, "Presione enter para continuar...");
 
+        //guarda el posible puntaje
+        guardarPuntaje(arbol_puntajes, jugador);
+        
         // Se sale de la funcion
         return;
     }
@@ -1244,7 +1249,7 @@ void jugar(Jugador *jugador)
     }
 
     // Se llama a la funcion jugar
-    jugar(jugador);
+    jugar(jugador, arbol_puntajes);
 }
 
 //  Funcion instrucciones

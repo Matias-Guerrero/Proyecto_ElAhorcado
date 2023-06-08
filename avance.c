@@ -26,7 +26,7 @@
 
 
 int lower_than_int(void * key1, void * key2) {
-    if((int)key1 < (int)key2) return 1;
+    if((int*) key1 < (int*) key2) return 1;
     return 0;
 }
 
@@ -45,7 +45,7 @@ int main(int argc, const char * argv[])
 
     TreeMap *arbol_puntajes = createTreeMap(lower_than_int);
 
-    //leerPuntajes(arbol_puntajes);
+    leerPuntajes(arbol_puntajes);
 
     //====================================================================================================
     // MENU INTERACTIVO
@@ -58,5 +58,7 @@ int main(int argc, const char * argv[])
 
     menu(jugador, arbol_puntajes);
 
+    
+    
     return 0;
 }

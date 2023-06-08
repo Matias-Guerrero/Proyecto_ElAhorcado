@@ -479,9 +479,13 @@ void procesarJugadorRepetido(TreeMap *tree, Jugador * player)
         {   
             //si supera los puntos del mismo nombre, se elimina el que existe en la lista y se inserta el con puntaje mas alto
             if(current_spot->puntos < player->puntos)
-            {
-                eraseTreeMapCurrent(tree);
-                insertTreeMap(tree, player->puntos, player);
+            {   
+                
+                //se convierte el puntaje a string
+                char buffer[20];
+                char* ptj_char = itoa(player->puntos, buffer, 10);
+                
+                insertTreeMap(tree, ptj_char, player);
             }
         }
         else
@@ -508,7 +512,11 @@ void guardarPuntaje(TreeMap *tree, Jugador *player)
         }
         else
         {   
-            insertTreeMap(tree, player->puntos, player);
+            //se convierte el puntaje a string
+            char buffer[20];
+            char* ptj_char = itoa(player->puntos, buffer, 10);
+
+            insertTreeMap(tree, ptj_char, player);
             
             //al insertar un nuevo jugador, si es que este llega a crear un size de mas de 10 en la tabla, el ultimo dato se elimina.
             if(treeSize(tree) == 10)
@@ -519,4 +527,49 @@ void guardarPuntaje(TreeMap *tree, Jugador *player)
             
         }
     }
+}
+
+//funcion para leer los puntajes desde el archivo scoreboard.txt
+void leerPuntajes(TreeMap *arbol_puntajes)
+{   
+    FILE * archivo = fopen("scoreboard.txt", "r");
+
+    if(archivo == NULL)
+    {
+        return;
+    }
+    else
+    {
+        //columnas a leer
+        // Nombre, puntuacion
+
+        //buffer para guardar linea actual
+        char linea[50]; 
+
+        while(fgets(linea, sizeof(linea), archivo))
+        {   
+            //se crea un jugador para almacenar datos y luego insertar
+            Jugador *aux_player;
+
+            //se obtiene el nombre de un jugador
+            char* nombre = strtok(linea, ",");
+            strcpy(aux_player->nombre, nombre);
+
+            //obtenemos el puntaje del jugador
+            char* puntaje = strtok(NULL,",\n");
+            int int_puntaje = atoi(puntaje);
+            aux_player->puntos = int_puntaje;
+            
+            //insertamos la linea al arbol
+            insertTreeMap(arbol_puntajes, puntaje, aux_player);
+        }
+    }
+}
+
+//se exportan los puntajes del arbol al archivo scoreboard.txt
+void exportarPuntajes(TreeMap* arbol_puntajes)
+{
+    FILE * archivo = fopen("scoreboard.txt", "r");
+
+
 }
