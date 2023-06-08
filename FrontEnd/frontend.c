@@ -707,7 +707,51 @@ void mostrarInstrucciones(int x, int y)
 //======== VENTANA PUNTAJES =========
 //===================================
 
+void mostrarPuntajes(int x, int y, TreeMap *tabla_puntajes)
+{   
+    //referencia de el inicio de columna
+    int initial_y = y;
 
+    //se lee el top 1 del arbol
+    Pair* aux_pair = lastTreeMap(tabla_puntajes);
+    Jugador *current_spot = aux_pair->value;
+    
+    //verificamos si existe algun jugador en el "tablero"
+    if(current_spot == NULL)
+    {   
+        //se omite la impresion de jugadores
+        gotoxy(x,y); printf("Aun no existe ningun puntaje registrado");
+    }
+    else
+    {   
+        //contador para separar columnas de jugadores
+        int cont = 0;
+
+        //impresion de cuadros de puntaje
+        while(current_spot != NULL)
+        {   
+            //se dibuja un cuadro para el puntaje
+            cuadro(x, 28, y, 4);
+            //se imprime el nombre
+            gotoxy(x + 8, y + 1); printf("%d. %s", cont, current_spot->nombre);
+
+            //se imprime el puntaje
+            gotoxy(x + 8, y + 2); printf("%d, puntos.", current_spot->puntos);
+
+            
+
+            //una vez impreso 4 jugadores en una columna, se procede a correr las x para crear una nueva columna
+            if(cont % 4 == 0)
+            {
+                x += 30;
+                y = initial_y;
+            }
+
+            cont++;
+        }
+    }
+
+}
 
 
 
@@ -906,12 +950,12 @@ void menuPuntajes(TreeMap *arbol_puntajes)
     // Se limpia la pantalla del menú
     limpiarPantalla();
 
-    TreeMap *current_puntaje = lastTreeMap(arbol_puntajes);
-    
     mostrarTitulo(35,1, 5);
 
-    mostrarPuntajes(50, 8, arbol_puntajes);
+    mostrarPuntajes(30, 8, arbol_puntajes);
 
+    // Se llama a la función pause
+    pause(30, 23, "Presione enter para continuar...");
 }
 
 
