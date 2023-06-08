@@ -3,7 +3,7 @@
 
 #include "../BackEnd/backend.h"
 #include "../Struct/struct.h"
-
+#include "../DataStructures/TreeMap/treemap.h"
 // FUNCIONES DE LA INTERFAZ DEL JUEGO
 
 void gotoxy(int x, int y);
@@ -16,6 +16,6 @@ void pause(int x, int y, char *mensaje);
 
 // void cuadro();
 
-void menu(Jugador *jugador);
+void menu(Jugador *jugador, TreeMap* tree);
 
 #endif // FRONTEND_H

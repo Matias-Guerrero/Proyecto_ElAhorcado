@@ -12,6 +12,7 @@
 #include "../BackEnd/backend.h"
 #include "../Struct/struct.h"
 #include "../DataStructures/ArrayList/arraylist.h"
+#include "../DataStructures/TreeMap/treemap.h"
 
 /*
   función para comparar claves de tipo string
@@ -280,7 +281,15 @@ void mostrarTitulo(int x, int y, int opcion)
         gotoxy(x, y + 4); printf("    | |  | | (_| \\__ \\  ____) | |_| | |_) | | (_| | (_) | | (_| |  __/ | |\\  | |\\ V /  __/ |");
         gotoxy(x, y + 5); printf("    |_|  |_|\\__,_|___/ |_____/ \\__,_|_.__/|_|\\__,_|\\___/   \\__,_|\\___| |_| \\_|_| \\_/ \\___|_|");
     }
-
+    if(opcion == 5)
+    {
+        gotoxy(x, y); printf("__________              __              __               ");
+        gotoxy(x, y + 1); printf("\______   \__ __  _____/  |______      |__| ____   ______");
+        gotoxy(x, y + 2); printf("|     ___/  |  \/    \   __\__  \     |  |/ __ \ /  ___/");
+        gotoxy(x, y + 3); printf("|    |   |  |  /   |  \  |  / __ \_   |  \  ___/ \___ \ ");
+        gotoxy(x, y + 4); printf(" |____|   |____/|___|  /__| (____  /\__|  |\___  >____  >");
+        gotoxy(x, y + 5); printf("                    \/          \/\______|    \/     \/ ");
+    }
 
     // Se restablece el color de la consola
     SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
@@ -694,6 +703,12 @@ void mostrarInstrucciones(int x, int y)
 
 }
 
+//===================================
+//======== VENTANA PUNTAJES =========
+//===================================
+
+
+
 
 
 // Funcion para mostrar el menu de nivel
@@ -772,11 +787,12 @@ void menuNivel(Jugador *jugador)
 //====================================================================================================
 
 // Prototipado de funciones
-void menu(Jugador *jugador);
+void menu(Jugador *jugador, TreeMap *tree);
 void subMenuJugar(Jugador *jugador);
 void nuevaPartida(Jugador *jugador);
 void cargarPartidaFE(Jugador *jugador);
 void jugar(Jugador *jugador);
+void menuPuntajes(TreeMap *tree);
 void instrucciones();
 
 //================================
@@ -784,7 +800,7 @@ void instrucciones();
 //================================
 
 // Función para mostrar el menú
-void menu(Jugador *jugador)
+void menu(Jugador *jugador, TreeMap * arbol_puntajes)
 {
     // Se inicia un booleano para inicio de juego
     bool inicioJuego = true;
@@ -828,6 +844,8 @@ void menu(Jugador *jugador)
 
                 break;
             case 2:
+                //se llama a la funcion menuPuntajes
+                menuPuntajes(arbol_puntajes);
                 break;
             case 3:
                 break;
@@ -881,6 +899,21 @@ void subMenuJugar(Jugador *jugador)
         break;
     }    
 }
+
+//Funcion para mostrar submenu de puntajes
+void menuPuntajes(TreeMap *arbol_puntajes)
+{
+    // Se limpia la pantalla del menú
+    limpiarPantalla();
+
+    TreeMap *current_puntaje = lastTreeMap(arbol_puntajes);
+    
+    mostrarTitulo(35,1, 5);
+
+    mostrarPuntajes(50, 8, arbol_puntajes);
+
+}
+
 
 // Funcion para nuevo juego
 void nuevaPartida(Jugador *jugador)
