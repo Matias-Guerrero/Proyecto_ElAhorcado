@@ -247,6 +247,60 @@ Pair * nextTreeMap(TreeMap * tree) {
     }
 }
 
+Pair* lastTreeMap(TreeMap* tree) {
+    if (tree == NULL || tree->root == NULL) return NULL;
+
+    // Encontrar el nodo más a la derecha (el nodo más grande)
+    TreeNode* current = tree->root;
+    while (current->right != NULL) {
+        current = current->right;
+    }
+
+    // Establecer el nodo actual en el árbol
+    tree->current = current;
+
+    // Devolver el par clave-valor del nodo actual
+    return current->pair;
+}
+
+Pair* prevTreeMap(TreeMap* tree) {
+    if (tree == NULL || tree->current == NULL) return NULL;
+
+    // Si el nodo actual tiene un hijo izquierdo, encontrar el nodo más a la derecha en ese subárbol
+    if (tree->current->left != NULL) {
+        TreeNode* current = tree->current->left;
+        while (current->right != NULL) {
+            current = current->right;
+        }
+        tree->current = current;
+        return current->pair;
+    }
+
+    // Si el nodo actual no tiene un hijo izquierdo, encontrar el primer ancestro ascendente que sea un hijo derecho
+    TreeNode* current = tree->current;
+    TreeNode* parent = current->parent;
+    while (parent != NULL && current == parent->left) {
+        current = parent;
+        parent = parent->parent;
+    }
+    tree->current = parent;
+
+    // Devolver el par clave-valor del nodo actual
+    if (parent != NULL) {
+        return parent->pair;
+    } else {
+        // Se ha alcanzado el inicio del árbol
+        return NULL;
+    }
+}
+
+//funcion para ver la cantidad de nodos
+int treeSize(TreeMap* tree) {
+  if (tree == NULL || tree->root == NULL)
+    return 0;
+
+  return countNodesRecursive(tree->root);
+}
 
 //====================================================================================================
 // OTRAS FUNCIONES
@@ -259,4 +313,16 @@ Pair* obtenerNodoRaiz(TreeMap * tree) {
     TreeNode* nodoActual = tree->root;
 
     return nodoActual->pair;
+}
+
+
+//Funcion que cuenta nodos recursivamente
+int countNodesRecursive(TreeNode* node) {
+  if (node == NULL)
+    return 0;
+
+  int countLeft = countNodesRecursive(node->left);
+  int countRight = countNodesRecursive(node->right);
+
+  return countLeft + countRight + 1;
 }
