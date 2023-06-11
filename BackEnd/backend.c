@@ -535,28 +535,30 @@ void leerPuntajes(TreeMap *arbol_puntajes)
     FILE * archivo = fopen("scoreboard.txt", "r");
 
     if(archivo == NULL)
-    {
+    {    
         return;
     }
     else
     {
         //columnas a leer
         // Nombre, puntuacion
-
+        
         //buffer para guardar linea actual
         char linea[50]; 
-
+        
         while(fgets(linea, sizeof(linea), archivo))
         {   
             //se crea un jugador para almacenar datos y luego insertar
-            Jugador *aux_player;
-
+            Jugador *aux_player = (Jugador*) malloc(sizeof(Jugador));
+            
             //se obtiene el nombre de un jugador
+
             char* nombre = strtok(linea, ",");
-            strcpy(aux_player->nombre, nombre);
+
+            strcpy(aux_player->nombre, nombre); //crashea aqui
 
             //obtenemos el puntaje del jugador
-            char* puntaje = strtok(NULL,",\n");
+            char* puntaje = strtok(NULL,"\n");
             int int_puntaje = atoi(puntaje);
             aux_player->puntos = int_puntaje;
             
@@ -564,6 +566,11 @@ void leerPuntajes(TreeMap *arbol_puntajes)
             insertTreeMap(arbol_puntajes, puntaje, aux_player);
         }
     }
+
+   
+
+
+    fclose(archivo);
 }
 
 //se exportan los puntajes del arbol al archivo scoreboard.txt

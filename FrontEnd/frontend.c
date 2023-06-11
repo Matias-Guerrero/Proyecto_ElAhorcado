@@ -712,18 +712,21 @@ void mostrarPuntajes(int x, int y, TreeMap *tabla_puntajes)
     //referencia de el inicio de columna
     int initial_y = y;
 
+    
     //se lee el top 1 del arbol
     Pair* aux_pair = lastTreeMap(tabla_puntajes);
-    Jugador *current_spot = aux_pair->value;
-    
+
     //verificamos si existe algun jugador en el "tablero"
-    if(current_spot == NULL)
+    if(aux_pair == NULL)
     {   
         //se omite la impresion de jugadores
         gotoxy(x,y); printf("Aun no existe ningun puntaje registrado");
     }
     else
     {   
+        Jugador *current_spot = aux_pair->value; //crashea aqui aparentemente.
+
+
         //contador para separar columnas de jugadores
         int cont = 0;
 
@@ -736,7 +739,7 @@ void mostrarPuntajes(int x, int y, TreeMap *tabla_puntajes)
             gotoxy(x + 8, y + 1); printf("%d. %s", cont, current_spot->nombre);
 
             //se imprime el puntaje
-            gotoxy(x + 8, y + 2); printf("%d, puntos.", current_spot->puntos);
+            gotoxy(x + 8, y + 2); printf("%d puntos.", current_spot->puntos);
 
 
             //una vez impreso 4 jugadores en una columna, se procede a correr las x para crear una nueva columna
@@ -951,8 +954,7 @@ void menuPuntajes(TreeMap *arbol_puntajes)
 
     mostrarTitulo(35,1, 5);
 
-    gotoxy(37, 2); printf("PROBANDO SI CRASHEA AQUI");
-    pause(30, 23, "Presione enter para continuar...");
+    
 
     mostrarPuntajes(30, 8, arbol_puntajes);
 
