@@ -47,6 +47,33 @@ int main(int argc, const char * argv[])
 
     leerPuntajes(arbol_puntajes);
 
+    Pair* aux_pair = lastTreeMap(arbol_puntajes);
+
+    if(aux_pair == NULL)
+    {
+        printf("no existe ningun elemento en el arbol\n");
+        system("pause");
+    }
+    else
+    {
+        while(aux_pair != NULL)
+        {
+            Jugador *current_spot = aux_pair->value;
+
+            printf("%s, %d\n ", current_spot->nombre, current_spot->puntos);
+
+            aux_pair = prevTreeMap(arbol_puntajes);
+            system("pause");
+        }
+    }
+
+    puts("fin del arbol");
+
+    system("pause");
+
+
+
+
     //====================================================================================================
     // MENU INTERACTIVO
     //====================================================================================================
