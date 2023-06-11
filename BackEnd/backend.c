@@ -554,7 +554,7 @@ void leerPuntajes(TreeMap* arbol_puntajes)
         strcpy(nuevo_jugador->nombre, nombre);
         nuevo_jugador->puntos = atoi(puntos);
 
-        insertTreeMap(arbol_puntajes, (void *) puntos, (void *) nuevo_jugador);
+        insertTreeMap(arbol_puntajes, (void *) nuevo_jugador->puntos, (void *) nuevo_jugador);
     }
 
     fclose(archivo);
