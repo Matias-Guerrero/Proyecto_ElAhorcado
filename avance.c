@@ -31,6 +31,9 @@ int main(int argc, const char * argv[])
     //====================================================================================================
 
     Jugador *jugador = (Jugador *)malloc(sizeof(Jugador));
+    
+    // Se inicializa el idioma
+    jugador->idioma = 1; // 1: Español, 2: Inglés
 
     //====================================================================================================
     // MENU INTERACTIVO

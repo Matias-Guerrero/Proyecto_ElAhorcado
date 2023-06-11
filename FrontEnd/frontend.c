@@ -164,7 +164,7 @@ void mostrarAhorcado(int x, int y, int intentos)
 }
 
 // Función para mostrar animación de cargando
-void cargando(int duracion)
+void cargando(int duracion, Jugador *jugador)
 {
     // Se limpia la pantalla
     limpiarPantalla();
@@ -175,92 +175,125 @@ void cargando(int duracion)
     // Se inicializa la variable para la duracion de cada mensaje
     int milisegundos = 250;
 
-    // Se hace un bucle para mostrar el mensaje de cargando
-    for(int i = 0; i < duracion; i++)
+    if(jugador->idioma == 1)
     {
-        gotoxy(45, 12); printf("Cargando");
-        mostrarAhorcado(15, 6, j);
-        j++;
-        Sleep(milisegundos);
-        gotoxy(45, 12); printf("Cargando.");
-        mostrarAhorcado(15, 6, j);
-        j++;
-        Sleep(milisegundos);
-        gotoxy(45, 12); printf("Cargando..");
-        mostrarAhorcado(15, 6, j);
-        j++;
-        Sleep(milisegundos);
-        gotoxy(45, 12); printf("Cargando...");
-        mostrarAhorcado(15, 6, j);
-        j++;
-        Sleep(milisegundos);
+        // Se hace un bucle para mostrar el mensaje de cargando
+        for(int i = 0; i < duracion; i++)
+        {
+            gotoxy(45, 12); printf("Cargando");
+            mostrarAhorcado(15, 6, j);
+            j++;
+            Sleep(milisegundos);
+            gotoxy(45, 12); printf("Cargando.");
+            mostrarAhorcado(15, 6, j);
+            j++;
+            Sleep(milisegundos);
+            gotoxy(45, 12); printf("Cargando..");
+            mostrarAhorcado(15, 6, j);
+            j++;
+            Sleep(milisegundos);
+            gotoxy(45, 12); printf("Cargando...");
+            mostrarAhorcado(15, 6, j);
+            j++;
+            Sleep(milisegundos);
 
-        // Se limpia la linea anterior
-        limpiarLinea(45, 12, 11);
+            // Se limpia la linea anterior
+            limpiarLinea(45, 12, 11);
+        }
+
+    }
+    else if (jugador->idioma == 2)
+    {
+        // Se hace un bucle para mostrar el mensaje de cargando
+        for(int i = 0; i < duracion; i++)
+        {
+            gotoxy(45, 12); printf("Loading");
+            mostrarAhorcado(15, 6, j);
+            j++;
+            Sleep(milisegundos);
+            gotoxy(45, 12); printf("Loading.");
+            mostrarAhorcado(15, 6, j);
+            j++;
+            Sleep(milisegundos);
+            gotoxy(45, 12); printf("Loading..");
+            mostrarAhorcado(15, 6, j);
+            j++;
+            Sleep(milisegundos);
+            gotoxy(45, 12); printf("Loading...");
+            mostrarAhorcado(15, 6, j);
+            j++;
+            Sleep(milisegundos);
+
+            // Se limpia la linea anterior
+            limpiarLinea(45, 12, 11);
+        }
     }
 }
 
 // Función para mostrar el título
-void mostrarTitulo(int x, int y, int opcion)
+void mostrarTitulo(int x, int y, int opcion, Jugador* jugador)
 {
-    // Se imprime el titulo en rojo
-    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
-
-    /***
-     *   _______________________________
-     *  |    _____  _    ___   _        |                           _        
-     *  |   |  ___|| |  / _ \ | |       |                          | |       
-     *  |   | |__  | | / /_\ \| |__    _|_   _ __   ___   __ _   __| |  ___  
-     *  |   |  __| | | |  _  || '_ \  /   \ | '__| / __| / _` | / _` | / _ \ 
-     *  |   | |___ | | | | | || | | || X X || |   | (__ | (_| || (_| || (_) |
-     *  |   \____/ |_| \_| |_/|_| |_| \_-_/ |_|    \___| \__,_| \__,_| \___/ 
-     *  |                               |                                     
-     * _|_________                     /|\                                       
-     *                                / | \
-     *			                       / \
-     *				                  /   \
-     */
-
-    if(opcion == 1)
+    // Juego en Español
+    if(jugador->idioma == 1)
     {
-        gotoxy(x, y);     printf("   _______________________________");
-        gotoxy(x, y + 1); printf("  |    _____  _    ___   _        |                           _");
-        gotoxy(x, y + 2); printf("  |   |  ___|| |  / _ \\ | |       |                          | |");
-        gotoxy(x, y + 3); printf("  |   | |__  | | / /_\\ \\| |__    _|_   _ __   ___   __ _   __| |  ___");
-        gotoxy(x, y + 4); printf("  |   |  __| | | |  _  || '_ \\  /   \\ | '__| / __| / _` | / _` | / _ \\");
-        gotoxy(x, y + 5); printf("  |   | |___ | | | | | || | | || X X || |   | (__ | (_| || (_| || (_) |");
-        gotoxy(x, y + 6); printf("  |   \\____/ |_| \\_| |_/|_| |_| \\_-_/ |_|    \\___| \\__,_| \\__,_| \\___/");
-        gotoxy(x, y + 7); printf("  |                               |");
-        gotoxy(x, y + 8); printf(" _|_________                     /|\\");
-        gotoxy(x, y + 9); printf("                                / | \\");
-        gotoxy(x, y + 10); printf("			          / \\");
-        gotoxy(x, y + 11); printf("				 /   \\");
-    }
+        // Se imprime el titulo en rosado
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 13);
 
-    /* ___          __        __   ___  ___  __   __   __ *
-    * |___ |       |__| |__| |  | |__/ |    |__| |  \ |  | *
-    * |___ |___    |  | |  | |__| |  \ |___ |  | |__/ |__| */
+        /***
+         *   _______________________________
+         *  |    _____  _    ___   _        |                           _        
+         *  |   |  ___|| |  / _ \ | |       |                          | |       
+         *  |   | |__  | | / /_\ \| |__    _|_   _ __   ___   __ _   __| |  ___  
+         *  |   |  __| | | |  _  || '_ \  /   \ | '__| / __| / _` | / _` | / _ \ 
+         *  |   | |___ | | | | | || | | || X X || |   | (__ | (_| || (_| || (_) |
+         *  |   \____/ |_| \_| |_/|_| |_| \_-_/ |_|    \___| \__,_| \__,_| \___/ 
+         *  |                               |                                     
+         * _|_________                     /|\                                       
+         *                                / | \
+         *			                       / \
+        *				                  /   \
+        */
 
-    if(opcion == 2)
-    {
-        gotoxy(x, y); printf(" ___          __        __   ___  ___  __   __   __");
-        gotoxy(x, y + 1); printf("|___ |       |__| |__| |  | |__/ |    |__| |  \\ |  |");
-        gotoxy(x, y + 2); printf("|___ |___    |  | |  | |__| |  \\ |___ |  | |__/ |__|");
-    
-    }
+        if(opcion == 1)
+        {
+            gotoxy(x, y);     printf("   _______________________________");
+            gotoxy(x, y + 1); printf("  |    _____  _    ___   _        |                           _");
+            gotoxy(x, y + 2); printf("  |   |  ___|| |  / _ \\ | |       |                          | |");
+            gotoxy(x, y + 3); printf("  |   | |__  | | / /_\\ \\| |__    _|_   _ __   ___   __ _   __| |  ___");
+            gotoxy(x, y + 4); printf("  |   |  __| | | |  _  || '_ \\  /   \\ | '__| / __| / _` | / _` | / _ \\");
+            gotoxy(x, y + 5); printf("  |   | |___ | | | | | || | | || X X || |   | (__ | (_| || (_| || (_) |");
+            gotoxy(x, y + 6); printf("  |   \\____/ |_| \\_| |_/|_| |_| \\_-_/ |_|    \\___| \\__,_| \\__,_| \\___/");
+            gotoxy(x, y + 7); printf("  |                               |");
+            gotoxy(x, y + 8); printf(" _|_________                     /|\\");
+            gotoxy(x, y + 9); printf("                                / | \\");
+            gotoxy(x, y + 10); printf("			          / \\");
+            gotoxy(x, y + 11); printf("				 /   \\");
+        }
 
-    /*  ____  __        __    _   _  _____  ____   ___    __    ____   _____ *
-     * ( ___)(  )      /__\  ( )_( )(  _  )(  _ \ / __)  /__\  (  _ \ (  _  ) *
-     *  )__)  )(__    /(__)\  ) _ (  )(_)(  )   /( (__  /(__)\  )(_) ) )(_)( *
-     * (____)(____)  (__)(__)(_) (_)(_____)(_)\_) \___)(__)(__)(____/ (_____) */
+        /* ___          __        __   ___  ___  __   __   __ *
+        * |___ |       |__| |__| |  | |__/ |    |__| |  \ |  | *
+        * |___ |___    |  | |  | |__| |  \ |___ |  | |__/ |__| */
 
-    if(opcion == 3)
-    {
-        gotoxy(x, y); printf(" ____  __        __    _   _  _____  ____   ___    __    ____   _____");
-        gotoxy(x, y + 1); printf("( ___)(  )      /__\\  ( )_( )(  _  )(  _ \\ / __)  /__\\  (  _ \\ (  _  )");
-        gotoxy(x, y + 2); printf(" )__)  )(__    /(__)\\  ) _ (  )(_)(  )   /( (__  /(__)\\  )(_) ) )(_)( ");
-        gotoxy(x, y + 3); printf("(____)(____)  (__)(__)(_) (_)(_____)(_)\\_) \\___)(__)(__)(____/ (_____)");
-    }
+        if(opcion == 2)
+        {
+            gotoxy(x, y); printf(" ___          __        __   ___  ___  __   __   __");
+            gotoxy(x, y + 1); printf("|___ |       |__| |__| |  | |__/ |    |__| |  \\ |  |");
+            gotoxy(x, y + 2); printf("|___ |___    |  | |  | |__| |  \\ |___ |  | |__/ |__|");
+        
+        }
+
+        /*  ____  __        __    _   _  _____  ____   ___    __    ____   _____ *
+        * ( ___)(  )      /__\  ( )_( )(  _  )(  _ \ / __)  /__\  (  _ \ (  _  ) *
+        *  )__)  )(__    /(__)\  ) _ (  )(_)(  )   /( (__  /(__)\  )(_) ) )(_)( *
+        * (____)(____)  (__)(__)(_) (_)(_____)(_)\_) \___)(__)(__)(____/ (_____) */
+
+        if(opcion == 3)
+        {
+            gotoxy(x, y); printf(" ____  __        __    _   _  _____  ____   ___    __    ____   _____");
+            gotoxy(x, y + 1); printf("( ___)(  )      /__\\  ( )_( )(  _  )(  _ \\ / __)  /__\\  (  _ \\ (  _  )");
+            gotoxy(x, y + 2); printf(" )__)  )(__    /(__)\\  ) _ (  )(_)(  )   /( (__  /(__)\\  )(_) ) )(_)( ");
+            gotoxy(x, y + 3); printf("(____)(____)  (__)(__)(_) (_)(_____)(_)\\_) \\___)(__)(__)(____/ (_____)");
+        }
 
     /***
      *      _    _              _____       _     _     _             _        _   _ _           _ 
@@ -282,8 +315,108 @@ void mostrarTitulo(int x, int y, int opcion)
     }
 
 
-    // Se restablece el color de la consola
-    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+        // Se restablece el color de la consola
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+    }
+    else if (jugador->idioma == 2)
+    {
+        // Se imprime el titulo en rosado
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 13);
+
+        /*
+                 _    _                                         
+                | |  | |                                        
+                | |__| | __ _ _ __   __ _ _ __ ___   __ _ _ __  
+                |  __  |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+                | |  | | (_| | | | | (_| | | | | | | (_| | | | |
+                |_|  |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+                                    __/ |                      
+                                   |___/                       
+        */
+
+       /*
+              _______ _            _    _                                         
+             |__   __| |          | |  | |                                        
+                | |  | |__   ___  | |__| | __ _ _ __   __ _ _ __ ___   __ _ _ __  
+                | |  | '_ \ / _ \ |  __  |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+                | |  | | | |  __/ | |  | | (_| | | | | (_| | | | | | | (_| | | | |
+                |_|  |_| |_|\___| |_|  |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+                                                    __/ |                      
+                                                    |___/                       
+       */
+
+       /*
+        *      ______________________________________________________________
+            |   _______ _            _    _                                |         
+            |  |__   __| |          | |  | |                               |         
+            |     | |  | |__   ___  | |__| | __ _ _ __   __ _ _ __ ___   __|_ _ __  
+            |     | |  | '_ \ / _ \ |  __  |/ _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+            |     | |  | | | |  __/ | |  | | (_| | | | | (_| | | | | | | (_| | | | |
+            |     |_|  |_| |_|\___| |_|  |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+            |                                            __/ |             |         
+            |                                           |___/  	         /|\\	
+           _|_______						                           / | \\
+                                                                        / \\
+                                                                       /   \\
+         *  
+         *			                             
+        */
+
+        if(opcion == 1)
+        {
+            gotoxy(x, y); printf("      ______________________________________________________________");
+            gotoxy(x, y + 1); printf("     |   _______ _            _    _                                |");
+            gotoxy(x, y + 2); printf("     |  |__   __| |          | |  | |                               |");
+            gotoxy(x, y + 3); printf("     |     | |  | |__   ___  | |__| | __ _ _ __   __ _ _ __ ___   __|_ _ __");
+            gotoxy(x, y + 4); printf("     |     | |  | '_ \\ / _ \\ |  __  |/ _` | '_ \\ / _` | '_ ` _ \\ / _` | '_ \\");
+            gotoxy(x, y + 5); printf("     |     | |  | | | |  __/ | |  | | (_| | | | | (_| | | | | | | (_| | | | |");
+            gotoxy(x, y + 6); printf("     |     |_|  |_| |_|\\___| |_|  |_|\\__,_|_| |_|\\__, |_| |_| |_|\\__,_|_| |_|");
+            gotoxy(x, y + 7); printf("     |                                            __/ |             |");
+            gotoxy(x, y + 8); printf("     |                                           |___/  	    /|\\");
+            gotoxy(x, y + 9); printf("    _|_______						           / | \\");
+            gotoxy(x, y + 10); printf("                                                                   / \\");
+            gotoxy(x, y + 11); printf("                                                                  /   \\");
+
+ 
+        }
+        /*  _  _ ____ _  _ ____ _  _ ____ _  _ 
+            |__| |__| |\ | | __ |\/| |__| |\ | 
+            |  | |  | | \| |__] |  | |  | | \|                 
+        */
+
+       /*
+       ___ _  _ ____    _  _ ____ _  _ ____ _  _ ____ _  _ 
+        |  |__| |___    |__| |__| |\ | | __ |\/| |__| |\ | 
+        |  |  | |___    |  | |  | | \| |__] |  | |  | | \| 
+       */
+
+        if(opcion == 2)
+        {
+            gotoxy(x, y); printf("___ _  _ ____    _  _ ____ _  _ ____ _  _ ____ _  _ ");
+            gotoxy(x, y + 1); printf(" |  |__| |___    |__| |__| |\\ | | __ |\\/| |__| |\\ | ");
+            gotoxy(x, y + 2); printf(" |  |  | |___    |  | |  | | \\| |__] |  | |  | | \\| ");
+
+        }
+
+        /*  
+         ____  _   _  ____    _   _    __    _  _  ___  __  __    __    _  _ 
+        (_  _)( )_( )( ___)  ( )_( )  /__\  ( \( )/ __)(  \/  )  /__\  ( \( )
+         )(   ) _ (  )__)    ) _ (  /(__)\  )  (( (_-. )    (  /(__)\  )  ( 
+        (__) (_) (_)(____)  (_) (_)(__)(__)(_)\_)\___/(_/\/\_)(__)(__)(_)\_)
+         */
+
+        if(opcion == 3)
+        {
+            gotoxy(x, y); printf(" ____  _   _  ____    _   _    __    _  _  ___  __  __    __    _  _ ");
+            gotoxy(x, y + 1); printf("(_  _)( )_( )( ___)  ( )_( )  /__\\  ( \\( )/ __)(  \\/  )  /__\\  ( \\( )");
+            gotoxy(x, y + 2); printf(" )(   ) _ (  )__)    ) _ (  /(__)\\  )  (( (_-. )    (  /(__)\\  )  ( ");
+            gotoxy(x, y + 3); printf("(__) (_) (_)(____)  (_) (_)(__)(__)(_)\\_)\\___/(_/\\/\\_)(__)(__)(_)\\_)");
+        }
+
+        // Se restablece el color de la consola
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+    }
+    
 }
 
 //================================
@@ -291,16 +424,54 @@ void mostrarTitulo(int x, int y, int opcion)
 //================================
 
 // Función para mostrar el menú
-void mostrarMenu(int x, int y, int opcionSeleccionada, int maxOpcion)
+void mostrarMenu(int x, int y, int opcionSeleccionada, int maxOpcion, Jugador *jugador)
 {
-    if(maxOpcion == 4)
+    // Menu en Español
+    if(jugador->idioma == 1)
     {
-        gotoxy(x, y); printf("%s JUGAR", (opcionSeleccionada == 1) ? "->" : "  ");
-        gotoxy(x, y + 1); printf("%s Ver Puntuaciones", (opcionSeleccionada == 2) ? "->" : "  ");
-        gotoxy(x, y + 2); printf("%s Elegir Idioma", (opcionSeleccionada == 3) ? "->" : "  ");
-        gotoxy(x, y + 3); printf("%s Instrucciones", (opcionSeleccionada == 4) ? "->" : "  ");
-    }
+        if(maxOpcion == 4)
+        {
+            gotoxy(x, y); printf("%s JUGAR", (opcionSeleccionada == 1) ? "->" : "  ");
+            gotoxy(x, y + 1); printf("%s Ver Puntuaciones", (opcionSeleccionada == 2) ? "->" : "  ");
+            gotoxy(x, y + 2); printf("%s Elegir Idioma", (opcionSeleccionada == 3) ? "->" : "  ");
+            gotoxy(x, y + 3); printf("%s Instrucciones", (opcionSeleccionada == 4) ? "->" : "  ");
+        }
 
+        if(maxOpcion == 2)
+        {
+            gotoxy(x, y); printf("%s Nueva Partida", (opcionSeleccionada == 1) ? "->" : "  ");
+            gotoxy(x, y + 1); printf("%s Cargar Partida", (opcionSeleccionada == 2) ? "->" : "  ");
+        }
+
+        if(maxOpcion == 3)
+        {
+            gotoxy(x, y); printf("%s Espanol", (opcionSeleccionada == 1) ? "->" : "  ");
+            gotoxy(x, y + 1); printf("%s Ingles", (opcionSeleccionada == 2) ? "->" : "  ");
+        }
+    }
+    else if (jugador->idioma == 2) // Menu en Ingles
+    {
+        if(maxOpcion == 4)
+        {
+            gotoxy(x, y); printf("%s Play", (opcionSeleccionada == 1) ? "->" : "  ");
+            gotoxy(x, y + 1); printf("%s Score", (opcionSeleccionada == 2) ? "->" : "  ");
+            gotoxy(x, y + 2); printf("%s Language", (opcionSeleccionada == 3) ? "->" : "  ");
+            gotoxy(x, y + 3); printf("%s Instructions", (opcionSeleccionada == 4) ? "->" : "  ");
+        }
+
+        if(maxOpcion == 2)
+        {
+            gotoxy(x, y); printf("%s New Game ", (opcionSeleccionada == 1) ? "->" : "  ");
+            gotoxy(x, y + 1); printf("%s Load Game ", (opcionSeleccionada == 2) ? "->" : "  ");
+        }
+
+        if(maxOpcion == 3)
+        {
+            gotoxy(x, y); printf("%s Spanish", (opcionSeleccionada == 1) ? "->" : "  ");
+            gotoxy(x, y + 1); printf("%s English", (opcionSeleccionada == 2) ? "->" : "  ");
+        }
+    }
+    
     if(maxOpcion == 2)
     {
         gotoxy(x, y); printf("%s Nueva Partida", (opcionSeleccionada == 1) ? "->" : "  ");
@@ -444,153 +615,308 @@ bool cambiarOpcion(int * opcion, int maxOpcion)
 //=====================================
 
 // Funcion para mostrar las letras usadas en el nivel
-void mostrarLetras(int x, int y, Nivel *nivel)
+void mostrarLetras(int x, int y, Nivel *nivel, Jugador *jugador)
 {
-    // Se muestra la tabla de letras usadas
-    gotoxy(x, y); printf(" ___Letras usadas___");
-    gotoxy(x, y + 1); printf("|                   |");
-    gotoxy(x, y + 2); printf("|                   |");
-    gotoxy(x, y + 3); printf("|___________________|");
-
-    // Se obtiene el primer elemento de la lista
-    char *letraActual = firstList(nivel->letrasJugadas);
-
-    int contador = 1;
-
-    while(letraActual != NULL)
+    if(jugador->idioma == 1) //Español
     {
-        // Se muestra la letra actual
-        //    Letras usadas
-        //  ___________________
-        // |A-B-C-D-E-F-G-H-I-J|
-        // |                   |
-        // |___________________|
+        // Se muestra la tabla de letras usadas
+        gotoxy(x, y); printf(" ___Letras usadas___");
+        gotoxy(x, y + 1); printf("|                   |");
+        gotoxy(x, y + 2); printf("|                   |");
+        gotoxy(x, y + 3); printf("|___________________|");
 
-        if(contador == 1 || (((contador - 1) % 10) == 0))
+        // Se obtiene el primer elemento de la lista
+        char *letraActual = firstList(nivel->letrasJugadas);
+
+        int contador = 1;
+
+        while(letraActual != NULL)
         {
-            if(contador != 1)
+            // Se muestra la letra actual
+            //    Letras usadas
+            //  ___________________
+            // |A-B-C-D-E-F-G-H-I-J|
+            // |                   |
+            // |___________________|
+
+            if(contador == 1 || (((contador - 1) % 10) == 0))
             {
-                y++;
-                contador = 1;
+                if(contador != 1)
+                {
+                    y++;
+                    contador = 1;
+                }
+
+                gotoxy(x + 1, y + 1); printf("%c", toupper(*letraActual));
+            }
+            else
+            {
+                gotoxy(x + (contador - 2) + contador, y + 1); printf("-%c", toupper(*letraActual));
             }
 
-            gotoxy(x + 1, y + 1); printf("%c", toupper(*letraActual));
-        }
-        else
-        {
-            gotoxy(x + (contador - 2) + contador, y + 1); printf("-%c", toupper(*letraActual));
-        }
+            // Se obtiene el siguiente elemento de la lista
+            letraActual = nextList(nivel->letrasJugadas);
 
-        // Se obtiene el siguiente elemento de la lista
-        letraActual = nextList(nivel->letrasJugadas);
-
-        // Se aumenta el contador
-        contador++;
+            // Se aumenta el contador
+            contador++;
+        }
     }
+    else if (jugador->idioma == 2) //Ingles
+    {
+        // Se muestra la tabla de letras usadas
+        gotoxy(x, y); printf(" ___Used letters___");
+        gotoxy(x, y + 1); printf("|                   |");
+        gotoxy(x, y + 2); printf("|                   |");
+        gotoxy(x, y + 3); printf("|___________________|");
 
+        // Se obtiene el primer elemento de la lista
+        char *letraActual = firstList(nivel->letrasJugadas);
+
+        int contador = 1;
+
+        while(letraActual != NULL)
+        {
+            // Se muestra la letra actual
+            //    Letras usadas
+            //  ___________________
+            // |A-B-C-D-E-F-G-H-I-J|
+            // |                   |
+            // |___________________|
+
+            if(contador == 1 || (((contador - 1) % 10) == 0))
+            {
+                if(contador != 1)
+                {
+                    y++;
+                    contador = 1;
+                }
+
+                gotoxy(x + 1, y + 1); printf("%c", toupper(*letraActual));
+            }
+            else
+            {
+                gotoxy(x + (contador - 2) + contador, y + 1); printf("-%c", toupper(*letraActual));
+            }
+
+            // Se obtiene el siguiente elemento de la lista
+            letraActual = nextList(nivel->letrasJugadas);
+
+            // Se aumenta el contador
+            contador++;
+        }
+    }
+    
 }
 
 void mostrarInformacion(int x, int y, Jugador *jugador, Nivel *nivel)
 {
-    // Se crea un cuadro
-    cuadro(x, y, x + 29, y + 20);
-
-    // Se imprime titulo
-    gotoxy(x + 2, y + 1); printf("** INFORMACION JUGADOR **");
-
-    // Se muestra el nombre del jugador
-    gotoxy(x + 5, y + 3); printf("Jugador: %s", jugador->nombre);
-    gotoxy(x + 5, y + 4); printf("===============");
-
-    // Se muestra la tabla de Nivel
-    gotoxy(x + 5, y + 5); printf("Nivel Actual: %d", jugador->nivel);
-    gotoxy(x + 5, y + 6); printf("===============");
-    
-    // Se muestra la tabla de puntos
-    gotoxy(x + 5, y + 7); printf("Puntos: %d", jugador->puntos);
-    gotoxy(x + 5, y + 8); printf("===============");
-
-    // Se agrega una linea de separacion al cuadro
-    gotoxy(x + 1, y + 9); printf("___________________________");
-
-    // Se imprime titulo
-    gotoxy(x + 2, y + 11); printf("** INFORMACION NIVEL **");
-
-    // Se muestra la tabla de Nivel
-    gotoxy(x + 5, y + 13); printf("Nivel: %d", nivel->nivel);
-    gotoxy(x + 5, y + 14); printf("===============");
-
-    // Se muestra la tabla de intentos
-    gotoxy(x + 5, y + 15); printf("Intentos: %d", nivel->intentosRestantes);
-    gotoxy(x + 5, y + 16); printf("===============");
-    
-    // Se muestra la tabla de puntos
-    gotoxy(x + 5, y + 17); printf("Puntos: %5d", nivel->puntosNivel);
-    gotoxy(x + 5, y + 18); printf("===============");
-}
-
-void mostrarPalabra(int x, int y, Nivel *nivel)
-{
-    // Se obtiene el largo de la palabra actual
-    int largo = strlen(nivel->palabraActual);
-    
-    // Se muestra la palabra actual con los guiones bajos saltando un espacion por guion
-    gotoxy(x, y); printf("Palabra a adivinar:");
-    for(int i = 0; nivel->palabraActual[i] != '\0'; i++)
+    if(jugador->idioma == 1) // Español
     {
-        // Se imprime debajo y al centro de la palabra a adivinar
-        gotoxy(x + (10 - largo) + (i * 2), y + 2); printf("%c", toupper(nivel->palabraActual[i]));
+        // Se crea un cuadro
+        cuadro(x, y, x + 29, y + 20);
+
+        // Se imprime titulo
+        gotoxy(x + 2, y + 1); printf("** INFORMACION JUGADOR **");
+
+        // Se muestra el nombre del jugador
+        gotoxy(x + 5, y + 3); printf("Jugador: %s", jugador->nombre);
+        gotoxy(x + 5, y + 4); printf("===============");
+
+        // Se muestra la tabla de Nivel
+        gotoxy(x + 5, y + 5); printf("Nivel Actual: %d", jugador->nivel);
+        gotoxy(x + 5, y + 6); printf("===============");
+        
+        // Se muestra la tabla de puntos
+        gotoxy(x + 5, y + 7); printf("Puntos: %d", jugador->puntos);
+        gotoxy(x + 5, y + 8); printf("===============");
+
+        // Se agrega una linea de separacion al cuadro
+        gotoxy(x + 1, y + 9); printf("___________________________");
+
+        // Se imprime titulo
+        gotoxy(x + 2, y + 11); printf("** INFORMACION NIVEL **");
+
+        // Se muestra la tabla de Nivel
+        gotoxy(x + 5, y + 13); printf("Nivel: %d", nivel->nivel);
+        gotoxy(x + 5, y + 14); printf("===============");
+
+        // Se muestra la tabla de intentos
+        gotoxy(x + 5, y + 15); printf("Intentos: %d", nivel->intentosRestantes);
+        gotoxy(x + 5, y + 16); printf("===============");
+        
+        // Se muestra la tabla de puntos
+        gotoxy(x + 5, y + 17); printf("Puntos: %5d", nivel->puntosNivel);
+        gotoxy(x + 5, y + 18); printf("===============");
     }
+    else if (jugador->idioma == 2) // Ingles
+    {
+        // Se crea un cuadro
+        cuadro(x, y, x + 29, y + 20);
+
+        // Se imprime titulo
+        gotoxy(x + 2, y + 1); printf("** PLAYER INFORMATION **");
+
+        // Se muestra el nombre del jugador
+        gotoxy(x + 5, y + 3); printf("Player: %s", jugador->nombre);
+        gotoxy(x + 5, y + 4); printf("===============");
+
+        // Se muestra la tabla de Nivel
+        gotoxy(x + 5, y + 5); printf("Current Level: %d", jugador->nivel);
+        gotoxy(x + 5, y + 6); printf("===============");
+        
+        // Se muestra la tabla de puntos
+        gotoxy(x + 5, y + 7); printf("Points: %d", jugador->puntos);
+        gotoxy(x + 5, y + 8); printf("===============");
+
+        // Se agrega una linea de separacion al cuadro
+        gotoxy(x + 1, y + 9); printf("___________________________");
+
+        // Se imprime titulo
+        gotoxy(x + 2, y + 11); printf("** LEVEL INFORMATION **");
+
+        // Se muestra la tabla de Nivel
+        gotoxy(x + 5, y + 13); printf("Level: %d", nivel->nivel);
+        gotoxy(x + 5, y + 14); printf("===============");
+
+        // Se muestra la tabla de intentos
+        gotoxy(x + 5, y + 15); printf("Attempts: %d", nivel->intentosRestantes);
+        gotoxy(x + 5, y + 16); printf("===============");
+        
+        // Se muestra la tabla de puntos
+        gotoxy(x + 5, y + 17); printf("Points: %5d", nivel->puntosNivel);
+        gotoxy(x + 5, y + 18); printf("===============");
+    }
+    
 }
 
-void procesarLetra(int x, int y, Nivel *nivel, char letra)
+void mostrarPalabra(int x, int y, Nivel *nivel, Jugador *jugador)
 {
-    int aciertos = 0;
-
-    // Se recorre la palabra secreta
-    for(int i = 0; i < strlen(nivel->palabraSecreta); i++)
+    if(jugador->idioma == 1) // Español
     {
-        // Se compara la letra ingresada con la letra de la palabra secreta
-        if(nivel->palabraSecreta[i] == letra)
+        // Se obtiene el largo de la palabra actual
+        int largo = strlen(nivel->palabraActual);
+        
+        // Se muestra la palabra actual con los guiones bajos saltando un espacion por guion
+        gotoxy(x, y); printf("Palabra a adivinar:");
+        for(int i = 0; nivel->palabraActual[i] != '\0'; i++)
         {
-            // Se agrega la letra a la palabra actual
-            nivel->palabraActual[i] = letra;
-
-            // Se aumenta el contador de aciertos
-            aciertos++;
+            // Se imprime debajo y al centro de la palabra a adivinar
+            gotoxy(x + (10 - largo) + (i * 2), y + 2); printf("%c", toupper(nivel->palabraActual[i]));
         }
     }
-
-    // Se verifica si se ha acertado alguna letra
-    if(aciertos > 0)
+    else if (jugador->idioma == 2) // Ingles
     {
-        // Se muestra el mensaje de acierto
-        gotoxy(x, y); printf("Has acertado %d letras", aciertos);
-
-        // Se muestra el mensaje de pausa
-        pause(x, y + 2, "Presione enter para continuar...");
+        // Se obtiene el largo de la palabra actual
+        int largo = strlen(nivel->palabraActual);
+        
+        // Se muestra la palabra actual con los guiones bajos saltando un espacion por guion
+        gotoxy(x, y); printf("Word to guess:");
+        for(int i = 0; nivel->palabraActual[i] != '\0'; i++)
+        {
+            // Se imprime debajo y al centro de la palabra a adivinar
+            gotoxy(x + (10 - largo) + (i * 2), y + 2); printf("%c", toupper(nivel->palabraActual[i]));
+        }
     }
-    else
+    
+}
+
+void procesarLetra(int x, int y, Nivel *nivel, char letra, Jugador *jugador)
+{
+    if(jugador->idioma == 1) // Español
     {
-        // Se muestra el mensaje de error
-        gotoxy(x, y); printf("La letra ingresada no se encuentra en la palabra");
+        int aciertos = 0;
 
-        // Se muestra el mensaje de pausa
-        pause(x, y + 2, "Presione enter para continuar...");
+        // Se recorre la palabra secreta
+        for(int i = 0; i < strlen(nivel->palabraSecreta); i++)
+        {
+            // Se compara la letra ingresada con la letra de la palabra secreta
+            if(nivel->palabraSecreta[i] == letra)
+            {
+                // Se agrega la letra a la palabra actual
+                nivel->palabraActual[i] = letra;
 
-        // Se resta un intento
-        nivel->intentosRestantes--;
+                // Se aumenta el contador de aciertos
+                aciertos++;
+            }
+        }
 
-        // Se restan 100 puntos
-        nivel->puntosNivel -= 100;
+        // Se verifica si se ha acertado alguna letra
+        if(aciertos > 0)
+        {
+            // Se muestra el mensaje de acierto
+            gotoxy(x, y); printf("Has acertado %d letras", aciertos);
+
+            // Se muestra el mensaje de pausa
+            pause(x, y + 2, "Presione enter para continuar...");
+        }
+        else
+        {
+            // Se muestra el mensaje de error
+            gotoxy(x, y); printf("La letra ingresada no se encuentra en la palabra");
+
+            // Se muestra el mensaje de pausa
+            pause(x, y + 2, "Presione enter para continuar...");
+
+            // Se resta un intento
+            nivel->intentosRestantes--;
+
+            // Se restan 100 puntos
+            nivel->puntosNivel -= 100;
+        }
+
+        // Se limpia la linea anterior
+        limpiarLinea(x, y, 50);
     }
+    else if (jugador->idioma == 2) // Ingles
+    {
+        int aciertos = 0;
 
-    // Se limpia la linea anterior
-    limpiarLinea(x, y, 50);
+        // Se recorre la palabra secreta
+        for(int i = 0; i < strlen(nivel->palabraSecreta); i++)
+        {
+            // Se compara la letra ingresada con la letra de la palabra secreta
+            if(nivel->palabraSecreta[i] == letra)
+            {
+                // Se agrega la letra a la palabra actual
+                nivel->palabraActual[i] = letra;
+
+                // Se aumenta el contador de aciertos
+                aciertos++;
+            }
+        }
+
+        // Se verifica si se ha acertado alguna letra
+        if(aciertos > 0)
+        {
+            // Se muestra el mensaje de acierto
+            gotoxy(x, y); printf("You have guessed %d letters", aciertos);
+
+            // Se muestra el mensaje de pausa
+            pause(x, y + 2, "Press enter to continue...");
+        }
+        else
+        {
+            // Se muestra el mensaje de error
+            gotoxy(x, y); printf("The letter entered is not found in the word");
+
+            // Se muestra el mensaje de pausa
+            pause(x, y + 2, "Press enter to continue...");
+
+            // Se resta un intento
+            nivel->intentosRestantes--;
+
+            // Se restan 100 puntos
+            nivel->puntosNivel -= 100;
+        }
+
+        // Se limpia la linea anterior
+        limpiarLinea(x, y, 50);
+    }
+    
 }
 
 // Se verifica las teclas presionadas con la funcion GetAsyncKeyState
-void teclaPresionada(int x, int y, char* letra, Nivel *nivel)
+void teclaPresionada(int x, int y, char* letra, Nivel *nivel, Jugador *jugador)
 {
     // Se limpia el buffer de teclado
     resetearTeclas();
@@ -620,12 +946,28 @@ void teclaPresionada(int x, int y, char* letra, Nivel *nivel)
                     if(*letraActual == *letra)
                     {
                         // Se muestra el mensaje de error
-                        gotoxy(50, 20); printf("La letra ingresada ya fue utilizada");
+                        if(jugador->idioma == 1) // Español
+                        {
+                            gotoxy(50, 20); printf("La letra ingresada ya fue utilizada");
+                        }
+                        else if (jugador->idioma == 2) // Ingles
+                        {
+                            gotoxy(50, 20); printf("The letter entered has already been used");
+                        }
+                        
                         
                         ocultarCursor();
 
                         // Se muestra el mensaje de pausa
-                        pause(50, 22, "Presione enter para continuar...");
+                        if(jugador->idioma == 1) // Español
+                        {
+                            pause(50, 22, "Presione enter para continuar...");
+                        }
+                        else if (jugador->idioma == 2) // Ingles
+                        {
+                            pause(50, 22, "Press enter to continue...");
+                        }
+                        
 
                         // Se limpia la linea anterior
                         limpiarLinea(50, 20, 50);
@@ -676,21 +1018,39 @@ void teclaPresionada(int x, int y, char* letra, Nivel *nivel)
     }
 }
 
+
 //=====================================
 //========VENTANA INSTRUCCIONES========
 //=====================================
 
-void mostrarInstrucciones(int x, int y)
+void mostrarInstrucciones(int x, int y, Jugador *jugador)
 {
-    gotoxy(x, y); printf("Instrucciones:");
-    gotoxy(x, y+2); printf("1. Adivina la palabra oculta en el menor numero de intentos posible.");
-    gotoxy(x, y+3); printf("2. Cada nivel tiene una palabra de longitud especifica, aumentando en un caracter por nivel.");
-    gotoxy(x, y+4); printf("3. Necesitas alcanzar 1000 puntos por nivel para avanzar.");
-    gotoxy(x, y+5); printf("4. Cada intento fallido disminuye tu puntaje base.");
-    gotoxy(x, y+6); printf("5. Selecciona la opcion correspondiente para adivinar una letra de la palabra oculta.");
-    gotoxy(x, y+7); printf("6. Si adivinas correctamente, se revelaran las apariciones de la letra en la palabra.");
-    gotoxy(x, y+8); printf("7. Completa el nivel antes de agotar los intentos para obtener puntos adicionales; de lo contrario,");
-    gotoxy(x, y+9); printf("   no ganas puntos y pierdes el nivel.");
+    if(jugador->idioma == 1)
+    {
+        gotoxy(x, y); printf("Instrucciones:");
+        gotoxy(x, y+2); printf("1. Adivina la palabra oculta en el menor numero de intentos posible.");
+        gotoxy(x, y+3); printf("2. Cada nivel tiene una palabra de longitud especifica, aumentando en un caracter por nivel.");
+        gotoxy(x, y+4); printf("3. Necesitas alcanzar 1000 puntos por nivel para avanzar.");
+        gotoxy(x, y+5); printf("4. Cada intento fallido disminuye tu puntaje base.");
+        gotoxy(x, y+6); printf("5. Selecciona la opcion correspondiente para adivinar una letra de la palabra oculta.");
+        gotoxy(x, y+7); printf("6. Si adivinas correctamente, se revelaran las apariciones de la letra en la palabra.");
+        gotoxy(x, y+8); printf("7. Completa el nivel antes de agotar los intentos para obtener puntos adicionales; de lo contrario,");
+        gotoxy(x, y+9); printf("   no ganas puntos y pierdes el nivel.");
+    }
+    else if (jugador->idioma == 2)
+    {
+        gotoxy(x, y); printf("Instruction:");
+        gotoxy(x, y+2); printf("1. Guess the hidden word in the least number of attempts possible.");
+        gotoxy(x, y+3); printf("2. Each level has a word of specific length, increasing by one character per level.");
+        gotoxy(x, y+4); printf("3. You need to reach 1000 points per level to advance.");
+        gotoxy(x, y+5); printf("4. Each failed attempt decreases your base score.");
+        gotoxy(x, y+6); printf("5. Select the corresponding option to guess a letter of the hidden word.");
+        gotoxy(x, y+7); printf("6. If you guess correctly, the appearances of the letter in the word will be revealed.");
+        gotoxy(x, y+8); printf("7. Complete the level before running out of attempts to get additional points; otherwise,");
+        gotoxy(x, y+9); printf("   you do not earn points and lose the level.");
+    }
+    
+    
 
 }
 
@@ -777,7 +1137,8 @@ void subMenuJugar(Jugador *jugador);
 void nuevaPartida(Jugador *jugador);
 void cargarPartidaFE(Jugador *jugador);
 void jugar(Jugador *jugador);
-void instrucciones();
+void idioma(Jugador *jugador);
+void instrucciones(Jugador *jugador);
 
 //================================
 //========MENU PRINCIPAL==========
@@ -786,58 +1147,121 @@ void instrucciones();
 // Función para mostrar el menú
 void menu(Jugador *jugador)
 {
-    // Se inicia un booleano para inicio de juego
-    bool inicioJuego = true;
+    if(jugador->idioma == 1) // Español
+    {
+        // Se inicia un booleano para inicio de juego
+        bool inicioJuego = true;
 
     // Se inicializa el mapa de palabras jugadas
     jugador->palabrasJugadas = createMap(is_equal_string);
 
-    while(true)
-    {
-        int opcionSeleccionada = 1;
-
-        system("cls"); // Limpiar la pantalla
-        cuadro(1, 0, 119, 25); // Se dibuja el cuadro
-
-        mostrarTitulo(25, 4, 1); // Se muestra el titulo
-
-        if(inicioJuego)
+        while(true)
         {
-            // Se cambia el color de la consola a verde
-            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
+            int opcionSeleccionada = 1;
 
-            // Se muestra el mensaje de pausa
-            pause(35, 18, "Presione ENTER para iniciar juego...");
+            system("cls"); // Limpiar la pantalla
+            cuadro(1, 0, 119, 25); // Se dibuja el cuadro
 
-            inicioJuego = false;
+            mostrarTitulo(25, 4, 1, jugador); // Se muestra el titulo
 
-            // Se restablece el color de la consola
-            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-        }
+            if(inicioJuego)
+            {
+                // Se cambia el color de la consola a verde
+                SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 11);
 
-        while(!cambiarOpcion(&opcionSeleccionada, 4))
-        {
-            mostrarMenu(40, 16, opcionSeleccionada, 4);
-        }
+                // Se muestra el mensaje de pausa
+                pause(35, 18, "Presione ENTER para iniciar juego...");
 
-        switch(opcionSeleccionada)
-        {
-            case 1:
-                // Se llama a la funcion subMenuJugar
-                subMenuJugar(jugador);
+                inicioJuego = false;
 
-                break;
-            case 2:
-                break;
-            case 3:
-                break;
-            case 4:
-                // Se llama a la funcion instrucciones
-                instrucciones();
+                // Se restablece el color de la consola
+                SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+            }
 
-                break;
+            while(!cambiarOpcion(&opcionSeleccionada, 4))
+            {
+                mostrarMenu(40, 16, opcionSeleccionada, 4, jugador);
+            }
+
+            switch(opcionSeleccionada)
+            {
+                case 1:
+                    // Se llama a la funcion subMenuJugar
+                    subMenuJugar(jugador);
+
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    // Se llama a la funcion idioma
+                    idioma(jugador);
+        
+                    break;
+                case 4:
+                    // Se llama a la funcion instrucciones
+                    instrucciones(jugador);
+
+                    break;
+            }
         }
     }
+    else if (jugador->idioma == 2) // Ingles
+    {
+        // Se inicia un booleano para inicio de juego
+        bool inicioJuego = true;
+
+        while(true)
+        {
+            int opcionSeleccionada = 1;
+
+            system("cls"); // Limpiar la pantalla
+            cuadro(1, 0, 119, 25); // Se dibuja el cuadro
+
+            mostrarTitulo(25, 4, 1, jugador); // Se muestra el titulo
+
+            if(inicioJuego)
+            {
+                // Se cambia el color de la consola a verde
+                SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 11);
+
+                // Se muestra el mensaje de pausa
+                pause(35, 18, "Press ENTER to start the game...");
+
+                inicioJuego = false;
+
+                // Se restablece el color de la consola
+                SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+            }
+
+            while(!cambiarOpcion(&opcionSeleccionada, 4))
+            {
+                mostrarMenu(40, 16, opcionSeleccionada, 4, jugador);
+            }
+
+            switch(opcionSeleccionada)
+            {
+                case 1:
+                    // Se llama a la funcion subMenuJugar
+                    subMenuJugar(jugador);
+
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    // Se llama a la funcion idioma
+                    idioma(jugador);
+        
+                    break;
+                case 4:
+                    // Se llama a la funcion instrucciones
+                    instrucciones(jugador);
+
+                    break;
+            }
+        }
+    }
+   
+    
 }
 
 //===================================
@@ -859,7 +1283,7 @@ void subMenuJugar(Jugador *jugador)
     {
         while(!cambiarOpcion(&opcionSeleccionada, 2))
         {
-            mostrarMenu(40, 16, opcionSeleccionada, 2);
+            mostrarMenu(40, 16, opcionSeleccionada, 2, jugador);
         }
 
         switch(opcionSeleccionada)
@@ -867,7 +1291,7 @@ void subMenuJugar(Jugador *jugador)
             case 1:
                 nuevaPartida(jugador);               
 
-                break;
+                break; 
             case 2:
                 cargarPartidaFE(jugador);
 
@@ -885,54 +1309,109 @@ void subMenuJugar(Jugador *jugador)
 // Funcion para nuevo juego
 void nuevaPartida(Jugador *jugador)
 {
-    // Se limpia la pantalla del menú
-    limpiarLinea(40, 16, 20);
-    limpiarLinea(40, 17, 20);
+    if(jugador->idioma == 1)
+    {
+        // Se limpia la pantalla del menú
+        limpiarLinea(40, 16, 20);
+        limpiarLinea(40, 17, 20);
 
-    // Se crea una variable para guardar el nombre del jugador
-    char nombre[50];
+        // Se crea una variable para guardar el nombre del jugador
+        char nombre[50];
 
-    mostrarCursor();
+        mostrarCursor();
 
-    // Se obtiene el nombre del jugador
-    gotoxy(40, 16);
+        // Se obtiene el nombre del jugador
+        gotoxy(40, 16);
 
-    // Linea para que el cursor se mantenga en la misma linea
-    system("timeout /t 0 /nobreak >nul");
+        // Linea para que el cursor se mantenga en la misma linea
+        system("timeout /t 0 /nobreak >nul");
 
-    // Se obtiene el nombre del jugador
-    printf("Ingrese su nombre: ");
-    scanf("%s", nombre);
+        // Se obtiene el nombre del jugador
+        printf("Ingrese su nombre: ");
+        scanf("%s", nombre);
 
-    while(getchar() != '\n'); // Limpiar buffer
+        while(getchar() != '\n'); // Limpiar buffer
 
-    ocultarCursor();
+        ocultarCursor();
 
-    // Se guarda el nombre del jugador
-    strcpy(jugador->nombre, nombre);
+        // Se guarda el nombre del jugador
+        strcpy(jugador->nombre, nombre);
 
-    // Se limpia la linea anterior
-    limpiarLinea(40, 16, 30);
+        // Se limpia la linea anterior
+        limpiarLinea(40, 16, 30);
 
-    // Se inicializa el nivel y los puntos del jugador
-    jugador->nivel = 1;
-    jugador->puntos = 0;
+        // Se inicializa el nivel y los puntos del jugador
+        jugador->nivel = 1;
+        jugador->puntos = 0;
 
-    // Se cambia el color de la consola a amarillo
-    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 14);
+        // Se cambia el color de la consola a amarillo
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 14);
 
-    // Se muestra el mensaje de bienvenida
-    gotoxy(35, 17); printf("BIENVENIDO %s!!!!!!!", jugador->nombre);
+        // Se muestra el mensaje de bienvenida
+        gotoxy(35, 17); printf("BIENVENIDO %s!!!!!!!", jugador->nombre);
 
-    // Se muestra el mensaje de pausa
-    pause(35, 18, "Presione enter para comenzar...");
+        // Se muestra el mensaje de pausa
+        pause(35, 18, "Presione enter para comenzar...");
 
-    // Se restaura el color de la consola
-    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+        // Se restaura el color de la consola
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 
-    cargando(2);
+        cargando(2, jugador);
 
-    jugar(jugador);
+        jugar(jugador);
+    }
+    else if (jugador->idioma == 2)
+    {
+        // Se limpia la pantalla del menú
+        limpiarLinea(40, 16, 20);
+        limpiarLinea(40, 17, 20);
+
+        // Se crea una variable para guardar el nombre del jugador
+        char nombre[50];
+
+        mostrarCursor();
+
+        // Se obtiene el nombre del jugador
+        gotoxy(40, 16);
+
+        // Linea para que el cursor se mantenga en la misma linea
+        system("timeout /t 0 /nobreak >nul");
+
+        // Se obtiene el nombre del jugador
+        printf("Enter your name: ");
+        scanf("%s", nombre);
+
+        while(getchar() != '\n'); // Limpiar buffer
+
+        ocultarCursor();
+
+        // Se guarda el nombre del jugador
+        strcpy(jugador->nombre, nombre);
+
+        // Se limpia la linea anterior
+        limpiarLinea(40, 16, 30);
+
+        // Se inicializa el nivel y los puntos del jugador
+        jugador->nivel = 1;
+        jugador->puntos = 0;
+
+        // Se cambia el color de la consola a amarillo
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 14);
+
+        // Se muestra el mensaje de bienvenida
+        gotoxy(35, 17); printf("WELCOME %s!!!!!!!", jugador->nombre);
+
+        // Se muestra el mensaje de pausa
+        pause(35, 18, "Press enter to start...");
+
+        // Se restaura el color de la consola
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+
+        cargando(2, jugador);
+
+        jugar(jugador);
+    }
+    
 }
 
 void cargarPartidaFE(Jugador *jugador)
@@ -1012,176 +1491,394 @@ void cargarPartidaFE(Jugador *jugador)
 // Funcion Jugar
 void jugar(Jugador *jugador)
 {
-    //================================================================
-    //================= BACKEND JUGAR ================================
-    //================================================================
-
-    // Se crea una estructura para guardar el nivel
-    Nivel *nivel = (Nivel *)malloc(sizeof(Nivel));
-
-    // Se inicializa el nivel
-    nivel->nivel = jugador->nivel;
-    nivel->letrasJugadas = createList();
-    nivel->intentosRestantes = 6;
-
-    // Se inicializa los puntos del nivel segun el nivel del jugador
-    nivel->puntosNivel = 600 + (200 * (nivel->nivel - 1));
-
-    // Se llama a la funcion para agregar una palabra aleatoria
-    agregarPalabraAleatoria(jugador, nivel);
-
-    // Se llena de guiones bajos la palabra actual
-    for(int i = 0; i < strlen(nivel->palabraSecreta); i++)
+    if(jugador->idioma == 1)
     {
-        nivel->palabraActual[i] = '_';
-    }
-    nivel->palabraActual[strlen(nivel->palabraSecreta)] = '\0'; // Se agrega el caracter nulo
-
-    // Creacion de variables
-    bool ganar = false; // Variable para saber si se ha ganado el juego
-    char letra; // Variable para guardar la letra ingresada
-    bool limpiarLetra = false; // Variable para saber si se debe limpiar la letra ingresada
-    bool subirNivel = false; // Variable para saber si se debe subir de nivel
-
-    // Se limpia la pantalla
-    limpiarPantalla();
-
-    // Se hace el bucle para mostrar el juego
-    while(nivel->intentosRestantes > 0 && !ganar)
-    {
-        //================================================================
-        //================= FRONTEND JUGAR ===============================
-        //================================================================
-
-        // Se limpia la letra ingresada si es que se ha ingresado una
-        if(limpiarLetra)
-        {
-            // Se limpia la letra ingresada
-            limpiarLinea(85, 17, 1);
-        }
-
-        // Se muestra el titulo
-        mostrarTitulo(50, 1, 2);
-
-        // Se muestra la informacion del juego actual
-        mostrarInformacion(8, 3, jugador, nivel);
-
-        // Se muestra el ahorcado
-        mostrarAhorcado(45, 6, nivel->intentosRestantes);
-
-        // Se muestra las letras usadas
-        mostrarLetras(85, 6, nivel);
-
-        // Se muestra la palabra actual con los guiones bajos saltando un espacion por guion
-        mostrarPalabra(65, 12, nivel);
-
-        // Se pregunta por la letra
-        gotoxy(65, 17); printf("Ingrese una letra:  ");
-
-        mostrarCursor(); // Se muestra el cursor
-
-        // Se llama a la funcion que verifica que letra se ha ingresado
-        teclaPresionada(85, 17, &letra, nivel);
-
-        ocultarCursor(); // Se oculta el cursor
-
         //================================================================
         //================= BACKEND JUGAR ================================
         //================================================================
 
-        // Se copia el puntero a una nueva direccion de memoria
-        char *letraIngresada = (char *)malloc(sizeof(char));
-        *letraIngresada = letra;
+        // Se crea una estructura para guardar el nivel
+        Nivel *nivel = (Nivel *)malloc(sizeof(Nivel));
 
-        // Se guarda la letra ingresada en la lista de letras jugadas
-        pushBack(nivel->letrasJugadas, letraIngresada);
+        // Se inicializa el nivel
+        nivel->nivel = jugador->nivel;
+        nivel->letrasJugadas = createList();
+        nivel->intentosRestantes = 6;
 
-        // Se cambia el valor de la variable limpiarLetra
-        limpiarLetra = true;
+        // Se inicializa los puntos del nivel segun el nivel del jugador
+        nivel->puntosNivel = 600 + (200 * (nivel->nivel - 1));
 
-        // Se llama a funcion para validar la letra ingresada
-        procesarLetra(50, 20, nivel, letra);
+        // Se llama a la funcion para agregar una palabra aleatoria
+        agregarPalabraAleatoria(jugador, nivel);
+
+        // Se llena de guiones bajos la palabra actual
+        for(int i = 0; i < strlen(nivel->palabraSecreta); i++)
+        {
+            nivel->palabraActual[i] = '_';
+        }
+        nivel->palabraActual[strlen(nivel->palabraSecreta)] = '\0'; // Se agrega el caracter nulo
+
+        // Creacion de variables
+        bool ganar = false; // Variable para saber si se ha ganado el juego
+        char letra; // Variable para guardar la letra ingresada
+        bool limpiarLetra = false; // Variable para saber si se debe limpiar la letra ingresada
+     bool subirNivel = false; // Variable para saber si se debe subir de nivel
+
+        // Se limpia la pantalla
+        limpiarPantalla();
+
+        // Se hace el bucle para mostrar el juego
+        while(nivel->intentosRestantes > 0 && !ganar)
+        {
+            //================================================================
+            //================= FRONTEND JUGAR ===============================
+            //================================================================
+
+            // Se limpia la letra ingresada si es que se ha ingresado una
+            if(limpiarLetra)
+            {
+                // Se limpia la letra ingresada
+                limpiarLinea(85, 17, 1);
+            }
+
+            // Se muestra el titulo
+            mostrarTitulo(50, 1, 2, jugador);
+
+            // Se muestra la informacion del juego actual
+            mostrarInformacion(8, 3, jugador, nivel);
+
+            // Se muestra el ahorcado
+            mostrarAhorcado(45, 6, nivel->intentosRestantes);
+
+            // Se muestra las letras usadas
+            mostrarLetras(85, 6, nivel, jugador);
+
+            // Se muestra la palabra actual con los guiones bajos saltando un espacion por guion
+            mostrarPalabra(65, 12, nivel, jugador);
+
+            // Se pregunta por la letra
+            gotoxy(65, 17); printf("Ingrese una letra:  ");
+
+            mostrarCursor(); // Se muestra el cursor
+
+            // Se llama a la funcion que verifica que letra se ha ingresado
+            teclaPresionada(85, 17, &letra, nivel, jugador);
+
+            ocultarCursor(); // Se oculta el cursor
+
+            //================================================================
+            //================= BACKEND JUGAR ================================
+            //================================================================
+
+            // Se copia el puntero a una nueva direccion de memoria
+            char *letraIngresada = (char *)malloc(sizeof(char));
+            *letraIngresada = letra;
+
+            // Se guarda la letra ingresada en la lista de letras jugadas
+            pushBack(nivel->letrasJugadas, letraIngresada);
+
+            // Se cambia el valor de la variable limpiarLetra
+            limpiarLetra = true;
+
+            // Se llama a funcion para validar la letra ingresada
+            procesarLetra(50, 20, nivel, letra, jugador);
+
+            // Se verifica si se ha ganado el juego
+            if(strcmp(nivel->palabraSecreta, nivel->palabraActual) == 0)
+            {
+                // Se cambia el valor de la variable ganar
+                ganar = true;
+            }
+        }
 
         // Se verifica si se ha ganado el juego
-        if(strcmp(nivel->palabraSecreta, nivel->palabraActual) == 0)
+        if(ganar)
         {
-            // Se cambia el valor de la variable ganar
-            ganar = true;
+            // Se muestra la ultima letra ingresada
+            mostrarPalabra(65, 12, nivel);
+
+            // Se aumenta los puntos del jugador
+            jugador->puntos += nivel->puntosNivel;
+
+            // Se muestra el mensaje de felicitaciones
+            gotoxy(50, 20); printf("FELICITACIONES HAS COMPLETADO LA PALABRA!!!!!!!");
+
+            // Se muestra el mensaje de pausa
+            pause(50, 22, "Presione enter para continuar...");
+
+            // Se verifica la cantidad de puntos del jugador para subir de nivel
+            if(jugador->puntos >= 1000 * jugador->nivel)
+            {
+                // Se aumenta el nivel del jugador
+                jugador->nivel++;
+
+                // Se limpia la linea anterior
+                limpiarLinea(50, 20, 50);
+
+                // Se muestra el mensaje de felicitaciones
+                gotoxy(50, 20); printf("FELICITACIONES HAS SUBIDO DE NIVEL!!!!!!!");
+
+                // Se muestra el mensaje de pausa
+                pause(50, 22, "Presione enter para continuar...");
+            }
         }
-    }
-
-    // Se verifica si se ha ganado el juego
-    if(ganar)
-    {
-        // Se muestra la ultima letra ingresada
-        mostrarPalabra(65, 12, nivel);
-
-        // Se aumenta los puntos del jugador
-        jugador->puntos += nivel->puntosNivel;
-
-        // Se muestra el mensaje de felicitaciones
-        gotoxy(50, 20); printf("FELICITACIONES HAS COMPLETADO LA PALABRA!!!!!!!");
-
-        // Se muestra el mensaje de pausa
-        pause(50, 22, "Presione enter para continuar...");
-
-        // Se verifica la cantidad de puntos del jugador para subir de nivel
-        if(jugador->puntos >= 1000 * jugador->nivel)
+        else
         {
-            // Se aumenta el nivel del jugador
-            jugador->nivel++;
+            // Se muestra el mensaje de perdiste
+            gotoxy(50, 20); printf("PERDISTE!!!!!!!");
 
-            // Se limpia la linea anterior
-            limpiarLinea(50, 20, 50);
+            // Se muestra la palabra secreta
+            gotoxy(50, 21); printf("La palabra secreta era: %s", nivel->palabraSecreta);
 
-            // Se cambia el valor de la variable subirNivel
-            subirNivel = true;
+            // Se muestra el mensaje de pausa
+            pause(50, 22, "Presione enter para continuar...");
+
+            // Se sale de la funcion
+            return;
         }
+
+        // Se libera la memoria de la estructura nivel
+        free(nivel);
+
+        // Se llama a cargar
+        cargando(2, jugador);
+
+        // Se verifica si se debe subir de nivel
+        if(subirNivel)
+        {
+            // Se llama a la funcion si se subio de nivel
+            menuNivel(jugador);
+        }
+
+        // Se llama a la funcion jugar
+        jugar(jugador);
     }
-    else
+    else if (jugador->idioma == 2)
     {
-        // Se muestra el mensaje de perdiste
-        gotoxy(50, 20); printf("PERDISTE!!!!!!!");
+        //================================================================
+        //================= BACKEND JUGAR ================================
+        //================================================================
 
-        // Se muestra la palabra secreta
-        gotoxy(50, 21); printf("La palabra secreta era: %s", nivel->palabraSecreta);
+        // Se crea una estructura para guardar el nivel
+        Nivel *nivel = (Nivel *)malloc(sizeof(Nivel));
 
-        // Se muestra el mensaje de pausa
-        pause(50, 22, "Presione enter para continuar...");
+        // Se inicializa el nivel
+        nivel->nivel = jugador->nivel;
+        nivel->letrasJugadas = createList();
+        nivel->intentosRestantes = 6;
 
-        // Se sale de la funcion
-        return;
+        // Se inicializa los puntos del nivel segun el nivel del jugador
+        nivel->puntosNivel = 600 + (200 * (nivel->nivel - 1));
+
+        // Se llama a la funcion para agregar una palabra aleatoria
+        agregarPalabraAleatoria(jugador, nivel);
+
+        // Se llena de guiones bajos la palabra actual
+        for(int i = 0; i < strlen(nivel->palabraSecreta); i++)
+        {
+            nivel->palabraActual[i] = '_';
+        }
+        nivel->palabraActual[strlen(nivel->palabraSecreta)] = '\0'; // Se agrega el caracter nulo
+
+        // Creacion de variables
+        bool ganar = false; // Variable para saber si se ha ganado el juego
+        char letra; // Variable para guardar la letra ingresada
+        bool limpiarLetra = false; // Variable para saber si se debe limpiar la letra ingresada
+
+        // Se limpia la pantalla
+        limpiarPantalla();
+
+        // Se hace el bucle para mostrar el juego
+        while(nivel->intentosRestantes > 0 && !ganar)
+        {
+            //================================================================
+            //================= FRONTEND JUGAR ===============================
+            //================================================================
+
+            // Se limpia la letra ingresada si es que se ha ingresado una
+            if(limpiarLetra)
+            {
+                // Se limpia la letra ingresada
+                limpiarLinea(85, 17, 1);
+            }
+
+            // Se muestra el titulo
+            mostrarTitulo(50, 1, 2, jugador);
+
+            // Se muestra la informacion del juego actual
+            mostrarInformacion(8, 3, jugador, nivel);
+
+            // Se muestra el ahorcado
+            mostrarAhorcado(45, 6, nivel->intentosRestantes);
+
+            // Se muestra las letras usadas
+            mostrarLetras(85, 6, nivel, jugador);
+
+            // Se muestra la palabra actual con los guiones bajos saltando un espacion por guion
+            mostrarPalabra(65, 12, nivel, jugador);
+
+            // Se pregunta por la letra
+            gotoxy(65, 17); printf("Enter a letter:  ");
+
+            mostrarCursor(); // Se muestra el cursor
+
+            // Se llama a la funcion que verifica que letra se ha ingresado
+            teclaPresionada(85, 17, &letra, nivel, jugador);
+
+            ocultarCursor(); // Se oculta el cursor
+
+            //================================================================
+            //================= BACKEND JUGAR ================================
+            //================================================================
+
+            // Se copia el puntero a una nueva direccion de memoria
+            char *letraIngresada = (char *)malloc(sizeof(char));
+            *letraIngresada = letra;
+
+            // Se guarda la letra ingresada en la lista de letras jugadas
+            pushBack(nivel->letrasJugadas, letraIngresada);
+
+            // Se cambia el valor de la variable limpiarLetra
+            limpiarLetra = true;
+
+            // Se llama a funcion para validar la letra ingresada
+            procesarLetra(50, 20, nivel, letra, jugador);
+
+            // Se verifica si se ha ganado el juego
+            if(strcmp(nivel->palabraSecreta, nivel->palabraActual) == 0)
+            {
+                // Se cambia el valor de la variable ganar
+                ganar = true;
+            }
+        }
+
+        // Se verifica si se ha ganado el juego
+        if(ganar)
+        {
+            // Se aumenta los puntos del jugador
+            jugador->puntos += nivel->puntosNivel;
+
+            // Se muestra el mensaje de felicitaciones
+            gotoxy(50, 20); printf("CONGRATULATIONS YOU HAVE COMPLETED THE WORD!!!!!!!");
+
+            // Se muestra el mensaje de pausa
+            pause(50, 22, "Press enter to continue...");
+
+            // Se verifica la cantidad de puntos del jugador para subir de nivel
+            if(jugador->puntos >= 1000 * jugador->nivel)
+            {
+                // Se aumenta el nivel del jugador
+                jugador->nivel++;
+
+                // Se limpia la linea anterior
+                limpiarLinea(50, 20, 50);
+
+                // Se muestra el mensaje de felicitaciones
+                gotoxy(50, 20); printf("CONGRATULATIONS YOU HAVE LEVEL UP!!!!!!!");
+
+                // Se muestra el mensaje de pausa
+                pause(50, 22, "Press enter to continue...");
+            }
+        }
+        else
+        {
+            // Se muestra el mensaje de perdiste
+            gotoxy(50, 20); printf("YOU LOST!!!!!!!");
+
+            // Se muestra la palabra secreta
+            gotoxy(50, 21); printf("The secret word was: %s", nivel->palabraSecreta);
+
+            // Se muestra el mensaje de pausa
+            pause(50, 22, "Press enter to continue...");
+
+            // Se sale de la funcion
+            return;
+        }
+
+        // Se libera la memoria de la estructura nivel
+        free(nivel);
+
+        // Se llama a cargar
+        cargando(2, jugador);
+
+        // Se llama a la funcion jugar
+        jugar(jugador);
     }
+    
+}
 
-    // Se libera la memoria de la estructura nivel
-    free(nivel);
+// Funcion para seleccionar el idioma
+void idioma(Jugador *jugador)
+{
+    int opcionSeleccionada = 1;
 
-    // Se llama a cargar
-    cargando(2);
+    // Se limpia la pantalla del menú 
+    limpiarLinea(40, 16, 20);
+    limpiarLinea(40, 17, 20);
+    limpiarLinea(40, 18, 20);
+    limpiarLinea(40, 19, 20);
 
-    // Se verifica si se debe subir de nivel
-    if(subirNivel)
+    while(true)
     {
-        // Se llama a la funcion si se subio de nivel
-        menuNivel(jugador);
-    }
+        while(!cambiarOpcion(&opcionSeleccionada, 2))
+        {
+            mostrarMenu(40, 16, opcionSeleccionada, 3, jugador);
+        }
 
-    // Se llama a la funcion jugar
-    jugar(jugador);
+        switch(opcionSeleccionada)
+        {
+            case 1:
+                // Se cambia el idioma del jugador
+                jugador->idioma = 1; 
+            
+                // Se muestra el mensaje de pausa
+                pause(30, 22, "Presione enter para continuar...");
+
+                break;
+            case 2:
+                // Se cambia el idioma del jugador
+                jugador->idioma = 2;
+
+                // Se muestra el mensaje de pausa
+                pause(30, 22, "Press enter to continue...");
+
+                break;
+        }
+
+        break;
+    }    
+    cargando(2, jugador);
 }
 
 //  Funcion instrucciones
-void instrucciones()
+void instrucciones(Jugador *jugador)
 {
-    // Se limpia la pantalla
-    limpiarPantalla();
+    if(jugador->idioma == 1)
+    {
+        // Se limpia la pantalla
+        limpiarPantalla();
 
-    // Se muestra el titulo
-    mostrarTitulo(30, 1, 2);
+        // Se muestra el titulo
+        mostrarTitulo(30, 1, 2, jugador);
 
-    // Se muestra el mensaje de instrucciones
-    mostrarInstrucciones(7, 6);
+        // Se muestra el mensaje de instrucciones
+        mostrarInstrucciones(6, 7, jugador);
 
-    // Se llama a la función pause
-    pause(30, 23, "Presione enter para continuar...");
+        // Se llama a la función pause
+        pause(30, 23, "Presione enter para continuar...");
+    }
+    else if (jugador->idioma == 2)
+    {
+        // Se limpia la pantalla
+        limpiarPantalla();
+
+        // Se muestra el titulo
+        mostrarTitulo(30, 1, 2, jugador);
+
+        // Se muestra el mensaje de instrucciones
+        mostrarInstrucciones(6, 7, jugador);
+
+        // Se llama a la función pause
+        pause(30, 23, "Press enter to continue...");
+    }
 }
