@@ -11,13 +11,11 @@ void guardarPartida(Jugador *jugador, int x, int y);
 
 void cargarPartida(char *nombreJugador, Jugador *jugador, int x, int y);
 
-void obtenerJugadores(ArrayList *jugadores);
-
-void leerPuntajes(TreeMap *arbol_puntajes);
+void obtenerJugadores(ArrayList *jugadores, Jugador *jugador);
 
 void guardarPuntaje(TreeMap *tree, Jugador *player);
 
-void leerPuntajes(TreeMap *arbol_puntajes);
+void leerPuntajes(TreeMap *arbol_puntajes, Jugador *jugador);
 
 void exportarPuntajes(TreeMap* arbol_puntajes);
 

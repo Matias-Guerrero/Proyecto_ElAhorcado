@@ -460,6 +460,14 @@ void mostrarMenu(int x, int y, int opcionSeleccionada, int maxOpcion, Jugador *j
             gotoxy(x, y); printf("%s Espanol", (opcionSeleccionada == 1) ? "->" : "  ");
             gotoxy(x, y + 1); printf("%s Ingles", (opcionSeleccionada == 2) ? "->" : "  ");
         }
+
+        if(maxOpcion == 50)
+        {
+            gotoxy(x, y); printf("%s Continuar", (opcionSeleccionada == 1) ? "->" : "  ");
+            gotoxy(x, y + 1); printf("%s Guardar y Continuar", (opcionSeleccionada == 2) ? "->" : "  ");
+            gotoxy(x, y + 2); printf("%s Guardar y Salir", (opcionSeleccionada == 3) ? "->" : "  ");
+            gotoxy(x, y + 3); printf("%s Salir", (opcionSeleccionada == 4) ? "->" : "  ");
+        }
     }
     else if (jugador->idioma == 2) // Menu en Ingles
     {
@@ -482,21 +490,17 @@ void mostrarMenu(int x, int y, int opcionSeleccionada, int maxOpcion, Jugador *j
             gotoxy(x, y); printf("%s Spanish", (opcionSeleccionada == 1) ? "->" : "  ");
             gotoxy(x, y + 1); printf("%s English", (opcionSeleccionada == 2) ? "->" : "  ");
         }
+
+        if(maxOpcion == 50)
+        {
+            gotoxy(x, y); printf("%s Continue", (opcionSeleccionada == 1) ? "->" : "  ");
+            gotoxy(x, y + 1); printf("%s Save and Continue", (opcionSeleccionada == 2) ? "->" : "  ");
+            gotoxy(x, y + 2); printf("%s Save and Exit", (opcionSeleccionada == 3) ? "->" : "  ");
+            gotoxy(x, y + 3); printf("%s Exit", (opcionSeleccionada == 4) ? "->" : "  ");
+        }
     }
     
-    if(maxOpcion == 2)
-    {
-        gotoxy(x, y); printf("%s Nueva Partida", (opcionSeleccionada == 1) ? "->" : "  ");
-        gotoxy(x, y + 1); printf("%s Cargar Partida", (opcionSeleccionada == 2) ? "->" : "  ");
-    }
-
-    if(maxOpcion == 50)
-    {
-        gotoxy(x, y); printf("%s Continuar", (opcionSeleccionada == 1) ? "->" : "  ");
-        gotoxy(x, y + 1); printf("%s Guardar y Continuar", (opcionSeleccionada == 2) ? "->" : "  ");
-        gotoxy(x, y + 2); printf("%s Guardar y Salir", (opcionSeleccionada == 3) ? "->" : "  ");
-        gotoxy(x, y + 3); printf("%s Salir", (opcionSeleccionada == 4) ? "->" : "  ");
-    }
+    
 }
 
 // Funcion para mostrar jugadores estilo menu
@@ -1595,7 +1599,7 @@ void cargarPartidaFE(Jugador *jugador, TreeMap* arbol_puntajes)
         ArrayList *jugadores = createArrayList();
 
         // Se llama a la funcion para obtener los jugadores
-        obtenerJugadores(jugadores);
+        obtenerJugadores(jugadores, jugador);
 
         // Se crea una variable para guardar la opcion seleccionada
         int opcionSeleccionada = 1;
@@ -1668,7 +1672,7 @@ void cargarPartidaFE(Jugador *jugador, TreeMap* arbol_puntajes)
         ArrayList *jugadores = createArrayList();
 
         // Se llama a la funcion para obtener los jugadores
-        obtenerJugadores(jugadores);
+        obtenerJugadores(jugadores, jugador);
 
         // Se crea una variable para guardar la opcion seleccionada
         int opcionSeleccionada = 1;

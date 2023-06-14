@@ -48,7 +48,7 @@ int main(int argc, const char * argv[])
 
     TreeMap *arbol_puntajes = createTreeMap(lower_than_int);
 
-    leerPuntajes(arbol_puntajes);
+    leerPuntajes(arbol_puntajes, jugador);
 
     //====================================================================================================
     // MENU INTERACTIVO
@@ -58,8 +58,6 @@ int main(int argc, const char * argv[])
     system("mode con: cols=120 lines=25");
 
     ocultarCursor();
-
-    system("pause");
 
     menu(jugador, arbol_puntajes);
 
