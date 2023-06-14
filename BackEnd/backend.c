@@ -201,7 +201,7 @@ void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
                 break;
             case 2:
                 strcpy(archivo, "WordBank/04_English.txt");
-                totalPalabras = 69;
+                totalPalabras = 100;
                 break;
             case 3:
                 strcpy(archivo, "WordBank/05_English.txt");
