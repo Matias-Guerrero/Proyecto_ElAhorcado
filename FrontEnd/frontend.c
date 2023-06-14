@@ -12,6 +12,7 @@
 #include "../BackEnd/backend.h"
 #include "../Struct/struct.h"
 #include "../DataStructures/ArrayList/arraylist.h"
+#include "../DataStructures/TreeMap/treemap.h"
 
 /*
   función para comparar claves de tipo string
@@ -312,6 +313,15 @@ void mostrarTitulo(int x, int y, int opcion, Jugador* jugador)
         gotoxy(x, y + 3); printf("    |  __  |/ _` / __|  \\___ \\| | | | '_ \\| |/ _` |/ _ \\   / _` |/ _ \\ | . ` | \\ \\ / / _ \\ |");
         gotoxy(x, y + 4); printf("    | |  | | (_| \\__ \\  ____) | |_| | |_) | | (_| | (_) | | (_| |  __/ | |\\  | |\\ V /  __/ |");
         gotoxy(x, y + 5); printf("    |_|  |_|\\__,_|___/ |_____/ \\__,_|_.__/|_|\\__,_|\\___/   \\__,_|\\___| |_| \\_|_| \\_/ \\___|_|");
+    }
+    if(opcion == 5)
+    {
+        gotoxy(x, y); printf("__________              __              __               ");
+        gotoxy(x, y + 1); printf("\\______   \\__ __  _____/  |______      |__| ____   ______");
+        gotoxy(x, y + 2); printf("|     ___/  |  \\/    \\   __\\__  \\     |  |/ __ \\ /  ___/");
+        gotoxy(x, y + 3); printf("|    |   |  |  /   |  \\  |  / __ \\_   |  \\  ___/ \\___ \\ ");
+        gotoxy(x, y + 4); printf(" |____|   |____/|___|  /__| (____  /\\__|  |\\___  >____  >");
+        gotoxy(x, y + 5); printf("                    \\/          \\/\\______|    \\/     \\/ ");
     }
 
 
@@ -1074,6 +1084,32 @@ void mostrarPuntajes(int x, int y, TreeMap *tabla_puntajes)
         //contador para separar columnas de jugadores
         int cont = 1;
 
+//===================================
+//======== VENTANA PUNTAJES =========
+//===================================
+
+void mostrarPuntajes(int x, int y, TreeMap *tabla_puntajes)
+{   
+    //referencia de el inicio de columna
+    int initial_y = y;
+
+    
+    //se lee el top 1 del arbol
+    Pair* aux_pair = lastTreeMap(tabla_puntajes);
+
+    //verificamos si existe algun jugador en el "tablero"
+    if(aux_pair == NULL)
+    {   
+        //se omite la impresion de jugadores
+        gotoxy(x,y); printf("Aun no existe ningun puntaje registrado");
+    }
+    else
+    {   
+        
+
+        //contador para separar columnas de jugadores
+        int cont = 1;
+
         //impresion de cuadros de puntaje
         while(aux_pair != NULL)
         {   
@@ -1105,6 +1141,8 @@ void mostrarPuntajes(int x, int y, TreeMap *tabla_puntajes)
         }
     }
 }
+
+
 
 // Funcion para mostrar el menu de nivel
 void menuNivel(Jugador *jugador)
@@ -1253,13 +1291,14 @@ void menuNivel(Jugador *jugador)
 //====================================================================================================
 
 // Prototipado de funciones
-void menu(Jugador *jugador , TreeMap *tree);
-void subMenuJugar(Jugador *jugador, TreeMap* arbol_puntajes);
-void nuevaPartida(Jugador *jugador, TreeMap* arbol_puntajes);
-void cargarPartidaFE(Jugador *jugador, TreeMap* arbol_puntajes);
+void menu(Jugador *jugador , TreeMap *tree, TreeMap *tree);
+void subMenuJugar(Jugador *jugador, TreeMap* arbol_puntajes, TreeMap* arbol_puntajes);
+void nuevaPartida(Jugador *jugador, TreeMap* arbol_puntajes, TreeMap* arbol_puntajes);
+void cargarPartidaFE(Jugador *jugador, TreeMap* arbol_puntajes, TreeMap* arbol_puntajes);
 void jugar(Jugador *jugador, TreeMap* arbol_puntajes);
 void menuPuntajes(TreeMap *tree);
-void idioma(Jugador *jugador);
+void idioma(Jugador *jugador, TreeMap* arbol_puntajes);
+void menuPuntajes(TreeMap *tree);
 void instrucciones();
 
 //================================
@@ -1267,12 +1306,10 @@ void instrucciones();
 //================================
 
 // Función para mostrar el menú
-void menu(Jugador *jugador, TreeMap *arbol_puntajes)
+void menu(Jugador *jugador)
 {
-    if(jugador->idioma == 1) // Español
-    {
-        // Se inicia un booleano para inicio de juego
-        bool inicioJuego = true;
+    // Se inicia un booleano para inicio de juego
+    bool inicioJuego = true;
 
         // Se inicializa el mapa de palabras jugadas
         jugador->palabrasJugadas = createMap(is_equal_string);
@@ -1309,13 +1346,15 @@ void menu(Jugador *jugador, TreeMap *arbol_puntajes)
             {
                 case 1:
                     // Se llama a la funcion subMenuJugar
-                    subMenuJugar(jugador, arbol_puntajes);
+                    subMenuJugar(jugador, arbol_puntajes, arbol_puntajes);
 
                     break;
                 case 2:
                     // Se llama a la funcion menuPuntajes
                     menuPuntajes(arbol_puntajes);
-                    break;
+                    //se llama a la funcion menuPuntajes
+                menuPuntajes(arbol_puntajes);
+                break;
                 case 3:
                     // Se llama a la funcion idioma
                     idioma(jugador);
@@ -1395,7 +1434,7 @@ void menu(Jugador *jugador, TreeMap *arbol_puntajes)
 //===================================
 
 // Función para mostrar el submenú de jugar
-void subMenuJugar(Jugador *jugador, TreeMap* arbol_puntajes)
+void subMenuJugar(Jugador *jugador, TreeMap* arbol_puntajes, TreeMap* arbol_puntajes)
 {
     int opcionSeleccionada = 1;
 
@@ -1438,7 +1477,9 @@ void menuPuntajes(TreeMap *arbol_puntajes)
     // Se limpia la pantalla del menú
     limpiarPantalla();
 
-    // mostrarTitulo(35,1, 5, jugador);
+    mostrarTitulo(35,1, 5);
+
+    
 
     mostrarPuntajes(30, 8, arbol_puntajes);
 
@@ -1446,14 +1487,13 @@ void menuPuntajes(TreeMap *arbol_puntajes)
     pause(45, 23, "Presione enter para continuar...");
 }
 
+
 // Funcion para nuevo juego
-void nuevaPartida(Jugador *jugador, TreeMap* arbol_puntajes)
+void nuevaPartida(Jugador *jugador)
 {
-    if(jugador->idioma == 1)
-    {
-        // Se limpia la pantalla del menú
-        limpiarLinea(40, 16, 20);
-        limpiarLinea(40, 17, 20);
+    // Se limpia la pantalla del menú
+    limpiarLinea(40, 16, 20);
+    limpiarLinea(40, 17, 20);
 
         // Se crea una variable para guardar el nombre del jugador
         char nombre[50];
@@ -1498,7 +1538,7 @@ void nuevaPartida(Jugador *jugador, TreeMap* arbol_puntajes)
 
         cargando(2, jugador);
 
-        jugar(jugador, arbol_puntajes);
+        jugar(jugador, arbol_puntajes, arbol_puntajes);
     }
     else if (jugador->idioma == 2)
     {
@@ -1554,7 +1594,7 @@ void nuevaPartida(Jugador *jugador, TreeMap* arbol_puntajes)
     
 }
 
-void cargarPartidaFE(Jugador *jugador, TreeMap* arbol_puntajes)
+void cargarPartidaFE(Jugador *jugador, TreeMap* arbol_puntajes, TreeMap* arbol_puntajes)
 {
     if(jugador->idioma == 1) // Español
     {
@@ -1627,7 +1667,7 @@ void cargarPartidaFE(Jugador *jugador, TreeMap* arbol_puntajes)
         cargando(2,jugador);
 
         // Se llama a la funcion jugar
-        jugar(jugador, arbol_puntajes);
+        jugar(jugador, arbol_puntajes, arbol_puntajes);
     }
     else if(jugador->idioma == 2) // Ingles
     {
@@ -1707,7 +1747,7 @@ void cargarPartidaFE(Jugador *jugador, TreeMap* arbol_puntajes)
 // Funcion Jugar
 void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
 {
-    if(jugador->idioma == 1)
+    if(jugador->idioma == 1, TreeMap* arbol_puntajes)
     {
         //================================================================
         //================= BACKEND JUGAR ================================
@@ -1846,12 +1886,12 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
             // Se muestra la palabra secreta
             gotoxy(50, 21); printf("La palabra secreta era: %s", nivel->palabraSecreta);
 
-            // Se muestra el mensaje de pausa
-            pause(50, 22, "Presione enter para continuar...");
+        // Se muestra el mensaje de pausa
+        pause(50, 22, "Presione enter para continuar...");
 
-            // Se sale de la funcion
-            return;
-        }
+        // Se sale de la funcion
+        return;
+    }
 
         // Se libera la memoria de la estructura nivel
         free(nivel);
