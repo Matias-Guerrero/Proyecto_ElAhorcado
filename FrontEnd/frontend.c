@@ -1065,64 +1065,135 @@ void menuNivel(Jugador *jugador)
     // Se limpia la pantalla
     limpiarPantalla();
 
-    // Se muestra el titulo
-    mostrarTitulo(12, 3, 4);
+    if(jugador->idioma == 1) // Español
+    {
+        // Se muestra el titulo
+        mostrarTitulo(12, 3, 4, jugador);
 
-    // Se muestra titulo menu
-    gotoxy(40, 12); printf("Que desea hacer?");
+        // Se muestra titulo menu
+        gotoxy(40, 12); printf("Que desea hacer?");
+
+    }
+    else if (jugador->idioma == 2) // Ingles
+    {
+        // Se muestra el titulo
+        mostrarTitulo(12, 3, 4, jugador);
+
+        // Se muestra titulo menu
+        gotoxy(40, 12); printf("What do you want to do?");
+    }
+
 
     while(true)
     {
-        while(!cambiarOpcion(&opcionSeleccionada, 50))
+        if(jugador->idioma == 1)
         {
-            // Se muestra el menu
-            mostrarMenu(40, 14, opcionSeleccionada, 4);
-        }
+            while(!cambiarOpcion(&opcionSeleccionada, 50))
+            {
+                // Se muestra el menu
+                mostrarMenu(40, 14, opcionSeleccionada, 4, jugador);
+            }
 
-        switch(opcionSeleccionada)
+            switch(opcionSeleccionada)
+            {
+                case 1:
+                    // Continuar
+                    cargando(2,jugador);
+
+                    break;
+                case 2:
+                    // Guardar y continuar
+
+                    // Se llama a la funcion para guardar partida
+                    guardarPartida(jugador, 40, 20);
+
+                    // Se muestra el mensaje de pausa
+                    pause(40, 22, "Presione enter para continuar...");
+
+                    // Se llama a cargando
+                    cargando(2,jugador);
+
+                    break;
+                case 3:
+                    // Guardar y salir
+
+                    // Se llama a la funcion para guardar partida
+                    guardarPartida(jugador, 40, 20);
+
+                    // Se muestra el mensaje de pausa
+                    pause(40, 22, "Presione enter para salir...");
+
+                    // Se sale de la aplicacion
+                    exit(0);
+
+                    break;
+                case 4:
+                    // Salir
+
+                    // Se muestra el mensaje de pausa
+                    pause(40, 22, "Presione enter para salir...");
+
+                    // Se sale de la aplicacion
+                    exit(0);
+
+                    break;
+            }
+
+        }
+        else if (jugador->idioma == 2)
         {
-            case 1:
-                // Continuar
-                cargando(2);
+            while(!cambiarOpcion(&opcionSeleccionada, 50))
+            {
+                // Se muestra el menu
+                mostrarMenu(40, 14, opcionSeleccionada, 2, jugador);
+            }
 
-                break;
-            case 2:
-                // Guardar y continuar
+            switch(opcionSeleccionada)
+            {
+                case 1:
+                    // Continue
+                    cargando(2,jugador);
 
-                // Se llama a la funcion para guardar partida
-                guardarPartida(jugador, 40, 20);
+                    break;
+                case 2:
+                    // Save and continue
 
-                // Se muestra el mensaje de pausa
-                pause(40, 22, "Presione enter para continuar...");
+                    // Se llama a la funcion para guardar partida
+                    guardarPartida(jugador, 40, 20);
 
-                // Se llama a cargando
-                cargando(2);
+                    // Se muestra el mensaje de pausa
+                    pause(40, 22, "Press enter to continue...");
 
-                break;
-            case 3:
-                // Guardar y salir
+                    // Se llama a cargando
+                    cargando(2,jugador);
 
-                // Se llama a la funcion para guardar partida
-                guardarPartida(jugador, 40, 20);
+                    break;
+                case 3:
+                    // Save and exit
 
-                // Se muestra el mensaje de pausa
-                pause(40, 22, "Presione enter para salir...");
+                    // Se llama a la funcion para guardar partida
+                    guardarPartida(jugador, 40, 20);
 
-                // Se sale de la aplicacion
-                exit(0);
+                    // Se muestra el mensaje de pausa
+                    pause(40, 22, "Press enter to exit...");
 
-                break;
-            case 4:
-                // Salir
+                    // Se sale de la aplicacion
+                    exit(0);
 
-                // Se muestra el mensaje de pausa
-                pause(40, 22, "Presione enter para salir...");
+                    break;
+                case 4:
+                    // Exit
 
-                // Se sale de la aplicacion
-                exit(0);
+                    // Se muestra el mensaje de pausa
+                    pause(40, 22, "Press enter to exit...");
 
-                break;
+                    // Se sale de la aplicacion
+                    exit(0);
+
+                    break;
+            }
         }
+        
         break;
     }
 }
@@ -1416,76 +1487,152 @@ void nuevaPartida(Jugador *jugador)
 
 void cargarPartidaFE(Jugador *jugador)
 {
-    // Se muestra cargando
-    cargando(2);
-    
-    // Se limpia la pantalla
-    limpiarPantalla();
-
-    // Se muestra el titulo
-    mostrarTitulo(35, 1, 2);
-
-    // Se imprime Seleccione una partida guardada
-    gotoxy(45, 6); printf("Seleccione una partida guardada:");
-
-    // Se crea un cuadro para mostrar las partidas guardadas
-    cuadro(15, 7, 105, 22);
-
-    // Se crea una arreglo para guardar los jugadores
-    ArrayList *jugadores = createArrayList();
-
-    // Se llama a la funcion para obtener los jugadores
-    obtenerJugadores(jugadores);
-
-    // Se crea una variable para guardar la opcion seleccionada
-    int opcionSeleccionada = 1;
-
-    while(true)
+    if(jugador->idioma == 1) // Español
     {
-        // Se crea un booleano para saber si se la opcion seleccionada supero los 9
-        bool cambioOpcion = false;
+        // Se muestra cargando
+        cargando(2,jugador);
+        
+        // Se limpia la pantalla
+        limpiarPantalla();
 
-        // Se crea un entero para saber en que rango se encuentra la opcion seleccionada
-        int rango = (opcionSeleccionada - 1) / 9;
+        // Se muestra el titulo
+        mostrarTitulo(35, 1, 2,jugador);
 
-        while(!cambiarOpcion(&opcionSeleccionada, get_size(jugadores)))
+        // Se imprime Seleccione una partida guardada
+        gotoxy(45, 6); printf("Seleccione una partida guardada:");
+
+        // Se crea un cuadro para mostrar las partidas guardadas
+        cuadro(15, 7, 105, 22);
+
+        // Se crea una arreglo para guardar los jugadores
+        ArrayList *jugadores = createArrayList();
+
+        // Se llama a la funcion para obtener los jugadores
+        obtenerJugadores(jugadores);
+
+        // Se crea una variable para guardar la opcion seleccionada
+        int opcionSeleccionada = 1;
+
+        while(true)
         {
-            // Se comprueba si la opcion seleccionada cambio de rango
-            if(rango != ((opcionSeleccionada - 1) / 9))
-            {
-                // Se cambia el valor de la variable cambioOpcion
-                cambioOpcion = true;
+            // Se crea un booleano para saber si se la opcion seleccionada supero los 9
+            bool cambioOpcion = false;
 
-                // Se cambia el valor de la variable rango
-                rango = (opcionSeleccionada - 1) / 9;
+            // Se crea un entero para saber en que rango se encuentra la opcion seleccionada
+            int rango = (opcionSeleccionada - 1) / 9;
+
+            while(!cambiarOpcion(&opcionSeleccionada, get_size(jugadores)))
+            {
+                // Se comprueba si la opcion seleccionada cambio de rango
+                if(rango != ((opcionSeleccionada - 1) / 9))
+                {
+                    // Se cambia el valor de la variable cambioOpcion
+                    cambioOpcion = true;
+
+                    // Se cambia el valor de la variable rango
+                    rango = (opcionSeleccionada - 1) / 9;
+                }
+
+                // Se muestran los jugadores en el cuadro
+                mostrarJugadores(19, 9, jugadores, opcionSeleccionada, cambioOpcion);
+
+                // Se cambia el valor de la variable cambioOpcion
+                cambioOpcion = false;
             }
 
-            // Se muestran los jugadores en el cuadro
-            mostrarJugadores(19, 9, jugadores, opcionSeleccionada, cambioOpcion);
-
-            // Se cambia el valor de la variable cambioOpcion
-            cambioOpcion = false;
+            break;
         }
 
-        break;
+        // Se obtiene el jugador seleccionado
+        Jugador *jugadorSeleccionado = get(jugadores, opcionSeleccionada - 1);
+
+        // Se copia el jugador seleccionado al jugador actual
+        strcpy(jugador->nombre, jugadorSeleccionado->nombre);
+        jugador->nivel = jugadorSeleccionado->nivel;
+        jugador->puntos = jugadorSeleccionado->puntos;
+
+        // Se hace una pause
+        pause(45, 22, "Presione enter para continuar...");
+
+        // Se muestra cargando
+        cargando(2,jugador);
+
+        // Se llama a la funcion jugar
+        jugar(jugador);
     }
+    else if(jugador->idioma == 2) // Ingles
+    {
+        // Se muestra cargando
+        cargando(2,jugador);
+        
+        // Se limpia la pantalla
+        limpiarPantalla();
 
-    // Se obtiene el jugador seleccionado
-    Jugador *jugadorSeleccionado = get(jugadores, opcionSeleccionada - 1);
+        // Se muestra el titulo
+        mostrarTitulo(35, 1, 2,jugador);
 
-    // Se copia el jugador seleccionado al jugador actual
-    strcpy(jugador->nombre, jugadorSeleccionado->nombre);
-    jugador->nivel = jugadorSeleccionado->nivel;
-    jugador->puntos = jugadorSeleccionado->puntos;
+        // Se imprime Seleccione una partida guardada
+        gotoxy(45, 6); printf("Select a saved game:");
 
-    // Se hace una pause
-    pause(45, 22, "Presione enter para continuar...");
+        // Se crea un cuadro para mostrar las partidas guardadas
+        cuadro(15, 7, 105, 22);
 
-    // Se muestra cargando
-    cargando(2);
+        // Se crea una arreglo para guardar los jugadores
+        ArrayList *jugadores = createArrayList();
 
-    // Se llama a la funcion jugar
-    jugar(jugador);
+        // Se llama a la funcion para obtener los jugadores
+        obtenerJugadores(jugadores);
+
+        // Se crea una variable para guardar la opcion seleccionada
+        int opcionSeleccionada = 1;
+
+        while(true)
+        {
+            // Se crea un booleano para saber si se la opcion seleccionada supero los 9
+            bool cambioOpcion = false;
+
+            // Se crea un entero para saber en que rango se encuentra la opcion seleccionada
+            int rango = (opcionSeleccionada - 1) / 9;
+
+            while(!cambiarOpcion(&opcionSeleccionada, get_size(jugadores)))
+            {
+                // Se comprueba si la opcion seleccionada cambio de rango
+                if(rango != ((opcionSeleccionada - 1) / 9))
+                {
+                    // Se cambia el valor de la variable cambioOpcion
+                    cambioOpcion = true;
+
+                    // Se cambia el valor de la variable rango
+                    rango = (opcionSeleccionada - 1) / 9;
+                }
+
+                // Se muestran los jugadores en el cuadro
+                mostrarJugadores(19, 9, jugadores, opcionSeleccionada, cambioOpcion);
+
+                // Se cambia el valor de la variable cambioOpcion
+                cambioOpcion = false;
+            }
+
+            break;
+        }
+
+       // Se obtiene el jugador seleccionado
+        Jugador *jugadorSeleccionado = get(jugadores, opcionSeleccionada - 1);
+
+        // Se copia el jugador seleccionado al jugador actual
+        strcpy(jugador->nombre, jugadorSeleccionado->nombre);
+        jugador->nivel = jugadorSeleccionado->nivel;
+        jugador->puntos = jugadorSeleccionado->puntos;
+
+        // Se hace una pause
+        pause(45, 22, "Press enter to continue..");
+
+        // Se muestra cargando
+        cargando(2,jugador);
+
+        // Se llama a la funcion jugar
+        jugar(jugador);
+    }
 }
 
 // Funcion Jugar
@@ -1522,7 +1669,7 @@ void jugar(Jugador *jugador)
         bool ganar = false; // Variable para saber si se ha ganado el juego
         char letra; // Variable para guardar la letra ingresada
         bool limpiarLetra = false; // Variable para saber si se debe limpiar la letra ingresada
-     bool subirNivel = false; // Variable para saber si se debe subir de nivel
+        bool subirNivel = false; // Variable para saber si se debe subir de nivel
 
         // Se limpia la pantalla
         limpiarPantalla();
@@ -1595,7 +1742,7 @@ void jugar(Jugador *jugador)
         if(ganar)
         {
             // Se muestra la ultima letra ingresada
-            mostrarPalabra(65, 12, nivel);
+            mostrarPalabra(65, 12, nivel, jugador);
 
             // Se aumenta los puntos del jugador
             jugador->puntos += nivel->puntosNivel;
