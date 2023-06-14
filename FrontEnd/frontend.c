@@ -299,22 +299,22 @@ void mostrarTitulo(int x, int y, int opcion, Jugador* jugador)
         }
 
     /***
-     *      _    _              _____       _     _     _             _        _   _ _           _ 
-     *     | |  | |            / ____|     | |   (_)   | |           | |      | \ | (_)         | |
-     *     | |__| | __ _ ___  | (___  _   _| |__  _  __| | ___     __| | ___  |  \| |___   _____| |
-     *     |  __  |/ _` / __|  \___ \| | | | '_ \| |/ _` |/ _ \   / _` |/ _ \ | . ` | \ \ / / _ \ |
-     *     | |  | | (_| \__ \  ____) | |_| | |_) | | (_| | (_) | | (_| |  __/ | |\  | |\ V /  __/ |
-     *     |_|  |_|\__,_|___/ |_____/ \__,_|_.__/|_|\__,_|\___/   \__,_|\___| |_| \_|_| \_/ \___|_|                                                                                          
+         _    _                       _     _     _             _              _           _ 
+        | |  | |                     | |   (_)   | |           | |            (_)         | |
+        | |__| | __ _ ____  ___ _   _| |__  _  __| | ___     __| | ___   _ __  ___   _____| |
+        |  __  |/ _` |_  / / __| | | | '_ \| |/ _` |/ _ \   / _` |/ _ \ | '_ \| \ \ / / _ \ |
+        | |  | | (_| |/ /  \__ \ |_| | |_) | | (_| | (_) | | (_| |  __/ | | | | |\ V /  __/ |
+        |_|  |_|\__,_/___| |___/\__,_|_.__/|_|\__,_|\___/   \__,_|\___| |_| |_|_| \_/ \___|_|                                                                                       
      */
 
     if(opcion == 4)
     {
-        gotoxy(x, y); printf("     _    _              _____       _     _     _             _        _   _ _           _");
-        gotoxy(x, y + 1); printf("    | |  | |            / ____|     | |   (_)   | |           | |      | \\ | (_)         | |");
-        gotoxy(x, y + 2); printf("    | |__| | __ _ ___  | (___  _   _| |__  _  __| | ___     __| | ___  |  \\| |___   _____| |");
-        gotoxy(x, y + 3); printf("    |  __  |/ _` / __|  \\___ \\| | | | '_ \\| |/ _` |/ _ \\   / _` |/ _ \\ | . ` | \\ \\ / / _ \\ |");
-        gotoxy(x, y + 4); printf("    | |  | | (_| \\__ \\  ____) | |_| | |_) | | (_| | (_) | | (_| |  __/ | |\\  | |\\ V /  __/ |");
-        gotoxy(x, y + 5); printf("    |_|  |_|\\__,_|___/ |_____/ \\__,_|_.__/|_|\\__,_|\\___/   \\__,_|\\___| |_| \\_|_| \\_/ \\___|_|");
+        gotoxy(x, y); printf(" _    _                       _     _     _             _              _           _ ");
+        gotoxy(x, y + 1); printf("| |  | |                     | |   (_)   | |           | |            (_)         | |");
+        gotoxy(x, y + 2); printf("| |__| | __ _ ____  ___ _   _| |__  _  __| | ___     __| | ___   _ __  ___   _____| |");
+        gotoxy(x, y + 3); printf("|  __  |/ _` |_  / / __| | | | '_ \\| |/ _` |/ _ \\   / _` |/ _ \\ | '_ \\| \\ \\ / / _ \\ |");
+        gotoxy(x, y + 4); printf("| |  | | (_| |/ /  \\__ \\ |_| | |_) | | (_| | (_) | | (_| |  __/ | | | | |\\ V /  __/ |");
+        gotoxy(x, y + 5); printf("|_|  |_|\\__,_/___| |___/\\__,_|_.__/|_|\\__,_|\\___/   \\__,_|\\___| |_| |_|_| \\_/ \\___|_|");
     }
     if(opcion == 5)
     {
@@ -423,6 +423,43 @@ void mostrarTitulo(int x, int y, int opcion, Jugador* jugador)
             gotoxy(x, y + 1); printf("(_  _)( )_( )( ___)  ( )_( )  /__\\  ( \\( )/ __)(  \\/  )  /__\\  ( \\( )");
             gotoxy(x, y + 2); printf(" )(   ) _ (  )__)    ) _ (  /(__)\\  )  (( (_-. )    (  /(__)\\  )  ( ");
             gotoxy(x, y + 3); printf("(__) (_) (_)(____)  (_) (_)(__)(__)(_)\\_)\\___/(_/\\/\\_)(__)(__)(_)\\_)");
+        }
+
+        /*
+         __     __           _                       _                _          _               
+        \ \   / /          | |                     | |              | |        | |              
+        \ \_/ /__  _   _  | |__   __ ___   _____  | | _____   _____| | ___  __| |  _   _ _ __  
+        \   / _ \| | | | | '_ \ / _` \ \ / / _ \ | |/ _ \ \ / / _ \ |/ _ \/ _` | | | | | '_ \ 
+        | | (_) | |_| | | | | | (_| |\ V /  __/ | |  __/\ V /  __/ |  __/ (_| | | |_| | |_) |
+        |_|\___/ \__,_| |_| |_|\__,_| \_/ \___| |_|\___| \_/ \___|_|\___|\__,_|  \__,_| .__/ 
+                                                                                      | |    
+                                                                                     |_|    
+        */
+       if(opcion == 4)
+       {
+            gotoxy(x, y); printf(" __     __           _                       _                _          _               ");
+            gotoxy(x, y + 1); printf(" \\ \\   / /          | |                     | |              | |        | |              ");
+            gotoxy(x, y + 2); printf("  \\ \\_/ /__  _   _  | |__   __ ___   _____  | | _____   _____| | ___  __| |  _   _ _ __  ");
+            gotoxy(x, y + 3); printf("   \\   / _ \\| | | | | '_ \\ / _` \\ \\ / / _ \\ | |/ _ \\ \\ / / _ \\ |/ _ \\/ _` | | | | | '_ \\ ");
+            gotoxy(x, y + 4); printf("    | | (_) | |_| | | | | | (_| |\\ V /  __/ | |  __/\\ V /  __/ |  __/ (_| | | |_| | |_) |");
+            gotoxy(x, y + 5); printf("    |_|\\___/ \\__,_| |_| |_|\\__,_| \\_/ \\___| |_|\\___| \\_/ \\___|_|\\___|\\__,_|  \\__,_| .__/ ");
+
+       }
+
+       /*
+          ___  ___ ___  _ __ ___  ___ 
+        / __|/ __/ _ \| '__/ _ \/ __|
+        \__ \ (_| (_) | | |  __/\__ \
+        |___/\___\___/|_|  \___||___/
+
+       */
+
+        if(opcion == 5)
+        {
+            gotoxy(x, y); printf("   ___  ___ ___  _ __ ___  ___ ");
+            gotoxy(x, y + 1); printf("  / __|/ __/ _ \\| '__/ _ \\/ __|");
+            gotoxy(x, y + 2); printf("  \\__ \\ (_| (_) | | |  __/\\__ \\");
+            gotoxy(x, y + 3); printf("  |___/\\___\\___/|_|  \\___||___/");
         }
 
         // Se restablece el color de la consola
@@ -1279,9 +1316,8 @@ void subMenuJugar(Jugador *jugador, TreeMap* arbol_puntajes);
 void nuevaPartida(Jugador *jugador, TreeMap* arbol_puntajes);
 void cargarPartidaFE(Jugador *jugador, TreeMap* arbol_puntajes);
 void jugar(Jugador *jugador, TreeMap* arbol_puntajes);
-void menuPuntajes(TreeMap *tree);
+void menuPuntajes(TreeMap *tree, Jugador *jugador);
 void idioma(Jugador *jugador);
-void menuPuntajes(TreeMap *tree);
 void instrucciones();
 
 //================================
@@ -1335,7 +1371,7 @@ void menu(Jugador *jugador, TreeMap *tree)
                     break;
                 case 2:
                     // Se llama a la funcion menuPuntajes
-                    menuPuntajes(tree);
+                    menuPuntajes(tree, jugador);
                     break;
                 case 3:
                     // Se llama a la funcion idioma
@@ -1390,7 +1426,7 @@ void menu(Jugador *jugador, TreeMap *tree)
                     break;
                 case 2:
                     // Se llama a la funcion menuPuntajes
-                    menuPuntajes(tree);
+                    menuPuntajes(tree, jugador);
                     break;
                 case 3:
                     // Se llama a la funcion idioma
@@ -1452,14 +1488,12 @@ void subMenuJugar(Jugador *jugador, TreeMap* arbol_puntajes)
 }
 
 //Funcion para mostrar submenu de puntajes
-void menuPuntajes(TreeMap *tree)
+void menuPuntajes(TreeMap *tree, Jugador *jugador)
 {
     // Se limpia la pantalla del menú
     limpiarPantalla();
 
-    // mostrarTitulo(35,1, 5);
-
-    
+    mostrarTitulo(35,1, 5, jugador);
 
     mostrarPuntajes(30, 8, tree);
 
