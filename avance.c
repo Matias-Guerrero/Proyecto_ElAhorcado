@@ -39,6 +39,9 @@ int main(int argc, const char * argv[])
 
     Jugador *jugador = (Jugador *)malloc(sizeof(Jugador));
 
+    // Se inicializa el idioma en español
+    jugador->idioma = 1;
+
     //====================================================================================================
     // SE INICIA UN ARBOL Y SE LEEN LOS PUNTAJES YA EXISTENTES
     //====================================================================================================
@@ -55,6 +58,8 @@ int main(int argc, const char * argv[])
     system("mode con: cols=120 lines=25");
 
     ocultarCursor();
+
+    system("pause");
 
     menu(jugador, arbol_puntajes);
 
