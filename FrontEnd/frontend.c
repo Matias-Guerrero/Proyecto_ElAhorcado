@@ -919,9 +919,9 @@ void procesarLetra(int x, int y, Nivel *nivel, char letra, Jugador *jugador)
             // Se resta un intento
             nivel->intentosRestantes--;
 
-        // Se restan 100 puntos
-        nivel->puntosNivel -= 100 * nivel->nivel;
-    }
+            // Se restan 100 puntos
+            nivel->puntosNivel -= 100 * nivel->nivel;
+        }
 
         // Se limpia la linea anterior
         limpiarLinea(x, y, 50);
@@ -965,7 +965,7 @@ void procesarLetra(int x, int y, Nivel *nivel, char letra, Jugador *jugador)
             nivel->intentosRestantes--;
 
             // Se restan 100 puntos
-            nivel->puntosNivel -= 100;
+            nivel->puntosNivel -= 100 * nivel->nivel;
         }
 
         // Se limpia la linea anterior
@@ -1704,7 +1704,7 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
         nivel->intentosRestantes = 6;
 
         // Se inicializa los puntos del nivel segun el nivel del jugador
-        nivel->puntosNivel = 600 + (200 * (nivel->nivel - 1));
+        nivel->puntosNivel = 600 * nivel->nivel;
 
         // Se llama a la funcion para agregar una palabra aleatoria
         agregarPalabraAleatoria(jugador, nivel);
@@ -1810,6 +1810,9 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
                 // Se aumenta el nivel del jugador
                 jugador->nivel++;
 
+                // Se cambia el valor de la variable subirNivel
+                subirNivel = true;
+
                 // Se limpia la linea anterior
                 limpiarLinea(50, 20, 50);
 
@@ -1866,7 +1869,7 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
         nivel->intentosRestantes = 6;
 
         // Se inicializa los puntos del nivel segun el nivel del jugador
-        nivel->puntosNivel = 600 + (200 * (nivel->nivel - 1));
+        nivel->puntosNivel = 600 * nivel->nivel;
 
         // Se llama a la funcion para agregar una palabra aleatoria
         agregarPalabraAleatoria(jugador, nivel);
@@ -1882,6 +1885,7 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
         bool ganar = false; // Variable para saber si se ha ganado el juego
         char letra; // Variable para guardar la letra ingresada
         bool limpiarLetra = false; // Variable para saber si se debe limpiar la letra ingresada
+        bool subirNivel = false; // Variable para saber si se debe subir de nivel
 
         // Se limpia la pantalla
         limpiarPantalla();
@@ -1968,6 +1972,9 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
                 // Se aumenta el nivel del jugador
                 jugador->nivel++;
 
+                // Se cambia el valor de la variable subirNivel
+                subirNivel = true;
+
                 // Se limpia la linea anterior
                 limpiarLinea(50, 20, 50);
 
@@ -1998,6 +2005,13 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
 
         // Se llama a cargar
         cargando(2, jugador);
+
+        // Se verifica si se debe subir de nivel
+        if(subirNivel)
+        {
+            // Se llama a la funcion si se subio de nivel
+            menuNivel(jugador);
+        }
 
         // Se llama a la funcion jugar
         jugar(jugador, arbol_puntajes);
