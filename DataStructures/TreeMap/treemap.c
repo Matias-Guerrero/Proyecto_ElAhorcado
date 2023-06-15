@@ -198,6 +198,10 @@ void eraseTreeMapCurrent(TreeMap * tree) {
 // BUSQUEDA
 //==============================================================================
 
+//prototipado
+int countNodesRecursive(TreeNode* node);
+
+
 // Funcion actualizada
 Pair * firstTreeMap(TreeMap * tree) {
     if (tree == NULL || tree->root == NULL) return NULL;

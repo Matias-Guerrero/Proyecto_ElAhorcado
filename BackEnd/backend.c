@@ -518,55 +518,105 @@ void cargarPartida(char *nombreJugador, Jugador *jugador, int x, int y)
 }
 
 // Funcion para obtener todas las partidas guardadas y almacenarlas en un arreglo
-void obtenerJugadores(ArrayList *jugadores)
+void obtenerJugadores(ArrayList *jugadores, Jugador *jugador)
 {
-    // Abrir el archivo de guardado
-    FILE *archivo = fopen("partida_guardada.txt", "r");
-
-    // Verificar si el archivo existe
-    if (archivo == NULL)
+    if(jugador->idioma == 1) // Español
     {
-        // El archivo no existe, mostrar un mensaje de error
-        printf("No se encontró ninguna partida guardada.\n");
+        // Abrir el archivo de guardado
+        FILE *archivo = fopen("partida_guardada.txt", "r");
 
-        return;
+        // Verificar si el archivo existe
+        if (archivo == NULL)
+        {
+            // El archivo no existe, mostrar un mensaje de error
+            printf("No se encontró ninguna partida guardada.\n");
+
+            return;
+        }
+
+        // Crear un buffer para almacenar la línea
+        char linea[50];
+
+        // Recorrer el archivo
+        while (fgets(linea, sizeof(linea), archivo))
+        {
+            // Se separa el nombre del jugador del resto de la línea separada por comas
+            char *nombre = strtok(linea, ",");
+
+            // Se separa el puntaje del resto de la línea separada por comas
+            char *puntaje = strtok(NULL, ",");
+
+            // Se separa el nivel del resto de la línea separada por comas
+            char *nivel = strtok(NULL, ",");
+
+            // Se crea una struct para almacenar el jugador
+            Jugador *jugador = (Jugador *)malloc(sizeof(Jugador));
+
+            // Se asigna el nombre del jugador
+            strcpy(jugador->nombre, nombre);
+
+            // Se asigna el puntaje del jugador
+            jugador->puntos = atoi(puntaje);
+
+            // Se asigna el nivel del jugador
+            jugador->nivel = atoi(nivel);
+
+            // Se agrega el jugador al arreglo
+            append(jugadores, jugador);
+        }
+
+        // Cerrar el archivo
+        fclose(archivo);
     }
-
-    // Crear un buffer para almacenar la línea
-    char linea[50];
-
-    // Recorrer el archivo
-    while (fgets(linea, sizeof(linea), archivo))
+    else if(jugador->idioma == 2) // Ingles
     {
-        // Se separa el nombre del jugador del resto de la línea separada por comas
-        char *nombre = strtok(linea, ",");
+        // Abrir el archivo de guardado
+        FILE *archivo = fopen("partida_guardada.txt", "r");
 
-        // Se separa el puntaje del resto de la línea separada por comas
-        char *puntaje = strtok(NULL, ",");
+        // Verificar si el archivo existe
+        if (archivo == NULL)
+        {
+            // El archivo no existe, mostrar un mensaje de error
+            printf("No saved games found.\n");
 
-        // Se separa el nivel del resto de la línea separada por comas
-        char *nivel = strtok(NULL, ",");
+            return;
+        }
 
-        // Se crea una struct para almacenar el jugador
-        Jugador *jugador = (Jugador *)malloc(sizeof(Jugador));
+        // Crear un buffer para almacenar la línea
+        char linea[50];
 
-        // Se asigna el nombre del jugador
-        strcpy(jugador->nombre, nombre);
+        // Recorrer el archivo
+        while (fgets(linea, sizeof(linea), archivo))
+        {
+            // Se separa el nombre del jugador del resto de la línea separada por comas
+            char *nombre = strtok(linea, ",");
 
-        // Se asigna el puntaje del jugador
-        jugador->puntos = atoi(puntaje);
+            // Se separa el puntaje del resto de la línea separada por comas
+            char *puntaje = strtok(NULL, ",");
 
-        // Se asigna el nivel del jugador
-        jugador->nivel = atoi(nivel);
+            // Se separa el nivel del resto de la línea separada por comas
+            char *nivel = strtok(NULL, ",");
 
-        // Se agrega el jugador al arreglo
-        append(jugadores, jugador);
+            // Se crea una struct para almacenar el jugador
+            Jugador *jugador = (Jugador *)malloc(sizeof(Jugador));
+
+            // Se asigna el nombre del jugador
+            strcpy(jugador->nombre, nombre);
+
+            // Se asigna el puntaje del jugador
+            jugador->puntos = atoi(puntaje);
+
+            // Se asigna el nivel del jugador
+            jugador->nivel = atoi(nivel);
+
+            // Se agrega el jugador al arreglo
+            append(jugadores, jugador);
+        }
+
+        // Cerrar el archivo
+        fclose(archivo);
     }
-
-    // Cerrar el archivo
-    fclose(archivo);
 }
-
 
 //====================================================================================================
 // Funciones para administracion de los puntajes
@@ -626,7 +676,7 @@ void procesarJugadorRepetido(TreeMap *tree, Jugador * player)
             if(current_spot->puntos < player->puntos)
             {
                 eraseTreeMapCurrent(tree);
-                insertTreeMap(tree, player->puntos, player);
+                insertTreeMap(tree, (void *) player->puntos, (void *) player);
             }
         }
         else
@@ -653,7 +703,11 @@ void guardarPuntaje(TreeMap *tree, Jugador *player)
         }
         else
         {   
-            insertTreeMap(tree, player->puntos, player);
+            //se convierte el puntaje a string
+            char buffer[20];
+            char* ptj_char = itoa(player->puntos, buffer, 10);
+
+            insertTreeMap(tree, ptj_char, player);
             
             //al insertar un nuevo jugador, si es que este llega a crear un size de mas de 10 en la tabla, el ultimo dato se elimina.
             if(treeSize(tree) == 10)
@@ -663,5 +717,68 @@ void guardarPuntaje(TreeMap *tree, Jugador *player)
             }
             
         }
+    }
+}
+
+//funcion para leer los puntajes desde el archivo scoreboard.txt
+void leerPuntajes(TreeMap* arbol_puntajes, Jugador *jugador)
+{
+    if(jugador->idioma == 1) // Español
+    {
+        FILE *archivo = fopen("scoreboard.txt", "r");
+
+        if(archivo == NULL)
+        {
+            printf("No se pudo abrir el archivo\n");
+            system("pause");
+
+            return;
+        }
+
+        char linea[100];
+
+        while(fgets(linea, 100, archivo))
+        {
+            Jugador *nuevo_jugador = (Jugador*) malloc(sizeof(Jugador));
+
+            char* nombre = strtok(linea, ",");
+            char* puntos = strtok(NULL, ",");
+
+            strcpy(nuevo_jugador->nombre, nombre);
+            nuevo_jugador->puntos = atoi(puntos);
+
+            insertTreeMap(arbol_puntajes, (void *) nuevo_jugador->puntos, (void *) nuevo_jugador);
+        }
+
+        fclose(archivo);
+    }
+    else if(jugador->idioma == 2) // Ingles
+    {
+        FILE *archivo = fopen("scoreboard.txt", "r");
+
+        if(archivo == NULL)
+        {
+            printf("Could not open file\n");
+            system("pause");
+
+            return;
+        }
+
+        char linea[100];
+
+        while(fgets(linea, 100, archivo))
+        {
+            Jugador *nuevo_jugador = (Jugador*) malloc(sizeof(Jugador));
+
+            char* nombre = strtok(linea, ",");
+            char* puntos = strtok(NULL, ",");
+
+            strcpy(nuevo_jugador->nombre, nombre);
+            nuevo_jugador->puntos = atoi(puntos);
+
+            insertTreeMap(arbol_puntajes, (void *) nuevo_jugador->puntos, (void *) nuevo_jugador);
+        }
+
+        fclose(archivo);
     }
 }
