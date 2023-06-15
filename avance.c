@@ -24,6 +24,13 @@
 #include "FrontEnd/frontend.h"
 #include "BackEnd/backend.h"
 
+
+int lower_than_int(void * key1, void * key2) {
+    if((int*) key1 < (int*) key2) return 1;
+    return 0;
+}
+
+
 int main(int argc, const char * argv[])
 {
     //====================================================================================================
@@ -31,9 +38,17 @@ int main(int argc, const char * argv[])
     //====================================================================================================
 
     Jugador *jugador = (Jugador *)malloc(sizeof(Jugador));
-    
-    // Se inicializa el idioma
-    jugador->idioma = 1; // 1: Español, 2: Inglés
+
+    // Se inicializa el idioma en español
+    jugador->idioma = 1;
+
+    //====================================================================================================
+    // SE INICIA UN ARBOL Y SE LEEN LOS PUNTAJES YA EXISTENTES
+    //====================================================================================================
+
+    TreeMap *arbol_puntajes = createTreeMap(lower_than_int);
+
+    leerPuntajes(arbol_puntajes, jugador);
 
     //====================================================================================================
     // MENU INTERACTIVO
@@ -44,7 +59,7 @@ int main(int argc, const char * argv[])
 
     ocultarCursor();
 
-    menu(jugador);
+    menu(jugador, arbol_puntajes);
 
     return 0;
 }
