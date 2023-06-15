@@ -91,77 +91,77 @@ void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
 
         int totalPalabras = 100;
 
-    // Se verifica el nivel seleccionado
-    switch(jugador->nivel)
-    {
-        case 1:
-            strcpy(archivo, "DataBase/03.txt");
-            totalPalabras = 104;
-            break;
-        case 2:
-            strcpy(archivo, "DataBase/04.txt");
-            totalPalabras = 407;
-            break;
-        case 3:
-            strcpy(archivo, "DataBase/05.txt");
-            totalPalabras = 1007;
-            break;
-        case 4:
-            strcpy(archivo, "DataBase/06.txt");
-            totalPalabras = 766;
-            break;
-        case 5:
-            strcpy(archivo, "DataBase/07.txt");
-            break;
-        case 6:
-            strcpy(archivo, "DataBase/08.txt");
-            break;
-        case 7:
-            strcpy(archivo, "DataBase/09.txt");
-            break;
-        case 8:
-            strcpy(archivo, "DataBase/10.txt");
-            break;
-        case 9:
-            strcpy(archivo, "DataBase/11.txt");
-            break;
-        case 10:
-            strcpy(archivo, "DataBase/12.txt");
-            break;
-        case 11:
-            strcpy(archivo, "DataBase/13.txt");
-            break;
-        case 12:
-            strcpy(archivo, "DataBase/14.txt");
-            break;
-        case 13:
-            strcpy(archivo, "DataBase/15.txt");
-            break;
-        case 14:
-            strcpy(archivo, "DataBase/16.txt");
-            break;
-        case 15:
-            strcpy(archivo, "DataBase/17.txt");
-            break;
-        case 16:
-            strcpy(archivo, "DataBase/18.txt");
-            break;
-        case 17:
-            strcpy(archivo, "DataBase/19.txt");
-            break;
-        case 18:
-            strcpy(archivo, "DataBase/20.txt");
-            break;
-        case 19:
-            strcpy(archivo, "DataBase/21.txt");
-            break;
-        case 20:
-            strcpy(archivo, "DataBase/22.txt");
-            break;
-        case 21:
-            strcpy(archivo, "DataBase/23.txt");
-            break;
-    }
+        // Se verifica el nivel seleccionado
+        switch(jugador->nivel)
+        {
+            case 1:
+                strcpy(archivo, "DataBase/03.txt");
+                totalPalabras = 104;
+                break;
+            case 2:
+                strcpy(archivo, "DataBase/04.txt");
+                totalPalabras = 407;
+                break;
+            case 3:
+                strcpy(archivo, "DataBase/05.txt");
+                totalPalabras = 1007;
+                break;
+            case 4:
+                strcpy(archivo, "DataBase/06.txt");
+                totalPalabras = 766;
+                break;
+            case 5:
+                strcpy(archivo, "DataBase/07.txt");
+                break;
+            case 6:
+                strcpy(archivo, "DataBase/08.txt");
+                break;
+            case 7:
+                strcpy(archivo, "DataBase/09.txt");
+                break;
+            case 8:
+                strcpy(archivo, "DataBase/10.txt");
+                break;
+            case 9:
+                strcpy(archivo, "DataBase/11.txt");
+                break;
+            case 10:
+                strcpy(archivo, "DataBase/12.txt");
+                break;
+            case 11:
+                strcpy(archivo, "DataBase/13.txt");
+                break;
+            case 12:
+                strcpy(archivo, "DataBase/14.txt");
+                break;
+            case 13:
+                strcpy(archivo, "DataBase/15.txt");
+                break;
+            case 14:
+                strcpy(archivo, "DataBase/16.txt");
+                break;
+            case 15:
+                strcpy(archivo, "DataBase/17.txt");
+                break;
+            case 16:
+                strcpy(archivo, "DataBase/18.txt");
+                break;
+            case 17:
+                strcpy(archivo, "DataBase/19.txt");
+                break;
+            case 18:
+                strcpy(archivo, "DataBase/20.txt");
+                break;
+            case 19:
+                strcpy(archivo, "DataBase/21.txt");
+                break;
+            case 20:
+                strcpy(archivo, "DataBase/22.txt");
+                break;
+            case 21:
+                strcpy(archivo, "DataBase/23.txt");
+                break;
+        }
 
         // Se abre el archivo
         FILE *file = fopen(archivo, "r");
@@ -332,10 +332,6 @@ void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
         }
     
 }
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 void sobrescribirLinea(char* nombreArchivo, int numeroLinea, const char* nuevaLinea) {
     // Abrir el archivo en modo lectura

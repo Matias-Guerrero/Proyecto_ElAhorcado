@@ -1061,12 +1061,7 @@ void mostrarInstrucciones(int x, int y, Jugador *jugador)
         gotoxy(x, y+8); printf("7. Complete the level before running out of attempts to get additional points; otherwise,");
         gotoxy(x, y+9); printf("   you do not earn points and lose the level.");
     }
-    
-    
-
 }
-
-
 
 // Funcion para mostrar el menu de nivel
 void menuNivel(Jugador *jugador)
@@ -1078,7 +1073,7 @@ void menuNivel(Jugador *jugador)
     limpiarPantalla();
 
     // Se muestra el titulo
-    mostrarTitulo(12, 3, 4);
+    mostrarTitulo(12, 3, 4, jugador);
 
     // Se muestra titulo menu
     gotoxy(40, 12); printf("Que desea hacer?");
@@ -1088,14 +1083,14 @@ void menuNivel(Jugador *jugador)
         while(!cambiarOpcion(&opcionSeleccionada, 4))
         {
             // Se muestra el menu
-            mostrarMenu(40, 14, opcionSeleccionada, 50);
+            mostrarMenu(40, 14, opcionSeleccionada, 50, jugador);
         }
 
         switch(opcionSeleccionada)
         {
             case 1:
                 // Continuar
-                cargando(2);
+                cargando(2, jugador);
 
                 break;
             case 2:
@@ -1108,7 +1103,7 @@ void menuNivel(Jugador *jugador)
                 pause(40, 22, "Presione enter para continuar...");
 
                 // Se llama a cargando
-                cargando(2);
+                cargando(2, jugador);
 
                 break;
             case 3:
@@ -1429,13 +1424,13 @@ void nuevaPartida(Jugador *jugador)
 void cargarPartidaFE(Jugador *jugador)
 {
     // Se muestra cargando
-    cargando(2);
+    cargando(2, jugador);
     
     // Se limpia la pantalla
     limpiarPantalla();
 
     // Se muestra el titulo
-    mostrarTitulo(35, 1, 2);
+    mostrarTitulo(35, 1, 2, jugador);
 
     // Se imprime Seleccione una partida guardada
     gotoxy(45, 6); printf("Seleccione una partida guardada:");
@@ -1499,7 +1494,7 @@ void cargarPartidaFE(Jugador *jugador)
     pause(45, 22, "Presione enter para continuar...");
 
     // Se muestra cargando
-    cargando(2);
+    cargando(2, jugador);
 
     // Se llama a la funcion jugar
     jugar(jugador);
@@ -1612,7 +1607,7 @@ void jugar(Jugador *jugador)
         if(ganar)
         {
             // Se muestra la ultima letra ingresada
-            mostrarPalabra(65, 12, nivel);
+            mostrarPalabra(65, 12, nivel, jugador);
 
             // Se aumenta los puntos del jugador
             jugador->puntos += nivel->puntosNivel;
