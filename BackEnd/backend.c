@@ -20,6 +20,7 @@
 #include "../DataStructures/List/list.h"
 #include "../DataStructures/Map/Map.h"
 #include "../FrontEnd/frontend.h"
+#include "../DataStructures/TreeMap/treemap.h"
 
 //====================================================================================================
 // Importar structs, funciones de frontend y backend
@@ -84,9 +85,11 @@ char* quitar_tildes(char* cadena)
 // Función para buscar una palabra aleatoria
 void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
 {   
-    char archivo[20];
+    if(jugador->idioma == 1)
+    {
+        char archivo[20];
 
-    int totalPalabras = 100;
+        int totalPalabras = 100;
 
     // Se verifica el nivel seleccionado
     switch(jugador->nivel)
@@ -160,67 +163,174 @@ void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
             break;
     }
 
-    // Se abre el archivo
-    FILE *file = fopen(archivo, "r");
+        // Se abre el archivo
+        FILE *file = fopen(archivo, "r");
 
-    // Se verifica que el archivo exista
-    if(file == NULL)
-    {
-        printf("No se pudo abrir el archivo\n");
-        system("pause");
-        exit(1);
+        // Se verifica que el archivo exista
+        if(file == NULL)
+        {
+            printf("No se pudo abrir el archivo\n");
+            system("pause");
+            exit(1);
+        }
+
+        // Se inicializa la semilla para generar números aleatorios
+        srand(time(NULL));
+
+        // Se crea un buffer para almacenar la palabra
+        char buffer[100];
+
+        // Se recorre el archivo
+        while(fgets(buffer, 100, file))
+        {
+            // Se obtiene un número aleatorio
+            int aleatorio = rand() % totalPalabras;
+
+            // Se saltan las palabras hasta llegar al número aleatorio
+            for(int i = 0; i < aleatorio; i++)
+            {
+                fgets(buffer, 100, file);
+            }
+
+            // Se elimina el salto de linea
+            buffer[strlen(buffer) - 1] = '\0';
+
+            // Se crea una struct para almacenar la palabra
+            Palabra *palabra = (Palabra *) malloc(sizeof(Palabra));
+
+            // Se asigna la palabra a la struct
+            strcpy(palabra->palabra, buffer);
+
+            // Se asigna el nivel a la struct
+            palabra->nivel = jugador->nivel;
+
+            // Se verifica que la palabra no haya sido jugada
+            if(searchMap(jugador->palabrasJugadas, palabra->palabra) == NULL)
+            {
+                // Se agrega la palabra al mapa
+                insertMap(jugador->palabrasJugadas, palabra->palabra, palabra);
+
+                // Se asigna la palabra secreta
+                strcpy(nivel->palabraSecreta, buffer);
+
+                break;
+            }
+            else
+            {
+                // Se vuelven al inicio del archivo
+                rewind(file);
+            }
+        }
+
+        // Se cierra el archivo
+        fclose(file);
     }
-
-    // Se inicializa la semilla para generar números aleatorios
-    srand(time(NULL));
-
-    // Se crea un buffer para almacenar la palabra
-    char buffer[100];
-
-    // Se recorre el archivo
-    while(fgets(buffer, 100, file))
+    else if (jugador->idioma == 2)
     {
-        // Se obtiene un número aleatorio
-        int aleatorio = rand() % totalPalabras;
+        char archivo[20];
 
-        // Se saltan las palabras hasta llegar al número aleatorio
-        for(int i = 0; i < aleatorio; i++)
+        int totalPalabras = 100;
+
+        // Se verifica el nivel seleccionado
+        switch(jugador->nivel)
         {
-            fgets(buffer, 100, file);
+            case 1:
+                strcpy(archivo, "WordBank/03_English.txt");
+                totalPalabras = 171;
+                break;
+            case 2:
+                strcpy(archivo, "WordBank/04_English.txt");
+                totalPalabras = 69;
+                break;
+            case 3:
+                strcpy(archivo, "WordBank/05_English.txt");
+                totalPalabras = 488;
+                break;
+            case 4:
+                strcpy(archivo, "WordBank/06_English.txt");
+                totalPalabras = 140;
+                break;
+            case 5:
+                strcpy(archivo, "WordBank/07_English.txt");
+                totalPalabras = 500;
+                break;
+            case 6:
+                strcpy(archivo, "WordBank/08_English.txt");
+                totalPalabras = 500;
+                break;
+            case 7:
+                strcpy(archivo, "WordBank/09_English.txt");
+                totalPalabras = 95;
+                break;
+            case 8:
+                strcpy(archivo, "WordBank/10_English.txt");
+                totalPalabras = 100;
+                break;
         }
 
-        // Se elimina el salto de linea
-        buffer[strlen(buffer) - 1] = '\0';
+        // Se abre el archivo
+        FILE *file = fopen(archivo, "r");
 
-        // Se crea una struct para almacenar la palabra
-        Palabra *palabra = (Palabra *) malloc(sizeof(Palabra));
-
-        // Se asigna la palabra a la struct
-        strcpy(palabra->palabra, buffer);
-
-        // Se asigna el nivel a la struct
-        palabra->nivel = jugador->nivel;
-
-        // Se verifica que la palabra no haya sido jugada
-        if(searchMap(jugador->palabrasJugadas, palabra->palabra) == NULL)
+        // Se verifica que el archivo exista
+        if(file == NULL)
         {
-            // Se agrega la palabra al mapa
-            insertMap(jugador->palabrasJugadas, palabra->palabra, palabra);
-
-            // Se asigna la palabra secreta
-            strcpy(nivel->palabraSecreta, buffer);
-
-            break;
+            printf("No se pudo abrir el archivo\n");
+            system("pause");
+            exit(1);
         }
-        else
+
+        // Se inicializa la semilla para generar números aleatorios
+        srand(time(NULL));
+
+        // Se crea un buffer para almacenar la palabra
+        char buffer[100];
+
+        // Se recorre el archivo
+        while(fgets(buffer, 100, file))
         {
-            // Se vuelven al inicio del archivo
-            rewind(file);
-        }
-    }
+            // Se obtiene un número aleatorio
+            int aleatorio = rand() % totalPalabras;
 
-    // Se cierra el archivo
-    fclose(file);
+            // Se saltan las palabras hasta llegar al número aleatorio
+            for(int i = 0; i < aleatorio; i++)
+            {
+                fgets(buffer, 100, file);
+            }
+
+            // Se elimina el salto de linea
+            buffer[strlen(buffer) - 1] = '\0';
+
+            // Se crea una struct para almacenar la palabra
+            Palabra *palabra = (Palabra *) malloc(sizeof(Palabra));
+
+            // Se asigna la palabra a la struct
+            strcpy(palabra->palabra, buffer);
+
+            // Se asigna el nivel a la struct
+            palabra->nivel = jugador->nivel;
+
+            // Se verifica que la palabra no haya sido jugada
+            if(searchMap(jugador->palabrasJugadas, palabra->palabra) == NULL)
+            {
+                // Se agrega la palabra al mapa
+                insertMap(jugador->palabrasJugadas, palabra->palabra, palabra);
+
+                // Se asigna la palabra secreta
+                strcpy(nivel->palabraSecreta, buffer);
+
+                break;
+            }
+            else
+            {
+                // Se vuelven al inicio del archivo
+                rewind(file);
+            }
+        }
+
+        // Se cierra el archivo
+        fclose(file);
+        }
+    
 }
 
 #include <stdio.h>
@@ -459,4 +569,103 @@ void obtenerJugadores(ArrayList *jugadores)
 
     // Cerrar el archivo
     fclose(archivo);
+}
+
+
+//====================================================================================================
+// Funciones para administracion de los puntajes
+//====================================================================================================
+
+//bool que sirve para verificar si califica para el top 10
+int calificaEnTabla(TreeMap *tree, int puntos)
+{   
+    //conseguimos al ultimo de la lista
+    Pair *aux_pair = firstTreeMap(tree);
+    Jugador *current_last_spot = (Jugador*) aux_pair->value;
+    
+    //verificamos si el puntaje del jugador actual es mayor a el ultimo puesto
+    if(puntos > current_last_spot->puntos)
+    {
+        return 1;
+    }
+
+    return 0;
+}
+
+//verifica si el jugador existe en la tabla para evitar nombres
+int JugadorExisteEnTabla(TreeMap *tree, char* nombre)
+{
+    Pair *aux_pair = firstTreeMap(tree);
+    Jugador *current_spot = (Jugador*) aux_pair->value;
+
+    while(aux_pair != NULL)
+    {
+        if(strcmp(nombre, current_spot->nombre) == 0)
+        {
+            return 1;
+        }
+        else
+        {
+            Pair *aux_pair = nextTreeMap(tree);
+            Jugador *current_spot = (Jugador*) aux_pair->value;
+        }
+    }
+    return 0;
+}
+
+//procesamos el nombre repetido, si el puntaje nuevo es mayor
+void procesarJugadorRepetido(TreeMap *tree, Jugador * player)
+{
+    //tomamos la ultima posicion de la tabla
+    Pair *aux_pair = firstTreeMap(tree);
+    Jugador *current_spot = (Jugador*) aux_pair->value;
+
+    //recorremos la tabla
+    while(aux_pair != NULL)
+    {   
+        //si es el mismo nombre, evaluamos
+        if(strcmp(player->nombre, current_spot->nombre) == 0)
+        {   
+            //si supera los puntos del mismo nombre, se elimina el que existe en la lista y se inserta el con puntaje mas alto
+            if(current_spot->puntos < player->puntos)
+            {
+                eraseTreeMapCurrent(tree);
+                insertTreeMap(tree, player->puntos, player);
+            }
+        }
+        else
+        {   
+            //recorre al siguiente de la lista
+            Pair *aux_pair = nextTreeMap(tree);
+            Jugador *current_spot = (Jugador*) aux_pair->value;
+        }
+    }
+    
+}
+
+//funcion para guardar un puntaje
+void guardarPuntaje(TreeMap *tree, Jugador *player)
+{   
+    //pregunta si es mayor a el top 10 de los puntajes
+    if(calificaEnTabla(tree, player->puntos) == 1)
+    {
+        //si es que existe el jugador en la tabla, se comparan los puntajes de ambos casos
+        if(JugadorExisteEnTabla(tree, player->nombre) == 1)
+        {   
+            //inserta el nuevo puntaje del jugador en la tabla en caso de ser mayor al existente, en caso contrario solo se omite
+            procesarJugadorRepetido(tree, player);
+        }
+        else
+        {   
+            insertTreeMap(tree, player->puntos, player);
+            
+            //al insertar un nuevo jugador, si es que este llega a crear un size de mas de 10 en la tabla, el ultimo dato se elimina.
+            if(treeSize(tree) == 10)
+            {   
+                firstTreeMap(tree);
+                eraseTreeMapCurrent(tree);
+            }
+            
+        }
+    }
 }

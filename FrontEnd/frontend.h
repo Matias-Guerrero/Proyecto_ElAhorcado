@@ -10,7 +10,7 @@ void gotoxy(int x, int y);
 
 void ocultarCursor();
 
-void cargando(int duracion);
+void cargando(int duracion, Jugador *jugador);
 
 void pause(int x, int y, char *mensaje);
 
