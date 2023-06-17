@@ -429,8 +429,16 @@ void guardarPartida(Jugador *jugador, int x, int y)
         
         if (archivo == NULL)
         {
-            printf("No se pudo abrir el archivo.\n");
-            return;
+            if(jugador->idioma == 1) //Español
+            {
+                printf("No se pudo abrir el archivo.\n");
+                return;
+            }
+            else if(jugador->idioma == 2) //Inglés
+            {
+                printf("The file could not be opened.\n");
+                return;
+            }
         }
 
         fprintf(archivo, "%s,%d,%d\n", jugador->nombre, jugador->puntos, jugador->nivel);
@@ -441,7 +449,14 @@ void guardarPartida(Jugador *jugador, int x, int y)
 
     // Se muestra un mensaje de confirmación
     gotoxy(x, y);
-    printf("Partida guardada exitosamente.");
+    if(jugador->idioma == 1) //Español
+    {
+        printf("Partida guardada exitosamente.");
+    }
+    else if(jugador->idioma == 2) //Inglés
+    {
+        printf("Game saved successfully.");
+    }
 }
 
 void cargarPartida(char *nombreJugador, Jugador *jugador, int x, int y)
@@ -454,7 +469,14 @@ void cargarPartida(char *nombreJugador, Jugador *jugador, int x, int y)
     {
         // El archivo no existe, mostrar un mensaje de error
         gotoxy(x, y);
-        printf("No se encontró ninguna partida guardada.\n");
+        if(jugador->idioma == 1)
+        {
+            printf("No se encontró ninguna partida guardada.\n");
+        }
+        else if(jugador->idioma == 2)
+        {
+            printf("No saved game was found.\n");
+        }
 
         return;
     }
@@ -497,7 +519,14 @@ void cargarPartida(char *nombreJugador, Jugador *jugador, int x, int y)
 
             // Se muestra un mensaje de confirmación
             gotoxy(x, y);
-            printf("Partida cargada exitosamente.");
+            if(jugador->idioma == 1) //Español
+            {
+                printf("Partida cargada exitosamente.");
+            }
+            else if(jugador->idioma == 2) //Inglés
+            {
+                printf("Game loaded successfully.");
+            }
 
             return;
         }
@@ -511,8 +540,14 @@ void cargarPartida(char *nombreJugador, Jugador *jugador, int x, int y)
     {
         // El jugador no fue encontrado, mostrar un mensaje de error
         gotoxy(x, y);
-        printf("No se encontró ninguna partida para el jugador '%s'.\n", nombreJugador);
-
+        if(jugador->idioma == 1) //Español
+        {
+            printf("No se encontró ninguna partida para el jugador '%s'.\n", nombreJugador);
+        }
+        else if(jugador->idioma == 2) //Inglés
+        {
+            printf("No game was found for the player '%s'.\n", nombreJugador);
+        }
         return;
     }
 }
