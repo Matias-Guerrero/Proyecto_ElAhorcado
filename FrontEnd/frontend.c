@@ -308,6 +308,7 @@ void mostrarMenu(int x, int y, int opcionSeleccionada, int maxOpcion)
         gotoxy(x, y + 1); printf("%s Ver Puntuaciones", (opcionSeleccionada == 2) ? "->" : "  ");
         gotoxy(x, y + 2); printf("%s Elegir Idioma", (opcionSeleccionada == 3) ? "->" : "  ");
         gotoxy(x, y + 3); printf("%s Instrucciones", (opcionSeleccionada == 4) ? "->" : "  ");
+        gotoxy(x, y + 4); printf("%s Salir", (opcionSeleccionada == 5) ? "->" : "  ");
     }
 
     if(maxOpcion == 2)
@@ -441,7 +442,8 @@ bool cambiarOpcion(int * opcion, int maxOpcion)
         return true;
     }
     if( GetAsyncKeyState(VK_ESCAPE) && maxOpcion == 4)
-    {
+    {   
+
         exit(0);
     }
 
@@ -720,7 +722,7 @@ void mostrarPuntajes(int x, int y, TreeMap *tabla_puntajes)
     if(aux_pair == NULL)
     {   
         //se omite la impresion de jugadores
-        gotoxy(x,y); printf("Aun no existe ningun puntaje registrado");
+        gotoxy(x + 10,y); printf("Aun no existe ningun puntaje registrado");
     }
     else
     {   
@@ -883,7 +885,7 @@ void menu(Jugador *jugador, TreeMap * arbol_puntajes)
             SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
         }
 
-        while(!cambiarOpcion(&opcionSeleccionada, 4))
+        while(!cambiarOpcion(&opcionSeleccionada, 5))
         {
             mostrarMenu(40, 16, opcionSeleccionada, 4);
         }
@@ -906,6 +908,9 @@ void menu(Jugador *jugador, TreeMap * arbol_puntajes)
                 instrucciones();
 
                 break;
+            case 5:
+                //se sale de la funcion menu
+                return;
         }
     }
 }
@@ -924,6 +929,7 @@ void subMenuJugar(Jugador *jugador, TreeMap* arbol_puntajes)
     limpiarLinea(40, 17, 20);
     limpiarLinea(40, 18, 20);
     limpiarLinea(40, 19, 20);
+    limpiarLinea(40, 20, 20);
 
     while(true)
     {
@@ -958,16 +964,15 @@ void menuPuntajes(TreeMap *arbol_puntajes)
     // Se limpia la pantalla del menú
     limpiarPantalla();
 
+
+
     mostrarTitulo(35,1, 5);
 
-    
-
-    mostrarPuntajes(30, 8, arbol_puntajes);
+    mostrarPuntajes(28, 8, arbol_puntajes);
 
     // Se llama a la función pause
     pause(45, 23, "Presione enter para continuar...");
 }
-
 
 // Funcion para nuevo juego
 void nuevaPartida(Jugador *jugador, TreeMap* arbol_puntajes)
