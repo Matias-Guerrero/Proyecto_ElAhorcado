@@ -85,12 +85,12 @@ char* quitar_tildes(char* cadena)
 // Función para buscar una palabra aleatoria
 void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
 {   
-    char archivo[20];
-
-    int totalPalabras = 100;
-
-    if(jugador->idioma == 1) // Español
+    if(jugador->idioma == 1)
     {
+        char archivo[20];
+
+        int totalPalabras = 100;
+
         // Se verifica el nivel seleccionado
         switch(jugador->nivel)
         {
@@ -163,7 +163,7 @@ void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
                 break;
         }
 
-         // Se abre el archivo
+        // Se abre el archivo
         FILE *file = fopen(archivo, "r");
 
         // Se verifica que el archivo exista
@@ -224,10 +224,13 @@ void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
 
         // Se cierra el archivo
         fclose(file);
-
     }
-    else if(jugador->idioma == 2) // Inglés
+    else if (jugador->idioma == 2)
     {
+        char archivo[20];
+
+        int totalPalabras = 100;
+
         // Se verifica el nivel seleccionado
         switch(jugador->nivel)
         {
@@ -237,7 +240,7 @@ void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
                 break;
             case 2:
                 strcpy(archivo, "WordBank/04_English.txt");
-                totalPalabras = 100;
+                totalPalabras = 69;
                 break;
             case 3:
                 strcpy(archivo, "WordBank/05_English.txt");
@@ -271,7 +274,7 @@ void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
         // Se verifica que el archivo exista
         if(file == NULL)
         {
-            printf("Could not open the file\n");
+            printf("No se pudo abrir el archivo\n");
             system("pause");
             exit(1);
         }
@@ -326,98 +329,51 @@ void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
 
         // Se cierra el archivo
         fclose(file);
-
         }
-
+    
 }
 
-void sobrescribirLinea(char* nombreArchivo, int numeroLinea, const char* nuevaLinea, Jugador *jugador) 
-{
-    if(jugador->idioma == 1) // Español
-    {
-        // Abrir el archivo en modo lectura
-        FILE* archivo = fopen(nombreArchivo, "r");
-        if (archivo == NULL) {
-            printf("No se pudo abrir el archivo.\n");
-            return;
-        }
-
-        // Crear un archivo temporal para escribir el contenido actualizado
-        FILE* archivoTemporal = fopen("temp.txt", "w");
-        if (archivoTemporal == NULL) {
-            printf("No se pudo crear el archivo temporal.\n");
-            fclose(archivo);
-            return;
-        }
-        // Variables para contar las líneas y almacenar el contenido de cada línea
-        char linea[100];
-        int numeroLineaActual = 0;
-
-        // Leer el archivo línea por línea
-        while (fgets(linea, sizeof(linea), archivo) != NULL) {
-            numeroLineaActual++;
-
-            // Si es la línea que deseamos sobrescribir, la reemplazamos con la nueva línea
-            if (numeroLineaActual == numeroLinea) {
-                fputs(nuevaLinea, archivoTemporal);
-            } else {
-                fputs(linea, archivoTemporal);
-            }
-        }
-
-        // Cerrar los archivos
-        fclose(archivo);
-        fclose(archivoTemporal);
-
-        // Eliminar el archivo original
-        remove(nombreArchivo);
-
-        // Renombrar el archivo temporal con el nombre original
-        rename("temp.txt", nombreArchivo);
+void sobrescribirLinea(char* nombreArchivo, int numeroLinea, const char* nuevaLinea) {
+    // Abrir el archivo en modo lectura
+    FILE* archivo = fopen(nombreArchivo, "r");
+    if (archivo == NULL) {
+        printf("No se pudo abrir el archivo.\n");
+        return;
     }
-    else if(jugador->idioma == 2) // Inglés
-    {
-        // Abrir el archivo en modo lectura
-        FILE* archivo = fopen(nombreArchivo, "r");
-        if (archivo == NULL) {
-            printf("Could not open the file.\n");
-            return;
-        }
 
-        // Crear un archivo temporal para escribir el contenido actualizado
-        FILE* archivoTemporal = fopen("temp.txt", "w");
-        if (archivoTemporal == NULL) {
-            printf("Could not create the temporary file.\n");
-            fclose(archivo);
-            return;
-        }
-
-        // Variables para contar las líneas y almacenar el contenido de cada línea
-        char linea[100];
-        int numeroLineaActual = 0;
-
-        // Leer el archivo línea por línea
-        while (fgets(linea, sizeof(linea), archivo) != NULL) {
-            numeroLineaActual++;
-
-            // Si es la línea que deseamos sobrescribir, la reemplazamos con la nueva línea
-            if (numeroLineaActual == numeroLinea) {
-                fputs(nuevaLinea, archivoTemporal);
-            } else {
-                fputs(linea, archivoTemporal);
-            }
-        }
-
-        // Cerrar los archivos
+    // Crear un archivo temporal para escribir el contenido actualizado
+    FILE* archivoTemporal = fopen("temp.txt", "w");
+    if (archivoTemporal == NULL) {
+        printf("No se pudo crear el archivo temporal.\n");
         fclose(archivo);
-        fclose(archivoTemporal);
-
-        // Eliminar el archivo original
-        remove(nombreArchivo);
-
-        // Renombrar el archivo temporal con el nombre original
-        rename("temp.txt", nombreArchivo);
+        return;
     }
+
+    // Variables para contar las líneas y almacenar el contenido de cada línea
+    char linea[100];
+    int numeroLineaActual = 0;
+
+    // Leer el archivo línea por línea
+    while (fgets(linea, sizeof(linea), archivo) != NULL) {
+        numeroLineaActual++;
+
+        // Si es la línea que deseamos sobrescribir, la reemplazamos con la nueva línea
+        if (numeroLineaActual == numeroLinea) {
+            fputs(nuevaLinea, archivoTemporal);
+        } else {
+            fputs(linea, archivoTemporal);
+        }
+    }
+
+    // Cerrar los archivos
+    fclose(archivo);
+    fclose(archivoTemporal);
+
+    // Eliminar el archivo original
+    remove(nombreArchivo);
+
+    // Renombrar el archivo temporal con el nombre original
+    rename("temp.txt", nombreArchivo);
 }
 
 void guardarPartida(Jugador *jugador, int x, int y)
@@ -452,7 +408,7 @@ void guardarPartida(Jugador *jugador, int x, int y)
                 // Se sobrescribe la línea con los datos actualizados del jugador
                 char nuevaLinea[100];
                 snprintf(nuevaLinea, sizeof(nuevaLinea), "%s,%d,%d\n", jugador->nombre, jugador->puntos, jugador->nivel);
-                sobrescribirLinea("partida_guardada.txt", numeroLinea, nuevaLinea, jugador);
+                sobrescribirLinea("partida_guardada.txt", numeroLinea, nuevaLinea);
 
                 // Se marca que el jugador ya existe
                 existe = true;
@@ -465,202 +421,100 @@ void guardarPartida(Jugador *jugador, int x, int y)
         fclose(archivo);
     }
 
-    if(jugador->idioma == 1) // Español
+    // Si el jugador no existe, se agrega al final del archivo
+    if (!existe)
     {
-        // Si el jugador no existe, se agrega al final del archivo
-        if (!existe)
+        // Abrir el archivo en modo escritura al final
+        archivo = fopen("partida_guardada.txt", "a");
+        
+        if (archivo == NULL)
         {
-            // Abrir el archivo en modo escritura al final
-            archivo = fopen("partida_guardada.txt", "a");
-            if (archivo == NULL)
-            {
-                printf("No se pudo abrir el archivo.\n");
-                return;
-            }
-
-            fprintf(archivo, "%s,%d,%d\n", jugador->nombre, jugador->puntos, jugador->nivel);
-
-            // Cerrar el archivo
-            fclose(archivo);
+            printf("No se pudo abrir el archivo.\n");
+            return;
         }
 
-        // Se muestra un mensaje de confirmación
-        gotoxy(x, y);
-        printf("Partida guardada exitosamente.");
+        fprintf(archivo, "%s,%d,%d\n", jugador->nombre, jugador->puntos, jugador->nivel);
+
+        // Cerrar el archivo
+        fclose(archivo);
     }
-    else if(jugador->idioma == 2) // Inglés
-    {
-        // Si el jugador no existe, se agrega al final del archivo
-        if (!existe)
-        {
-            // Abrir el archivo en modo escritura al final
-            archivo = fopen("partida_guardada.txt", "a");
-            if (archivo == NULL)
-            {
-                printf("Could not open the file.\n");
-                return;
-            }
 
-            fprintf(archivo, "%s,%d,%d\n", jugador->nombre, jugador->puntos, jugador->nivel);
-
-            // Cerrar el archivo
-            fclose(archivo);
-        }
-
-        // Se muestra un mensaje de confirmación
-        gotoxy(x, y);
-        printf("Game saved successfully.");
-    }
+    // Se muestra un mensaje de confirmación
+    gotoxy(x, y);
+    printf("Partida guardada exitosamente.");
 }
 
 void cargarPartida(char *nombreJugador, Jugador *jugador, int x, int y)
 {
-    if(jugador->idioma == 1) // Español
+    // Abrir el archivo de guardado
+    FILE *archivo = fopen("partida_guardada.txt", "r");
+
+    // Verificar si el archivo existe
+    if (archivo == NULL)
     {
-        // Abrir el archivo de guardado
-        FILE *archivo = fopen("partida_guardada.txt", "r");
+        // El archivo no existe, mostrar un mensaje de error
+        gotoxy(x, y);
+        printf("No se encontró ninguna partida guardada.\n");
 
-        // Verificar si el archivo existe
-        if (archivo == NULL)
+        return;
+    }
+
+    // Crear un buffer para almacenar la línea
+    char linea[50];
+
+    // Crear un booleano para saber si el jugador fue encontrado
+    bool encontrado = false;
+
+    // Recorrer el archivo
+    while (fgets(linea, sizeof(linea), archivo))
+    {
+        // Se separa el nombre del jugador del resto de la línea separada por comas
+        char *nombre = strtok(linea, ",");
+
+        // Si el nombre del jugador es igual al nombre del archivo, el jugador ya existe
+        if (strcmp(nombre, nombreJugador) == 0)
         {
-            // El archivo no existe, mostrar un mensaje de error
+            // Se marca que el jugador fue encontrado
+            encontrado = true;
+
+            // Se separa el puntaje del resto de la línea separada por comas
+            char *puntaje = strtok(NULL, ",");
+
+            // Se separa el nivel del resto de la línea separada por comas
+            char *nivel = strtok(NULL, ",");
+
+            // Se asigna el nombre del jugador
+            strcpy(jugador->nombre, nombre);
+
+            // Se asigna el puntaje del jugador
+            jugador->puntos = atoi(puntaje);
+
+            // Se asigna el nivel del jugador
+            jugador->nivel = atoi(nivel);
+
+            // Se cierra el archivo
+            fclose(archivo);
+
+            // Se muestra un mensaje de confirmación
             gotoxy(x, y);
-            printf("No se encontró ninguna partida guardada.\n");
-
-            return;
-        }
-
-        // Crear un buffer para almacenar la línea
-        char linea[50];
-
-        // Crear un booleano para saber si el jugador fue encontrado
-        bool encontrado = false;
-
-        // Recorrer el archivo
-        while (fgets(linea, sizeof(linea), archivo))
-        {
-            // Se separa el nombre del jugador del resto de la línea separada por comas
-            char *nombre = strtok(linea, ",");
-
-            // Si el nombre del jugador es igual al nombre del archivo, el jugador ya existe
-            if (strcmp(nombre, nombreJugador) == 0)
-            {
-                // Se marca que el jugador fue encontrado
-                encontrado = true;
-
-                // Se separa el puntaje del resto de la línea separada por comas
-                char *puntaje = strtok(NULL, ",");
-
-                // Se separa el nivel del resto de la línea separada por comas
-                char *nivel = strtok(NULL, ",");
-
-                // Se asigna el nombre del jugador
-                strcpy(jugador->nombre, nombre);
-
-                // Se asigna el puntaje del jugador
-                jugador->puntos = atoi(puntaje);
-
-                // Se asigna el nivel del jugador
-                jugador->nivel = atoi(nivel);
-
-                // Se cierra el archivo
-                fclose(archivo);
-
-                // Se muestra un mensaje de confirmación
-                gotoxy(x, y);
-                printf("Partida cargada exitosamente.");
-
-                return;
-            }
-        }
-
-        // Cerrar el archivo
-        fclose(archivo);
-
-        // Verificar si el jugador fue encontrado
-        if (!encontrado)
-        {
-            // El jugador no fue encontrado, mostrar un mensaje de error
-            gotoxy(x, y);
-            printf("No se encontró ninguna partida para el jugador '%s'.\n", nombreJugador);
+            printf("Partida cargada exitosamente.");
 
             return;
         }
     }
-    else if(jugador->idioma == 2) // Ingles
+
+    // Cerrar el archivo
+    fclose(archivo);
+
+    // Verificar si el jugador fue encontrado
+    if (!encontrado)
     {
-        // Abrir el archivo de guardado
-        FILE *archivo = fopen("partida_guardada.txt", "r");
+        // El jugador no fue encontrado, mostrar un mensaje de error
+        gotoxy(x, y);
+        printf("No se encontró ninguna partida para el jugador '%s'.\n", nombreJugador);
 
-        // Verificar si el archivo existe
-        if (archivo == NULL)
-        {
-            // El archivo no existe, mostrar un mensaje de error
-            gotoxy(x, y);
-            printf("No save game found.\n");
-
-            return;
-        }
-
-        // Crear un buffer para almacenar la línea
-        char linea[50];
-
-        // Crear un booleano para saber si el jugador fue encontrado
-        bool encontrado = false;
-
-        // Recorrer el archivo
-        while (fgets(linea, sizeof(linea), archivo))
-        {
-            // Se separa el nombre del jugador del resto de la línea separada por comas
-            char *nombre = strtok(linea, ",");
-
-            // Si el nombre del jugador es igual al nombre del archivo, el jugador ya existe
-            if (strcmp(nombre, nombreJugador) == 0)
-            {
-                // Se marca que el jugador fue encontrado
-                encontrado = true;
-
-                // Se separa el puntaje del resto de la línea separada por comas
-                char *puntaje = strtok(NULL, ",");
-
-                // Se separa el nivel del resto de la línea separada por comas
-                char *nivel = strtok(NULL, ",");
-
-                // Se asigna el nombre del jugador
-                strcpy(jugador->nombre, nombre);
-
-                // Se asigna el puntaje del jugador
-                jugador->puntos = atoi(puntaje);
-
-                // Se asigna el nivel del jugador
-                jugador->nivel = atoi(nivel);
-
-                // Se cierra el archivo
-                fclose(archivo);
-
-                // Se muestra un mensaje de confirmación
-                gotoxy(x, y);
-                printf("Game loaded successfully.");
-
-                return;
-            }
-        }
-
-        // Cerrar el archivo
-        fclose(archivo);
-
-        // Verificar si el jugador fue encontrado
-        if (!encontrado)
-        {
-            // El jugador no fue encontrado, mostrar un mensaje de error
-            gotoxy(x, y);
-            printf("No games found for the player '%s'.\n", nombreJugador);
-
-            return;
-        }
-
+        return;
     }
-    
 }
 
 // Funcion para obtener todas las partidas guardadas y almacenarlas en un arreglo
@@ -764,7 +618,6 @@ void obtenerJugadores(ArrayList *jugadores, Jugador *jugador)
     }
 }
 
-
 //====================================================================================================
 // Funciones para administracion de los puntajes
 //====================================================================================================
@@ -821,13 +674,9 @@ void procesarJugadorRepetido(TreeMap *tree, Jugador * player)
         {   
             //si supera los puntos del mismo nombre, se elimina el que existe en la lista y se inserta el con puntaje mas alto
             if(current_spot->puntos < player->puntos)
-            {   
-                
-                //se convierte el puntaje a string
-                char buffer[20];
-                char* ptj_char = itoa(player->puntos, buffer, 10);
-                
-                insertTreeMap(tree, ptj_char, player);
+            {
+                eraseTreeMapCurrent(tree);
+                insertTreeMap(tree, (void *) player->puntos, (void *) player);
             }
         }
         else
@@ -932,10 +781,4 @@ void leerPuntajes(TreeMap* arbol_puntajes, Jugador *jugador)
 
         fclose(archivo);
     }
-}
-
-//se exportan los puntajes del arbol al archivo scoreboard.txt
-void exportarPuntajes(TreeMap* arbol_puntajes)
-{
-    FILE * archivo = fopen("scoreboard.txt", "r");
 }
