@@ -42,8 +42,7 @@ void resetearTeclas()
 
 /*La función recibe los parámetros x, y
 * y situa el cursor en esa posicción */
-void gotoxy(int x, int y)
-{
+void gotoxy(int x, int y){
     HANDLE consola = GetStdHandle(STD_OUTPUT_HANDLE);
     COORD pos;
     pos.X = x;
@@ -54,8 +53,7 @@ void gotoxy(int x, int y)
 
 /*Función que oculta el cursor. Si tiene dudas con esta existen
 * variados sitios en internet de donde obtener documentación*/
-void ocultarCursor()
-{
+void ocultarCursor(){
     HANDLE consola = GetStdHandle(STD_OUTPUT_HANDLE);
     CONSOLE_CURSOR_INFO cursInfo;
     cursInfo.dwSize = 2;
@@ -535,9 +533,7 @@ void mostrarMenu(int x, int y, int opcionSeleccionada, int maxOpcion, Jugador *j
             gotoxy(x, y + 2); printf("%s Save and Exit", (opcionSeleccionada == 3) ? "->" : "  ");
             gotoxy(x, y + 3); printf("%s Exit", (opcionSeleccionada == 4) ? "->" : "  ");
         }
-    }
-    
-    
+    }   
 }
 
 // Funcion para mostrar jugadores estilo menu
@@ -655,9 +651,19 @@ bool cambiarOpcion(int * opcion, int maxOpcion)
     {
         return true;
     }
-    if( GetAsyncKeyState(VK_ESCAPE) && maxOpcion == 4)
+    if( GetAsyncKeyState(VK_ESCAPE))
     {
-        exit(0);
+        if(maxOpcion == 4)
+        {
+            exit(0);
+        }
+        else if (maxOpcion < 4)
+        {
+            // Se asigna opcion en 0 para volver al menu principal
+            *opcion = 0;
+            return true;
+        }
+        
     }
 
     return false;
@@ -914,7 +920,7 @@ void procesarLetra(int x, int y, Nivel *nivel, char letra, Jugador *jugador)
             nivel->intentosRestantes--;
 
             // Se restan 100 puntos
-            nivel->puntosNivel -= 100;
+            nivel->puntosNivel -= 100 * nivel->nivel;
         }
 
         // Se limpia la linea anterior
@@ -959,7 +965,7 @@ void procesarLetra(int x, int y, Nivel *nivel, char letra, Jugador *jugador)
             nivel->intentosRestantes--;
 
             // Se restan 100 puntos
-            nivel->puntosNivel -= 100;
+            nivel->puntosNivel -= 100 * nivel->nivel;
         }
 
         // Se limpia la linea anterior
@@ -981,7 +987,8 @@ void teclaPresionada(int x, int y, char* letra, Nivel *nivel, Jugador *jugador)
     {
         for (int i = 0x41; i <= 0x5A; i++)
         {
-            if (GetAsyncKeyState(i)) {
+            if (GetAsyncKeyState(i))
+            {
                 *letra = i + 32; // Convertir a minúscula
                 tecla = true;
 
@@ -1042,8 +1049,6 @@ void teclaPresionada(int x, int y, char* letra, Nivel *nivel, Jugador *jugador)
 
                 if(tecla == false)
                 {
-                    // Se limpia el buffer de teclado
-                    resetearTeclas();
                     break;
                 }
 
@@ -1070,7 +1075,6 @@ void teclaPresionada(int x, int y, char* letra, Nivel *nivel, Jugador *jugador)
         }
     }
 }
-
 
 //=====================================
 //========VENTANA INSTRUCCIONES========
@@ -1112,7 +1116,6 @@ void mostrarPuntajes(int x, int y, TreeMap *tabla_puntajes)
 {   
     //referencia de el inicio de columna
     int initial_y = y;
-
     
     //se lee el top 1 del arbol
     Pair* aux_pair = lastTreeMap(tabla_puntajes);
@@ -1125,8 +1128,6 @@ void mostrarPuntajes(int x, int y, TreeMap *tabla_puntajes)
     }
     else
     {   
-        
-
         //contador para separar columnas de jugadores
         int cont = 1;
 
@@ -1162,8 +1163,6 @@ void mostrarPuntajes(int x, int y, TreeMap *tabla_puntajes)
     }
 }
 
-
-
 // Funcion para mostrar el menu de nivel
 void menuNivel(Jugador *jugador)
 {
@@ -1173,135 +1172,64 @@ void menuNivel(Jugador *jugador)
     // Se limpia la pantalla
     limpiarPantalla();
 
-    if(jugador->idioma == 1) // Español
-    {
-        // Se muestra el titulo
-        mostrarTitulo(12, 3, 4, jugador);
+    // Se muestra el titulo
+    mostrarTitulo(12, 3, 4, jugador);
 
-        // Se muestra titulo menu
-        gotoxy(40, 12); printf("Que desea hacer?");
-
-    }
-    else if (jugador->idioma == 2) // Ingles
-    {
-        // Se muestra el titulo
-        mostrarTitulo(12, 3, 4, jugador);
-
-        // Se muestra titulo menu
-        gotoxy(40, 12); printf("What do you want to do?");
-    }
-
+    // Se muestra titulo menu
+    gotoxy(40, 12); printf("Que desea hacer?");
 
     while(true)
     {
-        if(jugador->idioma == 1)
+        while(!cambiarOpcion(&opcionSeleccionada, 4))
         {
-            while(!cambiarOpcion(&opcionSeleccionada, 50))
-            {
-                // Se muestra el menu
-                mostrarMenu(40, 14, opcionSeleccionada, 4, jugador);
-            }
-
-            switch(opcionSeleccionada)
-            {
-                case 1:
-                    // Continuar
-                    cargando(2,jugador);
-
-                    break;
-                case 2:
-                    // Guardar y continuar
-
-                    // Se llama a la funcion para guardar partida
-                    guardarPartida(jugador, 40, 20);
-
-                    // Se muestra el mensaje de pausa
-                    pause(40, 22, "Presione enter para continuar...");
-
-                    // Se llama a cargando
-                    cargando(2,jugador);
-
-                    break;
-                case 3:
-                    // Guardar y salir
-
-                    // Se llama a la funcion para guardar partida
-                    guardarPartida(jugador, 40, 20);
-
-                    // Se muestra el mensaje de pausa
-                    pause(40, 22, "Presione enter para salir...");
-
-                    // Se sale de la aplicacion
-                    exit(0);
-
-                    break;
-                case 4:
-                    // Salir
-
-                    // Se muestra el mensaje de pausa
-                    pause(40, 22, "Presione enter para salir...");
-
-                    // Se sale de la aplicacion
-                    exit(0);
-
-                    break;
-            }
-
+            // Se muestra el menu
+            mostrarMenu(40, 14, opcionSeleccionada, 50, jugador);
         }
-        else if (jugador->idioma == 2)
+
+        switch(opcionSeleccionada)
         {
-            while(!cambiarOpcion(&opcionSeleccionada, 50))
-            {
-                // Se muestra el menu
-                mostrarMenu(40, 14, opcionSeleccionada, 2, jugador);
-            }
+            case 1:
+                // Continuar
+                cargando(2, jugador);
 
-            switch(opcionSeleccionada)
-            {
-                case 1:
-                    // Continue
-                    cargando(2,jugador);
+                break;
+            case 2:
+                // Guardar y continuar
 
-                    break;
-                case 2:
-                    // Save and continue
+                // Se llama a la funcion para guardar partida
+                guardarPartida(jugador, 40, 20);
 
-                    // Se llama a la funcion para guardar partida
-                    guardarPartida(jugador, 40, 20);
+                // Se muestra el mensaje de pausa
+                pause(40, 22, "Presione enter para continuar...");
 
-                    // Se muestra el mensaje de pausa
-                    pause(40, 22, "Press enter to continue...");
+                // Se llama a cargando
+                cargando(2, jugador);
 
-                    // Se llama a cargando
-                    cargando(2,jugador);
+                break;
+            case 3:
+                // Guardar y salir
 
-                    break;
-                case 3:
-                    // Save and exit
+                // Se llama a la funcion para guardar partida
+                guardarPartida(jugador, 40, 20);
 
-                    // Se llama a la funcion para guardar partida
-                    guardarPartida(jugador, 40, 20);
+                // Se muestra el mensaje de pausa
+                pause(40, 22, "Presione enter para salir...");
 
-                    // Se muestra el mensaje de pausa
-                    pause(40, 22, "Press enter to exit...");
+                // Se sale de la aplicacion
+                exit(0);
 
-                    // Se sale de la aplicacion
-                    exit(0);
+                break;
+            case 4:
+                // Salir
 
-                    break;
-                case 4:
-                    // Exit
+                // Se muestra el mensaje de pausa
+                pause(40, 22, "Presione enter para salir...");
 
-                    // Se muestra el mensaje de pausa
-                    pause(40, 22, "Press enter to exit...");
+                // Se sale de la aplicacion
+                exit(0);
 
-                    // Se sale de la aplicacion
-                    exit(0);
-
-                    break;
-            }
+                break;
         }
-        
         break;
     }
 }
@@ -1318,7 +1246,7 @@ void cargarPartidaFE(Jugador *jugador, TreeMap* arbol_puntajes);
 void jugar(Jugador *jugador, TreeMap* arbol_puntajes);
 void menuPuntajes(TreeMap *tree, Jugador *jugador);
 void idioma(Jugador *jugador);
-void instrucciones();
+void instrucciones(Jugador *jugador);
 
 //================================
 //========MENU PRINCIPAL==========
@@ -1327,11 +1255,11 @@ void instrucciones();
 // Función para mostrar el menú
 void menu(Jugador *jugador, TreeMap *tree)
 {
-    // Se inicia un booleano para inicio de juego
-    bool inicioJuego = true;
-
     if(jugador->idioma == 1) // Español
     {
+        // Se inicia un booleano para inicio de juego
+        bool inicioJuego = true;
+
         // Se inicializa el mapa de palabras jugadas
         jugador->palabrasJugadas = createMap(is_equal_string);
 
@@ -1368,6 +1296,7 @@ void menu(Jugador *jugador, TreeMap *tree)
                 case 1:
                     // Se llama a la funcion subMenuJugar
                     subMenuJugar(jugador, tree);
+
                     break;
                 case 2:
                     // Se llama a la funcion menuPuntajes
@@ -1431,12 +1360,10 @@ void menu(Jugador *jugador, TreeMap *tree)
                 case 3:
                     // Se llama a la funcion idioma
                     idioma(jugador);
-        
                     break;
                 case 4:
                     // Se llama a la funcion instrucciones
                     instrucciones(jugador);
-
                     break;
             }
         }
@@ -1452,8 +1379,6 @@ void menu(Jugador *jugador, TreeMap *tree)
 // Función para mostrar el submenú de jugar
 void subMenuJugar(Jugador *jugador, TreeMap* arbol_puntajes)
 {
-    int opcionSeleccionada = 1;
-
     // Se limpia la pantalla del menú
     limpiarLinea(40, 16, 20);
     limpiarLinea(40, 17, 20);
@@ -1462,6 +1387,8 @@ void subMenuJugar(Jugador *jugador, TreeMap* arbol_puntajes)
 
     while(true)
     {
+        int opcionSeleccionada = 1;
+
         while(!cambiarOpcion(&opcionSeleccionada, 2))
         {
             mostrarMenu(40, 16, opcionSeleccionada, 2, jugador);
@@ -1501,16 +1428,15 @@ void menuPuntajes(TreeMap *tree, Jugador *jugador)
     pause(45, 23, "Presione enter para continuar...");
 }
 
-
 // Funcion para nuevo juego
-void nuevaPartida(Jugador *jugador, TreeMap *arbol_puntajes)
+void nuevaPartida(Jugador *jugador, TreeMap* arbol_puntajes)
 {
-    // Se limpia la pantalla del menú
-    limpiarLinea(40, 16, 20);
-    limpiarLinea(40, 17, 20);
-
-    if(jugador->idioma == 1) // Español
+    if(jugador->idioma == 1)
     {
+        // Se limpia la pantalla del menú
+        limpiarLinea(40, 16, 20);
+        limpiarLinea(40, 17, 20);
+
         // Se crea una variable para guardar el nombre del jugador
         char nombre[50];
 
@@ -1778,7 +1704,7 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
         nivel->intentosRestantes = 6;
 
         // Se inicializa los puntos del nivel segun el nivel del jugador
-        nivel->puntosNivel = 600 + (200 * (nivel->nivel - 1));
+        nivel->puntosNivel = 600 * nivel->nivel;
 
         // Se llama a la funcion para agregar una palabra aleatoria
         agregarPalabraAleatoria(jugador, nivel);
@@ -1879,10 +1805,13 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
             pause(50, 22, "Presione enter para continuar...");
 
             // Se verifica la cantidad de puntos del jugador para subir de nivel
-            if(jugador->puntos >= 1000 * jugador->nivel)
+            if(jugador->puntos >= 1000 * jugador->nivel + (500 * (jugador->nivel - 1)))
             {
                 // Se aumenta el nivel del jugador
                 jugador->nivel++;
+
+                // Se cambia el valor de la variable subirNivel
+                subirNivel = true;
 
                 // Se limpia la linea anterior
                 limpiarLinea(50, 20, 50);
@@ -1940,7 +1869,7 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
         nivel->intentosRestantes = 6;
 
         // Se inicializa los puntos del nivel segun el nivel del jugador
-        nivel->puntosNivel = 600 + (200 * (nivel->nivel - 1));
+        nivel->puntosNivel = 600 * nivel->nivel;
 
         // Se llama a la funcion para agregar una palabra aleatoria
         agregarPalabraAleatoria(jugador, nivel);
@@ -1956,6 +1885,7 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
         bool ganar = false; // Variable para saber si se ha ganado el juego
         char letra; // Variable para guardar la letra ingresada
         bool limpiarLetra = false; // Variable para saber si se debe limpiar la letra ingresada
+        bool subirNivel = false; // Variable para saber si se debe subir de nivel
 
         // Se limpia la pantalla
         limpiarPantalla();
@@ -2037,10 +1967,13 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
             pause(50, 22, "Press enter to continue...");
 
             // Se verifica la cantidad de puntos del jugador para subir de nivel
-            if(jugador->puntos >= 1000 * jugador->nivel)
+            if(jugador->puntos >= 1000 * jugador->nivel + (500 * (jugador->nivel - 1)))
             {
                 // Se aumenta el nivel del jugador
                 jugador->nivel++;
+
+                // Se cambia el valor de la variable subirNivel
+                subirNivel = true;
 
                 // Se limpia la linea anterior
                 limpiarLinea(50, 20, 50);
@@ -2072,6 +2005,13 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
 
         // Se llama a cargar
         cargando(2, jugador);
+
+        // Se verifica si se debe subir de nivel
+        if(subirNivel)
+        {
+            // Se llama a la funcion si se subio de nivel
+            menuNivel(jugador);
+        }
 
         // Se llama a la funcion jugar
         jugar(jugador, arbol_puntajes);
