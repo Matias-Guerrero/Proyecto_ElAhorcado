@@ -8,6 +8,9 @@
 #include <windows.h>
 #include <time.h>
 
+#include <Windows.h>
+#pragma comment(lib, "winmm.lib")
+
 #include "frontend.h"
 #include "../BackEnd/backend.h"
 #include "../Struct/struct.h"
@@ -296,33 +299,54 @@ void mostrarTitulo(int x, int y, int opcion, Jugador* jugador)
             gotoxy(x, y + 3); printf("(____)(____)  (__)(__)(_) (_)(_____)(_)\\_) \\___)(__)(__)(____/ (_____)");
         }
 
-    /***
-         _    _                       _     _     _             _              _           _ 
-        | |  | |                     | |   (_)   | |           | |            (_)         | |
-        | |__| | __ _ ____  ___ _   _| |__  _  __| | ___     __| | ___   _ __  ___   _____| |
-        |  __  |/ _` |_  / / __| | | | '_ \| |/ _` |/ _ \   / _` |/ _ \ | '_ \| \ \ / / _ \ |
-        | |  | | (_| |/ /  \__ \ |_| | |_) | | (_| | (_) | | (_| |  __/ | | | | |\ V /  __/ |
-        |_|  |_|\__,_/___| |___/\__,_|_.__/|_|\__,_|\___/   \__,_|\___| |_| |_|_| \_/ \___|_|                                                                                       
-     */
+        /***
+             _    _                       _     _     _             _              _           _ 
+            | |  | |                     | |   (_)   | |           | |            (_)         | |
+            | |__| | __ _ ____  ___ _   _| |__  _  __| | ___     __| | ___   _ __  ___   _____| |
+            |  __  |/ _` |_  / / __| | | | '_ \| |/ _` |/ _ \   / _` |/ _ \ | '_ \| \ \ / / _ \ |
+            | |  | | (_| |/ /  \__ \ |_| | |_) | | (_| | (_) | | (_| |  __/ | | | | |\ V /  __/ |
+            |_|  |_|\__,_/___| |___/\__,_|_.__/|_|\__,_|\___/   \__,_|\___| |_| |_|_| \_/ \___|_|                                                                                       
+        */
 
-    if(opcion == 4)
-    {
-        gotoxy(x, y); printf(" _    _                       _     _     _             _              _           _ ");
-        gotoxy(x, y + 1); printf("| |  | |                     | |   (_)   | |           | |            (_)         | |");
-        gotoxy(x, y + 2); printf("| |__| | __ _ ____  ___ _   _| |__  _  __| | ___     __| | ___   _ __  ___   _____| |");
-        gotoxy(x, y + 3); printf("|  __  |/ _` |_  / / __| | | | '_ \\| |/ _` |/ _ \\   / _` |/ _ \\ | '_ \\| \\ \\ / / _ \\ |");
-        gotoxy(x, y + 4); printf("| |  | | (_| |/ /  \\__ \\ |_| | |_) | | (_| | (_) | | (_| |  __/ | | | | |\\ V /  __/ |");
-        gotoxy(x, y + 5); printf("|_|  |_|\\__,_/___| |___/\\__,_|_.__/|_|\\__,_|\\___/   \\__,_|\\___| |_| |_|_| \\_/ \\___|_|");
-    }
-    if(opcion == 5)
-    {
-        gotoxy(x, y); printf("__________              __              __               ");
-        gotoxy(x, y + 1); printf("\\______   \\__ __  _____/  |______      |__| ____   ______");
-        gotoxy(x, y + 2); printf("|     ___/  |  \\/    \\   __\\__  \\     |  |/ __ \\ /  ___/");
-        gotoxy(x, y + 3); printf("|    |   |  |  /   |  \\  |  / __ \\_   |  \\  ___/ \\___ \\ ");
-        gotoxy(x, y + 4); printf(" |____|   |____/|___|  /__| (____  /\\__|  |\\___  >____  >");
-        gotoxy(x, y + 5); printf("                    \\/          \\/\\______|    \\/     \\/ ");
-    }
+        if(opcion == 4)
+        {
+            gotoxy(x, y); printf(" _    _                       _     _     _             _              _           _ ");
+            gotoxy(x, y + 1); printf("| |  | |                     | |   (_)   | |           | |            (_)         | |");
+            gotoxy(x, y + 2); printf("| |__| | __ _ ____  ___ _   _| |__  _  __| | ___     __| | ___   _ __  ___   _____| |");
+            gotoxy(x, y + 3); printf("|  __  |/ _` |_  / / __| | | | '_ \\| |/ _` |/ _ \\   / _` |/ _ \\ | '_ \\| \\ \\ / / _ \\ |");
+            gotoxy(x, y + 4); printf("| |  | | (_| |/ /  \\__ \\ |_| | |_) | | (_| | (_) | | (_| |  __/ | | | | |\\ V /  __/ |");
+            gotoxy(x, y + 5); printf("|_|  |_|\\__,_/___| |___/\\__,_|_.__/|_|\\__,_|\\___/   \\__,_|\\___| |_| |_|_| \\_/ \\___|_|");
+        }
+
+        if(opcion == 5)
+        {
+            gotoxy(x, y); printf("__________              __              __               ");
+            gotoxy(x, y + 1); printf("\\______   \\__ __  _____/  |______      |__| ____   ______");
+            gotoxy(x, y + 2); printf("|     ___/  |  \\/    \\   __\\__  \\     |  |/ __ \\ /  ___/");
+            gotoxy(x, y + 3); printf("|    |   |  |  /   |  \\  |  / __ \\_   |  \\  ___/ \\___ \\ ");
+            gotoxy(x, y + 4); printf(" |____|   |____/|___|  /__| (____  /\\__|  |\\___  >____  >");
+            gotoxy(x, y + 5); printf("                    \\/          \\/\\______|    \\/     \\/ ");
+        }
+
+        //  ##                      #                                                  #
+        // #  #                                                                        #
+        // #     ###    ###   ##   ##     ###   ###         ###    ##   ###            #  #  #   ###   ###  ###
+        // # ##  #  #  #  #  #      #    #  #  ##           #  #  #  #  #  #           #  #  #  #  #  #  #  #  #
+        // #  #  #     # ##  #      #    # ##    ##         #  #  #  #  #           #  #  #  #   ##   # ##  #
+        // ###  #      # #   ##   ###    # #  ###          ###    ##   #            ##    ###  #      # #  #
+        //                                                 #                                    ###
+
+        
+        if(opcion == 6)
+        {
+                gotoxy(x, y); printf("  ##                      #                                          #");
+            gotoxy(x, y + 1); printf(" #  #                                                                #");
+            gotoxy(x, y + 2); printf(" #     ###    ###   ##   ##     ###   ###     ###    ##   ###        #  #  #   ###   ###  ###");
+            gotoxy(x, y + 3); printf(" # ##  #  #  #  #  #      #    #  #  ##       #  #  #  #  #  #       #  #  #  #  #  #  #  #  #");
+            gotoxy(x, y + 4); printf(" #  #  #     # ##  #      #    # ##    ##     #  #  #  #  #       #  #  #  #   ##   # ##  #");
+            gotoxy(x, y + 5); printf(" ###   #      # #   ##   ###    # #  ###      ###    ##   #        ##    ###  #      # #  #");
+            gotoxy(x, y + 6); printf("                                              #                                ###");
+        }
 
 
         // Se restablece el color de la consola
@@ -458,7 +482,7 @@ void mostrarTitulo(int x, int y, int opcion, Jugador* jugador)
             gotoxy(x, y + 1); printf("  / __|/ __/ _ \\| '__/ _ \\/ __|");
             gotoxy(x, y + 2); printf("  \\__ \\ (_| (_) | | |  __/\\__ \\");
             gotoxy(x, y + 3); printf("  |___/\\___\\___/|_|  \\___||___/");
-        }
+        }                                                                 
 
         // Se restablece el color de la consola
         SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
@@ -476,12 +500,13 @@ void mostrarMenu(int x, int y, int opcionSeleccionada, int maxOpcion, Jugador *j
     // Menu en Español
     if(jugador->idioma == 1)
     {
-        if(maxOpcion == 4)
+        if(maxOpcion == 5)
         {
             gotoxy(x, y); printf("%s JUGAR", (opcionSeleccionada == 1) ? "->" : "  ");
             gotoxy(x, y + 1); printf("%s Ver Puntuaciones", (opcionSeleccionada == 2) ? "->" : "  ");
             gotoxy(x, y + 2); printf("%s Elegir Idioma", (opcionSeleccionada == 3) ? "->" : "  ");
             gotoxy(x, y + 3); printf("%s Instrucciones", (opcionSeleccionada == 4) ? "->" : "  ");
+            gotoxy(x, y + 4); printf("%s Salir", (opcionSeleccionada == 5) ? "->" : "  ");
         }
 
         if(maxOpcion == 2)
@@ -506,12 +531,13 @@ void mostrarMenu(int x, int y, int opcionSeleccionada, int maxOpcion, Jugador *j
     }
     else if (jugador->idioma == 2) // Menu en Ingles
     {
-        if(maxOpcion == 4)
+        if(maxOpcion == 5)
         {
             gotoxy(x, y); printf("%s Play", (opcionSeleccionada == 1) ? "->" : "  ");
             gotoxy(x, y + 1); printf("%s Score", (opcionSeleccionada == 2) ? "->" : "  ");
             gotoxy(x, y + 2); printf("%s Language", (opcionSeleccionada == 3) ? "->" : "  ");
             gotoxy(x, y + 3); printf("%s Instructions", (opcionSeleccionada == 4) ? "->" : "  ");
+            gotoxy(x, y + 4); printf("%s Exit", (opcionSeleccionada == 5) ? "->" : "  ");
         }
 
         if(maxOpcion == 2)
@@ -604,6 +630,9 @@ bool cambiarOpcion(int * opcion, int maxOpcion)
     // Se limpia el buffer de teclado
     resetearTeclas();
 
+    // Se reproduce el sonido de cambio de opcion
+    PlaySound("sound.wav", NULL, SND_FILENAME);
+
     Sleep(150);
     if( GetAsyncKeyState(VK_UP) )
     {
@@ -653,17 +682,12 @@ bool cambiarOpcion(int * opcion, int maxOpcion)
     }
     if( GetAsyncKeyState(VK_ESCAPE))
     {
-        if(maxOpcion == 4)
-        {
-            exit(0);
-        }
-        else if (maxOpcion < 4)
+        if(maxOpcion < 4)
         {
             // Se asigna opcion en 0 para volver al menu principal
             *opcion = 0;
             return true;
         }
-        
     }
 
     return false;
@@ -1234,6 +1258,63 @@ void menuNivel(Jugador *jugador)
     }
 }
 
+// Funcion para la animacion de salida
+void animacionSalida(Jugador *jugador, int duracion)
+{
+    // Se limpia la pantalla
+    limpiarPantalla();
+
+    // Se muestra el titulo
+    mostrarTitulo(12, 6, 6, jugador);
+
+    // Se inicializa la variable para mostrar el ahorcado
+    int j = 0;
+
+    // Se inicializa la variable para la duracion de cada mensaje
+    int milisegundos = 250;
+
+    // Se imprime el titulo en rosado
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 13);
+
+    if(jugador->idioma == 1)
+    {
+        // Se hace un bucle para mostrar el mensaje de cargando
+        for(int i = 0; i < duracion; i++)
+        {
+            gotoxy(50, 16); printf("Saliendo del juego");
+            Sleep(milisegundos);
+            gotoxy(50, 16); printf("Saliendo del juego.");
+            Sleep(milisegundos);
+            gotoxy(50, 16); printf("Saliendo del juego..");
+            Sleep(milisegundos);
+            gotoxy(50, 16); printf("Saliendo del juego...");
+            Sleep(milisegundos);
+
+            // Se limpia la linea anterior
+            limpiarLinea(50, 16, 21);
+        }
+
+    }
+    else if (jugador->idioma == 2)
+    {
+        // Se hace un bucle para mostrar el mensaje de cargando
+        for(int i = 0; i < duracion; i++)
+        {
+            gotoxy(50, 16); printf("Exiting game");
+            Sleep(milisegundos);
+            gotoxy(50, 16); printf("Exiting game.");
+            Sleep(milisegundos);
+            gotoxy(50, 16); printf("Exiting game..");
+            Sleep(milisegundos);
+            gotoxy(50, 16); printf("Exiting game...");
+            Sleep(milisegundos);
+
+            // Se limpia la linea anterior
+            limpiarLinea(50, 16, 21);
+        }
+    }
+}
+
 //====================================================================================================
 // FUNCIONES DE FRONTEND - PRINCIPALES
 //====================================================================================================
@@ -1286,9 +1367,9 @@ void menu(Jugador *jugador, TreeMap *tree)
                 SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
             }
 
-            while(!cambiarOpcion(&opcionSeleccionada, 4))
+            while(!cambiarOpcion(&opcionSeleccionada, 5))
             {
-                mostrarMenu(40, 16, opcionSeleccionada, 4, jugador);
+                mostrarMenu(40, 16, opcionSeleccionada, 5, jugador);
             }
 
             switch(opcionSeleccionada)
@@ -1309,6 +1390,14 @@ void menu(Jugador *jugador, TreeMap *tree)
                 case 4:
                     // Se llama a la funcion instrucciones
                     instrucciones(jugador);
+                    break;
+                case 5:
+                    // Se muestra una animacion de salida
+                    animacionSalida(jugador, 1);
+
+                    // Se sale de la aplicacion
+                    exit(0);
+
                     break;
             }
         }
@@ -1341,9 +1430,9 @@ void menu(Jugador *jugador, TreeMap *tree)
                 SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
             }
 
-            while(!cambiarOpcion(&opcionSeleccionada, 4))
+            while(!cambiarOpcion(&opcionSeleccionada, 5))
             {
-                mostrarMenu(40, 16, opcionSeleccionada, 4, jugador);
+                mostrarMenu(40, 16, opcionSeleccionada, 5, jugador);
             }
 
             switch(opcionSeleccionada)
@@ -1365,11 +1454,17 @@ void menu(Jugador *jugador, TreeMap *tree)
                     // Se llama a la funcion instrucciones
                     instrucciones(jugador);
                     break;
+                case 5:
+                    // Se muestra el mensaje de pausa
+                    pause(40, 22, "Press enter to exit...");
+
+                    // Se sale de la aplicacion
+                    exit(0);
+
+                    break;
             }
         }
     }
-   
-    
 }
 
 //===================================
