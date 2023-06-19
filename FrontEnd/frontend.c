@@ -632,6 +632,8 @@ bool cambiarOpcion(int * opcion, int maxOpcion)
     {
         *opcion -= 1;
 
+        PlaySound("sound.wav", NULL, SND_FILENAME | SND_ASYNC);
+
         if(*opcion < 1)
         {
             *opcion = 1;
@@ -640,6 +642,8 @@ bool cambiarOpcion(int * opcion, int maxOpcion)
     if( GetAsyncKeyState(VK_DOWN) )
     {
         *opcion += 1;
+
+        PlaySound("sound.wav", NULL, SND_FILENAME | SND_ASYNC);
 
         if(*opcion > maxOpcion)
         {
