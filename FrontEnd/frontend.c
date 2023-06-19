@@ -8,9 +8,6 @@
 #include <windows.h>
 #include <time.h>
 
-#include <Windows.h>
-#pragma comment(lib, "winmm.lib")
-
 #include "frontend.h"
 #include "../BackEnd/backend.h"
 #include "../Struct/struct.h"
@@ -630,9 +627,6 @@ bool cambiarOpcion(int * opcion, int maxOpcion)
     // Se limpia el buffer de teclado
     resetearTeclas();
 
-    // Se reproduce el sonido de cambio de opcion
-    PlaySound("sound.wav", NULL, SND_FILENAME);
-
     Sleep(150);
     if( GetAsyncKeyState(VK_UP) )
     {
@@ -899,6 +893,21 @@ void mostrarPalabra(int x, int y, Nivel *nivel, Jugador *jugador)
             // Se imprime debajo y al centro de la palabra a adivinar
             gotoxy(x + (10 - largo) + (i * 2), y + 2); printf("%c", toupper(nivel->palabraActual[i]));
         }
+    }
+    
+}
+
+void mostrarPista(int x, int y, Nivel *nivel, Jugador *jugador)
+{
+    if(jugador->idioma == 1) // Español
+    {
+        // Se muestra la pista
+        gotoxy(x, y); printf("Pista: %s", nivel->pista);
+    }
+    else if (jugador->idioma == 2) // Ingles
+    {
+        // Se muestra la pista
+        gotoxy(x, y); printf("Hint: %s", nivel->pista);
     }
     
 }
@@ -1479,6 +1488,7 @@ void subMenuJugar(Jugador *jugador, TreeMap* arbol_puntajes)
     limpiarLinea(40, 17, 20);
     limpiarLinea(40, 18, 20);
     limpiarLinea(40, 19, 20);
+    limpiarLinea(40, 20, 20);
 
     while(true)
     {
@@ -1844,10 +1854,19 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
             mostrarAhorcado(45, 6, nivel->intentosRestantes);
 
             // Se muestra las letras usadas
-            mostrarLetras(85, 6, nivel, jugador);
+            mostrarLetras(90, 6, nivel, jugador);
 
             // Se muestra la palabra actual con los guiones bajos saltando un espacion por guion
-            mostrarPalabra(65, 12, nivel, jugador);
+            mostrarPalabra(67, 9, nivel, jugador);
+
+            // Se cambia el color de la letra roja
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
+
+            // Se muestra la pista de la palabra
+            mostrarPista(65, 14, nivel, jugador);
+
+            // Se cambia el color de la letra blanca
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 
             // Se pregunta por la letra
             gotoxy(65, 17); printf("Ingrese una letra:  ");
@@ -1888,7 +1907,7 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
         if(ganar)
         {
             // Se muestra la ultima letra ingresada
-            mostrarPalabra(65, 12, nivel, jugador);
+            mostrarPalabra(67, 9, nivel, jugador);
 
             // Se aumenta los puntos del jugador
             jugador->puntos += nivel->puntosNivel;
