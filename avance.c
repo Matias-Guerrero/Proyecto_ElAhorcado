@@ -59,6 +59,8 @@ int main(int argc, const char * argv[])
 
     ocultarCursor();
 
+    PlaySound("loop.wav", NULL, SND_FILENAME | SND_LOOP | SND_ASYNC);
+
     menu(jugador, arbol_puntajes);
 
     return 0;

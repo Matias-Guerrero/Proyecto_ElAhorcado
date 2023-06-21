@@ -38,6 +38,11 @@ void resetearTeclas()
 
         Sleep(150);
     }
+
+    // HANDLE hStdin = GetStdHandle(STD_INPUT_HANDLE);
+    // FlushConsoleInputBuffer(hStdin);
+
+    // Sleep(50);
 }
 
 /*La función recibe los parámetros x, y
@@ -1011,103 +1016,110 @@ void procesarLetra(int x, int y, Nivel *nivel, char letra, Jugador *jugador)
     
 }
 
-// Se verifica las teclas presionadas con la funcion GetAsyncKeyState
+bool isKeyPressed(int keyCode)
+{
+    SHORT keyState = GetAsyncKeyState(keyCode);
+    return (keyState & 0x0001) != 0; // Verificar el bit menos significativo
+}
+
+bool isAnyLetterKeyPressed(char* letter)
+{
+    for (int keyCode = 'A'; keyCode <= 'Z'; keyCode++)
+    {
+        if (isKeyPressed(keyCode))
+        {
+            *letter = tolower(keyCode);
+            return true;
+        }
+    }
+
+    return false;
+}
+
 void teclaPresionada(int x, int y, char* letra, Nivel *nivel, Jugador *jugador)
 {
-    // Se limpia el buffer de teclado
     resetearTeclas();
 
-    // Se inicializa la variable tecla
-    bool tecla = false;
+    bool teclaPresionada = false;
 
-    while (!tecla)
+    while(!teclaPresionada)
     {
-        for (int i = 0x41; i <= 0x5A; i++)
+        // Se verifica si se ha presionado alguna tecla
+        if(isAnyLetterKeyPressed(letra))
         {
-            if (GetAsyncKeyState(i))
+            bool letraRepetida = false;
+
+            // Se imprime la letra presionada
+            gotoxy(x, y); printf("%c", toupper(*letra));
+
+            // Se verifica si la letra ya ha sido ingresada
+            char *letraIngresada = firstList(nivel->letrasJugadas);
+
+            while(letraIngresada != NULL)
             {
-                *letra = i + 32; // Convertir a minúscula
-                tecla = true;
-
-                // Se imprime la letra ingresada en mayuscula
-                gotoxy(x, y); printf("%c", toupper(*letra));
-
-                // Se limpia las teclas presionadas
-                resetearTeclas();
-
-                // Se verifica si la letra ya fue ingresada
-                char *letraActual = firstList(nivel->letrasJugadas);
-
-                while(letraActual != NULL)
+                // Se verifica si la letra ya ha sido ingresada
+                if(*letra == *letraIngresada)
                 {
-                    if(*letraActual == *letra)
+                    // Se muestra el mensaje de error
+                    if(jugador->idioma == 1) // Español
                     {
-                        // Se muestra el mensaje de error
-                        if(jugador->idioma == 1) // Español
-                        {
-                            gotoxy(50, 20); printf("La letra ingresada ya fue utilizada");
-                        }
-                        else if (jugador->idioma == 2) // Ingles
-                        {
-                            gotoxy(50, 20); printf("The letter entered has already been used");
-                        }
-                        
-                        
+                        gotoxy(x, y + 2); printf("La letra ya ha sido ingresada");
+
+                        PlaySound("alerta.wav", NULL, SND_FILENAME | SND_ASYNC);
+
                         ocultarCursor();
 
                         // Se muestra el mensaje de pausa
-                        if(jugador->idioma == 1) // Español
-                        {
-                            pause(50, 22, "Presione enter para continuar...");
-                        }
-                        else if (jugador->idioma == 2) // Ingles
-                        {
-                            pause(50, 22, "Press enter to continue...");
-                        }
-                        
+                        pause(x, y + 4, "Presione enter para continuar...");
+                    }
+                    else if (jugador->idioma == 2) // Ingles
+                    {
+                        gotoxy(x, y + 2); printf("The letter has already been entered");
 
-                        // Se limpia la linea anterior
-                        limpiarLinea(50, 20, 50);
+                        ocultarCursor();
 
-                        // Se limpia la letra ingresada
-                        limpiarLinea(x, y, 1);
-
-                        mostrarCursor();
-
-                        // Se cambia el valor de la variable tecla
-                        tecla = false;
-
-                        break;
+                        // Se muestra el mensaje de pausa
+                        pause(x, y + 4, "Press enter to continue...");
                     }
 
-                    // Se obtiene el siguiente elemento de la lista
-                    letraActual = nextList(nivel->letrasJugadas);
-                }
+                    // Se limpia la linea anterior
+                    limpiarLinea(x, y + 2, 30);
 
-                if(tecla == false)
-                {
+                    // Se limpia la letra ingresada
+                    limpiarLinea(x, y, 1);
+
+                    mostrarCursor();
+
+                    // Se cambia el estado de la variable
+                    letraRepetida = true;
+
                     break;
                 }
 
-                // Se limpia el buffer de teclado
-                resetearTeclas();
+                // Se obtiene la siguiente letra
+                letraIngresada = nextList(nivel->letrasJugadas);
+            }
 
-                while(!GetAsyncKeyState(VK_RETURN) && !GetAsyncKeyState(VK_BACK));
-                {
-                    if(GetAsyncKeyState(VK_BACK))
-                    {
-                        // Se limpia la linea anterior
-                        limpiarLinea(x, y, 1);
+            // Se cambia el estado de la variable si la letra no ha sido ingresada
+            if(!letraRepetida)
+            {
+                teclaPresionada = true;
+            }
+        }
 
-                        // Se limpia la variable letra
-                        *letra = '\0';
+        // Si la letra no ha esta en la lista, se espera a que se presione enter para confirmar o back para borrar la letra
+        while(!isKeyPressed(VK_RETURN) && !isKeyPressed(VK_BACK) && teclaPresionada);
+        {
+            if(GetAsyncKeyState(VK_BACK))
+            {
+                // Se limpiar la letra
+                limpiarLinea(x, y, 1);
 
-                        // Se cambia el valor de la variable tecla
-                        tecla = false;
-                    }
-                }
+                // Se limpia la variable letra
+                *letra = '\0';
 
-                break;
+                // Se cambia el estado de la variable
+                teclaPresionada = false;
             }
         }
     }
@@ -1523,20 +1535,6 @@ void subMenuJugar(Jugador *jugador, TreeMap* arbol_puntajes)
     }    
 }
 
-//Funcion para mostrar submenu de puntajes
-void menuPuntajes(TreeMap *tree, Jugador *jugador)
-{
-    // Se limpia la pantalla del menú
-    limpiarPantalla();
-
-    mostrarTitulo(35,1, 5, jugador);
-
-    mostrarPuntajes(30, 8, tree);
-
-    // Se llama a la función pause
-    pause(45, 23, "Presione enter para continuar...");
-}
-
 // Funcion para nuevo juego
 void nuevaPartida(Jugador *jugador, TreeMap* arbol_puntajes)
 {
@@ -1793,6 +1791,20 @@ void cargarPartidaFE(Jugador *jugador, TreeMap* arbol_puntajes)
         // Se llama a la funcion jugar
         jugar(jugador, arbol_puntajes);
     }
+}
+
+//Funcion para mostrar submenu de puntajes
+void menuPuntajes(TreeMap *tree, Jugador *jugador)
+{
+    // Se limpia la pantalla del menú
+    limpiarPantalla();
+
+    mostrarTitulo(35,1, 5, jugador);
+
+    mostrarPuntajes(30, 8, tree);
+
+    // Se llama a la función pause
+    pause(45, 23, "Presione enter para continuar...");
 }
 
 // Funcion Jugar
@@ -2140,6 +2152,9 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
 // Funcion para seleccionar el idioma
 void idioma(Jugador *jugador)
 {
+    // Se almacena el idioma original del jugador
+    int idiomaOriginal = jugador->idioma;
+
     int opcionSeleccionada = 1;
 
     // Se limpia la pantalla del menú 
@@ -2147,6 +2162,7 @@ void idioma(Jugador *jugador)
     limpiarLinea(40, 17, 20);
     limpiarLinea(40, 18, 20);
     limpiarLinea(40, 19, 20);
+    limpiarLinea(40, 20, 20);
 
     while(true)
     {
@@ -2177,12 +2193,19 @@ void idioma(Jugador *jugador)
 
         break;
     }    
-    cargando(2, jugador);
+    
+    // Se verifica si el idioma del jugador ha cambiado
+    if(idiomaOriginal != jugador->idioma)
+    {
+        cargando(2, jugador);
+    }
 }
 
 //  Funcion instrucciones
 void instrucciones(Jugador *jugador)
 {
+    resetearTeclas();
+
     if(jugador->idioma == 1)
     {
         // Se limpia la pantalla

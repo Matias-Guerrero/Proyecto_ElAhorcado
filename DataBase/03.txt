@@ -8,7 +8,7 @@ aun,Incluso, todavía
 ave,Animal volador
 bar,Establecimiento para tomar algo
 bus,Medio de transporte público
-con,Preposición que indica compañía
+con,Preposición que indica companía
 dar,Acción de entregar
 das,Segunda persona del singular del verbo dar
 del,Contracción de "de" y "el"
@@ -65,7 +65,7 @@ ojo,Órgano de la visión
 ola,Oscilación en el agua
 oro,Metal precioso
 osa,Hembra de oso
-oso,Animal de gran tamaño
+oso,Animal de gran tamano
 oye,Verbo oír en segunda persona
 pan,Alimento básico
 par,Enfrente o al lado de
@@ -94,7 +94,7 @@ une,Acción de juntar o unir
 uno,Número cardinal
 usa,Tercera persona del singular del verbo usar
 uso,Acción de emplear
-uva,Fruta pequeña y redonda
+uva,Fruta pequena y redonda
 vas,Tercera persona del singular del verbo ir
 ven,Segunda persona del plural del verbo venir
 veo,Primera persona del singular del verbo ver
