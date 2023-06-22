@@ -1,159 +1,159 @@
-solicitar
-encontrar
-construir
-esperanza
-cognitivo
-reconocer
-organizar
-compartir
-resultado
-optimizar
-verificar
-descubrir
-encuentra
-confiable
-actividad
-presentar
-respuesta
-convertir
-continuar
-mecanismo
-controlar
-relevante
-pretender
-necesario
-conflicto
-principal
-conjetura
-proyectar
-necesidad
-descender
-delicioso
-diferente
-describir
-excelente
-presencia
-concretar
-capacidad
-contenido
-seguridad
-conformar
-arrogante
-enfrentar
-descansar
-practicar
-confirmar
-facilitar
-recorrido
-conservar
-tendencia
-beneficio
-documento
-habilidad
-brillante
-identidad
-despertar
-incidente
-exclusivo
-fragmento
-bienestar
-constatar
-demostrar
-necesitar
-posterior
-bicicleta
-paciencia
-disfrutar
-fortaleza
-contestar
-desprecio
-comunidad
-mencionar
-argumento
-invisible
-apropiado
-cerradura
-facilidad
-funcionar
-oscuridad
-propiedad
-tranquilo
-ejercicio
-convencer
-tolerante
-vergüenza
-corriente
-registrar
-colectivo
-inestable
-demasiado
-perseguir
-felicidad
-referente
-consultar
-maravilla
-requisito
-agradable
-conseguir
-preguntar
-deterioro
-saludable
-consignar
-comprobar
-destacado
-secuencia
-verdadero
-almacenar
-bondadoso
-atractivo
-inaugurar
-disminuir
-modificar
-existente
-sustancia
-sacerdote
-coherente
-principio
-divertido
-compuesto
-proclamar
-abandonar
-paradigma
-enfurecer
-reprender
-inmediato
-despierto
-intervalo
-individuo
-colaborar
-concurrir
-liderazgo
-localizar
-semejante
-descartar
-templanza
-concordar
-cuidadoso
-completar
-constante
-preocupar
-favorecer
-desgracia
-responder
-recuperar
-impasible
-inocencia
-costumbre
-escondido
-instituir
-siguiente
-propuesta
-confianza
-sentencia
-consistir
-comercial
-sustituir
-emprender
-congregar
-escenario
-finalidad
+solicitar,Pedir o hacer una petición formal para obtener algo.
+encontrar,Descubrir o hallar algo que se buscaba.
+construir,Edificar o crear algo mediante la unión de partes o elementos.
+esperanza,Estado emocional positivo que se basa en la expectativa de que algo deseado ocurra.
+cognitivo,Relativo a los procesos mentales y al conocimiento.
+reconocer,Identificar o aceptar algo como verdadero o válido.
+organizar,Ordenar o estructurar algo de manera sistemática.
+compartir,Compartir algo con otras personas o hacerlo accesible a ellas.
+resultado,El efecto o consecuencia de una acción o proceso.
+optimizar,Mejorar o perfeccionar algo para que alcance su máximo rendimiento o eficiencia.
+verificar,Comprobar o confirmar la veracidad o exactitud de algo.
+descubrir,Encontrar algo nuevo o desconocido.
+encuentra,Tercera persona del singular del verbo "encontrar".
+confiable,Digno de confianza o que inspira confianza.
+actividad,Acción o tarea realizada por una persona.
+presentar,Mostrar o exponer algo a otras personas.
+respuesta,Reacción o contestación a una pregunta solicitud o situación.
+convertir,Transformar o cambiar algo de una forma a otra.
+continuar,Seguir o proseguir sin interrupción.
+mecanismo,Conjunto de elementos que interactúan para producir un resultado o efecto.
+controlar,Regular o supervisar algo para mantenerlo en orden o dentro de límites establecidos.
+relevante,Importante o significativo en relación con algo.
+pretender,Tener la intención o el propósito de hacer algo.
+necesario,Que es imprescindible o requerido para algo.
+conflicto,Disputa o confrontación entre dos o más partes con intereses opuestos.
+principal,Que ocupa el lugar más importante o prominente.
+conjetura,Suposición o hipótesis basada en la información disponible pero sin evidencia concluyente.
+proyectar,Planificar o disenar algo que se llevará a cabo en el futuro.
+necesidad,Estado de carencia o requerimiento de algo.
+descender,Bajar o ir hacia abajo desde un lugar más alto.
+delicioso,Muy sabroso o agradable al gusto.
+diferente,Que es distinto o no es igual a algo o alguien más.
+describir,Explicar o representar algo con palabras proporcionando detalles y características.
+excelente,De muy buena calidad o alto nivel de mérito.
+presencia,Existencia o estado de estar presente en un lugar o situación.
+concretar,Hacer algo específico definido o tangible.
+capacidad,Habilidad o aptitud para hacer algo o realizar una función.
+contenido,Información o material que se incluye o está presente en algo.
+seguridad,Estado de estar protegido o libre de peligro riesgo o dano.
+conformar,Adaptarse o ajustarse a un conjunto de normas reglas o estándares.
+arrogante,Que muestra un sentido excesivo de superioridad o importancia.
+enfrentar,Hacer frente o confrontar algo o alguien.
+descansar,Reposar o tomar un descanso para recuperar energías o relajarse.
+practicar,Realizar una actividad o ejercicio de manera regular para mejorar habilidades o conocimientos.
+confirmar,Verificar o validar algo para asegurarse de su veracidad o autenticidad.
+facilitar,Hacer más fácil o accesible una tarea proceso o situación.
+recorrido,Trayecto o ruta que se sigue desde un punto inicial hasta un punto final.
+conservar,Mantener o preservar algo en su estado actual o en buen estado.
+tendencia,Tendencia o inclinación general hacia cierto comportamiento opinión o estilo.
+beneficio,Ventaja o ganancia obtenida de algo.
+documento,Escrito o registro que contiene información o evidencia.
+habilidad,Capacidad o destreza para realizar una tarea o actividad con eficacia.
+brillante,Que emite o refleja una luz intensa o que destaca por su inteligencia o talento.
+identidad,Conjunto de características o rasgos que distinguen a una persona o entidad.
+despertar,Recuperar el estado de vigilia después de dormir o estimular el interés o la atención de alguien.
+incidente,Acontecimiento o suceso que ocurre de manera inesperada o no planificada.
+exclusivo,Que está reservado o disponible solo para ciertas personas o grupos.
+fragmento,Pedazo o parte pequena de algo más grande.
+bienestar,Estado de salud y satisfacción física mental y emocional.
+constatar,Verificar o confirmar algo mediante pruebas o evidencias.
+demostrar,Mostrar o evidenciar la veracidad o validez de algo.
+necesitar,Tener la necesidad o requerir algo para satisfacer una carencia o deseo.
+posterior,Sucesivo o que ocurre después de algo en el tiempo o en el orden.
+bicicleta,Medio de transporte de dos ruedas que se impulsa mediante el pedaleo.
+paciencia,Tolerancia y capacidad de esperar con calma y perseverancia.
+disfrutar,Gozar o experimentar placer alegría o satisfacción con algo.
+fortaleza,Resistencia física o mental capacidad de superar dificultades o adversidades.
+contestar,Responder o dar una respuesta a una pregunta o solicitud.
+desprecio,Sentimiento de falta de aprecio o valoración hacia algo o alguien.
+comunidad,Grupo de personas que comparten intereses características o ubicación geográfica.
+mencionar,Hacer referencia o citar algo o alguien de manera breve o incidental.
+argumento,Razonamiento o serie de ideas que se presentan para justificar o apoyar una opinión o posición.
+invisible,Que no se puede ver o percibir con los sentidos.
+apropiado,Adecuado o correcto para una situación o propósito específico.
+cerradura,Mecanismo de seguridad que se utiliza para bloquear o asegurar una puerta o cajón.
+facilidad,Condición de ser fácil o la capacidad de hacer algo con poco esfuerzo o dificultad.
+funcionar,Operar o trabajar de la manera prevista o esperada.
+oscuridad,Falta de luz o ausencia de iluminación.
+propiedad,Derecho de poseer controlar o disponer de algo.
+tranquilo,Calmo o en paz libre de disturbios o agitación.
+ejercicio,Actividad física realizada con el fin de mantener la salud o mejorar la condición física.
+convencer,Persuadir o lograr que alguien adopte una opinión o punto de vista.
+tolerante,Que muestra respeto y aceptación hacia las opiniones o comportamientos diferentes.
+vergüenza,Emoción negativa que se experimenta cuando se ha hecho algo considerado inapropiado o incorrecto.
+corriente,Que está en curso o en vigencia en un momento determinado.
+registrar,Hacer un registro o anotación de información en un documento o sistema.
+colectivo,Relativo a un grupo de personas que comparten características o intereses comunes.
+inestable,Que no es estable o que cambia con facilidad.
+demasiado,En exceso o más de lo necesario o adecuado.
+perseguir,Seguir o buscar activamente a alguien o algo.
+felicidad,Estado de bienestar satisfacción y alegría.
+referente,Persona o cosa que se considera como modelo ejemplo o autoridad en un determinado ámbito.
+consultar,Buscar información o consejo en una fuente de conocimiento o experto.
+maravilla,Algo que provoca asombro admiración o sorpresa.
+requisito,Condición o especificación necesaria para cumplir con un objetivo o alcanzar un resultado.
+agradable,Que produce satisfacción bienestar o placer.
+conseguir,Obtener o lograr algo que se desea o busca.
+preguntar,Hacer una pregunta o solicitar información a alguien.
+deterioro,Degradación o empeoramiento progresivo de algo.
+saludable,Que promueve o contribuye a la salud o el bienestar.
+consignar,Registrar o dejar constancia por escrito de algo.
+comprobar,Verificar o confirmar la exactitud o validez de algo.
+destacado,Que sobresale o se distingue por sus cualidades o logros.
+secuencia,Sucesión o orden en que ocurren o se presentan las cosas.
+verdadero,Que es auténtico genuino o corresponde a la realidad.
+almacenar,Guardar o depositar algo en un lugar para su conservación o uso futuro.
+bondadoso,Que tiene bondad o muestra amabilidad y generosidad hacia otros.
+atractivo,Que atrae o resulta interesante o agradable a los sentidos o la mente.
+inaugurar,Iniciar o abrir oficialmente algo como un evento o una instalación.
+disminuir,Hacer que algo sea menos en cantidad tamano intensidad o importancia.
+modificar,Cambiar o alterar algo para mejorarlo o ajustarlo a ciertas condiciones.
+existente,Que existe o está presente en un lugar o en un momento determinado.
+sustancia,Sustancia materia o elemento que forma parte de algo.
+sacerdote,Persona que tiene autoridad religiosa y que realiza ritos y ceremonias religiosas.
+coherente,Que tiene coherencia lógica o conexión entre las partes o elementos.
+principio,Fundamento o idea fundamental que guía o rige algo.
+divertido,Que causa diversión alegría o entretenimiento.
+compuesto,Formado por la unión de dos o más elementos o partes.
+proclamar,Anunciar o declarar algo de manera pública y solemne.
+abandonar,Dejar o renunciar a algo o a alguien de manera permanente o definitiva.
+paradigma,Modelo o ejemplo que sirve de referencia o guía en un campo o disciplina.
+enfurecer,Provocar ira o enfado intenso en alguien.
+reprender,Corregir o reprender a alguien por una falta o error.
+inmediato,Que ocurre o sucede sin demora o sin intervalo de tiempo.
+despierto,Que está consciente y alerta que no está dormido.
+intervalo,Período de tiempo o espacio entre dos eventos o puntos.
+individuo,Persona o ser humano considerado como entidad única y autónoma.
+colaborar,Trabajar junto con otros para lograr un objetivo común.
+concurrir,Asistir o participar en un evento reunión o lugar.
+liderazgo,Acción o capacidad de liderar dirigir o influir en un grupo o equipo.
+localizar,Encontrar o ubicar la posición o el lugar de algo o alguien.
+semejante,Que es similar o tiene características comunes a algo o alguien.
+descartar,Eliminar o desechar algo porque se considera innecesario o sin valor.
+templanza,Control o moderación de los impulsos o emociones.
+concordar,Estar de acuerdo o tener una opinión o punto de vista similar.
+cuidadoso,Que actúa con precaución atención y diligencia.
+completar,Terminar o finalizar algo en su totalidad o anadir lo que falta.
+constante,Que se mantiene invariable o estable en el tiempo o en su naturaleza.
+preocupar,Causar ansiedad inquietud o interés por algo.
+favorecer,Beneficiar o ayudar a alguien o algo.
+desgracia,Suceso o situación desafortunada o desdichada.
+responder,Contestar o dar una respuesta a algo o alguien.
+recuperar,Recobrar o volver a tener algo que se había perdido o disminuido.
+impasible,Que no muestra emoción inmutabilidad o falta de reacción ante una situación.
+inocencia,Estado o cualidad de ser inocente libre de culpa o malicia.
+costumbre,Hábito o práctica adquirida y establecida por la repetición frecuente.
+escondido,Que está oculto o fuera de la vista.
+instituir,Establecer o fundar una organización regla o costumbre.
+siguiente,Que viene o sigue en orden después de otro.
+propuesta,Idea plan o sugerencia presentada para consideración o aceptación.
+confianza,Creencia o seguridad en la integridad habilidades o cualidades de alguien.
+sentencia,Frase o enunciado que expresa un juicio o decisión sobre algo.
+consistir,Tener una naturaleza composición o estructura particular.
+comercial,Relativo al comercio o a la compra y venta de bienes o servicios.
+sustituir,Reemplazar a algo o alguien con otra cosa o persona.
+emprender,Iniciar o comenzar una actividad proyecto o empresa.
+congregar,Reunir o juntar a un grupo de personas o cosas en un lugar.
+escenario,Lugar o espacio físico donde ocurren eventos o representaciones.
+finalidad,Objetivo o propósito que se pretende lograr con algo.

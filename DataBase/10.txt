@@ -1,168 +1,164 @@
-importante
-desarrollo
-determinar
-participar
-aprovechar
-establecer
-naturaleza
-estructura
-enfermedad
-ecosistema
-trabajador
-equilibrio
-compromiso
-transmitir
-considerar
-clasificar
-satisfacer
-consciente
-exhaustivo
-estrategia
-estudiante
-iniciativa
-integridad
-comprender
-contribuir
-componente
-incentivar
-distinguir
-comentario
-contemplar
-planificar
-manifestar
-introducir
-influencia
-permanente
-incorporar
-intervenir
-distribuir
-meticuloso
-frecuencia
-itinerario
-diligencia
-equitativo
-incidencia
-posicionar
-adversidad
-permanecer
-consolidar
-constituir
-diversidad
-contaminar
-publicidad
-relevancia
-entusiasmo
-divergente
-arbitrario
-deficiente
-imprevisto
-sugerencia
-preocupado
-reconocido
-apariencia
-territorio
-dificultad
-certificar
-productivo
-repercutir
-fundamento
-movimiento
-privilegio
-encantador
-suficiente
-reproducir
-organizado
-resistente
-garantizar
-individual
-misterioso
-evidenciar
-distintivo
-delicadeza
-curiosidad
-existencia
-agradecido
-pertinente
-provechoso
-desprender
-relacionar
-diferencia
-referencia
-investigar
-imprudente
-fortalecer
-claramente
-sorprender
-recomendar
-acrecentar
-justificar
-perdurable
-adrenalina
-predominio
-abundancia
-inadecuado
-prodigioso
-inventario
-particular
-argumentar
-usualmente
-corroborar
-descuidado
-inesperado
-competente
-tolerancia
-privacidad
-involucrar
-despreciar
-concentrar
-complicado
-pertenecer
-solucionar
-disponible
-igualmente
-procedente
-vehemencia
-majestuoso
-adversario
-inevitable
-perseverar
-explicitar
-significar
-prevalecer
-manifiesto
-viabilidad
-interdecir
-primordial
-impaciente
-ostensible
-sacrificio
-disciplina
-deplorable
-equivocado
-asistencia
-deliberado
-obediencia
-autoestima
-desacuerdo
-conquistar
-interferir
-indolencia
-convencido
-supervisar
-conciencia
-finalmente
-desvanecer
-intensidad
-indulgente
-honestidad
-enriquecer
-inflexible
-reluciente
-actualidad
-inmediatez
-reglamento
-transferir
-insensible
-observador
-sobrevivir
-partidario
+aprovechar,Aprovechar o sacar provecho de algo o alguien.
+establecer,Establecer o crear algo de manera formal o definitiva.
+naturaleza,Características y propiedades innatas de algo o alguien.
+estructura,Organización o disposición de partes que conforman algo.
+enfermedad,Alteración o trastorno de la salud que afecta el funcionamiento normal del cuerpo.
+ecosistema,Sistema formado por seres vivos y su entorno físico en interacción.
+trabajador,Persona que realiza una actividad laboral o profesional.
+equilibrio,Estado de estabilidad o armonía entre fuerzas o elementos opuestos.
+compromiso,Obligación o responsabilidad adquirida hacia algo o alguien.
+transmitir,Comunicar difundir o transferir información conocimiento o sentimientos.
+considerar,Tener en cuenta o evaluar algo o a alguien de manera cuidadosa.
+clasificar,Organizar o categorizar algo o alguien en grupos o categorías.
+satisfacer,Cumplir o satisfacer una necesidad deseo o requerimiento.
+consciente,Que tiene conocimiento o está atento a algo.
+exhaustivo,Completo o detallado en todos los aspectos.
+estrategia,Plan o conjunto de acciones disenadas para alcanzar un objetivo.
+estudiante,Persona que se dedica al estudio en una institución educativa.
+iniciativa,Capacidad para tomar la delantera y comenzar algo por propia voluntad.
+integridad,Calidad de ser íntegro honesto y coherente en principios y valores.
+comprender,Entender o captar el significado o la naturaleza de algo.
+contribuir,Aportar o colaborar en la realización o logro de algo.
+componente,Parte o elemento que forma parte de un todo más grande.
+incentivar,Estimular o motivar a alguien a realizar una acción o alcanzar un objetivo.
+distinguir,Reconocer o diferenciar algo o alguien por sus características particulares.
+comentario,Opinión o observación expresada sobre algo o alguien.
+contemplar,Observar o considerar algo detenidamente.
+planificar,Elaborar un plan o estrategia para alcanzar un objetivo.
+manifestar,Expresar o mostrar algo de manera pública o evidente.
+introducir,Poner o presentar algo en un lugar o contexto por primera vez.
+influencia,Efecto o poder que alguien o algo ejerce sobre otros.
+permanente,Que dura o se mantiene sin cambios en el tiempo.
+incorporar,Agregar o incluir algo en un conjunto o sistema existente.
+intervenir,Participar o tomar parte activa en un asunto o situación.
+distribuir,Repartir o repartir algo entre varias partes o lugares.
+meticuloso,Que se realiza con atención y cuidado en los detalles.
+frecuencia,Frecuencia ocurrencia o repetición de algo en un período de tiempo.
+itinerario,Ruta o plan detallado de un viaje o recorrido.
+diligencia,Rapidez eficiencia y atención al realizar una tarea o trabajo.
+equitativo,Justo o imparcial en la distribución o trato de algo.
+incidencia,Efecto o impacto que tiene algo en una situación o resultado.
+posicionar,Colocar o situar algo o alguien en una posición o lugar específico.
+adversidad,Dificultad problema o situación desfavorable o adversa.
+permanecer,Permanecer o quedarse en un lugar o situación durante un período de tiempo.
+consolidar,Fortalecer o reforzar algo para que sea más sólido o estable.
+constituir,Formar o ser parte de algo más grande o importante.
+diversidad,Variedad o multiplicidad de elementos o características diferentes.
+contaminar,Alterar o perjudicar la pureza o calidad de algo especialmente el medio ambiente.
+publicidad,Acción o técnica de dar a conocer algo al público con fines promocionales.
+relevancia,Importancia o pertinencia de algo en relación con un tema o contexto.
+entusiasmo,Emoción o interés intensos y fervientes por algo o alguien.
+divergente,Que se aparta o difiere de lo convencional o esperado.
+arbitrario,Que se basa en la voluntad o decisión personal en lugar de principios o reglas establecidas.
+deficiente,Que tiene deficiencias o carencias especialmente en términos de calidad o cantidad.
+imprevisto,Que ocurre de manera inesperada o no prevista.
+sugerencia,Recomendación o consejo dado para consideración o adopción.
+preocupado,Que se siente ansioso inquieto o angustiado por algo.
+reconocido,Que ha sido reconocido o aceptado por su mérito logro o cualidad.
+apariencia,Aspecto o imagen exterior de algo o alguien.
+territorio,Área o espacio delimitado que pertenece a un país grupo o individuo.
+dificultad,Problema obstáculo o desafío que dificulta la realización o el logro de algo.
+certificar,Confirmar o dar fe de algo a través de una certificación oficial.
+productivo,Que es capaz de producir o generar resultados o beneficios.
+repercutir,Tener un impacto o efecto en algo o alguien.
+fundamento,Base o principio en el que se sustenta algo.
+movimiento,Cambio de posición o ubicación de algo o alguien.
+privilegio,Derecho beneficio o ventaja especial concedida a alguien.
+encantador,Que atrae o deleita por su encanto o simpatía.
+suficiente,Que es adecuado en cantidad o calidad para un propósito determinado.
+reproducir,Generar una copia o duplicado de algo o alguien.
+organizado,Que está ordenado o dispuesto de manera lógica y sistemática.
+resistente,Que es capaz de resistir o soportar fuerzas o influencias adversas.
+garantizar,Asegurar o proporcionar seguridad o certeza sobre algo.
+individual,Relacionado con una sola persona o individuo.
+misterioso,Que tiene cualidades o características enigmáticas o desconocidas.
+evidenciar,Mostrar o revelar claramente algo especialmente a través de pruebas o indicios.
+distintivo,Que se destaca o diferencia claramente de otros por sus características únicas.
+delicadeza,Cualidad de ser delicado sutil o sensible.
+curiosidad,Deseo o interés por saber o aprender algo nuevo.
+existencia,Hecho de estar presente o ser real y tangible.
+agradecido,Que siente gratitud o agradecimiento por algo o alguien.
+pertinente,Pertinente o relevante para un tema o asunto en particular.
+provechoso,Que es beneficioso o útil para alguien.
+desprender,Separar o liberar algo de algo más a lo que estaba unido.
+relacionar,Establecer una conexión vínculo o relación entre dos o más cosas.
+diferencia,Discrepancia distinción o disparidad entre dos o más elementos.
+referencia,Información o fuente de información a la que se hace referencia.
+investigar,Indagar o buscar información detallada y precisa sobre algo.
+imprudente,Que carece de prudencia o precaución o que actúa sin considerar las consecuencias.
+fortalecer,Hacer más fuerte o resistente algo o alguien.
+claramente,De manera clara precisa o comprensible.
+sorprender,Causar sorpresa o asombro a alguien.
+recomendar,Dar una recomendación o consejo favorable sobre algo o alguien.
+acrecentar,Aumentar o hacer crecer algo en tamano cantidad o intensidad.
+justificar,Dar razones o argumentos válidos que respalden o expliquen algo.
+perdurable,Que perdura o se mantiene en el tiempo.
+adrenalina,Hormona producida en situaciones de estrés o excitación que aumenta la energía y la respuesta física.
+predominio,Estado de ser predominante o tener mayor influencia o poder.
+abundancia,Gran cantidad o disponibilidad de algo.
+inadecuado,Que no es apropiado adecuado o suficiente para una situación o propósito.
+prodigioso,Extraordinario o asombroso en grado extremo.
+inventario,Listado o registro detallado de bienes recursos o existencias disponibles.
+particular,Propio o exclusivo de algo o alguien en particular.
+argumentar,Presentar razones o argumentos para respaldar o justificar una posición o punto de vista.
+usualmente,De manera habitual común o frecuente.
+corroborar,Confirmar o respaldar algo mediante pruebas o evidencia adicional.
+descuidado,Que no presta atención o cuidado adecuado a algo o alguien.
+inesperado,Que ocurre sin ser anticipado o previsto.
+competente,Que tiene las habilidades conocimientos o cualidades necesarias para realizar una tarea o trabajo.
+tolerancia,Capacidad de aceptar y respetar las diferencias o ideas de los demás.
+privacidad,Derecho o estado de estar protegido de intrusiones o divulgaciones no deseadas.
+involucrar,Incluir o hacer participar a alguien en una actividad situación o proyecto.
+despreciar,Desestimar o menospreciar a alguien o algo.
+concentrar,Focalizar o dirigir la atención o los recursos hacia algo específico.
+complicado,Que es difícil de entender resolver o manejar.
+pertenecer,Ser parte o formar parte de algo o alguien.
+solucionar,Encontrar una solución o respuesta a un problema o situación.
+disponible,Que está a disposición o se encuentra a mano para ser utilizado.
+igualmente,De la misma manera o en la misma medida.
+procedente,Que es originario o se origina de un lugar o fuente específicos.
+vehemencia,Intensidad o fuerza en la forma de expresar o actuar.
+majestuoso,Impresionante o grandioso en apariencia o magnitud.
+adversario,Persona o entidad que está en oposición o competencia con otra.
+inevitable,Que no se puede evitar o eludir.
+perseverar,Continuar o persistir en una acción o creencia a pesar de los obstáculos o dificultades.
+explicitar,Aclarar o expresar de manera clara y detallada algo que antes no era claro o evidente.
+significar,Tener un significado o sentido particular.
+prevalecer,Existir o ser más fuerte o dominante en una situación o conflicto.
+manifiesto,Evidente claro o obvio en su apariencia o significado.
+viabilidad,Posibilidad o capacidad de ser exitoso o factible.
+interdecir,Prohibir o impedir algo oficialmente.
+primordial,De máxima importancia esencial o fundamental.
+impaciente,Que no puede esperar o tiene poca tolerancia a la espera.
+ostensible,Que es evidente visible o manifiesto.
+sacrificio,Acción de renunciar o ceder algo valioso o importante por un bien mayor o una causa noble.
+disciplina,Conjunto de reglas o normas que rigen el comportamiento o la conducta de alguien.
+deplorable,Muy malo lamentable o desfavorable en términos de calidad o condiciones.
+equivocado,Que está en error o se ha comprendido incorrectamente algo.
+asistencia,Ayuda apoyo o presencia proporcionada a alguien en una situación o evento.
+deliberado,Hecho o realizado con intención o después de una reflexión cuidadosa.
+obediencia,Acto de cumplir o acatar las órdenes o instrucciones de alguien en autoridad.
+autoestima,Valoración aprecio o confianza en uno mismo y en sus habilidades.
+desacuerdo,Falta de acuerdo o concordancia en opiniones ideas o posiciones.
+conquistar,Ganar o adquirir control poder o influencia sobre algo o alguien.
+interferir,Intervenir o entrometerse en la actividad o situación de alguien o algo.
+indolencia,Falta de interés energía o diligencia en la realización de tareas o actividades.
+convencido,Creer firmemente en algo o estar plenamente convencido de algo.
+supervisar,Vigilar controlar o supervisar el progreso o desarrollo de algo o alguien.
+conciencia,Conocimiento y comprensión de uno mismo de los demás y del entorno.
+finalmente,Por último o al final de un proceso o secuencia.
+desvanecer,Desaparecer gradualmente o disiparse.
+intensidad,Grado o nivel de fuerza energía o emoción en algo.
+indulgente,Tolerante o comprensivo en la forma de tratar o juzgar a alguien.
+honestidad,Calidad de ser honesto íntegro y sincero en acciones y palabras.
+enriquecer,Hacer más rico completo o valioso algo o alguien.
+inflexible,Que no se dobla o cede fácilmente ante presiones o cambios.
+reluciente,Que brilla o resplandece intensamente.
+actualidad,Estado de estar actual o ser relevante en el presente.
+inmediatez,Característica de ser inmediato o inmediato en tiempo o cercanía.
+reglamento,Conjunto de normas o reglas establecidas para regular una actividad o situación.
+transferir,Mover o llevar algo o alguien de un lugar a otro.
+insensible,Que no muestra o siente empatía o sensibilidad hacia los demás.
+observador,Persona que mira examina o vigila atentamente algo o a alguien.
+sobrevivir,Continuar viviendo o existiendo a pesar de las dificultades o peligros.
+partidario,Seguidor o defensor de una causa idea o persona.

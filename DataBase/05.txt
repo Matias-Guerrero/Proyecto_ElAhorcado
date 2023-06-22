@@ -1,140 +1,140 @@
-salir
-tener
-tocar
-golpe
-hacer
-nuevo
-deseo
-apoyo
-valor
-poder
-crear
-miedo
-perro
-subir
-orden
-mucho
-saber
-comer
-tomar
-largo
-pedir
-sacar
-poner
-causa
-amigo
-bajar
-mujer
-karma
-armar
-parte
-mundo
-nivel
-mejor
-grupo
-feliz
-donde
-hecho
-jugar
-decir
-carta
-dulce
-bella
-claro
-final
-mayor
-luego
-snack
-bueno
-regla
-lugar
-etapa
-sabio
-antes
-forma
-dejar
-mirar
-tenaz
-tarea
-calma
-ayuda
-ahora
-viaje
-deber
-cerca
-ideal
-norma
-falta
-dicha
-lleno
-hueco
-tanto
-campo
-nunca
-papel
-girar
-frase
-suave
-punto
-libro
-volar
-lento
-salud
-dotar
-tarde
-libre
-culpa
-pasar
-dolor
-breve
-yerno
-flujo
-lindo
-capaz
-venta
-cielo
-haber
-traer
-pluma
-abrir
-viejo
-matar
-banal
-local
-icono
-flaco
-oveja
-labor
-rumbo
-globo
-total
-grito
-spray
-firme
-denso
-pobre
-copia
-estar
-igual
-osado
-vivir
-gordo
-senda
-chico
-ciego
-vasto
-clase
-temor
-parar
-pagar
-creer
-serio
-veloz
-lejos
-mismo
-honor
-optar
-sobre
-morir
-medio
-audaz
+salir,Acción de abandonar un lugar o situación
+tener,Poseer o estar en posesión de algo
+tocar,Hacer contacto físico con algo o alguien
+golpe,Impacto fuerte o acción de golpear
+hacer,Realizar una acción o llevar a cabo algo
+nuevo,Reciente o recién creado
+deseo,Anhelo o aspiración
+apoyo,Ayuda o respaldo hacia alguien o algo
+valor,Importancia o coraje frente a situaciones difíciles
+poder,Capacidad o facultad para hacer algo
+crear,Generar o producir algo nuevo
+miedo,Sensación de temor o angustia
+perro,Animal doméstico de la familia de los cánidos
+subir,Ir o moverse hacia arriba
+orden,Organización o disposición adecuada de algo
+mucho,Gran cantidad o abundancia
+saber,Tener conocimiento o información sobre algo
+comer,Ingerir alimentos
+tomar,Agarrar o coger algo
+largo,De longitud mayor a la usual
+pedir,Solicitar algo a alguien
+sacar,Extraer o retirar algo de un lugar
+poner,Colocar o ubicar algo en algún sitio
+causa,Motivo o razón que origina algo
+amigo,Persona con la cual se tiene una relación de afecto y camaradería
+bajar,Descender o moverse hacia abajo
+mujer,Ser humano de sexo femenino
+karma,Ley de causa y efecto en algunas religiones y filosofías
+armar,Montar o ensamblar algo
+parte,Porción o segmento de un todo
+mundo,Planeta Tierra y todo lo que existe en él
+nivel,Grado o categoría de algo
+mejor,Superior o de mayor calidad
+grupo,Conjunto de personas o cosas que comparten características comunes
+feliz,Estado de alegría o satisfacción
+donde,Lugar o posición en el que algo se encuentra
+hecho,Acción o suceso que ha ocurrido
+jugar,Participar en una actividad recreativa o deportiva
+decir,Expresar algo mediante palabras
+carta,Documento escrito o mensaje
+dulce,Sabor agradablemente azucarado
+bella,Hermosa o de gran belleza
+claro,Transparente o fácil de entender
+final,Última parte o conclusión de algo
+mayor,De mayor tamano edad o importancia
+luego,Después o más tarde
+snack,Pequena porción de comida para picar
+bueno,De calidad satisfactoria o positivo
+regla,Norma o principio que guía una acción o comportamiento
+lugar,Sitio o espacio físico
+etapa,Periodo o fase de desarrollo o progreso
+sabio,Persona con conocimientos y sabiduría
+antes,Previo o anterior a un momento específico
+forma,Configuración o apariencia externa de algo
+dejar,Permitir o abandonar algo o a alguien
+mirar,Observar o dirigir la vista hacia algo o alguien
+tenaz,Persistente o perseverante en alcanzar un objetivo
+tarea,Actividad o trabajo que debe ser realizado
+calma,Estado de tranquilidad o serenidad
+ayuda,Asistencia o colaboración que se brinda a alguien
+ahora,En este momento o instante
+viaje,Desplazamiento de un lugar a otro
+deber,Obligación o responsabilidad de hacer algo
+cerca,Próximo o a poca distancia
+ideal,Modelo perfecto o deseado
+norma,Regla o estándar establecido
+falta,Ausencia o carencia de algo
+dicha,Felicidad o alegría intensa
+lleno,Que está ocupado o completo
+hueco,Espacio vacío o cavidad
+tanto,Cantidad indeterminada o en gran medida
+campo,Área de tierra destinada a la agricultura o actividad específica
+nunca,En ningún momento o de ninguna manera
+papel,Material en forma de hoja utilizado para escribir o imprimir
+girar,Dar vueltas alrededor de un eje
+frase,Conjunto de palabras con sentido completo
+suave,De textura delicada o de poca dureza
+punto,Marca o signo gráfico que indica un lugar específico
+libro,Obra escrita y encuadernada
+volar,Desplazarse en el aire mediante el uso de alas o algún medio de vuelo
+lento,Que se mueve o realiza acciones con poca velocidad
+salud,Estado de bienestar físico mental y social
+dotar,Proveer o equipar con algo necesario o deseado
+tarde,Después del tiempo esperado o habitual
+libre,Sin restricciones o limitaciones
+culpa,Responsabilidad o cargo de haber cometido algo incorrecto
+pasar,Moverse o desplazarse de un lugar a otro
+dolor,Sensación desagradable producida por una lesión o enfermedad
+breve,De corta duración o extensión
+yerno,Esposo de la hija en relación al padre o madre
+flujo,Movimiento constante o continuo de algo
+lindo,Bonito o atractivo a la vista
+capaz,Competente o habilidoso para realizar algo
+venta,Acción de comercializar o intercambiar bienes o servicios por dinero
+cielo,Espacio celeste sobre la Tierra
+haber,Existir o poseer algo
+traer,Llevar algo o alguien hacia el lugar donde se encuentra el hablante
+pluma,Instrumento de escritura con tinta
+abrir,Hacer que algo deje de estar cerrado o tapado
+viejo,De edad avanzada o de largo tiempo de existencia
+matar,Causar la muerte de alguien o algo
+banal,Sin interés o trivial
+local,Perteneciente o relacionado con un lugar específico
+icono,Símbolo gráfico que representa algo o alguien
+flaco,Delgado o de complexión física delgada
+oveja,Animal mamífero de la familia de los bóvidos
+labor,Trabajo o actividad realizada para lograr un objetivo
+rumbo,Dirección o trayectoria hacia donde se dirige algo o alguien
+globo,Objeto redondeado y lleno de aire utilizado como adorno o juguete
+total,Completo o sin faltantes
+grito,Voz fuerte y aguda emitida con fuerza
+spray,Envase presurizado que expulsa líquido en forma de aerosol
+firme,Estable o sólido
+denso,Compacto o de alta densidad
+pobre,Que tiene escasos recursos o carece de riquezas
+copia,Reproducción o duplicado de algo
+estar,Encontrarse en un lugar o situación
+igual,Similar o idéntico
+osado,Atrevido o valiente en la toma de riesgos
+vivir,Tener vida o existencia
+gordo,De gran tamano o volumen
+senda,Camino estrecho o sendero
+chico,Joven o de corta edad
+ciego,Que carece de visión o capacidad de ver
+vasto,Amplio o extenso en tamano o alcance
+clase,Grupo de estudiantes que reciben ensenanza sobre un tema específico
+temor,Sensación de miedo o inquietud
+parar,Dejar de moverse o detenerse
+pagar,Entregar dinero o realizar un pago por algo
+creer,Tener fe o confianza en algo o alguien
+serio,Formal o que muestra seriedad
+veloz,Rápido o que se mueve con gran velocidad
+lejos,A una distancia considerable o remota
+mismo,Identico o de la misma naturaleza
+honor,Respeto o reconocimiento por la integridad o méritos de alguien
+optar,Elegir entre varias opciones o alternativas
+sobre,Encima o en la parte superior de algo
+morir,Dejar de vivir o perder la vida
+medio,Situado entre dos extremos o partes
+audaz,Valiente o intrépido en la realización de acciones desafiantes
