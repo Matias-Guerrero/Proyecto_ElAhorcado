@@ -1,148 +1,148 @@
-ability
-backing
-cabinet
-absence
-balance
-caliber
-beating
-caption
-address
-binding
-certain
-alleged
-brother
-chamber
-already
-brought
-channel
-analyst
-burning
-chapter
-ancient
-dealing
-charity
-another
-decided
-charlie
-anxiety
-decline
-charter
-anxious
-default
-checked
-anybody
-defence
-chicken
-clothes
-attract
-devoted
-collect
-auction
-diamond
-college
-average
-digital
-evening
-driving
-concept
-evident
-dynamic
-concern
-exactly
-factory
-concert
-examine
-faculty
-conduct
-example
-failing
-confirm
-excited
-failure
-connect
-exclude
-fashion
-consent
-exhibit
-feature
-consist
-expense
-fishing
-correct
-genetic
-fitness
-council
-genuine
-foreign
-counsel
-gigabit
-forever
-counter
-greater
-formula
-country
-hanging
-fortune
-crucial
-heading
-forward
-crystal
-healthy
-founder
-culture
-hearing
-freedom
-current
-heavily
-further
-kingdom
-housing
-insight
-kitchen
-however
-install
-knowing
-hundred
-instant
-machine
-husband
-instead
-manager
-landing
-liberal
-network
-missing
-obvious
-package
-morning
-opinion
-passing
-musical
-optical
-passion
-mystery
-organic
-popular
-profile
-quarter
-section
-success
-radical
-segment
-suggest
-railway
-serious
-summary
-readily
-reflect
-warning
-winning
-variety
-warrant
-without
-various
-wearing
-witness
-vehicle
-visible
-waiting
+ability,capacity or skill to do something.
+backing,support or assistance.
+cabinet,a piece of furniture with shelves, drawers, or compartments for storing or displaying items.
+absence,the state of being away or not present.
+balance,an even distribution of weight enabling someone or something to remain upright and steady.
+caliber,the quality or level of someone's ability or character.
+beating,a physical act of striking or hitting someone or something repeatedly.
+caption,a title or brief explanation appended to an article, illustration, cartoon, or poster.
+address,the particulars of the place where someone lives or an organization is situated.
+binding,the action of fastening or holding together the pages or covers of a book.
+certain,known for sure; established beyond doubt.
+alleged,said without proof or with a presumption of guilt or fault.
+brother,a male sibling.
+chamber,a large room used for formal or public events.
+already,before or by now or the time in question.
+brought,past tense and past participle of the verb "bring."
+channel,a means of communication or expression.
+analyst,a person who conducts analysis, typically in a professional capacity.
+burning,being on fire or emitting flames.
+chapter,a main division of a book, typically with a number or title.
+ancient,belonging to the very distant past and no longer in existence.
+dealing,the activity of buying and selling goods or services.
+charity,the voluntary giving of help, typically in the form of money, to those in need.
+another,one more of the same kind or category.
+decided,having made a resolution or determination.
+charlie,a given name or a slang term for cocaine.
+anxiety,a feeling of unease, such as worry or fear.
+decline,politely refuse to accept or comply with something.
+charter,a written grant by a country's legislative or sovereign power.
+anxious,experiencing worry, unease, or nervousness.
+default,failure to fulfill an obligation or perform a task.
+checked,having a pattern of small squares.
+anybody,any person.
+defence,the action of defending from or resisting attack.
+chicken,a domestic fowl kept for its eggs or meat.
+clothes,items worn to cover the body.
+attract,cause to come to a place or participate in a venture by offering something of interest, favorable conditions, or opportunities.
+devoted,very loving or loyal.
+collect,bring or gather together (things, typically when scattered or widespread).
+auction,a public sale in which goods or property are sold to the highest bidder.
+diamond,a precious stone consisting of a clear and typically colorless crystalline form of pure carbon.
+college,an educational institution or establishment.
+average,typical or normal.
+digital,relating to or using signals or information represented by discrete values (digits) rather than by continuous ranges of values.
+evening,the period of time at the end of the day, usually from about 6 p.m. to bedtime.
+driving,operating a vehicle.
+concept,an abstract idea or general notion.
+evident,plain or obvious; clearly seen or understood.
+dynamic,characterized by constant change, activity, or progress.
+concern,a matter of interest or importance.
+exactly,in a precise or accurate manner.
+factory,a building or group of buildings where goods are manufactured or assembled chiefly by machine.
+concert,a musical performance given in public, typically by several performers or of several compositions.
+examine,inspect (someone or something) in detail to determine their nature or condition.
+faculty,an inherent mental or physical power.
+conduct,the manner in which a person behaves, especially on a particular occasion or in a particular context.
+example,a thing characteristic of its kind or illustrating a general rule.
+failing,a weakness or deficiency.
+confirm,establish the truth or correctness of (something previously believed or suspected to be the case).
+excited,very enthusiastic and eager.
+failure,lack of success.
+connect,bring together or into contact so that a real or notional link is established.
+exclude,deny (someone) access to or bar (someone) from a place, group, or privilege.
+fashion,a popular trend, especially in styles of dress and ornament or manners of behavior.
+consent,permission for something to happen or agreement to do something.
+exhibit,publicly display (a work of art or item of interest) in an art gallery or museum or at a trade fair.
+feature,a distinctive attribute or aspect of something.
+consist,be composed or made up of.
+expense,the cost incurred in or required for something.
+fishing,the activity of catching fish, either for food or as a sport.
+correct,free from error; in accordance with fact or truth.
+genetic,relating to genes or heredity.
+fitness,the condition of being physically fit and healthy.
+council,an advisory, deliberative, or legislative body of people formally constituted and meeting regularly.
+genuine,truly what something is said to be; authentic.
+foreign,of, from, in, or characteristic of a country or language other than one's own.
+counsel,advice, especially that given formally.
+gigabit,a unit of information equal to one billion (109) bits.
+forever,for all future time; for always.
+counter,a long flat-topped fitment across which business is conducted in a shop or bank.
+greater,of an extent, amount, or intensity beyond what is usual or average.
+formula,a mathematical relationship or rule expressed in symbols.
+country,a nation with its own government, occupying a particular territory.
+hanging,suspending or attaching something so that it is free on all sides except at the point of support.
+fortune,chance or luck as an external, arbitrary force affecting human affairs.
+crucial,decisive or critical, especially in the success or failure of something.
+heading,a title at the head of a page or section of a book.
+forward,onward so as to make progress; toward a successful conclusion.
+crystal,a piece of a homogeneous solid substance having a natural geometrically regular form with symmetrically arranged plane faces.
+healthy,in a good physical or mental condition; in good health.
+founder,a person who establishes an institution or settlement.
+culture,the arts and other manifestations of human intellectual achievement regarded collectively.
+hearing,the faculty of perceiving sounds.
+freedom,the power or right to act, speak, or think as one wants without hindrance or restraint.
+current,belonging to the present time; happening or being used or done now.
+heavily,to a great extent; with great weight or force.
+further,at, to, or by a greater distance (used to indicate distance in space or time).
+kingdom,a country, state, or territory ruled by a king or queen.
+housing,the state of being housed or sheltered.
+insight,the capacity to gain an accurate and deep understanding of someone or something.
+kitchen,a room or area where food is prepared and cooked.
+however,used to introduce a statement that contrasts with or seems to contradict something that has been said previously.
+install,place or fix (equipment or machinery) in position ready for use.
+knowing,having knowledge or information; aware or informed.
+hundred,the number equivalent to the product of ten and ten; ten more than ninety; 100.
+instant,happening or coming immediately.
+machine,an apparatus using mechanical power and having several parts, each with a definite function and together performing a particular task.
+husband,a married man considered in relation to his spouse.
+instead,as an alternative or substitute.
+manager,a person responsible for controlling or administering an organization or group of staff.
+landing,an instance of coming or bringing something to land, either from the air or from water.
+liberal,open to new behavior or opinions and willing to discard traditional values.
+network,an arrangement of intersecting horizontal and vertical lines.
+missing,not able to be found because it is not in its expected place.
+obvious,easily perceived or understood; clear, self-evident, or apparent.
+package,an object or group of objects wrapped in paper or plastic, or packed in a box.
+morning,the period of time between midnight and noon, especially from sunrise to noon.
+opinion,a view or judgment formed about something, not necessarily based on fact or knowledge.
+passing,lasting only for a short time; impermanent.
+musical,relating to music; melodious; harmonious.
+optical,relating to sight, especially in relation to the physical action of light.
+passion,strong and barely controllable emotion.
+mystery,something that is difficult or impossible to understand or explain.
+organic,relating to or derived from living matter.
+popular,liked, admired, or enjoyed by many people or by a particular person or group.
+profile,an outline of something, especially a person's face, as seen from one side.
+quarter,each of four equal or corresponding parts into which something is or can be divided.
+section,any of the more or less distinct parts into which something is or may be divided or from which it is made up.
+success,the accomplishment of an aim or purpose.
+radical,advocating or based on thorough or complete political or social change.
+segment,each of the parts into which something is or may be divided.
+suggest,put forward for consideration.
+railway,a track or set of tracks made of steel rails along which passenger and freight trains run.
+serious,demanding or characterized by careful consideration or application.
+summary,a brief statement or account of the main points of something.
+readily,without hesitation or reluctance; willingly.
+reflect,throw back (heat, light, or sound) without absorbing it.
+warning,a statement or event that indicates a possible or impending danger, problem, or other unpleasant situation.
+winning,gaining, resulting in, or relating to victory in a contest or competition.
+variety,the quality or state of being different or diverse.
+warrant,justify or necessitate (a course of action).
+without,not having or including; lacking or absent.
+various,different from one another; of different kinds or sorts.
+wearing,the action of wearing something.
+witness,a person who sees an event, typically a crime or accident, take place.
+vehicle,a thing used for transporting people or goods, especially on land, such as a car, truck, or cart.
+visible,able to be seen.
+waiting,the action of staying where one is or delaying action until a particular time or event.

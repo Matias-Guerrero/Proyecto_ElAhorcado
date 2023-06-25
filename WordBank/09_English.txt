@@ -1,101 +1,101 @@
-authority
-abandoned
-advantage
-admission
-agreement
-breakfast
-beautiful
-brilliant
-injection
-beginning
-community
-celebrity
-complaint
-confident
-difficult
-different
-direction
-dangerous
-equipment
-everybody
-exception
-excellent
-frequency
-financial
-formation
-forgotten
-gradually
-generally
-guarantee
-greatness
-harlequin
-highlight
-historian
-happiness
-hairstyle
-important
-influence
-intensity
-intention
-jellyfish
-judgment
-justified
-juridical
-knowledge
-kilometer
-kidnapped
-kiloliter
-sabotaged
-lifestyle
-landscape
-legendary
-landscape
-mechanism
-marketing
-masculine
-migration
-necessary
-negotiate
-narrative
-nutrition
-otherwise
-operation
-offensive
-principle
-permanent
-procedure
-potential
-recognize
-reference
-regularly
-earliness
-reduction
-similarly
-substance
-sensitive
-situation
-typically
-transform
-vaccinate
-territory
-treatment
-universal
-underline
-uplifting
-unhealthy
-violation
-variation
-vibration
-visualize
-factorize
-wonderful
-worthless
-waterfall
-worldwide
-yesterday
-youngster
-yellowish
-youthhood
-zoography
-zoophobia
-zoonomist
+authority,the power or right to give orders, make decisions, and enforce obedience.
+abandoned,left behind or deserted.
+advantage,a condition or circumstance that puts one in a favorable or superior position.
+admission,the act of allowing someone to enter a place or join an organization.
+agreement,a mutual understanding or arrangement between two or more parties.
+breakfast,the first meal of the day, usually eaten in the morning.
+beautiful,pleasing to the senses or mind, often associated with aesthetic appeal.
+brilliant,exceptionally intelligent or talented; shining brightly.
+injection,the act of introducing a substance into the body using a needle and syringe.
+beginning,the point in time or space at which something starts.
+community,a group of people living in the same area or having a particular characteristic in common.
+celebrity,a famous or well-known person.
+complaint,an expression of dissatisfaction or discontentment.
+confident,feeling or showing assurance and self-assurance.
+difficult,requiring great effort or skill to accomplish or overcome.
+different,not the same as another or each other; distinct or separate.
+direction,the course or path along which someone or something moves, faces, or is aimed.
+dangerous,involving a risk of harm, injury, or death.
+equipment,the necessary items or tools for a particular purpose or activity.
+everybody,every person; everyone.
+exception,a person or thing that is excluded from a general statement or does not follow a rule.
+excellent,extremely good; outstanding.
+frequency,the rate at which something occurs or is repeated over a particular period of time.
+financial,relating to money or the management of money.
+formation,the action of forming or process of being formed.
+forgotten,no longer remembered or regarded; left behind.
+gradually,happening or changing in small stages over time.
+generally,usually; in most cases.
+guarantee,a formal assurance or promise, especially to provide a particular outcome or condition.
+greatness,the quality or state of being great; eminence or distinction.
+harlequin,a clown or buffoon, typically dressed in bright, multicolored clothes.
+highlight,an outstanding or memorable part or feature.
+historian,an expert in or student of history.
+happiness,the state of being happy or feeling pleasure.
+hairstyle,a particular way in which a person's hair is cut or arranged.
+important,of great significance or value; notable.
+influence,the capacity to have an effect on the character, development, or behavior of someone or something.
+intensity,the quality of being intense; the degree or amount of strength or force.
+intention,a thing intended; an aim or plan.
+jellyfish,a free-swimming marine animal with a jelly-like bell or umbrella-shaped body and tentacles.
+judgment,the ability to make considered decisions or come to sensible conclusions.
+justified,having, done for, or marked by a good or legitimate reason.
+juridical,relating to the administration of justice or the law.
+knowledge,facts, information, and skills acquired through experience, education, or training.
+kilometer,a unit of length equal to 1,000 meters.
+kidnapped,taken away or captured by force, often for ransom.
+kiloliter,a unit of volume equal to 1,000 liters.
+sabotaged,deliberately destroy, damage, or obstruct (something), especially for political or military advantage.
+lifestyle,the way in which a person or group lives.
+landscape,all the visible features of an area of land, often considered in terms of their aesthetic appeal.
+legendary,remarkable enough to be famous; very well known.
+landscape,all the visible features of an area of land,often considered in terms of their aesthetic appeal.
+mechanism,a system or process that is used to achieve a particular result.
+marketing,the action or business of promoting and selling products or services.
+masculine,having qualities or appearance traditionally associated with men.
+migration,the movement of people, animals, or birds from one region or habitat to another.
+necessary,required to be done, achieved, or present; needed; essential.
+negotiate,try to reach an agreement or compromise by discussion with others.
+narrative,a spoken or written account of connected events; a story.
+nutrition,the process of providing or obtaining the food necessary for health and growth.
+otherwise,in circumstances different from those present or considered.
+operation,the action of functioning or the fact of being active or in effect.
+offensive,causing someone to feel deeply hurt, upset, or angry.
+principle,a fundamental truth or proposition that serves as the foundation for a system of belief or behavior.
+permanent,lasting or intended to last or remain unchanged indefinitely.
+procedure,a series of actions conducted in a certain order or manner.
+potential,having the capacity to become or develop into something in the future.
+recognize,identify (someone or something) from having encountered them before.
+reference,the action of mentioning or alluding to something.
+regularly,at fixed or uniform intervals; frequently.
+earliness,the quality or condition of being early in time.
+reduction,the action or fact of making something smaller or less in amount, degree, or size.
+similarly,in a similar manner; in the same way.
+substance,a particular kind of matter with uniform properties.
+sensitive,quick to detect or respond to slight changes, signals, or influences.
+situation,a set of circumstances in which one finds oneself.
+typically,in most cases; usually.
+transform,make a marked change in the form, nature, or appearance of.
+vaccinate,treat with a vaccine to produce immunity against a disease.
+territory,an area of land under the jurisdiction of a ruler or state.
+treatment,medical care or action given to a patient for an illness or injury.
+universal,applicable or common to all members of a group or set.
+underline,draw a line beneath (a word or phrase) to give emphasis or indicate special type.
+uplifting,making someone feel happier or more hopeful.
+unhealthy,not conducive to good health; not beneficial.
+violation,the action of violating someone or something.
+variation,a change or difference in condition, amount, or level.
+vibration,an instance of vibrating or the state of being vibrated.
+visualize,form a mental image of; imagine.
+factorize,resolve (a mathematical expression or equation) into factors.
+wonderful,inspiring delight, pleasure, or admiration; extremely good.
+worthless,having no real value or use.
+waterfall,a cascade of water falling from a height, formed when a river or stream flows over a precipice or steep incline.
+worldwide,extending or reaching throughout the world.
+yesterday,on the day before today.
+youngster,a young person, typically a child or teenager.
+yellowish,somewhat yellow in color.
+youthhood,the state or period of being a youth.
+zoography,the branch of zoology that deals with the geographical distribution of animals.
+zoophobia,an abnormal fear of animals.
+zoonomist,a person who studies the laws or principles of animal life.
