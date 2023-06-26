@@ -485,6 +485,7 @@ void mostrarMenu(int x, int y, int opcionSeleccionada, int maxOpcion, Jugador *j
             gotoxy(x, y + 2); printf("%s Elegir Idioma", (opcionSeleccionada == 3) ? "->" : "  ");
             gotoxy(x, y + 3); printf("%s Instrucciones", (opcionSeleccionada == 4) ? "->" : "  ");
         }
+    
 
         if(maxOpcion == 2)
         {
@@ -1415,12 +1416,15 @@ void menu(Jugador *jugador, TreeMap *tree)
                     // Se llama a la funcion instrucciones
                     instrucciones(jugador);
                     break;
+                case 5:
+                    //se sale de la funcion menu
+                    return;  
             }
         }
-    }
-   
-    
+    } 
 }
+             
+        
 
 //===================================
 //========SUBMENU JUGAR =============
@@ -1434,6 +1438,7 @@ void subMenuJugar(Jugador *jugador, TreeMap* arbol_puntajes)
     limpiarLinea(40, 17, 20);
     limpiarLinea(40, 18, 20);
     limpiarLinea(40, 19, 20);
+    limpiarLinea(40, 20, 20);
 
     while(true)
     {
