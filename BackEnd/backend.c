@@ -85,109 +85,253 @@ char* quitar_tildes(char* cadena)
 // Función para buscar una palabra aleatoria
 void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
 {   
-    char archivo[20];
-
-    int totalPalabras = 100;
-
-    // Se verifica el nivel seleccionado
-    switch(jugador->nivel)
+    if(jugador->idioma == 1)
     {
-        case 1:
-            strcpy(archivo, "DataBase/03.txt");
-            totalPalabras = 104;
-            break;
-        case 2:
-            strcpy(archivo, "DataBase/04.txt");
-            totalPalabras = 407;
-            break;
-        case 3:
-            strcpy(archivo, "DataBase/05.txt");
-            totalPalabras = 1007;
-            break;
-        case 4:
-            strcpy(archivo, "DataBase/06.txt");
-            totalPalabras = 766;
-            break;
-        case 5:
-            strcpy(archivo, "DataBase/07.txt");
-            break;
-        case 6:
-            strcpy(archivo, "DataBase/08.txt");
-            break;
-        case 7:
-            strcpy(archivo, "DataBase/09.txt");
-            break;
-        case 8:
-            strcpy(archivo, "DataBase/10.txt");
-            break;
-    }
+        char archivo[20];
 
-    // Se abre el archivo
-    FILE *file = fopen(archivo, "r");
+        int totalPalabras = 100;
 
-    // Se verifica que el archivo exista
-    if(file == NULL)
-    {
-        printf("No se pudo abrir el archivo\n");
-        system("pause");
-        exit(1);
-    }
-
-    // Se inicializa la semilla para generar números aleatorios
-    srand(time(NULL));
-
-    // Se crea un buffer para almacenar la palabra
-    char buffer[100];
-
-    // Se recorre el archivo
-    while(fgets(buffer, 100, file))
-    {
-        // Se obtiene un número aleatorio
-        int aleatorio = rand() % totalPalabras;
-
-        // Se saltan las palabras hasta llegar al número aleatorio
-        for(int i = 0; i < aleatorio; i++)
+        // Se verifica el nivel seleccionado
+        switch(jugador->nivel)
         {
-            fgets(buffer, 100, file);
+            case 1:
+                strcpy(archivo, "DataBase/03.txt");
+                totalPalabras = 104;
+                break;
+            case 2:
+                strcpy(archivo, "DataBase/04.txt");
+                totalPalabras = 407;
+                break;
+            case 3:
+                strcpy(archivo, "DataBase/05.txt");
+                totalPalabras = 1007;
+                break;
+            case 4:
+                strcpy(archivo, "DataBase/06.txt");
+                totalPalabras = 766;
+                break;
+            case 5:
+                strcpy(archivo, "DataBase/07.txt");
+                break;
+            case 6:
+                strcpy(archivo, "DataBase/08.txt");
+                break;
+            case 7:
+                strcpy(archivo, "DataBase/09.txt");
+                break;
+            case 8:
+                strcpy(archivo, "DataBase/10.txt");
+                break;
+            case 9:
+                strcpy(archivo, "DataBase/11.txt");
+                break;
+            case 10:
+                strcpy(archivo, "DataBase/12.txt");
+                break;
+            case 11:
+                strcpy(archivo, "DataBase/13.txt");
+                break;
+            case 12:
+                strcpy(archivo, "DataBase/14.txt");
+                break;
+            case 13:
+                strcpy(archivo, "DataBase/15.txt");
+                break;
+            case 14:
+                strcpy(archivo, "DataBase/16.txt");
+                break;
+            case 15:
+                strcpy(archivo, "DataBase/17.txt");
+                break;
+            case 16:
+                strcpy(archivo, "DataBase/18.txt");
+                break;
+            case 17:
+                strcpy(archivo, "DataBase/19.txt");
+                break;
+            case 18:
+                strcpy(archivo, "DataBase/20.txt");
+                break;
+            case 19:
+                strcpy(archivo, "DataBase/21.txt");
+                break;
+            case 20:
+                strcpy(archivo, "DataBase/22.txt");
+                break;
+            case 21:
+                strcpy(archivo, "DataBase/23.txt");
+                break;
         }
 
-        // Se elimina el salto de linea
-        buffer[strlen(buffer) - 1] = '\0';
+        // Se abre el archivo
+        FILE *file = fopen(archivo, "r");
 
-        // Se crea una struct para almacenar la palabra
-        Palabra *palabra = (Palabra *) malloc(sizeof(Palabra));
-
-        // Se asigna la palabra a la struct
-        strcpy(palabra->palabra, buffer);
-
-        // Se asigna el nivel a la struct
-        palabra->nivel = jugador->nivel;
-
-        // Se verifica que la palabra no haya sido jugada
-        if(searchMap(jugador->palabrasJugadas, palabra->palabra) == NULL)
+        // Se verifica que el archivo exista
+        if(file == NULL)
         {
-            // Se agrega la palabra al mapa
-            insertMap(jugador->palabrasJugadas, palabra->palabra, palabra);
-
-            // Se asigna la palabra secreta
-            strcpy(nivel->palabraSecreta, buffer);
-
-            break;
+            printf("No se pudo abrir el archivo\n");
+            system("pause");
+            exit(1);
         }
-        else
+
+        // Se inicializa la semilla para generar números aleatorios
+        srand(time(NULL));
+
+        // Se crea un buffer para almacenar la palabra
+        char buffer[100];
+
+        // Se recorre el archivo
+        while(fgets(buffer, 100, file))
         {
-            // Se vuelven al inicio del archivo
-            rewind(file);
+            // Se obtiene un número aleatorio
+            int aleatorio = rand() % totalPalabras;
+
+            // Se saltan las palabras hasta llegar al número aleatorio
+            for(int i = 0; i < aleatorio; i++)
+            {
+                fgets(buffer, 100, file);
+            }
+
+            // Se elimina el salto de linea
+            buffer[strlen(buffer) - 1] = '\0';
+
+            // Se crea una struct para almacenar la palabra
+            Palabra *palabra = (Palabra *) malloc(sizeof(Palabra));
+
+            // Se asigna la palabra a la struct
+            strcpy(palabra->palabra, buffer);
+
+            // Se asigna el nivel a la struct
+            palabra->nivel = jugador->nivel;
+
+            // Se verifica que la palabra no haya sido jugada
+            if(searchMap(jugador->palabrasJugadas, palabra->palabra) == NULL)
+            {
+                // Se agrega la palabra al mapa
+                insertMap(jugador->palabrasJugadas, palabra->palabra, palabra);
+
+                // Se asigna la palabra secreta
+                strcpy(nivel->palabraSecreta, buffer);
+
+                break;
+            }
+            else
+            {
+                // Se vuelven al inicio del archivo
+                rewind(file);
+            }
         }
+
+        // Se cierra el archivo
+        fclose(file);
     }
+    else if (jugador->idioma == 2)
+    {
+        char archivo[20];
 
-    // Se cierra el archivo
-    fclose(file);
+        int totalPalabras = 100;
+
+        // Se verifica el nivel seleccionado
+        switch(jugador->nivel)
+        {
+            case 1:
+                strcpy(archivo, "WordBank/03_English.txt");
+                totalPalabras = 171;
+                break;
+            case 2:
+                strcpy(archivo, "WordBank/04_English.txt");
+                totalPalabras = 69;
+                break;
+            case 3:
+                strcpy(archivo, "WordBank/05_English.txt");
+                totalPalabras = 488;
+                break;
+            case 4:
+                strcpy(archivo, "WordBank/06_English.txt");
+                totalPalabras = 140;
+                break;
+            case 5:
+                strcpy(archivo, "WordBank/07_English.txt");
+                totalPalabras = 500;
+                break;
+            case 6:
+                strcpy(archivo, "WordBank/08_English.txt");
+                totalPalabras = 500;
+                break;
+            case 7:
+                strcpy(archivo, "WordBank/09_English.txt");
+                totalPalabras = 95;
+                break;
+            case 8:
+                strcpy(archivo, "WordBank/10_English.txt");
+                totalPalabras = 100;
+                break;
+        }
+
+        // Se abre el archivo
+        FILE *file = fopen(archivo, "r");
+
+        // Se verifica que el archivo exista
+        if(file == NULL)
+        {
+            printf("No se pudo abrir el archivo\n");
+            system("pause");
+            exit(1);
+        }
+
+        // Se inicializa la semilla para generar números aleatorios
+        srand(time(NULL));
+
+        // Se crea un buffer para almacenar la palabra
+        char buffer[100];
+
+        // Se recorre el archivo
+        while(fgets(buffer, 100, file))
+        {
+            // Se obtiene un número aleatorio
+            int aleatorio = rand() % totalPalabras;
+
+            // Se saltan las palabras hasta llegar al número aleatorio
+            for(int i = 0; i < aleatorio; i++)
+            {
+                fgets(buffer, 100, file);
+            }
+
+            // Se elimina el salto de linea
+            buffer[strlen(buffer) - 1] = '\0';
+
+            // Se crea una struct para almacenar la palabra
+            Palabra *palabra = (Palabra *) malloc(sizeof(Palabra));
+
+            // Se asigna la palabra a la struct
+            strcpy(palabra->palabra, buffer);
+
+            // Se asigna el nivel a la struct
+            palabra->nivel = jugador->nivel;
+
+            // Se verifica que la palabra no haya sido jugada
+            if(searchMap(jugador->palabrasJugadas, palabra->palabra) == NULL)
+            {
+                // Se agrega la palabra al mapa
+                insertMap(jugador->palabrasJugadas, palabra->palabra, palabra);
+
+                // Se asigna la palabra secreta
+                strcpy(nivel->palabraSecreta, buffer);
+
+                break;
+            }
+            else
+            {
+                // Se vuelven al inicio del archivo
+                rewind(file);
+            }
+        }
+
+        // Se cierra el archivo
+        fclose(file);
+        }
+    
 }
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 void sobrescribirLinea(char* nombreArchivo, int numeroLinea, const char* nuevaLinea) {
     // Abrir el archivo en modo lectura
@@ -282,10 +426,19 @@ void guardarPartida(Jugador *jugador, int x, int y)
     {
         // Abrir el archivo en modo escritura al final
         archivo = fopen("partida_guardada.txt", "a");
+        
         if (archivo == NULL)
         {
-            printf("No se pudo abrir el archivo.\n");
-            return;
+            if(jugador->idioma == 1) //Español
+            {
+                printf("No se pudo abrir el archivo.\n");
+                return;
+            }
+            else if(jugador->idioma == 2) //Inglés
+            {
+                printf("The file could not be opened.\n");
+                return;
+            }
         }
 
         fprintf(archivo, "%s,%d,%d\n", jugador->nombre, jugador->puntos, jugador->nivel);
@@ -296,7 +449,14 @@ void guardarPartida(Jugador *jugador, int x, int y)
 
     // Se muestra un mensaje de confirmación
     gotoxy(x, y);
-    printf("Partida guardada exitosamente.");
+    if(jugador->idioma == 1) //Español
+    {
+        printf("Partida guardada exitosamente.");
+    }
+    else if(jugador->idioma == 2) //Inglés
+    {
+        printf("Game saved successfully.");
+    }
 }
 
 void cargarPartida(char *nombreJugador, Jugador *jugador, int x, int y)
@@ -309,7 +469,14 @@ void cargarPartida(char *nombreJugador, Jugador *jugador, int x, int y)
     {
         // El archivo no existe, mostrar un mensaje de error
         gotoxy(x, y);
-        printf("No se encontró ninguna partida guardada.\n");
+        if(jugador->idioma == 1)
+        {
+            printf("No se encontró ninguna partida guardada.\n");
+        }
+        else if(jugador->idioma == 2)
+        {
+            printf("No saved game was found.\n");
+        }
 
         return;
     }
@@ -352,7 +519,14 @@ void cargarPartida(char *nombreJugador, Jugador *jugador, int x, int y)
 
             // Se muestra un mensaje de confirmación
             gotoxy(x, y);
-            printf("Partida cargada exitosamente.");
+            if(jugador->idioma == 1) //Español
+            {
+                printf("Partida cargada exitosamente.");
+            }
+            else if(jugador->idioma == 2) //Inglés
+            {
+                printf("Game loaded successfully.");
+            }
 
             return;
         }
@@ -366,62 +540,118 @@ void cargarPartida(char *nombreJugador, Jugador *jugador, int x, int y)
     {
         // El jugador no fue encontrado, mostrar un mensaje de error
         gotoxy(x, y);
-        printf("No se encontró ninguna partida para el jugador '%s'.\n", nombreJugador);
-
+        if(jugador->idioma == 1) //Español
+        {
+            printf("No se encontró ninguna partida para el jugador '%s'.\n", nombreJugador);
+        }
+        else if(jugador->idioma == 2) //Inglés
+        {
+            printf("No game was found for the player '%s'.\n", nombreJugador);
+        }
         return;
     }
 }
 
 // Funcion para obtener todas las partidas guardadas y almacenarlas en un arreglo
-void obtenerJugadores(ArrayList *jugadores)
+void obtenerJugadores(ArrayList *jugadores, Jugador *jugador)
 {
-    // Abrir el archivo de guardado
-    FILE *archivo = fopen("partida_guardada.txt", "r");
-
-    // Verificar si el archivo existe
-    if (archivo == NULL)
+    if(jugador->idioma == 1) // Español
     {
-        // El archivo no existe, mostrar un mensaje de error
-        printf("No se encontró ninguna partida guardada.\n");
+        // Abrir el archivo de guardado
+        FILE *archivo = fopen("partida_guardada.txt", "r");
 
-        return;
+        // Verificar si el archivo existe
+        if (archivo == NULL)
+        {
+            // El archivo no existe, mostrar un mensaje de error
+            printf("No se encontró ninguna partida guardada.\n");
+
+            return;
+        }
+
+        // Crear un buffer para almacenar la línea
+        char linea[50];
+
+        // Recorrer el archivo
+        while (fgets(linea, sizeof(linea), archivo))
+        {
+            // Se separa el nombre del jugador del resto de la línea separada por comas
+            char *nombre = strtok(linea, ",");
+
+            // Se separa el puntaje del resto de la línea separada por comas
+            char *puntaje = strtok(NULL, ",");
+
+            // Se separa el nivel del resto de la línea separada por comas
+            char *nivel = strtok(NULL, ",");
+
+            // Se crea una struct para almacenar el jugador
+            Jugador *jugador = (Jugador *)malloc(sizeof(Jugador));
+
+            // Se asigna el nombre del jugador
+            strcpy(jugador->nombre, nombre);
+
+            // Se asigna el puntaje del jugador
+            jugador->puntos = atoi(puntaje);
+
+            // Se asigna el nivel del jugador
+            jugador->nivel = atoi(nivel);
+
+            // Se agrega el jugador al arreglo
+            append(jugadores, jugador);
+        }
+
+        // Cerrar el archivo
+        fclose(archivo);
     }
-
-    // Crear un buffer para almacenar la línea
-    char linea[50];
-
-    // Recorrer el archivo
-    while (fgets(linea, sizeof(linea), archivo))
+    else if(jugador->idioma == 2) // Ingles
     {
-        // Se separa el nombre del jugador del resto de la línea separada por comas
-        char *nombre = strtok(linea, ",");
+        // Abrir el archivo de guardado
+        FILE *archivo = fopen("partida_guardada.txt", "r");
 
-        // Se separa el puntaje del resto de la línea separada por comas
-        char *puntaje = strtok(NULL, ",");
+        // Verificar si el archivo existe
+        if (archivo == NULL)
+        {
+            // El archivo no existe, mostrar un mensaje de error
+            printf("No saved games found.\n");
 
-        // Se separa el nivel del resto de la línea separada por comas
-        char *nivel = strtok(NULL, ",");
+            return;
+        }
 
-        // Se crea una struct para almacenar el jugador
-        Jugador *jugador = (Jugador *)malloc(sizeof(Jugador));
+        // Crear un buffer para almacenar la línea
+        char linea[50];
 
-        // Se asigna el nombre del jugador
-        strcpy(jugador->nombre, nombre);
+        // Recorrer el archivo
+        while (fgets(linea, sizeof(linea), archivo))
+        {
+            // Se separa el nombre del jugador del resto de la línea separada por comas
+            char *nombre = strtok(linea, ",");
 
-        // Se asigna el puntaje del jugador
-        jugador->puntos = atoi(puntaje);
+            // Se separa el puntaje del resto de la línea separada por comas
+            char *puntaje = strtok(NULL, ",");
 
-        // Se asigna el nivel del jugador
-        jugador->nivel = atoi(nivel);
+            // Se separa el nivel del resto de la línea separada por comas
+            char *nivel = strtok(NULL, ",");
 
-        // Se agrega el jugador al arreglo
-        append(jugadores, jugador);
+            // Se crea una struct para almacenar el jugador
+            Jugador *jugador = (Jugador *)malloc(sizeof(Jugador));
+
+            // Se asigna el nombre del jugador
+            strcpy(jugador->nombre, nombre);
+
+            // Se asigna el puntaje del jugador
+            jugador->puntos = atoi(puntaje);
+
+            // Se asigna el nivel del jugador
+            jugador->nivel = atoi(nivel);
+
+            // Se agrega el jugador al arreglo
+            append(jugadores, jugador);
+        }
+
+        // Cerrar el archivo
+        fclose(archivo);
     }
-
-    // Cerrar el archivo
-    fclose(archivo);
 }
-
 
 //====================================================================================================
 // Funciones para administracion de los puntajes
@@ -501,9 +731,9 @@ void procesarJugadorRepetido(TreeMap *tree, Jugador * player)
         {   
             //si supera los puntos del mismo nombre, se elimina el que existe en la lista y se inserta el con puntaje mas alto
             if(current_spot->puntos < player->puntos)
-            {   
+            {
                 eraseTreeMapCurrent(tree);
-                insertTreeMap(tree, (void*) player->puntos, player);
+                insertTreeMap(tree, (void *) player->puntos, (void *) player);
             }
             return;
 
@@ -556,34 +786,63 @@ void guardarPuntaje(TreeMap *tree, Jugador *player)
 }
 
 //funcion para leer los puntajes desde el archivo scoreboard.txt
-void leerPuntajes(TreeMap* arbol_puntajes)
+void leerPuntajes(TreeMap* arbol_puntajes, Jugador *jugador)
 {
-    FILE *archivo = fopen("scoreboard.txt", "r");
-
-    if(archivo == NULL)
+    if(jugador->idioma == 1) // Español
     {
-        printf("No se pudo abrir el archivo\n");
-        system("pause");
+        FILE *archivo = fopen("scoreboard.txt", "r");
 
-        return;
+        if(archivo == NULL)
+        {
+            printf("No se pudo abrir el archivo\n");
+            system("pause");
+
+            return;
+        }
+
+        char linea[100];
+
+        while(fgets(linea, 100, archivo))
+        {
+            Jugador *nuevo_jugador = (Jugador*) malloc(sizeof(Jugador));
+
+            char* nombre = strtok(linea, ",");
+            char* puntos = strtok(NULL, ",");
+
+            strcpy(nuevo_jugador->nombre, nombre);
+            nuevo_jugador->puntos = atoi(puntos);
+
+            insertTreeMap(arbol_puntajes, (void *) nuevo_jugador->puntos, (void *) nuevo_jugador);
+        }
+
+        fclose(archivo);
     }
-
-    char linea[100];
-
-    while(fgets(linea, 100, archivo))
+    else if(jugador->idioma == 2) // Ingles
     {
-        Jugador *nuevo_jugador = (Jugador*) malloc(sizeof(Jugador));
+        FILE *archivo = fopen("scoreboard.txt", "r");
 
-        char* nombre = strtok(linea, ",");
-        char* puntos = strtok(NULL, ",");
+        if(archivo == NULL)
+        {
+            printf("Could not open file\n");
+            system("pause");
 
-        strcpy(nuevo_jugador->nombre, nombre);
-        nuevo_jugador->puntos = atoi(puntos);
+            return;
+        }
 
-        insertTreeMap(arbol_puntajes, (void *) nuevo_jugador->puntos, (void *) nuevo_jugador);
-    }
+        char linea[100];
 
-    fclose(archivo);
+        while(fgets(linea, 100, archivo))
+        {
+            Jugador *nuevo_jugador = (Jugador*) malloc(sizeof(Jugador));
+
+            char* nombre = strtok(linea, ",");
+            char* puntos = strtok(NULL, ",");
+
+            strcpy(nuevo_jugador->nombre, nombre);
+            nuevo_jugador->puntos = atoi(puntos);
+
+            insertTreeMap(arbol_puntajes, (void *) nuevo_jugador->puntos, (void *) nuevo_jugador);
+        }
 }
 
 //se exportan los puntajes del arbol al archivo scoreboard.txt

@@ -39,13 +39,16 @@ int main(int argc, const char * argv[])
 
     Jugador *jugador = (Jugador *)malloc(sizeof(Jugador));
 
+    // Se inicializa el idioma en español
+    jugador->idioma = 1;
+
     //====================================================================================================
     // SE INICIA UN ARBOL Y SE LEEN LOS PUNTAJES YA EXISTENTES
     //====================================================================================================
 
     TreeMap *arbol_puntajes = createTreeMap(lower_than_int);
 
-    leerPuntajes(arbol_puntajes);
+    leerPuntajes(arbol_puntajes, jugador);
 
     //====================================================================================================
     // MENU INTERACTIVO
