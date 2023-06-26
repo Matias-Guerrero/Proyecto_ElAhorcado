@@ -843,6 +843,7 @@ void leerPuntajes(TreeMap* arbol_puntajes, Jugador *jugador)
 
             insertTreeMap(arbol_puntajes, (void *) nuevo_jugador->puntos, (void *) nuevo_jugador);
         }
+    }
 }
 
 //se exportan los puntajes del arbol al archivo scoreboard.txt
