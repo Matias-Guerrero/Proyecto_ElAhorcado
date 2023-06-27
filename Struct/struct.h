@@ -6,13 +6,14 @@
 
 typedef struct {
     char palabra[50];
-    // char pista[50];
+    char pista[50];
     int nivel;
 } Palabra;
 
 typedef struct {
     char palabraSecreta[50];
     char palabraActual[50];
+    char pista[50];
     int nivel;
     int puntosNivel;
     int intentosRestantes;

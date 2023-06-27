@@ -1,104 +1,104 @@
-ajo
-ala
-ego
-amo
-ana
-aro
-aun
-ave
-bar
-bus
-con
-dar
-das
-del
-den
-dio
-don
-dos
-doy
-eco
-eje
-ele
-eme
-ene
-era
-esa
-ese
-eso
-fan
-fea
-feo
-fin
-fue
-fui
-gas
-gel
-gen
-gil
-gin
-gol
-hay
-haz
-iba
-ida
-ira
-lea
-lee
-ley
-lio
-los
-luz
-mal
-mar
-mas
-mes
-mia
-mil
-mio
-mol
-muy
-tal
-oca
-oda
-ojo
-ola
-oro
-osa
-oso
-oye
-pan
-par
-paz
-pez
-pia
-pie
-pio
-pop
-que
-rap
-reo
-rey
-rio
-rol
-ron
-sal
-sed
-ser
-sol
-soy
-sur
-tos
-una
-une
-uno
-usa
-uso
-uva
-vas
-ven
-veo
-ver
-vez
-voy
-voz
+ajo,Condimento culinario
+ala,Extremidad de un ave
+ego,Yo mismo
+amo,Verbo amar en primera persona
+ana,Nombre femenino
+aro,Objeto circular utilizado en deportes
+aun,Incluso, todavía
+ave,Animal volador
+bar,Establecimiento para tomar algo
+bus,Medio de transporte público
+con,Preposición que indica companía
+dar,Acción de entregar
+das,Segunda persona del singular del verbo dar
+del,Contracción de "de" y "el"
+den,Tercera persona del plural del verbo dar
+dio,Tercera persona del singular del verbo dar
+don,Título honorífico masculino
+dos,Cantidad numérica
+doy,Primera persona del singular del verbo dar
+eco,Fenómeno sonoro reflejado
+eje,Componente giratorio
+ele,Letra del abecedario
+eme,Letra del abecedario
+ene,Letra del abecedario
+era,Período de tiempo pasado
+esa,Indicativo femenino de "ese"
+ese,Indicativo masculino de "ese"
+eso,Pronombre demostrativo neutro
+fan,Aficionado entusiasta
+fea,No agradable a la vista
+feo,Poco estético
+fin,Término o finalización
+fue,Tercera persona del singular del verbo ser
+fui,Primera persona del singular del verbo ser
+gas,Sustancia en estado gaseoso
+gel,Sustancia semisólida
+gen,Unidad hereditaria
+gil,Tonto o poco inteligente
+gin,Bebida alcohólica
+gol,Acción de marcar un punto en deportes
+hay,Existencia presente
+haz,Segunda persona del singular del verbo hacer
+iba,Pasado del verbo ir
+ida,Acción de ir a un lugar
+ira,Sentimiento de enojo
+lea,Tercera persona del singular del verbo leer
+lee,Segunda persona del singular del verbo leer
+ley,Regla establecida
+lio,Confusión o desorden
+los,Pronombre personal en plural
+luz,Iluminación
+mal,Lo opuesto a bien
+mar,Cuerpo de agua salada
+mas,Pero o además
+mes,División temporal
+mia,Perteneciente a mí
+mil,Cantidad numérica grande
+mio,Perteneciente a mí
+mol,Unidad de medida en química
+muy,Indica grado o intensidad
+tal,De esa manera o parecido
+oca,Ave acuática
+oda,Composición poética
+ojo,Órgano de la visión
+ola,Oscilación en el agua
+oro,Metal precioso
+osa,Hembra de oso
+oso,Animal de gran tamano
+oye,Verbo oír en segunda persona
+pan,Alimento básico
+par,Enfrente o al lado de
+paz,Estado de tranquilidad
+pez,Animal acuático
+pia,Ave tropical
+pie,Extremidad inferior
+pio,Canto de un ave
+pop,Género musical
+que,Palabra interrogativa o exclamativa
+rap,Género musical urbano
+reo,Delincuente o prisionero
+rey,Título de monarca
+rio,Corriente de agua
+rol,Papel o función
+ron,Bebida alcohólica destilada
+sal,Sustancia para sazonar alimentos
+sed,Sensación de querer beber
+ser,Verbo de existencia
+sol,Astro que ilumina la Tierra
+soy,Primera persona del singular del verbo ser
+sur,Punto cardinal opuesto al norte
+tos,Acción de expulsar aire con fuerza
+una,Número cardinal femenino
+une,Acción de juntar o unir
+uno,Número cardinal
+usa,Tercera persona del singular del verbo usar
+uso,Acción de emplear
+uva,Fruta pequena y redonda
+vas,Tercera persona del singular del verbo ir
+ven,Segunda persona del plural del verbo venir
+veo,Primera persona del singular del verbo ver
+ver,Percibir con la vista
+vez,Ocasión o turno
+voy,Primera persona del singular del verbo ir
+voz,Sonido producido por las cuerdas vocales

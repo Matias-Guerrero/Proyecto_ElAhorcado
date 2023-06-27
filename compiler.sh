@@ -6,10 +6,10 @@
 read -p "Ingrese el nombre del ejecutable: " executable
 
 # Archivos a compilar
-FILES="avance.c Struct/struct.h BackEnd/backend.c FrontEnd/frontend.c DataStructures/Map/Map.c DataStructures/ArrayList/arraylist.c DataStructures/List/list.c DataStructures/TreeMap/treemap.c"
+FILES="main.c Struct/struct.h BackEnd/backend.c FrontEnd/frontend.c DataStructures/Map/Map.c DataStructures/ArrayList/arraylist.c DataStructures/List/list.c DataStructures/TreeMap/treemap.c"
 
 # Compilacion con gcc
-gcc -g $FILES -o $executable
+gcc -g $FILES -o $executable -lwinmm
 
 # Verificar si hubo errores
 if [ $? -eq 0 ]; then
