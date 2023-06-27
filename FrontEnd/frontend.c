@@ -443,6 +443,8 @@ void mostrarTitulo(int x, int y, int opcion, Jugador* jugador)
             gotoxy(x, y + 3); printf("   \\   / _ \\| | | | | '_ \\ / _` \\ \\ / / _ \\ | |/ _ \\ \\ / / _ \\ |/ _ \\/ _` | | | | | '_ \\ ");
             gotoxy(x, y + 4); printf("    | | (_) | |_| | | | | | (_| |\\ V /  __/ | |  __/\\ V /  __/ |  __/ (_| | | |_| | |_) |");
             gotoxy(x, y + 5); printf("    |_|\\___/ \\__,_| |_| |_|\\__,_| \\_/ \\___| |_|\\___| \\_/ \\___|_|\\___|\\__,_|  \\__,_| .__/ ");
+            gotoxy(x, y + 6); printf("                                                                                    | |    ");
+            gotoxy(x, y + 7); printf("                                                                                   | _|    ");
 
        }
 
@@ -508,6 +510,7 @@ void mostrarMenu(int x, int y, int opcionSeleccionada, int maxOpcion, Jugador *j
             gotoxy(x, y + 3); printf("%s Instrucciones", (opcionSeleccionada == 4) ? "->" : "  ");
             gotoxy(x, y + 4); printf("%s Salir", (opcionSeleccionada == 5) ? "->" : "  ");
         }
+    
 
         if(maxOpcion == 2)
         {
@@ -563,7 +566,7 @@ void mostrarMenu(int x, int y, int opcionSeleccionada, int maxOpcion, Jugador *j
 }
 
 // Funcion para mostrar jugadores estilo menu
-void mostrarJugadores(int x, int y, ArrayList *jugadores, int opcionSeleccionada, bool cambioOpcion)
+void mostrarJugadores(int x, int y, ArrayList *jugadores, int opcionSeleccionada, bool cambioOpcion, Jugador *jugador)
 {
     // Si cambioOpcion es true, se limpia la pantalla
     if(cambioOpcion)
@@ -605,10 +608,20 @@ void mostrarJugadores(int x, int y, ArrayList *jugadores, int opcionSeleccionada
             SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 14);
         }
 
-        // Se muestra el jugador actual
-        gotoxy(x, y + (contador * 4)); printf("%s %s\n", ((opcionSeleccionada - 1) == posicion) ? "->" : "  ", jugadorActual->nombre);
-        gotoxy(x, y + (contador * 4) + 1); printf("   - %d puntos\n", jugadorActual->puntos);
-        gotoxy(x, y + (contador * 4) + 2); printf("   - Nivel %d\n", jugadorActual->nivel);
+        if(jugador->idioma == 1) // Español
+        {
+            // Se muestra el jugador actual
+            gotoxy(x, y + (contador * 4)); printf("%s %s\n", ((opcionSeleccionada - 1) == posicion) ? "->" : "  ", jugadorActual->nombre);
+            gotoxy(x, y + (contador * 4) + 1); printf("   - %d puntos\n", jugadorActual->puntos);
+            gotoxy(x, y + (contador * 4) + 2); printf("   - Nivel %d\n", jugadorActual->nivel);
+        }
+        else if(jugador->idioma == 2) // Ingles
+        {
+            // Se muestra el jugador actual
+            gotoxy(x, y + (contador * 4)); printf("%s %s\n", ((opcionSeleccionada - 1) == posicion) ? "->" : "  ", jugadorActual->nombre);
+            gotoxy(x, y + (contador * 4) + 1); printf("   - %d points\n", jugadorActual->puntos);
+            gotoxy(x, y + (contador * 4) + 2); printf("   - Level %d\n", jugadorActual->nivel);
+        }
 
         // Se aumenta el contador
         contador++;
@@ -1161,7 +1174,7 @@ void mostrarInstrucciones(int x, int y, Jugador *jugador)
 //======== VENTANA PUNTAJES =========
 //===================================
 
-void mostrarPuntajes(int x, int y, TreeMap *tabla_puntajes)
+void mostrarPuntajes(int x, int y, TreeMap *tabla_puntajes, Jugador *jugador)
 {   
     //referencia de el inicio de columna
     int initial_y = y;
@@ -1171,9 +1184,17 @@ void mostrarPuntajes(int x, int y, TreeMap *tabla_puntajes)
 
     //verificamos si existe algun jugador en el "tablero"
     if(aux_pair == NULL)
-    {   
-        //se omite la impresion de jugadores
-        gotoxy(x,y); printf("Aun no existe ningun puntaje registrado");
+    {  
+        if(jugador->idioma == 1) // Español
+        {
+            //se omite la impresion de jugadores
+            gotoxy(x,y); printf("Aun no existe ningun puntaje registrado");
+        } 
+        else if (jugador->idioma == 2) // Ingles
+        {
+            //se omite la impresion de jugadores
+            gotoxy(x,y); printf("There are no scores registered yet");
+        }
     }
     else
     {   
@@ -1190,9 +1211,17 @@ void mostrarPuntajes(int x, int y, TreeMap *tabla_puntajes)
             //se imprime el nombre
             gotoxy(x + 8, y + 1); printf("%d. %s", cont, current_spot->nombre);
 
-            //se imprime el puntaje
-            gotoxy(x + 8, y + 2); printf("%d puntos.", current_spot->puntos);
-
+            if(jugador->idioma == 1) // Español
+            {
+                //se imprime el puntaje
+                gotoxy(x + 8, y + 2); printf("%d puntos.", current_spot->puntos);
+            }
+            else if (jugador->idioma == 2) // Ingles
+            {
+                //se imprime el puntaje
+                gotoxy(x + 8, y + 2); printf("%d points.", current_spot->puntos);
+            }
+           
             gotoxy(x + 7, y + 3); printf("================");
 
             //se mueve el y para colocar al siguiente jugador
@@ -1224,8 +1253,16 @@ void menuNivel(Jugador *jugador)
     // Se muestra el titulo
     mostrarTitulo(12, 3, 4, jugador);
 
-    // Se muestra titulo menu
-    gotoxy(40, 12); printf("Que desea hacer?");
+    if(jugador->idioma == 1)
+    {
+        // Se muestra el titulo del menu
+        gotoxy(40, 12); printf("Que desea hacer?");
+    }
+    else if (jugador->idioma == 2)
+    {
+        // Se muestra el titulo del menu
+        gotoxy(40, 12); printf("What do you want to do?");
+    }
 
     while(true)
     {
@@ -1249,7 +1286,14 @@ void menuNivel(Jugador *jugador)
                 guardarPartida(jugador, 40, 20);
 
                 // Se muestra el mensaje de pausa
-                pause(40, 22, "Presione enter para continuar...");
+                if(jugador->idioma == 1)
+                {
+                    pause(40, 22, "Partida guardada. Presione enter para continuar...");
+                }
+                else if (jugador->idioma == 2)
+                {
+                    pause(40, 22, "Game saved. Press enter to continue...");
+                }
 
                 // Se llama a cargando
                 cargando(2, jugador);
@@ -1262,7 +1306,14 @@ void menuNivel(Jugador *jugador)
                 guardarPartida(jugador, 40, 20);
 
                 // Se muestra el mensaje de pausa
-                pause(40, 22, "Presione enter para salir...");
+                if(jugador->idioma == 1)
+                {
+                    pause(40, 22, "Partida guardada. Presione enter para salir...");
+                }
+                else if (jugador->idioma == 2)
+                {
+                    pause(40, 22, "Game saved. Press enter to exit...");
+                }
 
                 // Se sale de la aplicacion
                 exit(0);
@@ -1495,6 +1546,8 @@ void menu(Jugador *jugador, TreeMap *tree)
             }
         }
     }
+   
+    
 }
 
 //===================================
@@ -1538,6 +1591,20 @@ void subMenuJugar(Jugador *jugador, TreeMap* arbol_puntajes)
 
         break;
     }    
+}
+
+//Funcion para mostrar submenu de puntajes
+void menuPuntajes(TreeMap *tree, Jugador *jugador)
+{
+    // Se limpia la pantalla del menú
+    limpiarPantalla();
+
+    mostrarTitulo(35,1, 5, jugador);
+
+    mostrarPuntajes(30, 8, tree, jugador);
+
+    // Se llama a la función pause
+    pause(45, 23, "Presione enter para continuar...");
 }
 
 // Funcion para nuevo juego
@@ -1697,7 +1764,7 @@ void cargarPartidaFE(Jugador *jugador, TreeMap* arbol_puntajes)
                 }
 
                 // Se muestran los jugadores en el cuadro
-                mostrarJugadores(19, 9, jugadores, opcionSeleccionada, cambioOpcion);
+                mostrarJugadores(19, 9, jugadores, opcionSeleccionada, cambioOpcion, jugador);
 
                 // Se cambia el valor de la variable cambioOpcion
                 cambioOpcion = false;
@@ -1770,7 +1837,7 @@ void cargarPartidaFE(Jugador *jugador, TreeMap* arbol_puntajes)
                 }
 
                 // Se muestran los jugadores en el cuadro
-                mostrarJugadores(19, 9, jugadores, opcionSeleccionada, cambioOpcion);
+                mostrarJugadores(19, 9, jugadores, opcionSeleccionada, cambioOpcion, jugador);
 
                 // Se cambia el valor de la variable cambioOpcion
                 cambioOpcion = false;
@@ -1796,20 +1863,6 @@ void cargarPartidaFE(Jugador *jugador, TreeMap* arbol_puntajes)
         // Se llama a la funcion jugar
         jugar(jugador, arbol_puntajes);
     }
-}
-
-//Funcion para mostrar submenu de puntajes
-void menuPuntajes(TreeMap *tree, Jugador *jugador)
-{
-    // Se limpia la pantalla del menú
-    limpiarPantalla();
-
-    mostrarTitulo(35,1, 5, jugador);
-
-    mostrarPuntajes(30, 8, tree);
-
-    // Se llama a la función pause
-    pause(45, 23, "Presione enter para continuar...");
 }
 
 // Funcion Jugar

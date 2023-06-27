@@ -1,140 +1,136 @@
-Abroad
-Casual
-Around
-Couple
-Accept
-Caught
-Arrive
-Course
-Access
-Center
-Artist
-Covers
-Across
-Centre
-Aspect
-Create
-Acting
-Chance
-Assess
-Credit
-Action
-Change
-Assist
-Crisis
-Active
-Charge
-Assume
-Custom
-Actual
-Choice
-Attack
-Damage
-Advice
-Choose
-Attend
-Danger
-Advise
-Chosen
-August
-Dealer
-Affect
-Church
-Author
-Debate
-Afford
-Circle
-Avenue
-Decade
-Afraid
-Client
-Backed
-Decide
-Agency
-Closed
-Barely
-Defeat
-Agenda
-Closer
-Battle
-Defend
-Almost
-Coffee
-Beauty
-Define
-Always
-Column
-Became
-Degree
-Amount
-Combat
-Become
-Demand
-Animal
-Coming
-Before
-Depend
-Annual
-Common
-Behalf
-Deputy
-Answer
-Comply
-Behind
-Desert
-Anyone
-Copper
-Belief
-Design
-Anyway
-Corner
-Belong
-Desire
-Appeal
-Costly
-Bestie
-Detail
-Appear
-County
-Better
-Detect
-Beyond
-Budget
-During
-Device
-Bishop
-Burden
-Easily
-Differ
-Border
-Bureau
-Eating
-Dinner
-Bottle
-Button
-Editor
-Direct
-Bottom
-Camera
-Effect
-Doctor
-Bought
-Cancer
-Effort
-Dollar
-Branch
-Cannot
-Eighth
-Domain
-Breath
-Carbon
-Either
-Double
-Bridge
-Career
-Eleven
-Driven
-Bright
-Castle
-Emerge
-Driver
+abroad,in or to a foreign country or countries.
+casual,relaxed and unconcerned.
+around,located or situated on every side.
+couple,two individuals considered together.
+accept,consent to receive or undertake.
+caught,intercept and hold (something that has been thrown, propelled, or dropped).
+arrive,reach a place at the end of a journey or a stage in a journey.
+course,a series of lectures or lessons in a particular subject or pursuit.
+access,the means or opportunity to approach or enter a place.
+center,the point that is equally distant from every point on the circumference of a circle or sphere.
+artist,a person who creates paintings or drawings as a profession or hobby.
+covers,provide physical protection, shelter, or concealment for.
+across,from one side to the other of (a place, area, etc.).
+centre,the point that is equally distant from every point on the circumference of a circle or sphere.
+aspect,a particular part or feature of something.
+create,bring (something) into existence.
+acting,the occupation or activity of performing in plays, movies, or television productions.
+chance,a possibility of something happening.
+assess,evaluate or estimate the nature, ability, or quality of.
+credit,the ability of a customer to obtain goods or services before payment.
+action,the fact or process of doing something, typically to achieve an aim.
+change,make or become different.
+assist,help (someone), typically by doing a share of the work.
+crisis,a time of intense difficulty, trouble, or danger.
+active,engaging or ready to engage in physically energetic pursuits.
+charge,demand (an amount) as a price for a service rendered or goods supplied.
+assume,suppose to be the case, without proof.
+custom,a traditional and widely accepted way of behaving or doing something.
+actual,existing in fact; typically as contrasted with what was intended, expected, or believed.
+choice,an act of selecting or making a decision when faced with two or more possibilities.
+attack,take aggressive military action against (a place or enemy forces) with weapons or armed force.
+damage,physically harm (something) so as to impair its value, usefulness, or normal function.
+advice,guidance or recommendations concerning prudent future action, typically given by someone regarded as knowledgeable or authoritative.
+choose,pick out or select (someone or something) as being the best or most appropriate of two or more alternatives.
+attend,be present at (an event, meeting, or function).
+danger,the possibility of suffering harm or injury.
+advise,offer suggestions about the best course of action to someone.
+chosen,having been selected as the best or most appropriate.
+august,respected and impressive.
+dealer,a person or business that buys and sells goods.
+affect,have an effect on; make a difference to.
+church,a building used for public Christian worship.
+author,a writer of a book, article, or document.
+debate,a formal discussion on a particular matter in a public meeting or legislative assembly.
+afford,have enough money to pay for.
+circle,a round plane figure whose boundary consists of points equidistant from a fixed center.
+avenue,a broad road in a town or city, typically having trees at regular intervals along its sides.
+decade,a period of ten years.
+afraid,feeling fear or anxiety; frightened.
+client,a person or organization using the services of a lawyer or other professional person or company.
+backed,supported or financed.
+decide,reach a conclusion or make a resolution after consideration.
+agency,a business or organization established to provide a particular service.
+closed,not open or accessible.
+barely,only just; almost not.
+defeat,win a victory over (someone) in a battle or other contest; overcome or beat.
+agenda,a list of items to be discussed at a formal meeting.
+closer,at a shorter distance away.
+battle,a sustained fight between large organized armed forces.
+defend,resist an attack made on (someone or something); protect from harm or danger.
+almost,not quite; very nearly.
+coffee,a hot drink made from the roasted and ground seeds (coffee beans) of a tropical shrub.
+beauty,a combination of qualities, such as shape, color, or form, that pleases the aesthetic senses.
+define,state or describe exactly the nature, scope, or meaning of.
+always,at all times; on all occasions.
+column,an upright pillar, typically cylindrical, supporting an arch, entablature, or other structure or standing alone as a monument.
+became,begin to be.
+degree,the amount, level, or extent to which something happens or is present.
+amount,a quantity of something, typically the total of a thing or things in number, size, value, or extent.
+combat,fighting between armed forces.
+become,begin to be.
+demand,an insistent and peremptory request, made as if by right.
+animal,a living organism that feeds on organic matter, typically having specialized sense organs and nervous system and able to respond rapidly to stimuli.
+coming,approach or arrive at a specified condition or time.
+before,during the period of time preceding (a particular event or time).
+depend,be controlled or determined by.
+annual,occurring once every year.
+common,occurring, found, or done often; prevalent.
+behalf,in the interests of a person, group, or principle.
+deputy,a person whose immediate superior is a senior figure within an organization and who is empowered to act as a substitute for this superior.
+answer,a thing that is said, written, or done as a reaction to a question or situation.
+comply,act in accordance with a wish or command.
+behind,at or to the far side of (something), typically so as to be hidden by it.
+desert,abandon (a person, cause, or organization) in a way considered disloyal or treacherous.
+anyone,any person.
+copper,a red-brown metal, the chemical element of atomic number 29.
+belief,an acceptance that something exists or is true, especially one without proof.
+design,a plan or drawing produced to show the look and function or workings of a building, garment, or other object before it is built or made.
+anyway,used to confirm or support a statement that has just been made.
+corner,a place or angle where two or more sides or edges meet.
+belong,be the property of.
+desire,a strong feeling of wanting to have something or wishing for something to happen.
+appeal,make a serious or urgent request, typically to the public.
+costly,costing a lot; expensive.
+bestie,a person's best friend.
+detail,an individual feature, fact, or item.
+appear,become visible or noticeable, typically without visible agent or apparent cause.
+county,a political and administrative division of a state, providing certain local governmental services.
+better,of a more excellent or effective type or quality.
+detect,discover or identify the presence or existence of.
+beyond,at or to the further side of.
+budget,an estimate of income and expenditure for a set period of time.
+during,throughout the course or duration of (a period of time).
+device,a thing made or adapted for a particular purpose, especially a piece of mechanical or electronic equipment.
+bishop,a senior member of the Christian clergy, typically in charge of a diocese and empowered to confer holy orders.
+burden,a load, especially a heavy one.
+easily,without difficulty or effort.
+differ,be unlike or dissimilar.
+border,a line separating two political or geographical areas, especially countries.
+bureau,an office or department for transacting particular business.
+eating,consume (food) by chewing and swallowing.
+dinner,the main meal of the day, taken either around midday or in the evening.
+bottle,a glass or plastic container with a narrow neck, used for storing drinks or other liquids.
+button,a small disk or knob sewn onto a garment, either to fasten it by being pushed through a slit made for the purpose or for decoration.
+editor,a person who is in charge of and determines the final content of a text, particularly a newspaper or magazine.
+direct,extend or pass in a straight line or course.
+bottom,the lowest point or part of something.
+camera,a device for recording visual images in the form of photographs, film, or video signals.
+effect,a change that is a result or consequence of an action or other cause.
+doctor,a qualified practitioner of medicine; a physician.
+bought,past tense and past participle of buy.
+cancer,a disease caused by an uncontrolled division of abnormal cells in a part of the body.
+effort,a vigorous or determined attempt.
+dollar,the basic monetary unit of the United States, Canada, Australia, and certain countries in the Pacific, Caribbean, Southeast Asia, Africa, and South America.
+branch,a part of a tree that grows out from the trunk or from a bough.
+cannot,can not; unable to.
+eighth,constituting number eight in a sequence.
+domain,an area of territory owned or controlled by a particular ruler or government.
+breath,the air taken into or expelled from the lungs.
+carbon,the chemical element of atomic number 6, a nonmetal that has two main forms (diamond and graphite) and that also occurs in impure form in charcoal, soot, and coal.
+either,used before the first of two (or occasionally more) alternatives specified (the other being introduced by "or").
+double,consisting of two equal, identical, or similar parts or things.
+bridge,a structure carrying a road, path, railway, etc., across a river, road, or other obstacle.
+career,an occupation undertaken for a significant period of a person's life and with opportunities for progress.
+eleven,equivalent to the product of five and two; one more than ten.
+driven,(of a person) relentlessly compelled by the need to accomplish a goal; very motivated or ambitious.

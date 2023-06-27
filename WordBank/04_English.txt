@@ -1,100 +1,100 @@
-Also
-Able
-Acid
-Aged
-Away
-Baby
-Band
-Back
-Edge
-Bank
-Been
-Ball
-Base
-Busy
-Bend
-Bell
-Body
-Cost
-Duty
-Book
-Door
-Club
-Bird
-Come
-Call
-Came
-Care
-Calm
-Card
-Coat
-Case
-City
-Chat
-Cash
-Crow
-Cook
-Cool
-Dark
-Date
-Film
-Each
-Farm
-Evil
-East
-Firm
-Even
-Ever
-Face
-Fact
-Four
-Five
-Fair
-Fear
-Feel
-Fell
-File
-Fire
-Fine
-Fish
-Game
-Gone
-Gold
-Have
-Deal
-Hair
-Here
-Hear
-Into
-Iron
-Jump
-Miss
-Kick
-Past
-Kill
-Life
-Like
-Love
-Main
-Move
-Meet
-More
-Nose
-Near
-Open
-Only
-Push
-Pull
-Sell
-Sale
-Area
-Army
-Bill
-Food
-Fund
-Game
-Girl
-Goal
-Hide
-Give
-Hate
+able,having the power, skill, or means to do something.
+acid,a chemical substance with a pH less than 7, turns litmus red, and typically reacts with metals to form hydrogen gas.
+aged,having reached a specific age or stage of development.
+away,at or to a distance from a particular place or person.
+baby,a very young child, especially one newly or recently born.
+band,a thin strip of material used to hold things together or to encircle something.
+back,the rear surface of the human body from the shoulders to the hips.
+edge,the outside limit of an object, area, or surface.
+bank,an institution where money is deposited, borrowed, or exchanged.
+been,past participle of the verb "be."
+ball,a solid or hollow spherical or egg-shaped object.
+base,the bottom part of an object that supports it.
+busy,having a great deal to do or keep oneself occupied.
+bend,shape or force (something straight) into a curve or angle.
+bell,a hollow object that makes a ringing sound when struck.
+body,the physical structure of a person or an animal.
+cost,the amount of money required or spent in order to purchase or obtain something.
+duty,a moral or legal obligation; a responsibility.
+book,a written or printed work consisting of pages glued or sewn together along one side and bound in covers.
+door,a hinged, sliding, or revolving barrier at the entrance to a building, room, or vehicle.
+club,a group or organization dedicated to a particular interest or activity.
+bird,a warm-blooded vertebrate animal of the class Aves, characterized by feathers, beaked jaws, and the ability to lay hard-shelled eggs.
+come,move or travel toward or into a place or position.
+call,make a telephone call.
+came,past tense of the verb "come."
+care,the provision of what is necessary for the health, welfare, maintenance, and protection of someone or something.
+calm,not showing or feeling nervousness, anger, or other strong emotions.
+card,a piece of thick, stiff paper or thin pasteboard, typically rectangular, with or without printing or writing on it, used for various purposes.
+coat,an outer garment with sleeves, covering at least the upper part of the body.
+case,a container designed to hold or protect something.
+city,a large town.
+chat,talk in a friendly and informal way.
+cash,money in coins or notes.
+crow,a large perching bird with mostly glossy black plumage, a heavy bill, and a raucous voice.
+cook,prepare (food, a dish, or a meal) by combining and heating the ingredients in various ways.
+cool,of or at a fairly low temperature.
+dark,with little or no light.
+date,the day of the month or year as specified by a number.
+film,a thin flexible strip of plastic or other material coated with light-sensitive emulsion for exposure in a camera, used to produce photographs or motion pictures.
+each,every one of two or more people or things considered separately.
+farm,an area of land and its buildings used for growing crops and rearing animals.
+evil,profoundly immoral and wicked.
+east,the direction toward the point of the horizon where the sun rises at the equinoxes.
+firm,having a solid, almost unyielding surface or structure.
+even,flat and smooth.
+ever,at any time.
+face,the front part of a person's head from the forehead to the chin.
+fact,a thing that is known or proved to be true.
+four,equivalent to the sum of two and two; one more than three.
+five,equivalent to the sum of two and three; onemore than four.
+fair,treating people equally without favoritism or discrimination.
+fear,an unpleasant emotion caused by the belief that someone or something is dangerous, likely to cause pain or a threat.
+feel,perceive or be aware of a physical sensation or emotion.
+fell,past tense of the verb "fall."
+file,a folder or box for holding loose papers that are typically arranged in a particular order for easy reference.
+fire,the state of combustion in which flames and heat are produced.
+fine,of high quality or excellence.
+fish,a limbless cold-blooded vertebrate animal with gills and fins and living wholly in water.
+game,an activity or sport involving physical exertion and skill in which an individual or team competes against another or others.
+gone,no longer present or in existence; departed or lost.
+gold,a yellow precious metal, the chemical element of atomic number 79.
+have,possess, own, or hold.
+deal,an agreement entered into by two or more parties for their mutual benefit.
+hair,any of the fine threadlike strands growing from the skin of humans, mammals, and some other animals.
+here,in, at, or to this place or position.
+hear,perceive with the ear the sound made by someone or something.
+into,expressing movement or action with the result that someone or something becomes enclosed or surrounded by something else.
+iron,a strong, hard magnetic silvery-gray metal.
+jump,push oneself off a surface and into the air by using the muscles in one's legs and feet.
+miss,fail to hit, reach, or come into contact with (something aimed at).
+kick,strike or propel forcibly with the foot.
+past,gone by in time and no longer existing.
+kill,cause the death of (a person, animal, or other living thing).
+life,the condition that distinguishes animals and plants from inorganic matter.
+like,having the same characteristics or qualities as; similar to.
+love,an intense feeling of deep affection.
+main,most important or principal.
+move,go in a specified direction or manner; change position.
+meet,come into the presence or company of (someone) by chance or arrangement.
+more,a greater or additional amount or degree.
+nose,the part projecting above the mouth on the face of a person or animal, containing the nostrils and used for breathing and smelling.
+near,at or to a short distance away; nearby.
+open,allowing access, passage, or view through an empty space; not closed or blocked up.
+only,and no one or nothing more besides; solely or exclusively.
+push,exert force on (someone or something) in order to move them away from oneself or the origin of the force.
+pull,exert force on (someone or something) so as to cause movement toward oneself or the origin of the force.
+sell,give or hand over (something) in exchange for money.
+sale,the exchange of a commodity for money; the action of selling something.
+area,a particular extent of space or surface; a region or part of a town, a country, or the world.
+army,a large organized military force equipped for fighting on land.
+bill,a formal or legal document, especially one that is set out in writing.
+food,any nutritious substance that people or animals eat or drink or that plants absorb in order to maintain life and growth.
+fund,a sum of money saved or made available for a particular purpose.
+game,an activity or sport involving physical exertion and skill in which an individual or team competes against another or others.
+girl,a female child.
+goal,the object of a person's ambition or effort; an aim or desired result.
+hide,put or keep out of sight; conceal from the view or notice of others.
+give,freely transfer the possession of (something) to (someone); hand over to.
+hate,feel intense or passionate dislike for (someone).
+also,as well; in addition to what has been mentioned before.

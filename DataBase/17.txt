@@ -1,75 +1,71 @@
-acondicionamiento
-administrativista
-autocompadezcamos
-autoconstruiremos
-autosugestionamos
-autotransformador
-bidimensionalidad
-cinematografiamos
-compendiariamente
-congestionamiento
-contraargumentado
-contrabalanceando
-convencionalmente
-desabastecimiento
-desapoderadamente
-desaprovecharemos
-descentralizadora
-descompasadamente
-descongestionando
-descorazonamiento
-desempolvoraremos
-desencadenamiento
-desfavorablemente
-desindustrializar
-desproporcionaban
-destornillamiento
-electrometalurgia
-electroventilador
-embellaqueceremos
-emblanquecimiento
-empoltronecierais
-empoltroneciereis
-empoltronecieseis
-empoltronecisteis
-empolvorizaríamos
-encuarentenaremos
-enorgullecimiento
-farmacovigilancia
-fotoluminiscencia
-helitransportaban
-hidroelectricidad
-hipermetamorfosis
-hipersensibilidad
-hospitalariamente
-imperdonablemente
-impertinentemente
-incomparablemente
-incompatibilizaba
-incompatibilizado
-incondicionalidad
-incongruentemente
-inconscientemente
-inconsolablemente
-indispensabilidad
-intergeneracional
-longitudinalmente
-multiculturalidad
-neurodegenerativa
-neurodegenerativo
-perpendicularidad
-perseverantemente
-predominantemente
-preparatoriamente
-privilegiadamente
-providencialmente
-radioelectricidad
-recomendablemente
-redimensionaremos
-representatividad
-sobrealimentadora
-sobredimensionado
-sobreexplotaremos
-termoelectricidad
-transportabilidad
-voluntariosamente
+acondicionamiento,Preparación física o mental para una actividad específica.
+administrativista,Persona especializada en el estudio o práctica del derecho administrativo.
+autocompadezcamos,Sentir lástima o compasión por uno mismo.
+autoconstruiremos,Construir algo por cuenta propia sin la ayuda de otros.
+autosugestionamos,Influenciar o persuadir a uno mismo a través de pensamientos o creencias.
+autotransformador,Dispositivo eléctrico utilizado para modificar la tensión de corriente alterna.
+bidimensionalidad,Propiedad de tener dos dimensiones, como un plano o una superficie.
+cinematografiamos,Grabar o producir una película o película cinematográfica.
+compendiariamente,De manera concisa o resumida.
+congestionamiento,Estado de obstrucción o acumulación excesiva, especialmente en el tráfico vehicular.
+contraargumentado,Refutar o rebatir un argumento o afirmación previa.
+contrabalanceando,Equilibrar o compensar un efecto o influencia negativa con otro opuesto.
+convencionalmente,De acuerdo con las prácticas o normas establecidas de una manera tradicional.
+desabastecimiento,Falta o escasez de suministros o recursos necesarios.
+desapoderadamente,De manera desenfrenada o sin control.
+desaprovecharemos,No aprovechar o utilizar algo de manera efectiva o adecuada.
+descentralizadora,Que tiene como objetivo o efecto distribuir el poder o la autoridad a nivel local o regional.
+descompasadamente,Sin ritmo, desordenadamente o sin coordinación.
+descongestionando,Aliviar o reducir la congestión o el bloqueo.
+descorazonamiento,Desánimo, desilusión o pérdida de esperanza.
+desempolvoraremos,Eliminar el polvo o la suciedad de algo.
+desencadenamiento,Inicio o desencadenamiento de un evento o proceso.
+desfavorablemente,En contra o en desventaja de alguien o algo.
+desindustrializar,Reducir o eliminar la actividad industrial en una región o país.
+desproporcionaban,Que no se encuentra en una relación equilibrada o adecuada.
+destornillamiento,Acción de quitar o aflojar un tornillo o varios.
+electrometalurgia,Rama de la metalurgia que utiliza la electricidad para procesar metales.
+electroventilador,Aparato eléctrico utilizado para proporcionar ventilación o enfriamiento.
+embellaqueceremos,Hacer que algo o alguien sea más hermoso o atractivo.
+emblanquecimiento,Acción de hacer algo o alguien más blanco o pálido.
+empoltronecierais,Colocar o sentar a alguien en un sillón o asiento de manera cómoda.
+empoltroneciereis,Ponerse o acomodarse en un sillón o asiento de manera cómoda.
+empoltronecieseis,Sentarse o colocarse en un sillón o asiento de manera cómoda.
+empoltronecisteis,Ponerse cómodo o acomodarse en un sillón o asiento.
+empolvorizaríamos,Cubrir o rociar algo con polvo o polvillo.
+encuarentenaremos,Poner en cuarentena o aislar a alguien o algo durante un período de tiempo determinado.
+enorgullecimiento,Acción o resultado de sentir orgullo o satisfacción por algo.
+farmacovigilancia,Vigilancia y estudio de la seguridad y efectividad de los medicamentos.
+fotoluminiscencia,Emitir luz después de ser expuesto a la luz.
+helitransportaban,Transportar o llevar algo o alguien en un helicóptero.
+hidroelectricidad,Generación de electricidad a través de la energía del agua.
+hipermetamorfosis,Trastorno o condición en la que una persona experimenta cambios extremos en su apariencia o comportamiento.
+hipersensibilidad,Sensibilidad excesiva o extrema a estímulos físicos o emocionales.
+hospitalariamente,De manera amable o acogedora en un entorno hospitalario.
+imperdonablemente,De manera que no se puede perdonar o excusar.
+impertinentemente,De manera inapropiada o fuera de lugar.
+incomparablemente,En una forma que no se puede comparar o igualar.
+inconscientemente,Sin ser consciente o tener conocimiento de algo.
+inconsolablemente,De manera que no se puede consolar o calmar.
+indispensabilidad,Calidad o estado de ser esencial o absolutamente necesario.
+intergeneracional,Que ocurre entre o involucra a diferentes generaciones.
+longitudinalmente,A lo largo de una línea o dirección longitudinal.
+multiculturalidad,Coexistencia o interacción de diversas culturas en un entorno o sociedad.
+neurodegenerativa,Relacionado con la degeneración progresiva del sistema nervioso.
+neurodegenerativo,Que provoca o está asociado con la degeneración del sistema nervioso.
+perpendicularidad,Calidad de ser perpendicular o formar un ángulo recto con otra cosa.
+perseverantemente,Con perseverancia o constancia a pesar de las dificultades o obstáculos.
+predominantemente,Principalmente o en su mayoría.
+preparatoriamente,De manera previa o en preparación para algo.
+privilegiadamente,Con ventajas o beneficios especiales.
+providencialmente,De una manera que parece ser el resultado de una intervención divina o el destino.
+radioelectricidad,Propagación de ondas electromagnéticas a través del espacio.
+recomendablemente,De manera que se puede recomendar o sugerir.
+redimensionaremos,Modificar o ajustar las dimensiones o el tamano de algo.
+representatividad,Calidad o estado de ser representativo o simbólico de algo.
+sobrealimentadora,Dispositivo que aumenta el suministro de aire o combustible a un motor.
+sobredimensionado,De mayor tamano o proporciones de lo normal o estándar.
+sobreexplotaremos,Explotar o utilizar algo en exceso o de manera insostenible.
+termoelectricidad,Generación de electricidad a partir de la diferencia de temperatura.
+transportabilidad,Característica de ser fácilmente transportable o móvil.
+voluntariosamente,De manera voluntaria o por elección propia.

@@ -60,5 +60,7 @@ int main(int argc, const char * argv[])
 
     menu(jugador, arbol_puntajes);
 
+    exportarPuntajes(arbol_puntajes);
+
     return 0;
 }

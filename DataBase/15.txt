@@ -1,199 +1,142 @@
-abarrancamiento
-abrillantaremos
-aburguesamiento
-acongojadamente
-admirativamente
-adoctrinamiento
-aerotransportar
-afortunadamente
-alborotadamente
-aleccionamiento
-amaestradamente
-amedrantamiento
-antropomorfismo
-aproximadamente
-audiofrecuencia
-autoaprendizaje
-autoconsciencia
-avergonzamiento
-biodegradaremos
-buenaventuriano
-calefaccionando
-calificadamente
-calumniosamente
-centroamericana
-centroamericano
-centrodelantero
-cerebrovascular
-chicharroneaban
-cinematografiar
-circuncidaremos
-circunferencial
-circunscribamos
-circunscribiera
-cofinanciaremos
-combustibilidad
-concertadamente
-contraargumento
-contrabalancear
-contraespionaje
-contrargumentar
-contrarrestaban
-corruptibilidad
-dactilografiaba
-defallecimiento
-definitivamente
-deliberadamente
-desaprisionemos
-desaprovechando
-desatornillador
-desbarrancadero
-descalificadora
-desequilibrando
-desesperanzador
-desnuclearizase
-desordenamiento
-desorganizadora
-diagnostiquemos
-diferenciaremos
-digitalizaremos
-diminutivamente
-ejemplificadora
-ejemplifiquemos
-electrifiquemos
-electronegativo
-electropositivo
-embotellamiento
-empolvoramiento
-enloquecimiento
-enorgulleciendo
-entremetimiento
-escabullimiento
-espiritualizado
-exclaustraremos
-expansionaremos
-fisioculturismo
-fisioculturista
-generalizaremos
-geolocalizadora
-gramaticalmente
-hiperventilando
-hiperventilarán
-hiperventilaras
-hiperventilarás
-horizontalmente
-hormigueamiento
-identificatorio
-imaginariamente
-impersonalizado
-implacablemente
-improbablemente
-improductividad
-imprudentemente
-inaccesibilidad
-inadaptabilidad
-inadmisibilidad
-incansablemente
-incidentalmente
-incorrectamente
-individualmente
-indivisibilidad
-industrialmente
-ineluctabilidad
-inmaculadamente
-insaciablemente
-insatisfactorio
-interconectemos
-intermediaremos
-interprovincial
-irrepresentable
-jurisprudencial
-lamentablemente
-laringectomizar
-latinoamericana
-latinoamericano
-limpiacristales
-litofotografiar
-macroestructura
-malacostumbrada
-malacostumbrado
-malinterpretado
-melodramatizado
-menospreciadora
-microprocesador
-monstruosamente
-monumentalizado
-multimillonaria
-multimillonario
-musicoterapeuta
-nacionalizadora
-neurotransmisor
-obstaculizadora
-obstruccionista
-octavofinalista
-originariamente
-panamericanismo
-parafrasearemos
-particularmente
-perdurablemente
-permanentemente
-personifiquemos
-placenteramente
-pluripartidismo
-potencializaban
-preinscribiendo
-preliminarmente
-presencialmente
-quebrantahuesos
-quebrantamiento
-radicalizaremos
-radiotransmisor
-reacondicionado
-recalentamiento
-recapitularemos
-reconquistadora
-reconstituyamos
-redimensionaban
-redireccionando
-reflexionaremos
-rejuveneceremos
-repugnantemente
-resolutivamente
-respectivamente
-respetuosamente
-responsabilizar
-retransmitiendo
-robustecimiento
-secundariamente
-sempiternamente
-sensacionalismo
-sensacionalista
-sentimentalismo
-silenciosamente
-sobrecalentando
-sobreexplotamos
-sobreexplotando
-sobrepintaremos
-sobrescribiendo
-sospechosamente
-subdesarrollada
-subdesarrollado
-superbombardero
-sustentabilidad
-sustituibilidad
-teleconferencia
-teledirigiremos
-tradicionalista
-trasmisibilidad
-trimestralmente
-turboventilador
-turbulentamente
-ultracongelando
-vergonzosamente
-verificabilidad
-vicepresidencia
-videofrecuencia
-videovigilancia
-voluntariamente
-voluptuosamente
-
+responsabilidad,Tener la obligación de responder por las propias acciones.
+particularmente,Específicamente o especialmente.
+establecimiento,Lugar donde se lleva a cabo una actividad o se ofrece un servicio.
+correspondiente,Que se relaciona o corresponde a algo o alguien en particular.
+arrepentimiento,Sentimiento de pesar o remordimiento por algo hecho en el pasado.
+entretenimiento,Actividad o evento que proporciona diversión o distracción.
+aproximadamente,Aproximadamente, más o menos, cerca de.
+condescendiente,Mostrar una actitud de superioridad y tratar a los demás de manera condescendiente.
+correspondencia,Intercambio de cartas, mensajes o comunicaciones entre personas.
+definitivamente,De manera definitiva o segura, sin dudas.
+fortalecimiento,Acción de hacer más fuerte o resistente algo o alguien.
+resplandeciente,Que brilla o emite un brillo intenso.
+desconocimiento,Falta de conocimiento o información sobre algo.
+posicionamiento,Acción de ubicar o colocar algo o alguien en una posición específica.
+aprovechamiento,Acción de utilizar o sacar beneficio de algo.
+susceptibilidad,Tendencia a ser influenciado o afectado por algo o alguien.
+inconmensurable,Que no se puede medir o cuantificar.
+contracorriente,Ir en contra de la corriente principal o las normas establecidas.
+condescendencia,Actitud de comportarse de manera condescendiente hacia los demás.
+lamentablemente,De manera lamentable o triste, causa pena o pesar.
+respectivamente,En el mismo orden o secuencia anteriormente mencionado.
+responsabilizar,Atribuir la responsabilidad o culpar a alguien por algo.
+consuetudinario,Que se realiza o se lleva a cabo de acuerdo con una costumbre establecida.
+estremecimiento,Acción de temblar o estremecerse debido a una emoción o miedo.
+progresivamente,De manera gradual o progresiva.
+enriquecimiento,Acción de hacer algo o alguien más rico o mejor.
+desprendimiento,Separación o liberación de algo que estaba unido o adherido.
+voluntariamente,De manera voluntaria o por propia elección.
+bienaventuranza,Estado de felicidad o alegría suprema.
+apresuradamente,Realizado con prisa o rapidez.
+permanentemente,De manera constante o duradera, sin cambios.
+discriminatorio,Que muestra o implica discriminación o trato desigual hacia ciertas personas.
+distanciamiento,Acción de alejarse emocionalmente o físicamente de algo o alguien.
+insignificancia,Falta de importancia o valor.
+superficialidad,Falta de profundidad o sustancia, se queda en la superficie.
+malintencionado,Con malas intenciones o propósitos ocultos.
+embellecimiento,Acción de hacer algo o alguien más hermoso o atractivo.
+individualmente,De manera individual o independiente.
+anticipadamente,Con antelación o antes de lo esperado.
+prestidigitador,Persona que realiza trucos de magia o ilusionismo.
+desvanecimiento,Acción de desaparecer o desvanecerse gradualmente.
+fraccionamiento,Acción de dividir o fragmentar en partes más pequenas.
+terminantemente,De manera categórica o absoluta, sin lugar a dudas.
+empobrecimiento,Acción de hacerse más pobre o perder riqueza.
+accidentalmente,De manera no intencional o por accidente.
+tradicionalista,Que se adhiere o se apega a las tradiciones o costumbres establecidas.
+deslumbramiento,Asombro o impresión causada por algo que brilla o es deslumbrante.
+cuestionamiento,Acto de hacer preguntas o poner en duda algo.
+sustentabilidad,Capacidad de mantener o sostener algo a largo plazo sin danar el medio ambiente.
+desmoronamiento,Colapso o derrumbe de algo, especialmente de una estructura.
+afortunadamente,De manera afortunada o con suerte.
+autoindulgencia,Complacerse o consentirse a uno mismo, especialmente en exceso.
+exhaustivamente,De manera exhaustiva o completa, sin dejar nada sin revisar.
+despersonalizar,Quitar o perder las características personales o la individualidad.
+reconstituyente,Que restaura o recupera la fuerza o vitalidad.
+acuartelamiento,Acción de alojar o guarnecer a soldados en un cuartel.
+acontecimientos,Eventos o sucesos que ocurren en un período de tiempo determinado.
+entrelazamiento,Acción de unir o mezclar cosas de manera entrelazada o interconectada.
+adelantadamente,Con anticipación o antes de lo esperado.
+contrabalancear,Equilibrar o compensar algo con otra cosa opuesta.
+enternecimiento,Sentimiento de ternura o compasión hacia algo o alguien.
+aprisionamiento,Acción de encarcelar o privar de libertad.
+embrutecimiento,Acción de hacerse bruto o perder sensibilidad o delicadeza.
+entorpecimiento,Obstaculización o dificultad para llevar a cabo algo.
+respetabilidad,Calidad de ser respetable o digno de respeto.
+transparentarse,Volverse o hacerse transparente o visible a través de algo.
+desproporcionado,Fuera de proporción o desequilibrado en tamano o cantidad.
+superabundancia,Existencia o presencia excesiva o abundante de algo.
+ensordecimiento,Pérdida temporal o permanente de la capacidad auditiva.
+amortiguamiento,Acción de disminuir o suavizar el impacto o la intensidad de algo.
+catequizamiento,Acción de ensenar o instruir en los principios de una religión.
+sentimentalismo,Tendencia a ser excesivamente emocional o melancólico.
+avituallamiento,Provisión de alimentos, suministros o equipo necesarios.
+infraestructura,Conjunto de estructuras y servicios básicos necesarios para el funcionamiento de una comunidad o sociedad.
+portaestandarte,Persona que lleva o sostiene un estandarte o bandera en una procesión o desfile.
+intrascendencia,Falta de importancia o relevancia.
+atropellamiento,Acción de atropellar o chocar violentamente con algo o alguien.
+impermeabilidad,Propiedad de no dejar pasar o penetrar líquidos o gases.
+deliberadamente,De manera intencional o premeditada.
+quebrantamiento,Acción de romper o infringir una ley, norma o promesa.
+desacostumbrado,No habitual o poco común, que no se acostumbra a hacer o ver.
+sustancialmente,De manera significativa o considerable.
+segregacionista,Que promueve o apoya la segregación o separación de grupos sociales.
+primordialmente,Principalmente o en primer lugar, de mayor importancia.
+pronunciamiento,Declaración o postura pública sobre un tema o asunto.
+embotellamiento,Congestión o bloqueo de tráfico, especialmente en calles o carreteras.
+indistintamente,Sin distinguir o diferenciar entre diferentes opciones o posibilidades.
+invariablemente,Sin cambio o variación, de manera constante o constante.
+autosuficiencia,Capacidad de valerse o satisfacer sus propias necesidades sin depender de los demás.
+esclarecimiento,Acción de aclarar o explicar algo para que sea entendido.
+ensimismamiento,Estado de estar absorto en uno mismo o en los propios pensamientos.
+equitativamente,De manera justa o imparcial, tratando a todos por igual.
+inesperadamente,De manera inesperada o sorpresiva, sin previo aviso.
+inteligibilidad,Capacidad de ser comprendido o entendido.
+acrecentamiento,Acción de aumentar o incrementar algo.
+suficientemente,En cantidad o grado adecuado o satisfactorio.
+correligionario,Persona que comparte la misma religión que otra.
+conservadurismo,Actitud o posición política que aboga por la tradición y la resistencia al cambio.
+grandilocuencia,Hablar o escribir en un estilo pomposo o grandilocuente.
+desmembramiento,Acción de separar o dividir en partes más pequenas o individuales.
+inevitablemente,De manera inevitable, que no se puede evitar o eludir.
+respetuosamente,Con respeto o cortesía hacia alguien o algo.
+manifiestamente,De manera evidente o clara, sin lugar a dudas.
+inexorablemente,De manera implacable o sin poder ser detenido o cambiado.
+participaciones,Acciones, aportes o contribuciones en un proyecto o actividad.
+incorrectamente,De manera incorrecta o errónea, no de acuerdo con lo correcto o preciso.
+incansablemente,Sin descanso o fatiga, de manera persistente o constante.
+excepcionalidad,Calidad de ser excepcional o fuera de lo común.
+encarcelamiento,Acción de encarcelar o privar de libertad.
+silenciosamente,De manera silenciosa o sin hacer ruido.
+empadronamiento,Registro o inscripción en un padrón o censo oficial.
+irreconciliable,Que no puede ser reconciliado o resuelto.
+afirmativamente,De manera positiva o afirmativa, respondiendo "sí".
+circunscribirse,Limitarse o restringirse a una determinada área o ámbito.
+apasionadamente,Con pasión, intensidad o fervor.
+impermeabilizar,Hacer o volver impermeable o resistente al agua.
+disimuladamente,De manera disimulada o oculta, sin que sea evidente.
+latinoamericano,Relativo a los países de América Latina o a sus habitantes.
+inadecuadamente,De manera inapropiada o insuficiente.
+anquilosamiento,Estado de inmovilidad o estancamiento debido a la falta de cambio o desarrollo.
+indefinidamente,Sin límite de tiempo o duración determinada.
+robustecimiento,Acción de hacerse más fuerte, resistente o sólido.
+atolondramiento,Acción de confundirse o perder el control debido a la precipitación o falta de atención.
+desproporcionar,Dar o asignar en una proporción incorrecta o desequilibrada.
+ajusticiamiento,Acción de ajusticiar o ejecutar a alguien por un delito.
+desacoplamiento,Separación o desconexión de algo que estaba unido o relacionado.
+encarnizamiento,Acción de atacar o perseguir con sana o crueldad.
+circunstanciado,Que se basa en las circunstancias particulares de un caso o situación.
+tradicionalismo,Adhesión o apego a las tradiciones o costumbres establecidas.
+inaccesibilidad,Calidad de ser inaccesible o difícil de alcanzar o acceder.
+sobrecogimiento,Estado de sorpresa o asombro repentino.
+imprevistamente,De manera imprevista o sin previo aviso.
+perceptibilidad,Capacidad de ser percibido o detectado.
+improductividad,Falta de productividad o rendimiento bajo en una actividad.
+entrometimiento,Intromisión o interferencia en los asuntos de otros sin ser invitado o deseado.
+congruentemente,De manera coherente o consistente con algo.
+amedrentamiento,Acción de intimidar o infundir miedo a alguien.
+resquebrajadura,Grieta o fisura en una superficie o estructura.
+aleccionamiento,Acción de ensenar o instruir a alguien de manera ejemplar o con lecciones.
+sempiternamente,De manera eterna o perpetua, sin fin.
+microprocesador,Componente electrónico que contiene una unidad central de procesamiento (CPU).
+desdichadamente,De manera desafortunada o infeliz, causando pena o desgracia.

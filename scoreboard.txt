@@ -1,10 +1,7 @@
-Twar,1000
-Ulysses,500
-Fabi,400
-Ignacio,600
-Mathi,700
-Cesar,800
-Fer,500
-Kapocha,900
-Sofi,700
-Javo,5000
+benja,100
+sofi,100
+diego,100
+alaska,100
+fer,400
+uly,600
+Twar,800

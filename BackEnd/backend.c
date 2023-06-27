@@ -432,8 +432,16 @@ void guardarPartida(Jugador *jugador, int x, int y)
         
         if (archivo == NULL)
         {
-            printf("No se pudo abrir el archivo.\n");
-            return;
+            if(jugador->idioma == 1) //Español
+            {
+                printf("No se pudo abrir el archivo.\n");
+                return;
+            }
+            else if(jugador->idioma == 2) //Inglés
+            {
+                printf("The file could not be opened.\n");
+                return;
+            }
         }
 
         fprintf(archivo, "%s,%d,%d\n", jugador->nombre, jugador->puntos, jugador->nivel);
@@ -444,7 +452,14 @@ void guardarPartida(Jugador *jugador, int x, int y)
 
     // Se muestra un mensaje de confirmación
     gotoxy(x, y);
-    printf("Partida guardada exitosamente.");
+    if(jugador->idioma == 1) //Español
+    {
+        printf("Partida guardada exitosamente.");
+    }
+    else if(jugador->idioma == 2) //Inglés
+    {
+        printf("Game saved successfully.");
+    }
 }
 
 void cargarPartida(char *nombreJugador, Jugador *jugador, int x, int y)
@@ -457,7 +472,14 @@ void cargarPartida(char *nombreJugador, Jugador *jugador, int x, int y)
     {
         // El archivo no existe, mostrar un mensaje de error
         gotoxy(x, y);
-        printf("No se encontró ninguna partida guardada.\n");
+        if(jugador->idioma == 1)
+        {
+            printf("No se encontró ninguna partida guardada.\n");
+        }
+        else if(jugador->idioma == 2)
+        {
+            printf("No saved game was found.\n");
+        }
 
         return;
     }
@@ -500,7 +522,14 @@ void cargarPartida(char *nombreJugador, Jugador *jugador, int x, int y)
 
             // Se muestra un mensaje de confirmación
             gotoxy(x, y);
-            printf("Partida cargada exitosamente.");
+            if(jugador->idioma == 1) //Español
+            {
+                printf("Partida cargada exitosamente.");
+            }
+            else if(jugador->idioma == 2) //Inglés
+            {
+                printf("Game loaded successfully.");
+            }
 
             return;
         }
@@ -514,8 +543,14 @@ void cargarPartida(char *nombreJugador, Jugador *jugador, int x, int y)
     {
         // El jugador no fue encontrado, mostrar un mensaje de error
         gotoxy(x, y);
-        printf("No se encontró ninguna partida para el jugador '%s'.\n", nombreJugador);
-
+        if(jugador->idioma == 1) //Español
+        {
+            printf("No se encontró ninguna partida para el jugador '%s'.\n", nombreJugador);
+        }
+        else if(jugador->idioma == 2) //Inglés
+        {
+            printf("No game was found for the player '%s'.\n", nombreJugador);
+        }
         return;
     }
 }
@@ -628,9 +663,27 @@ void obtenerJugadores(ArrayList *jugadores, Jugador *jugador)
 //bool que sirve para verificar si califica para el top 10
 int calificaEnTabla(TreeMap *tree, int puntos)
 {   
+
+    if(puntos == 0) //si no tiene puntos no califica en la tabla
+    {   
+        return 0;
+    }
+
     //conseguimos al ultimo de la lista
     Pair *aux_pair = firstTreeMap(tree);
-    Jugador *current_last_spot = (Jugador*) aux_pair->value;
+
+    if(aux_pair == NULL)
+    {   
+        return 1;
+    }
+
+    if(treeSize(tree) < 10)
+    {
+        return 1;
+    }
+     
+
+    Jugador *current_last_spot = (Jugador*) aux_pair->value; 
     
     //verificamos si el puntaje del jugador actual es mayor a el ultimo puesto
     if(puntos > current_last_spot->puntos)
@@ -643,35 +696,39 @@ int calificaEnTabla(TreeMap *tree, int puntos)
 
 //verifica si el jugador existe en la tabla para evitar nombres
 int JugadorExisteEnTabla(TreeMap *tree, char* nombre)
-{
+{   
+   
     Pair *aux_pair = firstTreeMap(tree);
     Jugador *current_spot = (Jugador*) aux_pair->value;
 
     while(aux_pair != NULL)
-    {
+    {   
         if(strcmp(nombre, current_spot->nombre) == 0)
         {
             return 1;
         }
         else
         {
-            Pair *aux_pair = nextTreeMap(tree);
-            Jugador *current_spot = (Jugador*) aux_pair->value;
+            aux_pair = nextTreeMap(tree);
+
+            if(aux_pair == NULL) return 0;
+
+            current_spot = (Jugador*) aux_pair->value;
         }
     }
-    return 0;
 }
 
 //procesamos el nombre repetido, si el puntaje nuevo es mayor
 void procesarJugadorRepetido(TreeMap *tree, Jugador * player)
-{
+{   
     //tomamos la ultima posicion de la tabla
     Pair *aux_pair = firstTreeMap(tree);
-    Jugador *current_spot = (Jugador*) aux_pair->value;
-
+    
     //recorremos la tabla
     while(aux_pair != NULL)
     {   
+        Jugador *current_spot = (Jugador*) aux_pair->value;
+
         //si es el mismo nombre, evaluamos
         if(strcmp(player->nombre, current_spot->nombre) == 0)
         {   
@@ -681,12 +738,13 @@ void procesarJugadorRepetido(TreeMap *tree, Jugador * player)
                 eraseTreeMapCurrent(tree);
                 insertTreeMap(tree, (void *) player->puntos, (void *) player);
             }
+            return;
+
         }
         else
         {   
             //recorre al siguiente de la lista
-            Pair *aux_pair = nextTreeMap(tree);
-            Jugador *current_spot = (Jugador*) aux_pair->value;
+            aux_pair = nextTreeMap(tree);
         }
     }
     
@@ -695,30 +753,37 @@ void procesarJugadorRepetido(TreeMap *tree, Jugador * player)
 //funcion para guardar un puntaje
 void guardarPuntaje(TreeMap *tree, Jugador *player)
 {   
+
+    Jugador *nuevo_jugador = (Jugador *)malloc(sizeof(Jugador));
+    strcpy(nuevo_jugador->nombre, player->nombre);
+    nuevo_jugador->puntos = player->puntos;
+
     //pregunta si es mayor a el top 10 de los puntajes
-    if(calificaEnTabla(tree, player->puntos) == 1)
-    {
+    if(calificaEnTabla(tree, nuevo_jugador->puntos) == 1)
+    {   
         //si es que existe el jugador en la tabla, se comparan los puntajes de ambos casos
-        if(JugadorExisteEnTabla(tree, player->nombre) == 1)
+        if(JugadorExisteEnTabla(tree, nuevo_jugador->nombre) == 1)
         {   
+
             //inserta el nuevo puntaje del jugador en la tabla en caso de ser mayor al existente, en caso contrario solo se omite
-            procesarJugadorRepetido(tree, player);
+            procesarJugadorRepetido(tree, nuevo_jugador);
         }
         else
         {   
-            //se convierte el puntaje a string
-            char buffer[20];
-            char* ptj_char = itoa(player->puntos, buffer, 10);
-
-            insertTreeMap(tree, ptj_char, player);
             
             //al insertar un nuevo jugador, si es que este llega a crear un size de mas de 10 en la tabla, el ultimo dato se elimina.
             if(treeSize(tree) == 10)
             {   
                 firstTreeMap(tree);
                 eraseTreeMapCurrent(tree);
+                insertTreeMap(tree, (void*) nuevo_jugador->puntos, nuevo_jugador);
             }
-            
+            else
+            {
+                insertTreeMap(tree, (void*) nuevo_jugador->puntos, nuevo_jugador);
+            }
+
+
         }
     }
 }
@@ -781,7 +846,38 @@ void leerPuntajes(TreeMap* arbol_puntajes, Jugador *jugador)
 
             insertTreeMap(arbol_puntajes, (void *) nuevo_jugador->puntos, (void *) nuevo_jugador);
         }
-
-        fclose(archivo);
     }
+}
+
+//se exportan los puntajes del arbol al archivo scoreboard.txt
+void exportarPuntajes(TreeMap* arbol_puntajes)
+{
+    //se abre el archivo para leer los datos
+    FILE * archivo = fopen("scoreboard.txt", "w");
+
+    if(archivo == NULL) // Si el archivo no se creo correctamente
+    {
+        // Se muestra un mensaje de error
+        puts("\n========================================");
+        puts("   El archivo no se creo correctamente");
+        puts("========================================");
+    }
+    else
+    {
+        Pair* aux_pair = firstTreeMap(arbol_puntajes);
+
+        while(aux_pair != NULL)
+        {   
+            Jugador *current_spot = (Jugador*) aux_pair->value;
+
+
+            fprintf(archivo, "%s,%d\n", current_spot->nombre, current_spot->puntos);
+
+
+            aux_pair = nextTreeMap(arbol_puntajes);
+        }
+    }
+
+    fclose(archivo);
+
 }

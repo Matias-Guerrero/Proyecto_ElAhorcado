@@ -1,171 +1,171 @@
-And
-Fix
-Own
-Are
-Fly
-Odd
-Ape
-Fry
-Our
-Ace
-For
-Pet
-Act
-Got
-Pat
-Ask
-Get
-Peg
-Arm
-God
-Paw
-Age
-Gel
-Pup
-Ago
-Gas
-Pit
-Air
-Hat
-Put
-Ate
-Hit
-Pot
-All
-Has
-Pop
-But
-Had
-Pin
-Bye
-How
-Rat
-Bad
-Her
-Rag
-Big
-His
-Rub
-Bed
-Hen
-Row
-Bat
-Ink
-Rug
-Boy
-Ice
-Run
-Bus
-Ill
-Rap
-Bag
-Jab
-Ram
-Box
-Jug
-Sow
-Bit
-Jet
-See
-Bee
-Jam
-Saw
-Buy
-Jar
-Set
-Bun
-Job
-Sit
-Cub
-Jog
-Sir
-Cat
-Kit
-Sat
-Car
-Key
-Sob
-Cut
-Lot
-Tap
-Cow
-Lit
-Tip
-Cry
-Let
-Top
-Cab
-Lay
-Tug
-Can
-Mat
-Tow
-Dad
-Man
-Toe
-Dab
-Mad
-Tan
-Dam
-Mug
-Ten
-Did
-Mix
-Two
-Dug
-Map
-Use
-Den
-Mum
-Van
-Dot
-Mud
-Vet
-Dip
-Mom
-Was
-Day
-May
-Wet
-Ear	
-Met
-Win
-Eye
-Net
-Won
-Eat
-New
-Wig
-End
-Nap
-War
-Elf
-Now
-Why
-Egg
-Nod
-Who
-Far
-Net
-Way
-Fat
-Not
-Wow
-Few
-Nut
-You
-Fan
-Oar
-Yes
-Fun
-One
-Yak
-Fit
-Out
-Yet
-Fin
-Owl
-Zip
-Fox
-Old
-Zap
+and,conjunction used to connect words or phrases.
+fix,repair or mend something.
+own,possess or have something as one's own.
+are,present tense form of the verb "to be" for the pronoun "you."
+fly,move through the air using wings.
+odd,strange or unusual.
+ape,a type of primate, similar to a monkey.
+fry,cook food in hot oil or fat.
+our,belonging to us.
+ace,a playing card with a single spot on it.
+for,used to express purpose or reason.
+pet,an animal kept for companionship.
+act,perform a specific action or behavior.
+got,past tense of the verb "get."
+pat,touch or stroke gently with the hand.
+ask,make a request or inquire about something.
+get,obtain or acquire something.
+peg,a small cylindrical or tapered pin.
+arm,upper limb of the human body.
+god,a deity or supreme being.
+paw,the foot of an animal.
+age,the length of time that a person or thing has existed.
+gel,a jelly-like substance.
+pup,a young dog.
+ago,in the past or before now.
+gas,a substance in a state of matter between liquid and solid.
+pit,a large hole or cavity in the ground.
+air,the invisible gaseous substance surrounding the Earth.
+hat,a head covering worn for protection or as a fashion accessory.
+put,place something in a specific position or location.
+ate,past tense of the verb "eat."
+hit,strike or impact forcefully.
+pot,a deep container used for cooking or storing food.
+all,the whole quantity or extent of something.
+has,third-person singular present tense of the verb "have."
+pop,make a sudden, sharp sound.
+but,used to introduce a statement that contrasts with what has been said previously.
+had,past tense of the verb "have."
+pin,a thin, pointed piece of metal used to fasten or hold things together.
+bye,a word used to bid farewell or say goodbye.
+how,in what way or manner.
+rat,a small rodent with a long tail.
+bad,of poor quality or low standard.
+her,used to refer to a female person or animal.
+rag,a piece of cloth used for cleaning or wiping.
+big,large in size or extent.
+his,belonging to or associated with a male person or animal.
+rub,apply pressure or friction to something using a repeated back-and-forth motion.
+bed,a piece of furniture used for sleeping or resting.
+hen,a female bird, especially of a domestic fowl.
+row,a line of things or people next to each other.
+bat,a wooden or metal club used to hit the ball in various sports.
+ink,a colored fluid used for writing or printing.
+rug,a floor covering made of thick woven fabric.
+boy,a young male person.
+ice,frozen water.
+run,move at a faster pace than walking.
+bus,a large motor vehicle used for carrying passengers.
+ill,in poor health or unwell.
+rap,a genre of music that combines rhythm and poetry.
+bag,a container used to carry objects.
+jab,a quick punch with a closed fist.
+ram,an adult male sheep.
+box,a square or rectangular container.
+jug,a container used for drinking or pouring liquids.
+sow,a female pig.
+bit,a small amount or fragment.
+jet,an aircraft propelled by jet engines.
+see,perceive with the eyes or comprehend something.
+bee,a flying insect that produces honey.
+jam,a thick mixture of cooked fruits used as a sweet spread.
+saw,a tool with a toothed blade used for cutting.
+buy,acquire something in exchange for money.
+jar,a wide-mouthed container.
+set,put or place something in a particular position or location.
+bun,a small, round bread roll.
+job,a regular activity performed in exchange for payment.
+sit,rest the weight of the body on the buttocks or haunches.
+cub,a young animal, especially a young fox, bear, or lion.
+jog,run at a slow, steady pace.
+sir,a polite term used to address a man.
+cat,a small domesticated carnivorous mammal.
+kit,a set of tools or equipment.
+sat,past tense of the verb "sit."
+car,a four-wheeled motor vehicle used for transportation.
+key,a small piece of metal used to open locks.
+sob,cry noisily while taking in short breaths.
+cut,make an incision or opening in something.
+lot,a particular group, collection, or quantity of something.
+tap,strike lightly or gently.
+cow,a large domesticated bovine animal.
+lit,past tense and past participle of the verb "light."
+tip,the pointed or rounded end of something.
+cry,shed tears as an expression of emotion.
+let,allow or permit something to happen.
+top,the highest point or part of something.
+cab,a taxi.
+lay,put something down in a flat or horizontal position.
+tug,pull something with force or effort.
+can,a cylindrical metal container.
+mat,a piece of material used as a floor covering.
+tow,pull something behind with a rope or chain.
+dad,father or male parent.
+man,an adult male human being.
+toe,one of the digits of the foot.
+dab,press lightly or stroke something with a soft object.
+mad,angry or mentally disturbed.
+tan,a light brown color.
+dam,a barrier built to hold back water or control its flow.
+mug,a large cup with a handle.
+ten,the number following nine.
+did,past tense of the verb "do."
+mix,combine different substances together.
+two,the number following one.
+dug,past tense and past participle of the verb "dig."
+map,a visual representation of an area.
+use,employ or utilize something.
+den,a small, cozy room or secluded space.
+mum,mother or female parent.
+van,a large enclosed vehicle used for transporting goods or people.
+dot,a small round mark or spot.
+mud,wet earth that has become soft and sticky.
+vet,a veterinarian or animal doctor.
+dip,immerse briefly in a liquid.
+mom,mother or female parent.
+was,past tense of the verb "be."
+day,a period of 24 hours.
+may,expressing possibility or permission.
+wet,covered or saturated with water or another liquid.
+ear,the organ of hearing in humans and other vertebrates.
+met,come into contact or encounter someone.
+win,be successful or victorious in a competition or endeavor.
+eye,the organ of sight in humans and animals.
+net,a meshed fabric material or object used for catching or trapping things.
+won,past tense of the verb "win."
+eat,consume food.
+new,not existing before or recently made or acquired.
+wig,a head covering made from human or synthetic hair.
+end,the final part or point of something.
+nap,a short period of sleep, especially during the day.
+war,a state of armed conflict between nations or groups.
+elf,a mythical creature of folklore, typically depicted as a small, mischievous being.
+now,at the present time or moment.
+why,for what reason or purpose.
+egg,an oval reproductive body produced by birds, reptiles, and some mammals.
+nod,move one's head up and down as a sign of agreement or acknowledgement.
+who,used to ask or refer to a person or people.
+far,at, to, or by a great distance.
+net,a meshed fabric material or object used for catching or trapping things.
+way,a method, style, or manner of doing something.
+fat,a natural oily or greasy substance occurring in animal bodies.
+not,used to express negation, denial, or refusal.
+wow,used to express astonishment or admiration.
+few,a small number of.
+nut,a hard-shelled fruit or seed.
+you,used to refer to the person or people being addressed.
+fan,a person who has a strong interest or admiration for someone or something.
+oar,a long pole with a broad blade, used for rowing a boat.
+yes,an affirmative response or agreement.
+fun,enjoyment, amusement, or lighthearted pleasure.
+one,the number after zero.
+yak,a large domesticated wild ox with shaggy hair, humped shoulders, and large horns.
+fit,be of the right size or shape for someone or something.
+out,away from the inside or center.
+yet,up until now or a particular time.
+fin,a flattened appendage on various parts of the body of many aquatic vertebrates.
+owl,a nocturnal bird of prey with large eyes and a hooked beak.
+zip,fasten or close securely with a zipper.
+fox,a carnivorous mammal with a bushy tail and a pointed muzzle.
+old,having lived for a long time or no longer young.
+zap,strike or hit suddenly and forcefully.
