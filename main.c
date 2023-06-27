@@ -4,8 +4,6 @@
 #include <stdbool.h>
 #include <ctype.h>
 #include <unistd.h>
-#include <windows.h>
-#include <time.h> // Para generar números aleatorios
 
 //====================================================================================================
 // Importar librerias de las estructuras de datos
@@ -24,8 +22,9 @@
 #include "FrontEnd/frontend.h"
 #include "BackEnd/backend.h"
 
-
-int lower_than_int(void * key1, void * key2) {
+// Función para comparar dos enteros
+int lower_than_int(void * key1, void * key2)
+{
     if((int*) key1 < (int*) key2) return 1;
     return 0;
 }
@@ -58,8 +57,6 @@ int main(int argc, const char * argv[])
     system("mode con: cols=120 lines=25");
 
     ocultarCursor();
-
-    PlaySound("loop.wav", NULL, SND_FILENAME | SND_LOOP | SND_ASYNC);
 
     menu(jugador, arbol_puntajes);
 

@@ -242,8 +242,8 @@ void mostrarTitulo(int x, int y, int opcion, Jugador* jugador)
     // Juego en Español
     if(jugador->idioma == 1)
     {
-        // Se imprime el titulo en rosado
-        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 13);
+        // Se imprime el titulo en verde
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
 
         /***
          *   _______________________________
@@ -356,8 +356,8 @@ void mostrarTitulo(int x, int y, int opcion, Jugador* jugador)
     }
     else if (jugador->idioma == 2)
     {
-        // Se imprime el titulo en rosado
-        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 13);
+        // Se imprime el titulo en verde
+        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
 
         /*
                  _    _                                         
@@ -681,6 +681,8 @@ bool cambiarOpcion(int * opcion, int maxOpcion)
 
     if( GetAsyncKeyState(VK_RETURN) )
     {
+        PlaySound("confirm.wav", NULL, SND_FILENAME | SND_ASYNC);
+
         return true;
     }
     if( GetAsyncKeyState(VK_ESCAPE))
@@ -1063,27 +1065,27 @@ void teclaPresionada(int x, int y, char* letra, Nivel *nivel, Jugador *jugador)
                     // Se muestra el mensaje de error
                     if(jugador->idioma == 1) // Español
                     {
-                        gotoxy(x, y + 2); printf("La letra ya ha sido ingresada");
+                        gotoxy(50, 20); printf("La letra ya ha sido ingresada");
 
                         PlaySound("alerta.wav", NULL, SND_FILENAME | SND_ASYNC);
 
                         ocultarCursor();
 
                         // Se muestra el mensaje de pausa
-                        pause(x, y + 4, "Presione enter para continuar...");
+                        pause(50, 22, "Presione enter para continuar...");
                     }
                     else if (jugador->idioma == 2) // Ingles
                     {
-                        gotoxy(x, y + 2); printf("The letter has already been entered");
+                        gotoxy(50, 20); printf("The letter has already been entered");
 
                         ocultarCursor();
 
                         // Se muestra el mensaje de pausa
-                        pause(x, y + 4, "Press enter to continue...");
+                        pause(50, 22, "Press enter to continue...");
                     }
 
                     // Se limpia la linea anterior
-                    limpiarLinea(x, y + 2, 30);
+                    limpiarLinea(50, 20, 50);
 
                     // Se limpia la letra ingresada
                     limpiarLinea(x, y, 1);
