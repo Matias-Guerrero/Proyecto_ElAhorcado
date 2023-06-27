@@ -89,26 +89,22 @@ void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
     {
         char archivo[20];
 
-        int totalPalabras = 100;
+        int totalPalabras = 180;
 
         // Se verifica el nivel seleccionado
         switch(jugador->nivel)
         {
             case 1:
                 strcpy(archivo, "DataBase/03.txt");
-                totalPalabras = 104;
                 break;
             case 2:
                 strcpy(archivo, "DataBase/04.txt");
-                totalPalabras = 407;
                 break;
             case 3:
                 strcpy(archivo, "DataBase/05.txt");
-                totalPalabras = 1007;
                 break;
             case 4:
                 strcpy(archivo, "DataBase/06.txt");
-                totalPalabras = 766;
                 break;
             case 5:
                 strcpy(archivo, "DataBase/07.txt");
@@ -244,42 +240,34 @@ void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
     {
         char archivo[20];
 
-        int totalPalabras = 100;
+        int totalPalabras = 180;
 
         // Se verifica el nivel seleccionado
         switch(jugador->nivel)
         {
             case 1:
                 strcpy(archivo, "WordBank/03_English.txt");
-                totalPalabras = 171;
                 break;
             case 2:
                 strcpy(archivo, "WordBank/04_English.txt");
-                totalPalabras = 69;
                 break;
             case 3:
                 strcpy(archivo, "WordBank/05_English.txt");
-                totalPalabras = 488;
                 break;
             case 4:
                 strcpy(archivo, "WordBank/06_English.txt");
-                totalPalabras = 140;
                 break;
             case 5:
                 strcpy(archivo, "WordBank/07_English.txt");
-                totalPalabras = 500;
                 break;
             case 6:
                 strcpy(archivo, "WordBank/08_English.txt");
-                totalPalabras = 500;
                 break;
             case 7:
                 strcpy(archivo, "WordBank/09_English.txt");
-                totalPalabras = 95;
                 break;
             case 8:
                 strcpy(archivo, "WordBank/10_English.txt");
-                totalPalabras = 100;
                 break;
         }
 
@@ -394,7 +382,7 @@ void sobrescribirLinea(char* nombreArchivo, int numeroLinea, const char* nuevaLi
 void guardarPartida(Jugador *jugador, int x, int y)
 {
     // Abrir el archivo de guardado
-    FILE *archivo = fopen("partida_guardada.txt", "r");
+    FILE *archivo = fopen("partidas_guardadas.txt", "r");
 
     // Se crea un booleano para saber si el jugador ya existe
     bool existe = false;
@@ -423,7 +411,7 @@ void guardarPartida(Jugador *jugador, int x, int y)
                 // Se sobrescribe la línea con los datos actualizados del jugador
                 char nuevaLinea[100];
                 snprintf(nuevaLinea, sizeof(nuevaLinea), "%s,%d,%d\n", jugador->nombre, jugador->puntos, jugador->nivel);
-                sobrescribirLinea("partida_guardada.txt", numeroLinea, nuevaLinea);
+                sobrescribirLinea("partidas_guardadas.txt", numeroLinea, nuevaLinea);
 
                 // Se marca que el jugador ya existe
                 existe = true;
@@ -440,7 +428,7 @@ void guardarPartida(Jugador *jugador, int x, int y)
     if (!existe)
     {
         // Abrir el archivo en modo escritura al final
-        archivo = fopen("partida_guardada.txt", "a");
+        archivo = fopen("partidas_guardadas.txt", "a");
         
         if (archivo == NULL)
         {
@@ -462,7 +450,7 @@ void guardarPartida(Jugador *jugador, int x, int y)
 void cargarPartida(char *nombreJugador, Jugador *jugador, int x, int y)
 {
     // Abrir el archivo de guardado
-    FILE *archivo = fopen("partida_guardada.txt", "r");
+    FILE *archivo = fopen("partidas_guardadas.txt", "r");
 
     // Verificar si el archivo existe
     if (archivo == NULL)
@@ -538,7 +526,7 @@ void obtenerJugadores(ArrayList *jugadores, Jugador *jugador)
     if(jugador->idioma == 1) // Español
     {
         // Abrir el archivo de guardado
-        FILE *archivo = fopen("partida_guardada.txt", "r");
+        FILE *archivo = fopen("partidas_guardadas.txt", "r");
 
         // Verificar si el archivo existe
         if (archivo == NULL)
@@ -586,7 +574,7 @@ void obtenerJugadores(ArrayList *jugadores, Jugador *jugador)
     else if(jugador->idioma == 2) // Ingles
     {
         // Abrir el archivo de guardado
-        FILE *archivo = fopen("partida_guardada.txt", "r");
+        FILE *archivo = fopen("partidas_guardadas.txt", "r");
 
         // Verificar si el archivo existe
         if (archivo == NULL)

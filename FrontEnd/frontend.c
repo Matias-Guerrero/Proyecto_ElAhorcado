@@ -38,11 +38,6 @@ void resetearTeclas()
 
         Sleep(150);
     }
-
-    // HANDLE hStdin = GetStdHandle(STD_INPUT_HANDLE);
-    // FlushConsoleInputBuffer(hStdin);
-
-    // Sleep(50);
 }
 
 /*La función recibe los parámetros x, y
@@ -239,12 +234,12 @@ void cargando(int duracion, Jugador *jugador)
 // Función para mostrar el título
 void mostrarTitulo(int x, int y, int opcion, Jugador* jugador)
 {
+    // Se imprime el titulo en verde
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
+
     // Juego en Español
     if(jugador->idioma == 1)
     {
-        // Se imprime el titulo en verde
-        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
-
         /***
          *   _______________________________
          *  |    _____  _    ___   _        |                           _        
@@ -288,19 +283,6 @@ void mostrarTitulo(int x, int y, int opcion, Jugador* jugador)
         
         }
 
-        /*  ____  __        __    _   _  _____  ____   ___    __    ____   _____ *
-        * ( ___)(  )      /__\  ( )_( )(  _  )(  _ \ / __)  /__\  (  _ \ (  _  ) *
-        *  )__)  )(__    /(__)\  ) _ (  )(_)(  )   /( (__  /(__)\  )(_) ) )(_)( *
-        * (____)(____)  (__)(__)(_) (_)(_____)(_)\_) \___)(__)(__)(____/ (_____) */
-
-        if(opcion == 3)
-        {
-            gotoxy(x, y); printf(" ____  __        __    _   _  _____  ____   ___    __    ____   _____");
-            gotoxy(x, y + 1); printf("( ___)(  )      /__\\  ( )_( )(  _  )(  _ \\ / __)  /__\\  (  _ \\ (  _  )");
-            gotoxy(x, y + 2); printf(" )__)  )(__    /(__)\\  ) _ (  )(_)(  )   /( (__  /(__)\\  )(_) ) )(_)( ");
-            gotoxy(x, y + 3); printf("(____)(____)  (__)(__)(_) (_)(_____)(_)\\_) \\___)(__)(__)(____/ (_____)");
-        }
-
         /***
              _    _                       _     _     _             _              _           _ 
             | |  | |                     | |   (_)   | |           | |            (_)         | |
@@ -330,35 +312,29 @@ void mostrarTitulo(int x, int y, int opcion, Jugador* jugador)
             gotoxy(x, y + 5); printf("                    \\/          \\/\\______|    \\/     \\/ ");
         }
 
-        //  ##                      #                                                  #
-        // #  #                                                                        #
-        // #     ###    ###   ##   ##     ###   ###         ###    ##   ###            #  #  #   ###   ###  ###
-        // # ##  #  #  #  #  #      #    #  #  ##           #  #  #  #  #  #           #  #  #  #  #  #  #  #  #
-        // #  #  #     # ##  #      #    # ##    ##         #  #  #  #  #           #  #  #  #   ##   # ##  #
-        // ###  #      # #   ##   ###    # #  ###          ###    ##   #            ##    ###  #      # #  #
-        //                                                 #                                    ###
-
+        //  ___                                          ___                   _____                            
+        // (  _`\                     _                 (  _`\                (___  )                           
+        // | ( (_) _ __   _ _    ___ (_)   _ _   ___    | |_) )  _    _ __        | | _   _    __     _ _  _ __ 
+        // | |___ ( '__)/'_` ) /'___)| | /'_` )/',__)   | ,__/'/'_`\ ( '__)    _  | |( ) ( ) /'_ `\ /'_` )( '__)
+        // | (_, )| |  ( (_| |( (___ | |( (_| |\__, \   | |   ( (_) )| |      ( )_| || (_) |( (_) |( (_| || |   
+        // (____/'(_)  `\__,_)`\____)(_)`\__,_)(____/   (_)   `\___/'(_)      `\___/'`\___/'`\__  |`\__,_)(_)   
+        //                                                                                  ( )_) |             
+        //                                                                                   \___/'
         
         if(opcion == 6)
         {
-                gotoxy(x, y); printf("  ##                      #                                          #");
-            gotoxy(x, y + 1); printf(" #  #                                                                #");
-            gotoxy(x, y + 2); printf(" #     ###    ###   ##   ##     ###   ###     ###    ##   ###        #  #  #   ###   ###  ###");
-            gotoxy(x, y + 3); printf(" # ##  #  #  #  #  #      #    #  #  ##       #  #  #  #  #  #       #  #  #  #  #  #  #  #  #");
-            gotoxy(x, y + 4); printf(" #  #  #     # ##  #      #    # ##    ##     #  #  #  #  #       #  #  #  #   ##   # ##  #");
-            gotoxy(x, y + 5); printf(" ###   #      # #   ##   ###    # #  ###      ###    ##   #        ##    ###  #      # #  #");
-            gotoxy(x, y + 6); printf("                                              #                                ###");
+                gotoxy(x, y); printf(" ___                                          ___                   _____                            ");
+            gotoxy(x, y + 1); printf("(  _`\\                     _                 (  _`\\                (___  )                           ");
+            gotoxy(x, y + 2); printf("| ( (_) _ __   _ _    ___ (_)   _ _   ___    | |_) )  _    _ __        | | _   _    __     _ _  _ __ ");
+            gotoxy(x, y + 3); printf("| |___ ( '__)/'_` ) /'___)| | /'_` )/',__)   | ,__/'/'_`\\ ( '__)    _  | |( ) ( ) /'_ `\\ /'_` )( '__)");
+            gotoxy(x, y + 4); printf("| (_, )| |  ( (_| |( (___ | |( (_| |\\__, \\   | |   ( (_) )| |      ( )_| || (_) |( (_) |( (_| || |   ");
+            gotoxy(x, y + 5); printf("(____/'(_)  `\\__,_)`\\____)(_)`\\__,_)(____/   (_)   `\\___/'(_)      `\\___/'`\\___/'`\\__  |`\\__,_)(_)   ");
+            gotoxy(x, y + 6); printf("                                                                                 ( )_) |             ");
+            gotoxy(x, y + 7); printf("                                                                                  \\___/'             ");
         }
-
-
-        // Se restablece el color de la consola
-        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
     }
     else if (jugador->idioma == 2)
     {
-        // Se imprime el titulo en verde
-        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
-
         /*
                  _    _                                         
                 | |  | |                                        
@@ -484,12 +460,34 @@ void mostrarTitulo(int x, int y, int opcion, Jugador* jugador)
             gotoxy(x, y + 1); printf("  / __|/ __/ _ \\| '__/ _ \\/ __|");
             gotoxy(x, y + 2); printf("  \\__ \\ (_| (_) | | |  __/\\__ \\");
             gotoxy(x, y + 3); printf("  |___/\\___\\___/|_|  \\___||___/");
-        }                                                                 
+        }     
 
-        // Se restablece el color de la consola
-        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+        //  _____  _                    _                 ___                       _                                  
+        // (_   _)( )                  ( )              /'___)                     (_ )                _               
+        //   | |  | |__     _ _   ___  | |/')   ___    | (__   _    _ __     _ _    | |    _ _  _   _ (_)  ___     __  
+        //   | |  |  _ `\ /'_` )/' _ `\| , <  /',__)   | ,__)/'_`\ ( '__)   ( '_`\  | |  /'_` )( ) ( )| |/' _ `\ /'_ `\
+        //   | |  | | | |( (_| || ( ) || |\`\ \__, \   | |  ( (_) )| |      | (_) ) | | ( (_| || (_) || || ( ) |( (_) |
+        //   (_)  (_) (_)`\__,_)(_) (_)(_) (_)(____/   (_)  `\___/'(_)      | ,__/'(___)`\__,_)`\__, |(_)(_) (_)`\__  |
+        //                                                                  | |                ( )_| |          ( )_) |
+        //                                                                  (_)                `\___/'           \___/' 
+
+        if(opcion == 6)
+        {
+                gotoxy(x, y); printf("  _____  _                    _                 ___                       _                                  ");
+            gotoxy(x, y + 1); printf(" (_   _)( )                  ( )              /'___)                     (_ )                _               ");
+            gotoxy(x, y + 2); printf("   | |  | |__     _ _   ___  | |/')   ___    | (__   _    _ __     _ _    | |    _ _  _   _ (_)  ___     __  ");
+            gotoxy(x, y + 3); printf("   | |  |  _ `\\ /'_` )/' _ `\\| , <  /',__)   | ,__)/'_`\\ ( '__)   ( '_`\\  | |  /'_` )( ) ( )| |/' _ `\\ /'_ `\\");
+            gotoxy(x, y + 4); printf("   | |  | | | |( (_| || ( ) || |\\`\\ \\__, \\   | |  ( (_) )| |      | (_) ) | | ( (_| || (_) || || ( ) |( (_) |");
+            gotoxy(x, y + 5); printf("   (_)  (_) (_)`\\__,_)(_) (_)(_) (_)(____/   (_)  `\\___/'(_)      | ,__/'(___)`\\__,_)`\\__, |(_)(_) (_)`\\__  |");
+            gotoxy(x, y + 6); printf("                                                                  | |                ( )_| |          ( )_) |");
+            gotoxy(x, y + 7); printf("                                                                  (_)                `\\___/'           \\___/'");
+
+            system("pause>nul");
+        }
     }
     
+    // Se restablece el color de la consola
+    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 }
 
 //================================
@@ -637,7 +635,7 @@ bool cambiarOpcion(int * opcion, int maxOpcion)
     {
         *opcion -= 1;
 
-        PlaySound("sound.wav", NULL, SND_FILENAME | SND_ASYNC);
+        PlaySound("Sounds/sound.wav", NULL, SND_FILENAME | SND_ASYNC);
 
         if(*opcion < 1)
         {
@@ -648,7 +646,7 @@ bool cambiarOpcion(int * opcion, int maxOpcion)
     {
         *opcion += 1;
 
-        PlaySound("sound.wav", NULL, SND_FILENAME | SND_ASYNC);
+        PlaySound("Sounds/sound.wav", NULL, SND_FILENAME | SND_ASYNC);
 
         if(*opcion > maxOpcion)
         {
@@ -681,7 +679,7 @@ bool cambiarOpcion(int * opcion, int maxOpcion)
 
     if( GetAsyncKeyState(VK_RETURN) )
     {
-        PlaySound("confirm.wav", NULL, SND_FILENAME | SND_ASYNC);
+        PlaySound("Sounds/confirm.wav", NULL, SND_FILENAME | SND_ASYNC);
 
         return true;
     }
@@ -1067,7 +1065,7 @@ void teclaPresionada(int x, int y, char* letra, Nivel *nivel, Jugador *jugador)
                     {
                         gotoxy(50, 20); printf("La letra ya ha sido ingresada");
 
-                        PlaySound("alerta.wav", NULL, SND_FILENAME | SND_ASYNC);
+                        PlaySound("Sounds/alerta.wav", NULL, SND_FILENAME | SND_ASYNC);
 
                         ocultarCursor();
 
@@ -1291,17 +1289,22 @@ void animacionSalida(Jugador *jugador, int duracion)
     // Se limpia la pantalla
     limpiarPantalla();
 
-    // Se muestra el titulo
-    mostrarTitulo(12, 6, 6, jugador);
+    if(jugador->idioma == 1)
+    {
+        // Se muestra el titulo
+        mostrarTitulo(12, 6, 6, jugador);
+    }
+    else if(jugador->idioma == 2)
+    {
+        // Se muestra el titulo
+        mostrarTitulo(5, 6, 6, jugador);
+    }
 
     // Se inicializa la variable para mostrar el ahorcado
     int j = 0;
 
     // Se inicializa la variable para la duracion de cada mensaje
-    int milisegundos = 250;
-
-    // Se imprime el titulo en rosado
-    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 13);
+    int milisegundos = 500;
 
     if(jugador->idioma == 1)
     {
@@ -1482,8 +1485,8 @@ void menu(Jugador *jugador, TreeMap *tree)
                     instrucciones(jugador);
                     break;
                 case 5:
-                    // Se muestra el mensaje de pausa
-                    pause(40, 22, "Press enter to exit...");
+                    // Se muestra una animacion de salida
+                    animacionSalida(jugador, 1);
 
                     // Se sale de la aplicacion
                     exit(0);
