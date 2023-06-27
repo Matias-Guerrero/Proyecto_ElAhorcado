@@ -89,73 +89,94 @@ void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
     {
         char archivo[20];
 
-        int totalPalabras = 180;
+        int totalPalabras;
 
         // Se verifica el nivel seleccionado
         switch(jugador->nivel)
         {
             case 1:
                 strcpy(archivo, "DataBase/03.txt");
+                totalPalabras = 104;
                 break;
             case 2:
                 strcpy(archivo, "DataBase/04.txt");
+                totalPalabras = 157;
                 break;
             case 3:
                 strcpy(archivo, "DataBase/05.txt");
+                totalPalabras = 140;
                 break;
             case 4:
                 strcpy(archivo, "DataBase/06.txt");
+                totalPalabras = 142;
                 break;
             case 5:
                 strcpy(archivo, "DataBase/07.txt");
+                totalPalabras = 180;
                 break;
             case 6:
                 strcpy(archivo, "DataBase/08.txt");
+                totalPalabras = 157;
                 break;
             case 7:
                 strcpy(archivo, "DataBase/09.txt");
+                totalPalabras = 159;
                 break;
             case 8:
                 strcpy(archivo, "DataBase/10.txt");
+                totalPalabras = 164;
                 break;
             case 9:
                 strcpy(archivo, "DataBase/11.txt");
+                totalPalabras = 135;
                 break;
             case 10:
                 strcpy(archivo, "DataBase/12.txt");
+                totalPalabras = 143;
                 break;
             case 11:
                 strcpy(archivo, "DataBase/13.txt");
+                totalPalabras = 152;
                 break;
             case 12:
                 strcpy(archivo, "DataBase/14.txt");
+                totalPalabras = 176;
                 break;
             case 13:
                 strcpy(archivo, "DataBase/15.txt");
+                totalPalabras = 142;
                 break;
             case 14:
                 strcpy(archivo, "DataBase/16.txt");
+                totalPalabras = 104;
                 break;
             case 15:
                 strcpy(archivo, "DataBase/17.txt");
+                totalPalabras = 71;
                 break;
             case 16:
                 strcpy(archivo, "DataBase/18.txt");
+                totalPalabras = 35;
                 break;
             case 17:
                 strcpy(archivo, "DataBase/19.txt");
+                totalPalabras = 10;
                 break;
             case 18:
                 strcpy(archivo, "DataBase/20.txt");
+                totalPalabras = 3;
                 break;
             case 19:
                 strcpy(archivo, "DataBase/21.txt");
+                totalPalabras = 5;
                 break;
             case 20:
                 strcpy(archivo, "DataBase/22.txt");
+                totalPalabras = 3;
                 break;
             case 21:
                 strcpy(archivo, "DataBase/23.txt");
+                totalPalabras = 1;
                 break;
         }
 
@@ -240,34 +261,42 @@ void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
     {
         char archivo[20];
 
-        int totalPalabras = 180;
+        int totalPalabras;
 
         // Se verifica el nivel seleccionado
         switch(jugador->nivel)
         {
             case 1:
                 strcpy(archivo, "WordBank/03_English.txt");
+                totalPalabras = 171;
                 break;
             case 2:
                 strcpy(archivo, "WordBank/04_English.txt");
+                totalPalabras = 100;
                 break;
             case 3:
                 strcpy(archivo, "WordBank/05_English.txt");
+                totalPalabras = 170;
                 break;
             case 4:
                 strcpy(archivo, "WordBank/06_English.txt");
+                totalPalabras = 136;
                 break;
             case 5:
                 strcpy(archivo, "WordBank/07_English.txt");
+                totalPalabras = 148;
                 break;
             case 6:
                 strcpy(archivo, "WordBank/08_English.txt");
+                totalPalabras = 164;
                 break;
             case 7:
                 strcpy(archivo, "WordBank/09_English.txt");
+                totalPalabras = 101;
                 break;
             case 8:
                 strcpy(archivo, "WordBank/10_English.txt");
+                totalPalabras = 100;
                 break;
         }
 
