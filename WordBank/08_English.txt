@@ -1,500 +1,164 @@
-absolute
-bachelor
-computer
-abstract
-bacteria
-conclude
-academic
-baseball
-concrete
-accepted
-bathroom
-conflict
-accident
-becoming
-confused
-accuracy
-birthday
-congress
-accurate
-boundary
-consider
-achieved
-breaking
-constant
-acquired
-breeding
-consumer
-activity
-building
-continue
-actually
-bulletin
-contract
-addition
-business
-contrary
-adequate
-calendar
-contrast
-adjacent
-campaign
-convince
-adjusted
-capacity
-corridor
-advanced
-cashmere
-coverage
-advisory
-casualty
-covering
-advocate
-catching
-creation
-affected
-category
-creative
-aircraft
-catholic
-criminal
-alliance
-cautious
-critical
-although
-cellular
-crossing
-aluminum
-ceremony
-cultural
-analysis
-chairman
-currency
-announce
-champion
-customer
-anything
-chemical
-database
-anywhere
-children
-daughter
-apparent
-circular
-daylight
-appendix
-civilian
-deadline
-approach
-clearing
-deciding
-approval
-clinical
-decision
-argument
-clothing
-decrease
-artistic
-collapse
-deferred
-assembly
-colonial
-definite
-assuming
-colorful
-delicate
-athletic
-commence
-delivery
-attached
-commerce
-describe
-attitude
-complain
-designer
-attorney
-complete
-detailed
-audience
-composed
-diabetes
-autonomy
-compound
-dialogue
-aviation
-comprise
-diameter
-doubtful
-emerging
-directly
-dramatic
-emphasis
-director
-dressing
-employee
-disabled
-dropping
-endeavor
-disaster
-duration
-engaging
-disclose
-dynamics
-engineer
-discount
-earnings
-enormous
-discover
-economic
-entirely
-disorder
-educated
-entrance
-disposal
-efficacy
-envelope
-distance
-eighteen
-equality
-distinct
-election
-equation
-district
-electric
-estimate
-dividend
-eligible
-evaluate
-division
-external
-eventual
-doctrine
-facility
-everyday
-document
-familiar
-everyone
-domestic
-featured
-evidence
-dominant
-feedback
-exchange
-dominate
-festival
-exciting
-floating
-finished
-exercise
-football
-firewall
-explicit
-foothill
-flagship
-exposure
-forecast
-flexible
-extended
-foremost
-function
-guidance
-formerly
-generate
-handling
-fourteen
-generous
-hardware
-fraction
-genomics
-heritage
-fracture
-goodwill
-highland
-frequent
-governor
-historic
-friendly
-graduate
-homeless
-frontier
-graphics
-homepage
-imperial
-grateful
-hospital
-incident
-guardian
-humanity
-included
-initiate
-identify
-increase
-innocent
-identity
-indicate
-inspired
-ideology
-indirect
-instance
-intimate
-industry
-integral
-intranet
-informal
-intended
-invasion
-informed
-interact
-involved
-inherent
-interest
-isolated
-keyboard
-interior
-judgment
-landlord
-internal
-judicial
-language
-interval
-junction
-laughter
-material
-minority
-learning
-maturity
-mobility
-leverage
-maximize
-modeling
-lifetime
-meantime
-moderate
-lighting
-measured
-momentum
-likewise
-medicine
-monetary
-limiting
-medieval
-moreover
-literary
-memorial
-mortgage
-location
-merchant
-mountain
-magazine
-midnight
-mounting
-magnetic
-military
-movement
-maintain
-minimize
-multiple
-majority
-minister
-national
-marginal
-ministry
-negative
-marriage
-original
-nineteen
-preserve
-overcome
-northern
-pressing
-overhead
-notebook
-pressure
-overseas
-numerous
-previous
-overview
-observer
-princess
-painting
-occasion
-printing
-parallel
-offering
-priority
-parental
-official
-probable
-patented
-offshore
-probably
-patience
-operator
-producer
-peaceful
-opponent
-profound
-periodic
-opposite
-progress
-personal
-optimism
-property
-persuade
-optional
-proposal
-petition
-ordinary
-prospect
-physical
-organize
-protocol
-pipeline
-relation
-provided
-platform
-relative
-provider
-pleasant
-relevant
-province
-pleasure
-reliable
-publicly
-politics
-reliance
-purchase
-portable
-religion
-pursuant
-portrait
-remember
-quantity
-position
-renowned
-question
-positive
-repeated
-rational
-possible
-reporter
-reaction
-powerful
-republic
-received
-practice
-required
-receiver
-precious
-research
-recovery
-pregnant
-reserved
-regional
-presence
-resident
-register
-scenario
-resigned
-revision
-schedule
-resource
-rigorous
-scrutiny
-response
-romantic
-seasonal
-restrict
-sampling
-secondly
-somebody
-struggle
-security
-somewhat
-stunning
-sensible
-southern
-suburban
-sentence
-speaking
-suitable
-separate
-specific
-superior
-sequence
-spectrum
-supposed
-sergeant
-sporting
-surgical
-shipping
-standard
-surprise
-shortage
-standing
-survival
-shoulder
-standout
-sweeping
-simplify
-sterling
-swimming
-situated
-straight
-symbolic
-slightly
-strategy
-sympathy
-software
-strength
-syndrome
-solution
-striking
-tactical
-terrible
-training
-tailored
-thinking
-transfer
-takeover
-thirteen
-tragical
-tangible
-thorough
-treasury
-taxation
-thousand
-triangle
-taxpayer
-together
-tropical
-teaching
-tomorrow
-turnover
-tendency
-touching
-ultimate
-terminal
-tracking
-umbrella
-universe
-weakness
-withdraw
-unlawful
-weighted
-woodland
-unlikely
-whatever
-workshop
-valuable
-whenever
-yourself
-variable
-wherever
-volatile
-vertical
-wildlife
-warranty
-victoria
-wireless
-violence
+absolute,complete and total.
+bachelor,an unmarried man.
+computer,an electronic device for storing and processing data.
+abstract,existing in thought or as an idea but not having a physical or concrete existence.
+consider,think carefully about (something), typically before making a decision.
+achieved,successfully reached or accomplished.
+breaking,separating or causing to separate into pieces.
+constant,occurring continuously over a period of time.
+acquired,obtained or gained through one's own efforts or actions.
+breeding,the process of mating and producing offspring.
+consumer,a person who purchases goods or services for personal use.
+activity,a specific action or series of actions.
+building,a structure with walls and a roof.
+continue,persist in an activity or process.
+actually,in reality; in fact.
+bulletin,a brief report or announcement.
+contract,a legally binding agreement between two or more parties.
+addition,the action or process of adding something to something else.
+business,an organization or economic system where goods and services are exchanged for money.
+contrary,opposite in nature, direction, or meaning.
+adequate,satisfactory or acceptable in quality or quantity.
+calendar,a system of organizing time into days, weeks, and months.
+contrast,the state of being strikingly different from something else.
+adjacent,next to or adjoining something else.
+campaign,a series of coordinated activities with a particular goal.
+convince,persuade someone to do or believe something.
+adjusted,adapted or changed to suit a new situation or condition.
+capacity,the maximum amount that something can contain or produce.
+corridor,a long passage in a building, usually with rooms on either side.
+advanced,at a higher level or position.
+cashmere,a fine, soft wool obtained from the Kashmir goat.
+coverage,the extent to which something is covered or included.
+advisory,providing advice or recommendations.
+casualty,a person killed or injured in a war or accident.
+covering,something that covers or hides something else.
+advocate,a person who publicly supports or recommends a particular cause or policy.
+catching,infecting or spreading easily.
+creation,the act or process of bringing something into existence.
+affected,influenced or changed by something.
+category,a class or division of people or things regarded as having particular shared characteristics.
+creative,involving the use of imagination or original ideas to create something.
+aircraft,a vehicle that can fly, such as an airplane or helicopter.
+catholic,relating to the Roman Catholic Church.
+criminal,a person who has committed a crime.
+alliance,a union or association formed for mutual benefit, especially between countries or organizations.
+cautious,careful to avoid potential problems or dangers.
+critical,expressing adverse or disapproving comments or judgments.
+although,despite the fact that; however.
+cellular,relating to cells, the basic structural and functional units of all living organisms.
+crossing,a place where two roads or railway lines intersect.
+aluminum,a lightweight, silver-white metal.
+ceremony,a formal event or ritual.
+cultural,relating to the arts, customs, and social institutions of a particular group or society.
+analysis,detailed examination or study of something.
+chairman,the person in charge of a meeting or organization.
+currency,a system of money in general use in a particular country.
+announce,make a public and typically formal declaration about a fact, occurrence, or intention.
+champion,a person who has surpassed all rivals in a competition.
+customer,a person who buys goods or services from a shop or business.
+anything,a thing of any kind.
+chemical,relating to or produced by chemistry.
+database,a structured set of data held in a computer.
+anywhere,in, at, or to any place.
+children,young human beings below the age of puberty.
+daughter,a female child.
+apparent,clearly visible or understood; obvious.
+circular,having the form of a circle.
+daylight,the natural light of the day.
+appendix,a small, tube-shaped sac attached to the large intestine.
+civilian,a person not in the armed services or the police force.
+deadline,the latest time or date by which something should be completed.
+approach,come near or nearer to (someone or something) in distance.
+clearing,an open space in a forest, especially one cleared for cultivation.
+deciding,settling or determining an outcome or course of action.
+approval,the action of officially agreeing to or accepting something as satisfactory.
+clinical,relating to the observation and treatment of actual patients.
+decision,a conclusion or resolution reached after consideration.
+argument,a reason or set of reasons given in support of an idea, action, or theory.
+clothing,garments collectively; clothes.
+decrease,make or become smaller or fewer in size, amount, intensity, or degree.
+artistic,having or revealing natural creative skill.
+collapse,fall down or in as a result of physical pressure.
+deferred,postponed or delayed.
+assembly,a group of people gathered together for a common purpose.
+colonial,relating to or characteristic of a colony or colonies.
+definite,clearly stated or decided; not vague or doubtful.
+assuming,taking on (a particular role, quality, or appearance).
+colorful,full of color; vibrant and exciting.
+delicate,very fine in texture or structure; easily broken or damaged.
+athletic,physically strong, fit, and active.
+commence,begin or start.
+delivery,the action of transporting goods or providing a service to a customer.
+attached,fastened or joined to something.
+commerce,the activity of buying and selling, especially on a large scale.
+describe,give a detailed account in words of.
+attitude,a settled way of thinking or feeling about something.
+complain,express dissatisfaction or annoyance about a state of affairs or an event.
+designer,a person who plans the form, look, or workings of something before it is made or built.
+attorney,a person appointed to act for another in business or legal matters.
+complete,having all the necessary or appropriate parts.
+detailed,involving many details or small particulars.
+audience,the assembled spectators or listeners at a public event, such as a play, movie, concert, or meeting.
+composed,calm and in control of one's emotions.
+diabetes,a disease in which the body's ability to produce or respond to the hormone insulin is impaired.
+autonomy,the right or condition of self-government.
+compound,a thing that is composed of two or more separate elements.
+dialogue,conversation between two or more people as a feature of a book, play, or movie.
+aviation,the flying or operating of aircraft.
+comprise,consist of; be made up of.
+enormous,very large in size, quantity, or extent.
+eventual,occurring or existing at a later time or as a result.
+doctrine,a belief or set of beliefs held and taught by a church, political party, or other group.
+facility,a place, amenity, or piece of equipment provided for a particular purpose.
+everyday,ordinary; commonplace.
+document,a piece of written, printed, or electronic matter that provides information or evidence or that serves as an official record.
+forecast,predict or estimate (a future event or trend).
+flexible,capable of bending easily without breaking.
+extended,lasting longer than is usual or expected.
+graduate,a person who has successfully completed a course of study or training.
+homeless,without a home; destitute.
+frontier,a line or border separating two countries.
+graphics,visual images or designs used in various media.
+homepage,the introductory or main web page of a website.
+intended,planned or meant.
+invasion,an instance of invading a country or region with an armed force.
+informed,having or showing knowledge or information.
+interact,act in such a way as to have an effect on another; work together.
+involved,having a close or intimate relationship with someone or something.
+inherent,existing in something as a permanent, essential, or characteristic attribute.
+interest,the state of wanting to know or learn about something or someone.
+isolated,far away from other places, buildings, or people; remote.
+keyboard,a panel of keys used for typing, text entry, or commanding a computer or typewriter.
+interior,the inside part of something; the inner part.
+judgment,the ability to make considered decisions or come to sensible conclusions.
+landlord,a person who owns or runs a property and rents it out to others.
+internal,situated or occurring within the body or an object.
+monetary,relating to money or currency.
+limiting,imposing or restricting a boundary or barrier.
+medieval,relating to the Middle Ages.
+moreover,besides; in addition to what has been said.
+literary,concerning the writing, study, or content of literature.
+memorial,serving as a remembrance or commemoration.
+original,present or existing from the beginning; first or earliest.
+nineteen,equivalent to the product of ten and nine; one more than eighteen.
+preserve,maintain (something) in its original or existing state.
+somebody,a person of importance or authority.
+struggle,make forceful or violent efforts to get free of restraint or constriction.
+security,the state of being free from danger or threat.
+somewhat,to a moderate extent or by a moderate amount.
+surprise,an unexpected or astonishing event, fact, or thing.
+shortage,a state or situation in which something needed cannot be obtained in sufficient amounts.
+standing,position or status relative to others.
+tropical,characteristic of or peculiar to the tropics.
+teaching,the occupation, profession, or work of a teacher.
+tomorrow,the day after today.
+variable,not consistent or having a fixed pattern; liable to change.
+wherever,in or to whatever place.
+volatile,liable to change rapidly and unpredictably.
+vertical,at right angles to a horizontal plane; upright.
+wildlife,wild animals collectively; the native fauna of a region.
+warranty,a written guarantee that a product or service will be repaired or replaced if necessary within a specified period.
+victoria,a light four-wheeled horse-drawn carriage with a collapsible hood.
+wireless,using radio, microwaves, or infrared signals to transmit data or communicate.
+violence,behavior involving physical force intended to hurt, damage, or kill someone or something.

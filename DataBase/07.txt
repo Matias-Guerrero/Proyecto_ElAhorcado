@@ -1,804 +1,180 @@
-conocer
-proceso
-hermosa
-mejorar
-interes
-aspecto
-momento
-tambien
-mostrar
-valores
-funcion
-durante
-cumplir
-ofrecer
-recibir
-impacto
-calidad
-onirico
-motivar
-sistema
-atender
-aplicar
-estudio
-emocion
-control
-gracias
-extrano
-ilusion
-caminar
-influir
-golpear
-intenso
-sublime
-guardar
-resumen
-mensaje
-otorgar
-generar
-empezar
-montana
-inferir
-cliente
-obligar
-senalar
-afirmar
-asistir
-detalle
-existir
-plasmar
-muestra
-delgado
-definir
-armonia
-exponer
-termino
-obtener
-iconico
-dificil
-honesto
-urgente
-indicar
-ejercer
-entidad
-negocio
-desafio
-primero
-incluir
-castigo
-posible
-aquello
-enfermo
-escasez
-avanzar
-trabajo
-esencia
-enfoque
-ensenar
-curioso
-revelar
-sentido
-inmenso
-energia
-ordenar
-asombro
-opinion
-escuela
-columna
-jornada
-entrada
-detener
-dirigir
-parecer
-visitar
-sincero
-imponer
-racismo
-reclamo
-pequeno
-redimir
-ampliar
-perdido
-aceptar
-limitar
-arrojar
-incitar
-confiar
-derrota
-secarse
-esperar
-aportar
-extraer
-memoria
-tecnica
-aptitud
-campana
-habitar
-ventaja
-separar
-maestro
-afectar
-despues
-colocar
-enfocar
-antiguo
-adicion
-extremo
-estatus
-abordar
-ajustar
-reunion
-elevado
-publico
-celebre
-comprar
-derecho
-brindar
-cambiar
-natural
-alterar
-ruidoso
-exhibir
-revisar
-actitud
-costoso
-alegria
-mentira
-soporte
-aspirar
-hermoso
-postura
-carecer
-perenne
-radical
-evaluar
-referir
-agarrar
-venerar
-abarcar
-sendero
-malvado
-reducir
-crucial
-planear
-escrito
-esteril
-riqueza
-anhelar
-moderno
-victima
-inducir
-diverso
-firmeza
-cerrado
-refutar
-sugerir
-valorar
-dividir
-vinculo
-acceder
-fracaso
-excluir
-espacio
-invadir
-potente
-invocar
-suponer
-dominar
-persona
-critico
-valioso
-ingerir
-relatar
-emplear
-cosecha
-ocupado
-pobreza
-dedicar
-ilustre
-egoista
-alianza
-certeza
-equidad
-regalar
-vigilar
-empresa
-repetir
-entrega
-alcance
-mezclar
-simbolo
-artista
-lugubre
-regular
-siempre
-tributo
-directo
-materia
-decidir
-soledad
-ignorar
-habitat
-archivo
-consejo
-peligro
-promesa
-respeto
-incauto
-sensual
-extenso
-rebelde
-ansioso
-agujero
-sujetar
-arribar
-proximo
-efimero
-mercado
-exaltar
-condena
-perdida
-furtivo
-incidir
-omision
-corazon
-iglesia
-efusivo
-cocinar
-sensato
-notable
-limpiar
-tortura
-ensayar
-ingreso
-abdicar
-asociar
-patente
-flagelo
-abrazar
-trivial
-vacante
-realzar
-nupcias
-difamar
-tsunami
-enfasis
-educado
-robusto
-grosero
-cordial
-delirio
-partida
-tactica
-rapidez
-lateral
-eslogan
-clasico
-orgullo
-nombrar
-cultivo
-empapar
-acercar
-envidia
-ilicito
-razonar
-miembro
-invitar
-apartar
-vomitar
-versado
-vanidad
-remitir
-defecto
-prestar
-informe
-triunfo
-abrupto
-sosiego
-embuste
-despojo
-nodriza
-asignar
-garante
-benigno
-maldito
-unisono
-bandada
-estrago
-nublado
-injusto
-lacerar
-lectura
-terapia
-quimera
-gigante
-absurdo
-malicia
-terreno
-incesto
-mistico
-aprobar
-talento
-excelso
-infeliz
-figurar
-derogar
-adornar
-interno
-reserva
-delirar
-sumario
-codicia
-infante
-ventana
-decorar
-esquema
-ambiguo
-dialogo
-especie
-agitado
-retomar
-frivolo
-prodigo
-colegio
-oracion
-agrupar
-escapar
-afilado
-refugio
-agravar
-esquivo
-adecuar
-reparar
-paisaje
-relieve
-oxigeno
-moldear
-colibri
-visible
-risueno
-encanto
-ironico
-salario
-genuino
-empujar
-opuesto
-simular
-falacia
-alinear
-revivir
-abogado
-caricia
-denotar
-nitidez
-llamada
-leccion
-bandera
-milagro
-seccion
-escolar
-expedir
-cascara
-experto
-disipar
-astucia
-cordura
-sinuoso
-porcion
-variado
-tecnico
-pedante
-maqueta
-desazon
-devorar
-maquina
-enemigo
-usuario
-ganador
-funesto
-ciencia
-caballo
-filtrar
-navegar
-noticia
-celeste
-apagado
-injuria
-acechar
-corroer
-aditivo
-mandato
-heraldo
-heroico
-popular
-diafano
-errante
-segundo
-longevo
-egoismo
-gastado
-credito
-militar
-agotado
-augurar
-nefasto
-absorto
-combate
-caridad
-capital
-disputa
-aparato
-usurpar
-oneroso
-basarse
-tragico
-insigne
-cautela
-estatua
-encajar
-cronica
-lujuria
-atrapar
-tension
-zozobra
-resumir
-inusual
-soltura
-turismo
-epilogo
-radicar
-indicio
-cristal
-fortuna
-repleto
-erroneo
-honrado
-situado
-ternura
-regreso
-pintura
-sintoma
-secuela
-deporte
-premisa
-tolerar
-utopico
-barrera
-retrato
-tiritar
-mutismo
-bonanza
-menguar
-viajero
-amuleto
-mudanza
-diestro
-reposar
-arreglo
-calculo
-comarca
-seducir
-externo
-abyecto
-objetar
-divisar
-esfinge
-permiso
-vocablo
-vertigo
-oblicuo
-asiento
-desviar
-ultraje
-carrera
-profuso
-metrica
-retraso
-sonreir
-resulta
-lamento
-exitoso
-rigidez
-llegada
-acabado
-alusivo
-central
-spoiler
-trafico
-arropar
-adverso
-acordar
-fecundo
-disfraz
-mochila
-asesino
-relegar
-semilla
-regañar
-marchar
-ensueño
-parcial
-cotejar
-pericia
-genesis
-acicate
-cavidad
-puntual
-arcaico
-batalla
-heredar
-delicia
-loteria
-sacudir
-oriundo
-bellaco
-querido
-vestido
-sembrar
-oquedad
-vastago
-apretar
-oscilar
-frenesi
-estupor
-auxilio
-ofrenda
-calmado
-hechizo
-sobajar
-notorio
-anormal
-soborno
-decreto
-lobrego
-cerebro
-llanura
-fabrica
-brillar
-renovar
-austero
-marasmo
-extasis
-tetrico
-formula
-alertar
-oraculo
-cancion
-elogiar
-enlazar
-mascara
-apenado
-adherir
-ingenio
-amainar
-paquete
-renacer
-emblema
-redondo
-miseria
-asentar
-agredir
-litigio
-patraña
-ventura
-brincar
-ascenso
-ajedrez
-liviano
-emision
-aislado
-tramite
-excepto
-acoplar
-censura
-exordio
-policia
-apostar
-ojeriza
-lagrima
-laboral
-mejoria
-asentir
-lastima
-desidia
-cometer
-decente
-fijarse
-dichoso
-premura
-oficina
-estigma
-abrigar
-privado
-creible
-impeler
-aliviar
-atenuar
-recrear
-rustico
-higiene
-vacilar
-testigo
-seguido
-relajar
-prender
-tratado
-selecto
-remover
-charlar
-afrenta
-pomposo
-angosto
-vetusto
-oxidado
-evasion
-leyenda
-apatico
-poblado
-esbozar
-certero
-soltero
-declive
-paraiso
-eslabon
-clerigo
-panacea
-humedad
-mediano
-eclipse
-quebrar
-mencion
-huracan
-ubicado
-botella
-mendigo
-soleado
-liberal
-recinto
-timidez
-ajetreo
-temblar
-funebre
-volador
-validez
-esclavo
-evacuar
-cotizar
-turista
-surtido
-bizarro
-colecta
-abanico
-esbelto
-inmovil
-galante
-denuedo
-repudio
-establo
-deseado
-laborar
-embargo
-abatido
-coartar
-aplazar
-moverse
-mascota
-delegar
-silueta
-prologo
-agudeza
-gradual
-devenir
-relevar
-trueque
-ilogico
-inedito
-varilla
-oprobio
-bombero
-ahondar
-festivo
-excavar
-emotivo
-animado
-exhalar
-zumbido
-amarrar
-arrasar
-almacen
-factura
-desecho
-abdomen
-cadaver
-impasse
-pasmado
-acogida
-inhalar
-arbitro
-pizarra
-despota
-estirar
-gravoso
-grafico
-limpido
-soldado
-inmoral
-cascada
-inercia
-remanso
-revocar
-estadio
-listado
-cortejo
-aferrar
-plantar
-fluidez
-aclamar
-irritar
-apuesta
-residuo
-torcido
-imperar
-brujula
-placido
-fomento
-teorico
-inundar
-erosion
-premiar
-oprimir
-balance
-modelar
-madurez
-temible
-collage
-escucha
-fachada
-halagar
-necedad
-modorra
-vasallo
-alegrar
-calzado
-afligir
-neutral
-regalia
-estampa
-relleno
-textura
-exceder
-tremulo
-atisbar
-oriente
-parrafo
-cintura
-encargo
-audacia
-enviado
-profano
-madurar
-ninguno
-atentar
-melodia
-horario
-credulo
-bohemio
-quietud
-vencido
-indexar
-candado
-descaro
-hibrido
-digerir
-autoria
-mundano
-excitar
-autobus
-aburrir
-catedra
-moderar
-paridad
-funeral
-alargar
-aficion
-cronico
+conocer,Obtener información o familiarizarse con algo o alguien.
+proceso,Secuencia de pasos o acciones para lograr un resultado específico.
+hermosa,Posee cualidades atractivas y estéticamente agradables.
+mejorar,Hacer que algo sea mejor o más satisfactorio.
+aspecto,Característica o apariencia particular de algo o alguien.
+momento,Punto específico en el tiempo o instante preciso.
+mostrar,Exhibir o presentar algo para que pueda ser visto.
+valores,Principios o creencias que guían el comportamiento.
+durante,A lo largo de un período de tiempo o a lo largo de un evento.
+cumplir,Realizar o llevar a cabo una acción o deber según lo acordado.
+ofrecer,Presentar o proporcionar algo de manera voluntaria.
+recibir,Aceptar o adquirir algo que se ha dado o enviado.
+impacto,Efecto o influencia significativa que produce un cambio.
+calidad,Grado de excelencia o superioridad de algo en particular.
+motivar,Estimular o fomentar el interés o la acción en alguien.
+sistema,Conjunto de elementos interrelacionados que trabajan juntos.
+atender,Prestar atención o cuidar de algo o alguien.
+aplicar,Utilizar o poner en práctica un método o conocimiento.
+estudio,Actividad sistemática para adquirir conocimiento o información.
+control,Supervisar o regular algo para mantener el orden o el equilibrio.
+gracias,Agradecimiento expresado por algo recibido o experimentado.
+caminar,Moverse a pie de un lugar a otro.
+influir,Ejercer poder o tener un impacto en las decisiones o acciones de otros.
+golpear,Dar un golpe o impacto físico a algo o alguien.
+intenso,De gran fuerza grado o intensidad.
+sublime,De una belleza o grandeza extraordinaria.
+guardar,Poner algo en un lugar seguro para su conservación.
+resumen,Abreviación o síntesis de algo más largo o complejo.
+mensaje,Comunicación escrita o verbal transmitida de una persona a otra.
+otorgar,Dar o conceder algo a alguien.
+generar,Producir o crear algo.
+empezar,Iniciar o dar comienzo a algo.
+inferir,Deducir o llegar a una conclusión basada en la evidencia o razonamiento.
+cliente,Persona que utiliza o compra bienes o servicios de una empresa.
+obligar,Forzar o requerir a alguien a hacer algo.
+afirmar,Declarar o sostener algo como verdadero o cierto.
+asistir,Estar presente en un lugar o evento o ayudar a alguien en una tarea o situación.
+detalle,Aspecto específico o elemento de algo.
+existir,Tener realidad o ser real.
+plasmar,Dar forma o expresión concreta a algo.
+muestra,Ejemplo o representación de algo más grande o general.
+delgado,De poco grosor o espesor.
+definir,Explicar o establecer el significado o alcance de algo.
+exponer,Presentar o mostrar algo en público.
+obtener,Adquirir o conseguir algo.
+honesto,Sincero justo y veraz en las acciones y palabras.
+urgente,Que requiere acción inmediata o atención rápida.
+indicar,Senalar o mostrar una dirección o información.
+ejercer,Poner en práctica o aplicar una habilidad o influencia.
+entidad,Unidad o ser individual generalmente de naturaleza organizada.
+negocio,Actividad comercial o empresa.
+primero,El número o elemento que precede a todos los demás en una secuencia.
+incluir,Contener o abarcar como parte de un todo.
+castigo,Acción de imponer una consecuencia negativa por una falta o error.
+posible,Que puede suceder o realizarse.
+aquello,Senala o hace referencia a algo mencionado anteriormente o conocido por el contexto.
+enfermo,Que está afectado por una enfermedad o dolencia.
+escasez,Falta o insuficiencia de algo en relación con la demanda.
+avanzar,Progresar o moverse hacia adelante.
+trabajo,Actividad realizada para obtener un resultado o ganarse la vida.
+esencia,Característica fundamental o más importante de algo.
+enfoque,Concentrarse o dirigir la atención en algo en particular.
+curioso,Interesado en descubrir o aprender cosas nuevas.
+revelar,Mostrar o dar a conocer algo que estaba oculto o desconocido.
+sentido,Percepción o significado que se atribuye a algo.
+inmenso,Muy grande o de gran magnitud.
+ordenar,Colocar en un orden o secuencia específica.
+asombro,Sorpresa o admiración intensa causada por algo inesperado o extraordinario.
+escuela,Institución educativa donde se imparte ensenanza a los estudiantes.
+columna,Elemento vertical alargado que soporta peso o divide espacios.
+jornada,Período de tiempo dedicado a un trabajo o actividad específica.
+entrada,Punto de acceso o paso a un lugar o evento.
+detener,Hacer que algo o alguien se pare o se detenga.
+dirigir,Guiar o liderar a un grupo o persona hacia una meta o dirección.
+parecer,Tener una apariencia o dar la impresión de ser algo.
+visitar,Ir a un lugar con el propósito de ver o conocer a alguien.
+sincero,Honesto y genuino en los sentimientos o intenciones.
+imponer,Establecer o hacer cumplir algo con autoridad o fuerza.
+reclamo,Demanda o petición formal de algo debido o esperado.
+redimir,Librar o liberar de una carga culpa o responsabilidad.
+ampliar,Aumentar en tamano alcance o cantidad.
+perdido,Que se ha extraviado o no se puede encontrar.
+aceptar,Consentir o recibir algo ofrecido o propuesto.
+limitar,Establecer un límite o restricción en algo.
+arrojar,Lanzar o tirar algo con fuerza.
+incitar,Estimular o provocar a alguien a realizar una acción o reacción.
+confiar,Tener fe o creer en la honestidad o habilidades de alguien.
+derrota,Pérdida o fracaso en una competencia o conflicto.
+secarse,Perder humedad o volverse seco.
+esperar,Tener la expectativa de que algo suceda o se realice.
+aportar,Contribuir o agregar algo a una causa o situación.
+extraer,Sacar o quitar algo de un lugar o una fuente.
+memoria,Facultad de recordar o retener información.
+aptitud,Habilidad o capacidad para hacer algo.
+habitar,Vivir o residir en un lugar.
+ventaja,Superioridad o beneficio en comparación con otros.
+separar,Dividir o poner distancia entre dos o más objetos o personas.
+maestro,Persona con habilidades y conocimientos expertos en una materia.
+afectar,Tener un impacto o influencia en algo o alguien.
+colocar,Poner o situar algo en un lugar específico.
+enfocar,Dirigir la atención o los recursos hacia un objetivo o tema en particular.
+antiguo,Que ha existido durante mucho tiempo o pertenece a una época pasada.
+extremo,Punto máximo o más alejado de algo.
+estatus,Posición o condición social o profesional de alguien.
+abordar,Enfrentar o tratar un tema o problema.
+ajustar,Modificar o adaptar algo para que encaje o funcione correctamente.
+elevado,De gran altura o nivel.
+comprar,Adquirir algo a cambio de dinero.
+derecho,Principio o norma que se considera moral o legalmente correcto.
+brindar,Ofrecer o proporcionar algo de manera generosa o gratuita.
+cambiar,Hacer que algo sea diferente o reemplazarlo por otro.
+natural,Relacionado con la naturaleza o propio de ella.
+alterar,Cambiar o modificar algo especialmente su estado o estructura.
+ruidoso,Que produce mucho ruido o es estruendoso.
+exhibir,Mostrar o presentar algo al público.
+revisar,Examinar o evaluar algo cuidadosamente.
+actitud,Disposición mental o emocional hacia algo o alguien.
+costoso,Que requiere mucho dinero o es caro.
+mentira,Declaración falsa hecha con la intención de enganar.
+soporte,Estructura o base que proporciona estabilidad o apoyo.
+aspirar,Inhalar o tratar de obtener algo con ambición o deseo.
+hermoso,De gran belleza o atractivo estético.
+postura,Posición o actitud física o mental adoptada respecto a algo.
+carecer,No tener o estar desprovisto de algo.
+radical,Fundamental o extremo en términos de cambio o acción.
+evaluar,Examinar o valorar algo para determinar su calidad o valor.
+referir,Mencionar o aludir a algo o alguien.
+agarrar,Sujetar o tomar algo con fuerza o firmeza.
+venerar,Adorar o reverenciar con gran respeto o devoción.
+abarcar,Incluir o comprender un rango o alcance amplio.
+sendero,Camino estrecho o ruta para caminar o seguir.
+malvado,De naturaleza maliciosa o perversa.
+reducir,Disminuir o hacer más pequeno en tamano cantidad o intensidad.
+crucial,De gran importancia o decisivo para el éxito o el resultado.
+planear,Disenar o idear un curso de acción para lograr un objetivo.
+escrito,Registrado o expresado en forma de palabras escritas.
+riqueza,Abundancia de recursos o posesiones valiosas.
+anhelar,Deseear intensamente o ansiar algo.
+moderno,Actual o contemporáneo en términos de estilo o tendencia.
+inducir,Provocar o causar que algo suceda o se produzca.
+diverso,De diferente tipo o naturaleza.
+firmeza,Estabilidad constancia o determinación en actitudes o decisiones.
+cerrado,Que no está abierto o accesible.
+refutar,Contradecir o rebatir una afirmación o argumento.
+sugerir,Proponer o presentar una idea o acción para consideración.
+valorar,Dar importancia apreciar o estimar el valor de algo o alguien.
+dividir,Separar algo en partes más pequenas o en grupos distintos.
+acceder,Dar consentimiento o tener la posibilidad de entrar o utilizar algo.
+fracaso,Resultado negativo o falta de éxito en un intento o empresa.
+excluir,Dejar fuera o no incluir a alguien o algo.
+espacio,Área o lugar físico que contiene o puede contener objetos.
+invadir,Entrar o tomar posesión de manera agresiva o indeseada.
+potente,Que tiene un gran poder fuerza o efecto.
+invocar,Llamar o solicitar algo especialmente a través de una invocación.
+suponer,Presumir o considerar algo como cierto sin pruebas concretas.
+dominar,Tener control o poder sobre algo o alguien.
+persona,Ser humano individual con identidad y características únicas.
+valioso,Que tiene un gran valor o importancia.
+ingerir,Consumir o tomar alimentos o sustancias por vía oral.
+relatar,Contar o narrar una historia o suceso.
+emplear,Usar o dar trabajo a alguien.
+cosecha,Recolección de productos agrícolas maduros o resultados obtenidos.
+ocupado,Que está siendo utilizado o está bajo la influencia de algo o alguien.
+pobreza,Condición de tener muy poco o carecer de recursos materiales.
+voluble,Cambiar o fluctuar con facilidad o frecuencia.
+dedicar,Asignar tiempo o esfuerzo a una actividad o causa específica.
+ilustre,Distinguido famoso o notable en logros o estatus.
+alianza,Asociación o acuerdo entre individuos o grupos con un objetivo común.
+certeza,Seguridad o convicción de que algo es cierto o seguro.
+equidad,Justicia o imparcialidad en el trato o la distribución de recursos.
+regalar,Dar algo como un regalo o muestra de afecto.
+vigilar,Observar o supervisar de cerca para asegurarse de que algo esté seguro.
+empresa,Organización o entidad comercial o industrial.
+repetir,Volver a hacer o decir algo que ya se ha hecho o dicho anteriormente.
+entrega,Acción de proporcionar o transferir algo a alguien.
+alcance,Extensión o rango de influencia acción o percepción.
+mezclar,Combinar o unir diferentes elementos o sustancias para crear una mezcla.
+artista,Persona que crea o produce obras de arte.
+regular,Normal o estándar siguiendo ciertas reglas o pautas.
+siempre,En todo momento o de manera constante.

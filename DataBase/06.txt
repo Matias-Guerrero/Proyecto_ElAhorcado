@@ -1,766 +1,142 @@
-abaten
-abatir
-abejea
-abismo
-abogar
-abolir
-abordo
-aborto
-abrazo
-abrigo
-abuela
-abuelo
-acabar
-accede
-acceso
-aceite
-acelga
-acepto
-acerca
-aclaro
-acoger
-acopio
-acorde
-acorta
-acotar
-activo
-actual
-acudir
-acusar
-acusas
-adepto
-adicta
-adicto
-admiro
-adobar
-adorar
-aduana
-adular
-afecto
-afilar
-afinar
-afloje
-afuera
-agenda
-agente
-agorar
-agosta
-agrega
-agrupa
-aguado
-agujar
-ahogar
-ahorra
-ahumar
-alabar
-alarma
-alegar
-alejar
-alerta
-alexia
-alisar
-alivio
-alojar
-alpaca
-alugar
-alumna
-alumno
-alvina
-alvino
-amador
-amargo
-amarre
-amasar
-amufar
-anclar
-andino
-anemia
-anexar
-aniden
-anillo
-animal
-animar
-anoche
-anotar
-antena
-antojo
-anular
-apagar
-apegar
-apilar
-aplano
-apodar
-aporte
-apoyar
-apunte
-arenal
-arriba
-artica
-asaban
-asalto
-asedio
-asilos
-asolas
-asomar
-astuta
-asumir
-asunto
-atacar
-ataque
-atasco
-atleta
-atrapa
-aunque
-autora
-avalúo
-avance
-avatar
-avisar
-ayudar
-ayunar
-azteca
-azucar
-azufre
-azules
-babosa
-baboso
-bailar
-banana
-banano
-barata
-barato
-barbas
-barbie
-basado
-batear
-bebida
-becada
-becado
-benito
-bestia
-biombo
-bitaba
-blanca
-blanco
-blanda
-blando
-blonda
-blondo
-bloque
-bobada
-bobear
-bobina
-bocado
-bocera
-boceto
-bocina
-bolsas
-boluda
-boludo
-bondad
-bonita
-bonito
-bordar
-bordes
-botaba
-botado
-botana
-botear
-boxear
-bramar
-brasil
-brecha
-brillo
-brisca
-buscar
-cabala
-cabeza
-cactus
-caemos	
-calcar
-callar
-calzar
-camada
-cambio
-camino
-camisa
-camita
-campus
-cancha
-canela
-canelo
-canosa
-canoso
-cantar
-capear
-cargar
-carril
-cartel
-casada
-casado
-casino
-casita
-casona
-casual
-catear
-caucho
-caudal
-causar
-causas
-caviar
-cegado
-cercar
-cetona
-chacen
-chisme
-chispa
-choclo
-chueca
-chueco
-cifras
-cimbre
-cintas
-clavel
-clonar
-cocida
-cocido
-cocina
-colina
-compra
-conejo
-copiar
-copias
-corcho
-cornea
-correr
-cortar
-coseno
-cotona
-craneo
-cremas
-cresta
-crimen
-cuadro
-cuanto
-cuarta
-cuarto
-cubeta
-cuerpo
-cuervo
-cuesco
-cuesta
-cuidar
-curada
-curado
-debajo
-debate
-debido
-decana
-decano
-dental
-diabla
-diablo
-diaria
-diario
-dibuja
-dibujo
-dictar
-diente
-difuso
-diluir
-discar
-divina
-divino
-docena
-dormir
-drenar
-ducado
-duchar
-dudosa
-dudoso
-editar
-editor
-educar
-efecto
-egreso
-elegir
-elevar
-emisor
-emitar
-emiten
-empuje
-enojar
-enorme
-ensayo
-entero
-entrar
-envase
-enviar
-erizar
-escala
-espada
-espiar
-espuma
-estado
-estafa
-estero
-eterna
-evadir
-evasor
-evento
-evitar
-exacta
-examen
-exceso
-exigir
-fabula
-faceta
-facial
-faenar
-fajear
-fallar
-falsas
-faltas
-famosa
-famoso
-febril
-fechas
-feudal
-fianza
-fiesta
-figura
-filmar
-filtro
-firmas
-flauta
-flores
-forjar
-formal
-formar
-formas
-frotar
-fundir
-futuro
-gamboa
-gancho
-garaje
-gastar
-gaucho
-gemela
-gemelo
-genero
-gentil
-germen
-gestar
-girado
-gitana
-gitano
-global
-gloria
-gluten
-golosa
-goloso
-golpea
-gomita
-gorila
-gotera
-gotero
-gracia
-granar
-granel
-granja
-graves
-grieta
-grillo
-gringa
-gringo
-grosor
-gruesa
-grueso
-grulla
-grullo
-grupal
-guagua
-guerra
-guiaba
-guiado
-guinda
-gustar
-habito
-hablar
-hiedra
-hielan
-hierro
-honrar
-honras
-huelga
-huella
-huerta
-huerto
-hurtar
-iberia
-idioma
-idiota
-ignora
-ilegal
-infama
-infame
-inflar
-inicio
-iterar
-jarabe
-jirafa
-jugada
-juicio
-juntar
-juntas
-jurado
-juzgar
-karate
-kelvin
-kermes
-kiosco
-labial
-lacayo
-ladrar
-laguna
-lamina
-lanzar
-lapsus
-latero
-latino
-lavado
-leamos
-lengua
-licuar
-lienza
-ligero
-limite
-limpio
-linaje
-lindas
-llamar
-llamas
-llegar
-llenar
-llueve
-lluvia
-lodoso
-lomita
-luchar
-lucida
-lucido
-lujosa
-lujoso
-lumbar
-maceta
-madeja
-madera
-madona
-madura
-maduro
-magias
-malaya
-mandar
-manejo
-manera
-mangas
-manjar
-maquis
-marcar
-marcas
-marcha
-mareas
-marfil
-marido
-marina
-martes
-masaje
-mascar
-mascás
-masead
-masean
-medias
-medula
-medusa
-melena
-melisa
-mezcla
-miente
-minuto
-modelo
-morada
-morado
-morder
-morral
-motivo
-muleta
-multas
-musica
-mutual
-nadaba
-narrar
-nervio
-neutra
-neutro
-nevado
-niebla
-niegan
-niegas
-nociva
-nocivo
-nombre
-nomina
-normal
-normas
-novias
-numero
-nutria
-objeto
-obtuso
-obtuve
-obviar
-ociosa
-ocioso
-octavo
-ocular
-oculto
-ocupar
-ocupas
-odiaba
-odiado
-odiosa
-odioso
-oferta
-ofertá
-oficio
-ojales
-oleada
-oleado
-oleáis
-oleaje
-olfato
-olimpo
-olmeca
-omitir
-ondear
-opacar
-operar
-opinar
-optimo
-orinal
-oscuro
-oxidar
-pactar
-pagada
-pagado
-paguen
-pancha
-pancho
-pangal
-pangue
-papaya
-papudo
-pareja
-parejo
-parral
-partir
-pascal
-pascua
-pasear
-pasiva
-pasivo
-paspas
-pastas
-pastel
-patear
-patria
-pausar
-pausas
-pecosa
-pecoso
-pedazo
-pegaba
-pegada
-pegado
-peinar
-pelado
-pelaje
-peludo
-pelusa
-pelvis
-penaba
-pepino
-perfil
-pescar
-piedad
-piedra
-piensa
-pierda
-pincel
-pivote
-placas
-placer
-plagio
-plasma
-playas
-poblar
-pocoyo
-polaca
-polaco
-poncho
-poroto
-portar
-premio
-prensa
-prieta
-prisma
-privar
-probar
-propia
-propio
-prueba
-pudren
-pudrir
-puerta
-quedar
-quejas
-quemar
-querer
-quieta
-quieto
-quinta
-quinto
-quitar
-quorum
-rancho
-rancia
-rancio
-rastro
-reabra
-rebajo
-recama
-receta
-recibo
-rectas
-reinas
-relajo
-remate
-repaso
-repisa
-repito
-reposo
-reunir
-rieran
-ritual
-rivera
-rodaje
-rodear
-romano
-roncar
-rondas
-ruedan
-ruegan
-rumano
-rutina
-sabana
-safari
-saliva
-saltar
-sanano
-sandia
-sangre
-sedujo
-sellar
-semana
-sensor
-sentar
-sentir
-servir
-sobres
-sobria
-sobrio
-soltar
-sombra
-sonido
-sorteo
-sudoku
-suegra
-suegro
-suelas
-sueldo
-sufrir
-supone
-tabaco
-tallar
-tallas
-taller
-tambor
-tarifa
-teatro
-tejido
-templo
-tercer
-tetera
-tiempo
-tienda
-tierra
-tijera
-tildar
-timbre
-tintas
-titulo
-toalla
-tocino
-torcer
-torneo
-tramar
-tramas
-trauma
-trecho
-tregua
-tremar
-triple
-trotar
-trucar
-trueno
-tumbar
-turbio
-tutora
-ubicar
-ultima
-umbral
-unamos
-unidad
-usaban
-vaciar
-vacuna
-veamos
-vecina
-vecino
-vector
-vegana
-vegano
-veinte
-venado
-vencer
-vender
-veneno
-vengar
-verbal
-viable
-viajar
-vibrar
-vibras
-viciar
-vienes
-vinilo
-visual
-vocera
-vocero
-volaba
-volcar
-votaba
-vuelco
-vuelen
-vuelta
+pensar,Proceso mental de generar ideas reflexionar o formar opiniones
+soltar,Dejar ir o liberar algo que se tenía agarrado
+grande,De tamano o magnitud considerable
+cambio,Acción de modificar o alterar algo
+fuerte,Que tiene gran resistencia o poder
+equipo,Grupo de personas trabajando juntas hacia un objetivo común
+suelta,Estado de algo que no está sujeto o atado
+muerte,Cese irreversible de la vida
+origen,Punto de partida o procedencia de algo
+modelo,Representación o ejemplo a seguir
+imagen,Representación visual o mental de algo o alguien
+aunque,A pesar de algo o en contraste con ello
+quitar,Remover o eliminar algo de su lugar
+zapato,Calzado que cubre el pie
+dinero,Medio de intercambio o medida de valor
+alegre,Sentimiento de felicidad o satisfacción
+dormir,Estado de reposo en el que se suspenden las funciones conscientes
+medida,Cantidad o dimensión de algo
+hombre,Ser humano adulto de género masculino
+eterno,Sin fin o que perdura para siempre
+camino,Vía o ruta que conduce de un lugar a otro
+cuidar,Atender o proteger algo o alguien
+formar,Dar forma o estructura a algo
+crecer,Aumentar de tamano o desarrollarse
+objeto,Cosa material que puede ser percibida por los sentidos
+blanco,Color que refleja todas las longitudes de onda de la luz
+perder,Dejar de tener algo o no poder encontrarlo
+enviar,Enviar algo a un destinatario específico
+factor,Elemento o variable que contribuye a un resultado o situación
+pintar,Aplicar pintura o pigmento sobre una superficie
+poseer,Tener algo en posesión o propiedad
+lograr,Alcanzar o conseguir un objetivo deseado
+servir,Proporcionar ayuda o cumplir una función
+cuenta,Registro o recuento de información o cantidad
+tiempo,Medida de la duración de los eventos y el transcurso de las cosas
+fuerza,Capacidad de realizar trabajo o generar movimiento
+porque,Indica la razón o causa de algo
+imitar,Reproducir o copiar el comportamiento o apariencia de alguien o algo
+relato,Narración de una historia o suceso
+cuerpo,Estructura física de un ser vivo
+volver,Regresar o retornar a un lugar o estado previo
+llegar,Alcanzar o arribar a un lugar o situación
+contar,Relatar o enumerar sucesos o elementos
+prueba,Evidencia o demostración de algo
+sentir,Experimentar emociones o sensaciones físicas
+sector,Área o división de una actividad o territorio
+asunto,Tema o materia de la que se habla o se trata
+saltar,Elevarse en el aire mediante un impulso o movimiento brusco de las piernas
+fuente,Origen o causa de algo
+efecto,Resultado o consecuencia de una causa
+ayudar,Dar asistencia o apoyo a alguien
+avance,Progreso o movimiento hacia adelante
+maleta,Bolso o equipaje utilizado para transportar pertenencias
+centro,Punto medio o lugar de convergencia
+evocar,Provocar la aparición o recuerdo de algo en la mente
+humano,Relacionado con los seres humanos
+arriba,En una posición superior o hacia un lugar elevado
+asumir,Aceptar la responsabilidad o suponer algo como cierto
+propio,Que pertenece a uno mismo o característico de alguien o algo
+oferta,Propuesta o posibilidad de adquirir algo
+salida,Acción de abandonar o dejar un lugar
+tratar,Lidiar o ocuparse de algo o alguien
+buscar,Intentar encontrar o descubrir algo
+suceso,Evento o acontecimiento que ocurre
+omitir,Dejar de mencionar o excluir algo
+oscuro,Falta de luz o de claridad
+enigma,Misterio o problema difícil de resolver
+vender,Intercambiar bienes o servicios por dinero
+triste,Sentimiento de melancolía o pena
+evitar,Esquivar o eludir algo para evitar un problema o peligro
+aludir,Hacer referencia indirecta a algo o alguien
+mandar,Dar órdenes o instrucciones a alguien
+afable,Amable o agradable en el trato con los demás
+ocupar,Tomar posesión o utilizar un espacio o lugar
+emanar,Provenir o desprenderse de algo
+cubrir,Poner algo encima para protegerlo o esconderlo
+acoger,Recibir o aceptar a alguien o algo
+mejora,Acción o proceso de hacer algo mejor o superior
+pueblo,Comunidad de personas que habitan en una localidad o región
+debido,Adecuado o necesario en una situación determinada
+llevar,Transportar o llevar algo de un lugar a otro
+alumno,Estudiante o persona que recibe ensenanza en una institución educativa
+regalo,Obsequio o presente que se da a alguien
+hablar,Comunicarse verbalmente o expresar ideas y opiniones
+divino,Relacionado con lo sagrado o lo celestial
+evento,Suceso o acontecimiento de importancia
+virtud,Cualidad positiva o excelencia moral
+doctor,Persona con un título académico superior en una disciplina
+excusa,Razón o justificación que se da para justificar o disculpar algo
+manera,Forma o estilo de hacer algo
+activo,Enérgico o que realiza acciones con diligencia
+social,Relacionado con la sociedad o las interacciones entre las personas
+hallar,Encontrar o descubrir algo
+surgir,Aparecer o manifestarse de repente o gradualmente
+estado,Situación o condición en la que se encuentra algo o alguien
+desear,Sentir anhelo o ansiar algo
+elevar,Subir o elevar algo a una posición más alta
+padres,Progenitores o personas que han dado origen a alguien
+niebla,Masa de partículas de agua suspendidas en el aire que reduce la visibilidad
+cantar,Producir sonidos melodiosos con la voz
+seguir,Continuar o continuar con algo
+unidad,Estado de ser uno o estar unido
+puente,Estructura que permite cruzar un obstáculo como un río o un valle
+faltar,No estar presente o ausentarse de un lugar
+adenda,Apéndice o agregado a un documento
+debate,Discusión o intercambio de opiniones sobre un tema
+cierto,Verdadero o indudable
+educar,Ensenar o instruir a alguien en conocimientos y valores
+querer,Desear o tener afecto hacia alguien o algo
+entrar,Ingresar o introducirse en un lugar
+huella,Rastro o marca dejada por algo o alguien
+crisis,Situación de peligro conflicto o dificultad grave
+pronto,En un corto período de tiempo o en un futuro cercano
+coraje,Valor o valentía para enfrentar situaciones difíciles
+astuto,Ingenioso o sagaz en la resolución de problemas
+rostro,Parte frontal de la cabeza donde están los ojos la nariz y la boca
+bonito,Atractivo o agradable a la vista
+agente,Persona que actúa en nombre de otra o realiza una tarea específica
+ocioso,Que no tiene ocupación o actividad
+ciudad,Área urbana con una alta densidad de población y una infraestructura desarrollada
+delito,Acción ilegal o infracción de la ley
+raspar,Frotar o rascar una superficie con fuerza
+motivo,Razón o causa que impulsa a hacer algo
+elogio,Expresión de admiración o aprobación hacia alguien o algo
+vereda,Camino estrecho para peatones a lo largo de una calle
+correr,Moverse rápidamente usando las piernas
+enorme,De gran tamano o magnitud
+cerrar,Sujetar o cubrir algo para impedir que se abra o se escape
+anotar,Registrar o escribir información en un documento o papel
+pasado,Tiempo que ha transcurrido antes del presente
+apoyar,Brindar respaldo ayuda o asistencia a alguien o algo
+oficio,Trabajo o profesión que se realiza de manera habitual o experta
+lluvia,Precipitación de agua en forma de gotas que cae de las nubes
+sumiso,Que muestra obediencia o sumisión hacia alguien
+adorar,Sentir un amor profundo o reverencia hacia alguien o algo
+limpio,Libre de suciedad impurezas o manchas
+eficaz,Que produce el efecto deseado o logra resultados positivos
+elegir,Seleccionar o escoger algo entre varias opciones
+innato,Que es inherente o se posee desde el nacimiento
+mentor,Persona que guía o aconseja a alguien con menos experiencia
+reunir,Juntar o agrupar cosas o personas en un mismo lugar
+examen,Evaluación o prueba para evaluar los conocimientos o habilidades de alguien

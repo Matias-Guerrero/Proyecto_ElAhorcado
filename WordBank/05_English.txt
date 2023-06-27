@@ -1,488 +1,170 @@
-about
-alert
-argue
-beach
-above
-alike
-arise
-began
-abuse
-alive
-array
-begin
-actor
-allow
-aside
-begun
-acute
-alone
-asset
-being
-admit
-along
-audio
-below
-adopt
-alter
-audit
-bench
-adult
-among
-avoid
-billy
-after
-anger
-award
-birth
-again
-angle
-aware
-black
-agent
-angry
-badly
-blame
-agree
-apart
-baker
-blind
-ahead
-apple
-bases
-block
-alarm
-apply
-basic
-blood
-album
-arena
-basis
-board
-boost
-buyer
-china
-cover
-booth
-cable
-chose
-craft
-bound
-calif
-civil
-crash
-brain
-carry
-claim
-cream
-brand
-catch
-class
-crime
-bread
-cause
-clean
-cross
-break
-chain
-clear
-crowd
-breed
-chair
-click
-crown
-brief
-chart
-clock
-curve
-bring
-chase
-close
-cycle
-broad
-cheap
-coach
-daily
-broke
-check
-coast
-dance
-brown
-chest
-could
-dated
-build
-chief
-count
-dealt
-built
-child
-court
-death
-debut
-entry
-forth
-group
-delay
-equal
-forty
-grown
-depth
-error
-forum
-guard
-doing
-event
-found
-guess
-doubt
-every
-frame
-guest
-dozen
-exact
-frank
-guide
-draft
-exist
-fraud
-happy
-drama
-extra
-fresh
-harry
-drawn
-faith
-front
-heart
-dream
-false
-fruit
-heavy
-dress
-fault
-fully
-hence
-drill
-fiber
-funny
-night
-drink
-field
-giant
-horse
-drive
-fifth
-given
-hotel
-drove
-fifty
-glass
-house
-dying
-fight
-globe
-human
-eager
-final
-going
-ideal
-early
-first
-grace
-image
-earth
-fixed
-grade
-index
-eight
-flash
-grand
-inner
-elite
-fleet
-grant
-input
-empty
-floor
-grass
-issue
-enemy
-fluid
-great
-irony
-enjoy
-focus
-green
-juice
-enter
-force
-gross
-joint
-judge
-metal
-media
-newly
-known
-local
-might
-noise
-label
-logic
-minor
-north
-large
-loose
-minus
-noted
-laser
-lower
-mixed
-novel
-later
-lucky
-model
-nurse
-laugh
-lunch
-money
-occur
-layer
-lying
-month
-ocean
-learn
-magic
-moral
-offer
-lease
-major
-motor
-often
-least
-maker
-mount
-order
-leave
-march
-mouse
-other
-legal
-music
-mouth
-ought
-level
-match
-movie
-paint
-light
-mayor
-needs
-paper
-limit
-meant
-never
-party
-peace
-power
-radio
-round
-panel
-press
-raise
-route
-phase
-price
-range
-royal
-phone
-pride
-rapid
-rural
-photo
-prime
-ratio
-scale
-piece
-print
-reach
-scene
-pilot
-prior
-ready
-scope
-pitch
-prize
-refer
-score
-place
-proof
-right
-sense
-plain
-proud
-rival
-serve
-plane
-prove
-river
-seven
-plant
-queen
-quick
-shall
-plate
-sixth
-stand
-shape
-point
-quiet
-roman
-share
-pound
-quite
-rough
-sharp
-sheet
-spare
-style
-times
-shelf
-speak
-sugar
-tired
-shell
-speed
-suite
-title
-shift
-spend
-super
-today
-shirt
-spent
-sweet
-topic
-shock
-split
-table
-total
-shoot
-spoke
-taken
-touch
-short
-sport
-taste
-tough
-shown
-staff
-taxes
-tower
-sight
-stage
-teach
-track
-since
-stake
-teeth
-trade
-sixty
-start
-texas
-treat
-sized
-state
-thank
-trend
-skill
-steam
-theft
-trial
-sleep
-steel
-their
-tried
-slide
-stick
-theme
-tries
-small
-still
-there
-truck
-smart
-stock
-these
-truly
-smile
-stone
-thick
-trust
-smith
-stood
-thing
-truth
-smoke
-store
-think
-twice
-solid
-storm
-third
-under
-solve
-story
-those
-undue
-sorry
-strip
-three
-union
-sound
-stuck
-threw
-unity
-south
-study
-throw
-until
-space
-stuff
-tight
-upper
-upset
-whole
-waste
-wound
-urban
-whose
-watch
-write
-usage
-woman
-water
-wrong
-usual
-train
-wheel
-wrote
-valid
-world
-where
-yield
-value
-worry
-which
-young
-video
-worse
-while
-youth
-virus
-worst
-white
-worth
-visit
-would
-vital
-voice
+about,concerning; on the subject of.
+alert,quick to notice and respond to danger or unusual circumstances.
+argue,give reasons or cite evidence in support of an idea, action, or theory.
+beach,a pebbly or sandy shore, especially by the ocean between high- and low-water marks.
+above,at a higher level or position than something else.
+alike,similar in nature or character; in the same or a similar manner.
+among,surrounded by; in the company of.
+avoid,keep away from or stop oneself from doing (something).
+billy,a male given name; a billy club, a type of baton.
+after,following in time or place; later than.
+anger,a strong feeling of displeasure or annoyance.
+award,give or order the giving of (something) as an official payment, compensation, or prize to (someone).
+birth,the emergence of a baby or other young from the body of its mother; the start or beginning of something.
+again,once more; another time.
+angle,the space (usually measured in degrees) between two intersecting lines or surfaces at or close to the point where they meet.
+aware,having knowledge or perception of a situation or fact.
+black,of the very darkest color; the opposite of white.
+agent,a person who acts on behalf of another person or group.
+angry,feeling or showing strong annoyance, displeasure, or rage.
+badly,to a severe or serious degree.
+blame,feel or declare that (someone or something) is responsible for a fault or wrong.
+agree,have the same opinion about something; concur.
+apart,separated by a distance; at a specified distance from each other in time or space.
+baker,a person who makes and sells bread, cakes, and pastries.
+blind,unable to see; lacking the sense of sight.
+ahead,in or toward the front; in advance.
+apple,a round fruit with crisp, juicy flesh and a core containing seeds.
+bases,the lowest part or edge of something, especially the part on which it rests or is supported.
+block,a large solid piece of hard material, especially rock, stone, or wood.
+alarm,an anxious awareness of danger; a warning sound or device.
+apply,make a formal application or request.
+basic,forming an essential foundation or starting point; fundamental.
+blood,the red liquid that circulates in the arteries and veins, carrying oxygen to and carbon dioxide from the tissues of the body.
+album,a collection of recordings issued as a single item on CD, record, or another medium.
+arena,a level area surrounded by seating, in which sports, entertainments, and other public events are held.
+basis,the underlying support or foundation for an idea, argument, or process.
+board,a long, thin, flat piece of wood or other hard material used for floors or other building purposes.
+boost,help or encourage (something) to increase or improve.
+buyer,a person who purchases goods or services.
+cause,a person or thing that gives rise to an action, phenomenon, or condition.
+clean,free from dirt, marks, or unwanted matter.
+cross,a mark, object, or figure formed by two short intersecting lines or pieces (+ or ×).
+break,separate into pieces as a result of a blow, shock, or strain.
+chain,a series of connected metal links used for fastening or securing objects.
+clear,easy to perceive, understand, or interpret; obvious.
+crowd,a large number of people gathered together in a disorganized or unruly way.
+breed,(of animals) mate and then produce offspring.
+chair,a separate seat for one person, typically with a back and four legs.
+click,make or cause to make a short, sharp sound.
+crown,a circular ornamental headdress worn by a monarch as a symbol of authority.
+brief,of short duration; not lasting for long.
+chart,a sheet of information in the form of a table, graph, or diagram.
+clock,a mechanical or electrical device for measuring time, indicating hours, minutes, and sometimes seconds.
+curve,a line or outline that gradually deviates from being straight for some or all of its length.
+bring,come to a place with (someone or something).
+chase,pursue in order to catch or catch up with.
+close,only a short distance away or apart in space or time.
+cycle,a series of events that are regularly repeated in the same order.
+broad,having a width larger than usual.
+cheap,low in price, especially in relation to similar items or services.
+could,used to indicate possibility or ability in the past.
+grown,past participle of the verb "grow."
+depth,the distance from the top or surface to the bottom of something.
+error,a mistake.
+forum,a place, meeting, or medium where ideas and views on a particular issue can be exchanged.
+guard,a person who protects something or keeps watch over it.
+doing,an action or activity.
+event,a thing that happens, especially one of importance.
+found,past tense and past participle of the verb "find."
+guess,estimate or suppose (something) without sufficient information to be sure of being correct.
+faith,complete trust or confidence in someone or something.
+front,the side or part of an object that presents itself to view or that is normally seen or used first; the forward-facing part.
+heart,the central or innermost part of something.
+dream,a series of thoughts, images, and sensations occurring in a person's mind during sleep.
+false,not according with truth or fact; incorrect.
+fruit,the sweet or savory edible part of a plant that contains seeds.
+heavy,of great weight; difficult to lift or move.
+dress,put on one's clothes.
+fault,responsibility for an accident or misfortune.
+fully,completely or entirely; to the greatest extent or degree.
+hence,as a consequence; for this reason.
+drill,a tool or machine with a rotating cutting tip or reciprocating hammer or chisel, used for making holes.
+fiber,a thread or filament from which a vegetable tissue, mineral substance, or textile is formed.
+funny,causing laughter or amusement; humorous.
+night,the period of darkness in each twenty-four hours; the time from sunset to sunrise.
+drink,take (a liquid) into the mouth and swallow.
+field,an area of open land, especially one planted with crops or pasture.
+giant,a person or thing of unusually great size, power, importance, or achievement.
+horse,a large plant-eating domesticated mammal with solid hoofs and a flowing mane and tail, used for riding, racing, and to carry and pull loads.
+drive,operate and control the direction and speed of a motor vehicle.
+fifth,constituting number five in a sequence; 5th.
+given,past participle of the verb "give."
+hotel,an establishment providing accommodations, meals, and other services for travelers and tourists.
+drove,past tense of the verb "drive."
+fifty,the number equivalent to the product of five and ten; ten less than sixty.
+glass,a hard, brittle substance, typically transparent or translucent, made by fusing sand with soda and lime and cooling rapidly.
+house,a building for human habitation, especially one that consists of a ground floor and one or more upper stories.
+dying,approaching death; gradually ceasing to exist or function.
+fight,take part in a violent struggle involving physical force or weapons.
+globe,the earth.
+human,relating to or characteristic of people or human beings.
+eager,wanting to do or have something very much.
+final,coming at the end of a series; last.
+going,the act of leaving or departing.
+ideal,satisfying one's conception of what is perfect; most suitable.
+early,happening or done before the usual or expected time.
+first,coming before all others in time or order; earliest.
+grace,smoothness and elegance of movement.
+image,a representation of the external form of a person or thing in art.
+earth,the planet on which we live; the world.
+fixed,fastened securely in position.
+grade,a particular level of rank, quality, proficiency, or value.
+index,an alphabetical list of names, subjects, etc., with reference to the pages on which they are mentioned.
+eight,equivalent to the product of two and four; one more than seven, or two less than ten; 8.
+flash,shine or produce a bright light suddenly and briefly.
+grand,magnificent or splendid.
+inner,situated inside or further in; internal.
+elite,a select group that is superior in terms of ability or qualities to the rest of a group or society.
+fleet,a group of ships sailing together, engaged in the same activity, or under the same ownership.
+grant,agree to give or allow (something requested) to.
+gross,unattractively large or bloated.
+joint,a point at which parts of an artificial structure are joined.
+judge,a public official appointed to decide cases in a court of law.
+metal,a solid material that is typically hard, shiny, malleable, fusible, and ductile.
+loose,not firmly or tightly fixed in place; detached or able to be detached.
+minus,with the subtraction of.
+noted,well known or famous.
+laser,a device that generates an intense beam of coherent monochromatic light.
+lower,situated not far above the ground, the horizon, or sea level.
+mixed,combine or put together to form one substance or mass.
+novel,a fictitious prose narrative of book length, typically representing character and action with some degree of realism.
+later,happening or done after the usual or expected time.
+lucky,having, bringing, or resulting from good luck.
+model,a three-dimensional representation of a person or thing or of a proposed structure, typically on a smaller scale than the original.
+nurse,a person trained to care for the sick or infirm, especially in a hospital.
+laugh,make the spontaneous sounds and movements of the face and body that are the instinctive expressions of lively amusement and sometimes also of contempt or derision.
+lunch,a meal eaten in the middle of the day.
+money,a current medium of exchange in the form of coins and banknotes; coins and banknotes collectively.
+occur,happen; take place.
+layer,a sheet, quantity, or thickness of material, typically one of several, covering a surface or body.
+lying,not telling the truth.
+month,each of the twelve named periods into which a year is divided.
+ratio,the quantitative relation between two amounts, typically expressed as a quotient of one divided by the other.
+shall,used to indicate the future tense.
+plate,a flat dish, typically circular and made of china, from which food is eaten or served.
+shirt,a garment worn on the upper body, typically having a collar, sleeves, and buttons down the front.
+spent,past tense and past participle of the verb "spend."
+sweet,having the pleasant taste characteristic of sugar or honey; not salt, sour, or bitter.
+topic,a matter dealt with in a text, discourse, or conversation; a subject.
+shock,a sudden upsetting or surprising event or experience.
+taxes,a compulsory contribution to state revenue, levied by the government on workers' income and business profits, or added to the cost of some goods, services, and transactions.
+tower,a tall, narrow building or part of a building that rises high above the ground.
+sight,the faculty or power of seeing.
+stage,a raised floor or platform, typically in a theater, on which actors, entertainers, or speakers perform.
+stone,a hard, solid nonmetallic mineral matter of which rock is made, especially as a building material.
+thick,with opposite sides or surfaces that are a great or relatively great distance apart.
+trust,believe in the reliability, truth, or ability of.
+smith,a person who makes things, especially metal objects, by hand.
+whose,used to indicate possession by a specified person or people.
+watch,look at or observe attentively over a period of time.
+write,mark (letters, words, or other symbols) on a surface, typically paper, with a pen, pencil, or similar implement.
+usage,the action of using something or the fact of being used.
+woman,an adult human female.
+water,a colorless, transparent, odorless liquid that forms the seas, lakes, rivers, and rain and is the basis of the fluids of living organisms.
+white,of the color of milk or fresh snow, due to the reflection of all visible rays of light.
+worth,equivalent in value to the sum or item specified.
+visit,go to see and spend time with (someone) socially.
+would,used to indicate the consequence or conditional result of an imagined event or situation.
+vital,absolutely necessary or important; essential.
+voice,the sound produced in a person's larynx and uttered through the mouth, as speech or song.

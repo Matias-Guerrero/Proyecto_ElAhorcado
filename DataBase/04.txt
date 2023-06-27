@@ -1,407 +1,157 @@
-abre
-abro
-acta
-acto
-afro
-agro
-agua
-aire
-alba
-albo
-alce
-alfa
-alga
-algo
-alma
-aloe
-alta
-alto
-alza
-amar
-amor
-anda
-ante
-apio
-apto
-arca
-arce
-arco
-arde
-arma
-arpa
-arte
-arto
-asco
-aseo
-asma
-asno
-atar
-ateo
-auge
-aula
-aura
-auto
-ayer
-azar
-azul
-baba
-bago
-bajo
-bala
-base
-bata
-bate
-bebe
-beca
-beso
-beta
-bici
-bobo
-boca
-boda
-bola
-bolo
-bote
-boya
-buda
-buey
-cada
-caen
-caer
-caja
-cama
-cana
-caos
-capa
-cara
-caro
-casa
-casi
-caza
-ceja
-cena
-cero
-chip
-cien
-cima
-cine
-cita
-clip
-coco
-codo
-cola
-coma
-cono
-copa
-copo
-cosa
-cria
-cruz
-cuba
-cubo
-cuna
-cupo
-cura
-dado
-daga
-dama
-dato
-deba
-dedo
-dice
-diez
-digo
-dijo
-diva
-domo
-dona
-dron
-duda
-duna
-dura
-echo
-edad
-elfo
-ergo
-euro
-faja
-fama
-faro
-fase
-feto
-fiar
-fiel
-fila
-fino
-flan
-flor
-foca
-foco
-fome
-foro
-frio
-fumo
-gafa
-gala
-gama
-gato
-gema
-gena
-gira
-goma
-gota
-modo
-guia
-hada
-haza
-hija
-hijo
-hipo
-hito
-hoja
-hora
-huir
-humo
-idea
-iris
-jala
-java
-jazz
-jefa
-jefe
-juan
-juez
-jugo
-kilo
-kiwi
-lado
-lago
-laja
-lana
-lapa
-lata
-lavo
-lazo
-leer
-liar
-liga
-lija
-lima
-liso
-loba
-lobo
-loca
-loco
-logo
-loma
-lomo
-lote
-loto
-loza
-luca
-ludo
-lujo
-luna
-lupa
-luto
-mago
-malo
-mama
-mano
-mapa
-masa
-mate
-memo
-mesa
-meta
-mide
-miel
-miga
-mina
-mira
-moda
-modo
-mono
-mora
-mota
-mote
-moto
-mozo
-mula
-muro
-nace
-nada
-nasa
-nave
-nido
-nuez
-nulo
-obra
-ocio
-odio
-olio
-olla
-olmo
-olor
-once
-onda
-oral
-orca
-osco
-oste
-otra
-otro
-ovni
-oyen
-oyes
-paga
-pago
-palo
-papa
-paro
-paso
-pato
-pavo
-paya
-pega
-pelo
-pena
-peor
-pepa
-pepe
-pera
-pero
-pesa
-peso
-peto
-piar
-pida
-piel
-pila
-pino
-piso
-plan
-poco
-poza
-pozo
-puma
-puro
-rama
-ramo
-rana
-rata
-rayo
-raza
-real
-rema
-remo
-reno
-rifa
-rima
-risa
-roca
-roce
-rojo
-roma
-romo
-ropa
-rosa
-roto
-roza
-ruda
-ruma
-rusa
-ruso
-ruta
-sabe
-saco
-saga
-sala
-sana
-sapa
-sapo
-sebo
-seca
-seco
-seda
-sede
-seis
-seno
-siga
-sigo
-soda
-soga
-sola
-solo
-sopa
-soya
-suba
-sube
-subo
-suma
-supe
-supo
-suyo
-tabo
-tajo
-tala
-tasa
-tata
-taxi
-taza
-teja
-tela
-tele
-tema
-tina
-tipa
-tipo
-tira
-tiro
-tofu
-toma
-tomo
-topo
-toro
-tren
-tres
-trio
-tuba
-tubo
-tuna
-tusa
-tuya
-tuyo
-urna
-usan
-usar
-usas
-vaca
-vaga
-vago
-vale
-vara
-vaso
-vaya
-vean
-vega
-vela
-vena
-vete
-veto
-vida
-viga
-vino
-visa
-vivo
-vota
-vote
-voto
-yema
-yodo
-yoga
-yudo
-yuta
-zeta
-zona
-zumo
+para,Preposición que indica finalidad o destino
+vida,Existencia de un ser
+amor,Sentimiento de afecto profundo hacia alguien
+cosa,Objeto o entidad sin especificar
+duda,Falta de certeza o seguridad
+poco,Cantidad escasa o insuficiente
+hijo,Descendiente masculino
+alto,De gran altura
+tema,Asunto o idea central de algo
+idea,Concepto o pensamiento
+olor,Percepción olfativa
+pero,Sin embargo no obstante
+guía,Persona que muestra el camino o dirige
+fiel,Leal y confiable
+duro,Resistente o difícil
+ropa,Prendas de vestir
+pues,Expresión que denota causa o justificación
+beso,Demostración de afecto mediante los labios
+base,Fundamento o apoyo
+caer,Descender o perder el equilibrio
+alma,Parte espiritual e inmaterial de una persona
+casa,Edificio donde se vive
+raro,Extrano o poco común
+show,Espectáculo o exhibición
+real,Genuino o verdadero
+caso,Situación o circunstancia
+sino,Excepto o más bien
+otro,Distinto o diferente
+haya,Árbol de madera dura
+paso,Acción de avanzar o transitar
+oler,Percepción olfativa
+bajo,De poca altura o posición inferior
+como,De qué manera o modo
+azul,Color entre el verde y el anil
+tipo,Clase o categoría
+peso,Medida de la masa de un cuerpo
+moda,Tendencia o estilo en el vestir
+agua,Sustancia líquida e incolora
+fase,Etapa o período de un proceso
+suma,Resultado de la adición
+mapa,Representación gráfica de un territorio
+sano,Saludable o libre de enfermedad
+ítem,Elemento o punto en una lista
+huir,Escapar o alejarse rápidamente
+malo,De mala calidad o nocivo
+raza,Grupo de individuos con características comunes
+usar,Hacer uso de algo
+amar,Sentir amor o afecto hacia alguien
+leer,Reconocer y comprender un texto escrito
+onda,Perturbación que se propaga en un medio
+rojo,Color intenso como la sangre
+obra,Trabajo o creación artística
+fino,Delgado o de calidad superior
+meta,Objetivo o fin a alcanzar
+bien,De manera adecuada o correcta
+cima,Punto más alto o culminación
+odio,Sentimiento de profunda aversión
+auge,Período de mayor desarrollo o éxito
+todo,La totalidad o conjunto completo
+cama,Mueble para dormir
+vago,Sin rumbo fijo o poca determinación
+rico,Que tiene riqueza o abundancia
+piel,Órgano externo que recubre el cuerpo
+ruta,Camino o trayecto a seguir
+unir,Juntar o conectar algo
+mesa,Mueble con una superficie plana y patas
+algo,Alguna cosa o alguna cantidad
+ijar,Parte lateral del abdomen de un animal
+cara,Parte frontal de la cabeza
+zona,Área o región determinada
+musa,Fuente de inspiración artística
+dama,Mujer de noble condición
+rudo,Grosero o tosco
+ente,Ser o entidad existente
+isla,Porción de tierra rodeada de agua
+leal,Fiel y honesto
+modo,Forma o manera de hacer algo
+azar,Suceso fortuito o aleatorio
+debe,Obligación o necesidad de hacer algo
+acto,Acción o hecho
+casi,Poco antes o por poco no
+caro,De alto precio o costoso
+yoga,Práctica física y mental de origen hindú
+yapa,Adición o regalo adicional
+este,Hacia el lugar donde está la persona que habla
+plan,Proyecto o estrategia
+arte,Manifestación creativa y estética
+cada,Indica distribución o frecuencia individual
+loco,Que tiene perturbaciones mentales
+ocio,Tiempo libre o descanso
+ojos,Órganos visuales
+gato,Animal felino doméstico
+alba,Amanecer o primera luz del día
+solo,Sin companía o único
+rifa,Sorteo de premios
+apto,Capaz o idóneo
+mano,Parte del cuerpo humano que está al final del brazo
+olla,Recipiente para cocinar alimentos
+nota,Escrito breve que comunica algo
+boda,Ceremonia de matrimonio
+esto,Referencia a algo que está cerca del hablante
+auto,Vehículo automóvil
+giro,Movimiento de rotación o cambio de dirección
+reto,Desafío o desafío
+vivo,Que está en vida o en funcionamiento
+masa,Cantidad de materia en un cuerpo
+cura,Remedio o tratamiento para una enfermedad
+nada,La ausencia total de algo
+foto,Imagen capturada con una cámara
+gozo,Alegría o satisfacción intensa
+rulo,Tubo cilíndrico utilizado para rizar el cabello
+club,Asociación o grupo social
+roto,Que está danado o partido
+dado,Cubo pequeno con puntos en sus caras
+atar,Unir o sujetar con una cuerda o lazo
+tono,Intensidad o altura de un sonido
+aire,Masa gaseosa que envuelve la Tierra
+hora,Unidad de tiempo equivalente a 60 minutos
+pena,Sentimiento de tristeza o aflicción
+tubo,Cilindro hueco
+jefe,Persona con autoridad o líder
+boca,Órgano por donde se ingieren alimentos
+yate,Embarcación de recreo de lujo
+lujo,Gran confort o bienestar material
+vela,Objeto que se enciende para producir luz
+fama,Reputación o reconocimiento público
+puro,Sin mezcla o impureza
+seco,Carente de humedad o líquido
+edad,Período de tiempo transcurrido desde el nacimiento
+vano,Presumido o engreído
+odre,Recipiente de piel para líquidos
+capa,Prenda de abrigo que cubre el cuerpo
+flor,Estructura reproductiva de las plantas
+yugo,Instrumento de madera para sujetar animales de tiro
+dato,Información o elemento de un conjunto
+asno,Animal mamífero de la familia de los équidos
+dios,Ser supremo en muchas religiones
+pago,Acción de entregar dinero a cambio de algo
+lote,Parcela de terreno o conjunto de cosas
+lado,Parte de algo que está en posición contigua
+risa,Reacción de alegría que se expresa con sonidos
+humo,Producto gaseoso de la combustión
+pelo,Filamento que crece en la piel de los mamíferos
+rayo,Descarga eléctrica producida por una nube
+toma,Acción de agarrar o coger algo
+rama,Parte de un árbol que se extiende desde el tronco
+luna,Satélite natural de la Tierra
+caos,Desorden total o confusión
+cita,Encuentro o reunión previamente acordada
+mira,Acción de dirigir la vista hacia algo
+mono,Primate que se caracteriza por su falta de cola
+lira,Instrumento musical de cuerda
+joya,Objeto valioso o de gran belleza
+voto,Expresión de voluntad o elección
+robo,Acción de apropiarse de algo ajeno
+reja,Estructura de metal que sirve como barrera
+nulo,Sin valor o que carece de efecto
