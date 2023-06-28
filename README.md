@@ -88,7 +88,7 @@ En esta aplicación implementamos las siguientes estructuras de datos y TDAs:
 Structs creadas
 ----
 
-Se nos pidio realizar un proyecto final, en donde elegimos el ahorcado. (complementar con mas info)
+Se nos pidio realizar un proyecto final, en donde elegimos el juego del ahorcado. En donde creamos una aplicación interactiva que ofrece una experiencia personalizada y desafiante a través de niveles progresivos. Incluimos un sistema de puntuaciones para fomentar la competencia entre los jugadores y la opción de guardar y cargar partidas. La aplicación se ejecuta en la terminal, es compatible con diversos dispositivos y tiene una interfaz intuitiva.
 
 Para mantener ordenada nuestro proyecto utilizamos subcarpetas.
 
@@ -131,9 +131,15 @@ Para esto definimos la siguiente struct en c:
   ````
 
 ---
-El programa comienza con la función main() donde se crea al jugador
+El programa del juego del Ahorcado comienza con la función main(), que crea un objeto jugador y lo inicializa. A continuación, se crea un árbol binario de búsqueda llamado "arbol_puntajes" utilizando la estructura TreeMap. Este árbol se utiliza para almacenar y organizar los puntajes de los jugadores.
 
-Dentro de la función main(), 
+Después de crear el árbol de puntajes, se procede a leer los puntajes existentes desde un archivo y cargarlos en el árbol utilizando la función leerPuntajes(). Esto permite mantener un registro de los puntajes anteriores y compararlos con los nuevos puntajes obtenidos por los jugadores.
+
+A continuación, se configura el tamaño de la pantalla y se oculta el cursor para proporcionar una experiencia de juego más agradable. Luego, se llama a la función menu(), que muestra un menú interactivo donde los jugadores pueden seleccionar diferentes opciones y jugar al juego del Ahorcado.
+
+Una vez que el jugador ha terminado de jugar, se exportan los nuevos puntajes al archivo utilizando la función exportarPuntajes(). Esto asegura que los puntajes actualizados se guarden para futuras sesiones de juego.
+
+Finalmente, el programa devuelve 0 para indicar que se ha ejecutado correctamente. En resumen, el main() del juego del Ahorcado gestiona la configuración inicial, el registro de puntajes, la interfaz de usuario y el flujo general del juego.
 
 Funciones Implementadas
 ----
