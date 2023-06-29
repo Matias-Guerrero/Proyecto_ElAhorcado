@@ -84,6 +84,16 @@ En esta aplicación implementamos las siguientes estructuras de datos y TDAs:
         int (*lower_than) (void* key1, void* key2);
     };
     ````
+*Estructura de datos ArrayList:
+
+````c
+ typedef struct ArrayList {
+    void **data;
+    int capacity;
+    int size;
+} ArrayList;
+````
+
   
 Structs creadas
 ----
