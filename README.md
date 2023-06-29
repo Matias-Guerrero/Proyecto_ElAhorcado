@@ -174,3 +174,54 @@ Funciones Implementadas
    A continuación, se muestra un mensaje de pausa utilizando la función `pause()`, que espera a que el jugador presione la tecla Enter para continuar. Después de la pausa, se muestra nuevamente el mensaje de carga y se llama a la función `jugar()` para iniciar el juego con el jugador actual y el árbol de puntajes.
 
 
+- **Jugar :** `void jugar(Jugador *jugador, TreeMap* arbol_puntajes)`.
+  
+   La función `jugar()` se encarga de iniciar el juego del Ahorcado. Recibe dos argumentos: un puntero a la estructura `Jugador` y un puntero al árbol binario de búsqueda de puntajes (`arbol_puntajes`).
+
+   La función comienza verificando el idioma seleccionado por el jugador. Luego, se realiza el backend del juego del Ahorcado.
+
+   En el backend, se crea una estructura `Nivel` para almacenar los datos del nivel actual. Se inicializan los valores del nivel, incluyendo el nivel actual del jugador, una lista para almacenar las letras jugadas y el número de intentos restantes. También se asigna el puntaje correspondiente al nivel.
+
+   A continuación, se llama a la función `agregarPalabraAleatoria()` para seleccionar una palabra aleatoria y asignarla como la palabra secreta del nivel. Se llena la palabra actual con guiones bajos para representar las letras no adivinadas.
+
+   Se crean variables para controlar el estado del juego, como la variable `ganar` para saber si se ha ganado el juego, la variable `letra` para almacenar la letra ingresada por el jugador, la variable `limpiarLetra` para determinar si se debe limpiar la letra ingresada y la variable `subirNivel` para saber si se debe subir de nivel.
+
+   En el frontend del juego, se muestra la interfaz gráfica del juego, incluyendo el título, la información del juego actual, el ahorcado, las letras usadas y la palabra actual. Se solicita al jugador que ingrese una letra y se llama a la función `teclaPresionada()` para obtener la letra ingresada y validarla.
+
+  En el backend, se guarda la letra ingresada en la lista de letras jugadas y se cambia el valor de `limpiarLetra` a true para limpiar la letra ingresada en la próxima iteración del bucle. Se llama a la función `procesarLetra()` para procesar la letra ingresada y actualizar la palabra actual.
+
+  Se verifica si se ha ganado el juego comparando la palabra secreta con la palabra actual. Si se ha ganado, se muestra un mensaje de felicitaciones, se aumentan los puntos del jugador y se verifica si se debe subir de nivel. En caso de perder el juego, se muestra un mensaje de derrota y se muestra la palabra secreta.
+
+  Se libera la memoria asignada a la estructura `nivel` y se llama a la función `cargando()` para mostrar un mensaje de carga. Si se debe subir de nivel, se llama a la función `menuNivel()` para mostrar el menú de selección de nivel. Luego, se llama nuevamente a la función `jugar()` para iniciar un nuevo juego.
+
+
+- **Idioma :** `void idioma(Jugador *jugador)`.
+  
+  La función `idioma()` se encarga de permitir al jugador seleccionar el idioma en el que desea jugar. Recibe como argumento un puntero a la estructura `Jugador`.
+
+  La función comienza almacenando el idioma original del jugador en una variable llamada `idiomaOriginal`.
+
+  Luego, se crea una variable `opcionSeleccionada` para almacenar la opción seleccionada por el jugador. Se limpia la pantalla del menú para mostrar las opciones disponibles.
+
+  Se inicia un bucle para permitir al jugador seleccionar una opción válida. Se llama a la función `cambiarOpcion()` para obtener la opción seleccionada por el jugador y mostrar el menú resaltando la opción seleccionada.
+
+  Dentro del bucle, se utiliza una estructura `switch` para manejar la opción seleccionada por el jugador. Si la opción es 1, se cambia el idioma del jugador a español (valor 1). Si la opción es 2, se cambia el idioma del jugador a inglés (valor 2).
+
+  Después de cambiar el idioma del jugador, se muestra un mensaje de pausa para que el jugador pueda leerlo. La función `pause()` se utiliza para mostrar el mensaje.
+
+  Se rompe el bucle para finalizar la función.
+
+  A continuación, se verifica si el idioma del jugador ha cambiado comparando el `idiomaOriginal` con el nuevo idioma seleccionado (`jugador->idioma`). Si el idioma ha cambiado, se llama a la función `cargando()` para mostrar un mensaje de carga.
+
+
+- **Instrucciones :** `void instrucciones(Jugador *jugador)`.
+
+  La función `instrucciones()` se encarga de mostrar las instrucciones del juego al jugador. Recibe como argumento un puntero a la estructura `Jugador`.
+
+  La función comienza llamando a la función `resetearTeclas()` para reiniciar el estado de las teclas del juego.
+
+  Luego, se verifica el idioma del jugador. Si el idioma es español (valor 1), se limpia la pantalla y se muestra el título del juego utilizando la función `mostrarTitulo()`. A continuación, se muestra el mensaje de instrucciones utilizando la función `mostrarInstrucciones()`.
+
+  Después de mostrar las instrucciones, se llama a la función `pause()` para mostrar un mensaje de pausa y permitir que el jugador presione Enter para continuar.
+
+  Si el idioma es inglés (valor 2), se realiza el mismo proceso pero mostrando los mensajes en inglés.
