@@ -1,157 +1,153 @@
-realizar,Llevar a cabo o completar una acción o tarea.
-permitir,Dar consentimiento o autorización para que algo suceda o se haga.
-analizar,Examinar detalladamente algo para comprender su estructura o características.
-observar,Ver o notar cuidadosamente algo a través de la atención visual.
-mediante,A través de un medio o método específico.
-recordar,Tener en la memoria algo que ha sucedido o se ha aprendido en el pasado.
-recuerdo,Memoria o imagen mental de algo que ha sucedido en el pasado.
-asimismo,También o de la misma manera.
-tristeza,Emoción o estado de ánimo caracterizado por la pena la melancolía o la desolación.
-entonces,En ese momento o en ese caso específico.
-proyecto,Plan o propuesta para llevar a cabo una acción o alcanzar un objetivo.
-escribir,Plasmar palabras o textos en un medio físico o digital.
-infinito,Que no tiene un límite o fin determinado.
-correcto,Exacto adecuado o conforme a la verdad o a un estándar.
-plantear,Presentar o proponer un tema problema o pregunta para su consideración o discusión.
-sostener,Sujetar o mantener algo en una posición estable o firme.
-especial,Único distinto o diferente de lo común o ordinario.
-explicar,Hacer comprensible o comprender algo mediante la descripción o el razonamiento.
-perfecto,Sin defectos o errores de máxima calidad o excelencia.
-mientras,Durante el tiempo que ocurre o sucede algo más.
-estudiar,Examinar o aprender de manera sistemática o detallada un tema o materia.
-producto,Resultado de una acción o proceso.
-respecto,En relación con o en consideración a algo.
-entender,Comprender o captar el significado o la intención de algo.
-elaborar,Crear o producir algo mediante un proceso detallado o complejo.
-proponer,Presentar una idea plan o propuesta para su consideración o adopción.
-criterio,Estándar o conjunto de reglas o principios para evaluar o juzgar algo.
-bastante,En gran medida o en una cantidad suficiente.
-objetivo,Meta o propósito que se pretende alcanzar.
-celebrar,Conmemorar o festejar un evento o logro de manera especial.
-utilizar,Hacer uso de algo para un propósito específico.
-provocar,Causar o incitar una reacción o respuesta en alguien o algo.
-zopilote,Tipo de ave carronera común en América.
-inocente,Que no tiene culpa o responsabilidad en algo.
-caliente,Con una temperatura elevada o que produce calor.
-realidad,Existencia objetiva o lo que es verdadero o cierto.
-impulsar,Promover o estimular el avance o desarrollo de algo.
-esencial,Fundamental o necesario para la existencia o funcionamiento de algo.
-elemento,Parte o componente básico de algo.
-corregir,Enmendar o rectificar un error o una falta.
-requerir,Necesitar o demandar algo como condición o requisito.
-original,Que es único innovador o no se basa en imitación.
-expresar,Comunicar o manifestar algo a través de palabras gestos o acciones.
-integrar,Combinar o unir partes o elementos en un todo completo.
-cualidad,Atributo o característica distintiva de alguien o algo.
-bullying,Acoso o maltrato sistemático y repetido hacia una persona.
-aparecer,Presentarse o manifestarse de repente o de forma visible.
-consumir,Usar o gastar algo especialmente en relación con alimentos o recursos.
-material,Sustancia o elemento físico que se utiliza para crear algo o que tiene una función específica.
-complejo,Compuesto o formado por partes interrelacionadas o complicadas.
-desastre,Acontecimiento o situación que causa gran dano destrucción o sufrimiento.
-peculiar,Extrano o inusual en comparación con lo normal o típico.
-recursos,Medios o elementos disponibles para llevar a cabo una acción o alcanzar un objetivo.
-problema,Situación o cuestión que presenta dificultades o incertidumbres a resolver.
-personal,Relacionado con una persona o su individualidad.
-conectar,Unir o establecer una conexión entre dos o más cosas.
-preparar,Hacer los arreglos necesarios o tomar las medidas previas para algo.
-sensible,Propenso o receptivo a percibir o sentir emociones o estímulos.
-progreso,Avance o desarrollo gradual hacia un estado o condición mejor.
-sencillo,Fácil de entender realizar o manejar.
-mantener,Conservar o sostener algo en una determinada condición o posición.
-examinar,Inspeccionar o investigar algo detalladamente.
-escuchar,Prestar atención a los sonidos o palabras que se perciben a través del oído.
-igualdad,Estado o condición de ser igual en derechos oportunidades o trato.
-concreto,Específico o definido de manera clara y precisa.
-esconder,Ocultar o mantener algo fuera de la vista de otros.
-comenzar,Iniciar o dar inicio a algo.
-declarar,Afirmar o expresar algo de manera clara y precisa.
-conocido,Familiar o reconocido por haber sido visto o experimentado antes.
-servicio,Acción o trabajo realizado para satisfacer las necesidades o deseos de otros.
-producir,Fabricar o crear algo mediante un proceso de transformación o generación.
-reiterar,Repetir o volver a decir algo para enfatizar o confirmar.
-distinto,Diferente o no igual a algo o alguien más.
-ambiente,Entorno o condiciones que rodean a un organismo o a una situación.
-ecología,Estudio de las interacciones entre los organismos y su entorno.
-difundir,Expandir o propagar algo para que sea conocido o compartido por otros.
-imaginar,Formar una imagen mental o concebir algo en la mente.
-fomentar,Promover o estimular el desarrollo o crecimiento de algo.
-advertir,Informar o senalar una situación o peligro potencial.
-empleado,Persona que trabaja para una organización o empresa.
-creativo,Que tiene la capacidad de producir ideas obras o soluciones originales.
-ostentar,Mostrar o exhibir algo con orgullo o ostentación.
-edificio,Estructura construida para ser habitada o utilizada con un propósito específico.
-cantidad,Cantidad o número de algo.
-valiente,Que muestra coraje o valentía ante situaciones difíciles o peligrosas.
-promover,Fomentar o apoyar activamente el desarrollo o la realización de algo.
-insistir,Persistir o mantener una opinión o petición con firmeza.
-iluminar,Proporcionar luz o claridad a un espacio o situación.
-historia,Relato o narración de eventos pasados o sucesos importantes.
-sustrato,Sustancia o base sobre la cual algo crece o se desarrolla.
-concebir,Imaginar o crear algo en la mente.
-voluntad,Determinación o intención de hacer algo.
-alimento,Sustancia consumida por los seres vivos para obtener energía y nutrición.
-aprender,Adquirir conocimientos habilidades o información a través del estudio o la experiencia.
-contexto,Conjunto de circunstancias o información que rodea un evento o situación.
-implicar,Tener como consecuencia o implicación lógica algo.
-publicar,Hacer disponible o poner a disposición del público algo especialmente a través de medios de comunicación.
-asustado,Asustado alarmado o temeroso.
-ordenado,Organizado o dispuesto de manera sistemática o estructurada.
-ausencia,Estado de estar ausente o no estar presente.
-detectar,Descubrir encontrar o identificar algo a través de la observación o el análisis.
-detallar,Describir o presentar algo de manera minuciosa o exhaustiva.
-violento,Que se caracteriza por la fuerza la agresividad o la intensidad extrema.
-intentar,Hacer un esfuerzo o poner a prueba algo con el objetivo de lograr un resultado deseado.
-temprano,Que ocurre o sucede antes de lo habitual o esperado.
-presente,Que está ocurriendo o existiendo en este momento.
-empapado,Totalmente mojado o saturado de líquido.
-arreglar,Reparar o poner en orden algo que está danado roto o desordenado.
-silencio,Estado o condición de ausencia de sonido o ruido.
-apartado,Aislado o separado de algo o alguien más.
-respetar,Tener consideración y mostrar consideración hacia alguien o algo.
-percibir,Notar o ser consciente de algo a través de los sentidos o la mente.
-adecuado,Apropiado o suficiente para satisfacer una necesidad o requisito.
-ascender,Subir o moverse hacia arriba a una posición o nivel más alto.
-destacar,Sobresalir o llamar la atención debido a características o cualidades especiales.
-proteger,Preservar o salvaguardar algo de dano peligro o deterioro.
-comparar,Examinar las similitudes y diferencias entre dos o más cosas o conceptos.
-trabajar,Realizar tareas o actividades para lograr un objetivo o producir un resultado.
-adquirir,Obtener o conseguir algo especialmente mediante el esfuerzo o la adquisición.
-resolver,Encontrar una solución o respuesta a un problema o conflicto.
-flexible,Capaz de doblarse o adaptarse fácilmente sin romperse.
-castigar,Imponer una consecuencia negativa o una sanción a alguien por su comportamiento.
-importar,Tener importancia o relevancia para alguien o algo.
-combinar,Unir o mezclar diferentes elementos para formar un todo coherente.
-racional,Basado en la razón o el pensamiento lógico en lugar de en las emociones o la intuición.
-asimilar,Comprender o incorporar información o conocimiento nuevo a lo que ya se sabe.
-moderado,No extremo o excesivo equilibrado o prudente.
-resaltar,Destacar o enfatizar algo de manera notable.
-conjunto,Grupo o colección de elementos que forman una unidad o entidad.
-riguroso,Exacto preciso o exigente en términos de calidad o estándares.
-poderoso,Que tiene una gran influencia fuerza o capacidad.
-protesta,Acción o expresión de descontento o desacuerdo hacia algo o alguien.
-soportar,Tolerar o resistir una carga presión o dificultad.
-orientar,Dirigir o guiar a alguien en una dirección o camino específico.
-competir,Participar en una competencia o enfrentamiento con el objetivo de superar a otros.
-aprendiz,Aprendiz o persona que está en proceso de adquirir habilidades o conocimientos en una determinada profesión o actividad.
-concepto,Idea o noción abstracta que representa una categoría o clase de objetos o fenómenos.
-registro,Documento o lista que contiene información organizada o datos sobre algo.
-terminar,Finalizar o completar algo que se ha comenzado.
-criticar,Hacer comentarios o evaluaciones negativas sobre algo o alguien.
-combatir,Luchar o enfrentar algo o alguien en un conflicto o batalla.
-delicado,Frágil o sensible que requiere cuidado o atención especial.
-disponer,Tener a disposición o hacer que algo esté disponible para su uso.
-italiano,Relacionado con Italia o el idioma italiano.
-informar,Comunicar información o noticias a alguien.
-paradoja,Declaración o situación que parece contradictoria o absurda pero puede ser cierta.
-inspirar,Evocar o despertar una emoción o un sentimiento de admiración o entusiasmo en alguien.
-reflejar,Mostrar o representar una imagen pensamiento o cualidad.
-aumentar,Hacer que algo aumente en cantidad tamano o intensidad.
-continuo,Que no tiene interrupción o pausa.
-relativo,En relación o comparación con algo más.
-concluir,Terminar o finalizar algo llegar a una conclusión o deducción.
-asociado,Relacionado o conectado con algo o alguien en particular.
-cultivar,Cultivar o cuidar plantas o desarrollar habilidades conocimientos o cualidades.
-positivo,Que es constructivo favorable o optimista.
-terrible,Muy malo espantoso o que provoca gran miedo o horror.
-afectado,Influenciado o impactado de manera negativa por algo.
+realizar,Llevar a cabo o completar una acción o tarea
+permitir,Dar autorización para que algo suceda o se haga
+analizar,Examinar algo para comprender sus características
+observar,Ver cuidadosamente algo
+mediante,A través de un medio o método específico
+recordar,Tener en la memoria algo que ya ha sucedido
+recuerdo,Imagen mental de algo que ha sucedido en el pasado
+asimismo,También o de la misma manera
+tristeza,Emoción caracterizada por la pena
+entonces,En ese momento o en ese caso específico
+proyecto,Plan para llevar a cabo una acción
+escribir,Plasmar palabras/textos en un medio físico/digital
+infinito,Que no tiene un límite o fin determinado
+correcto,Exacto adecuado a la verdad o a un estándar
+plantear,Presentar un problema/pregunta para considerar
+sostener,Sujetar o mantener algo en una posición estable
+especial,Único distinto o diferente de lo común o ordinario
+explicar,Hacer comprensible algo mediante la descripción
+perfecto,Sin defectos y de máxima calidad o excelencia
+mientras,Durante el tiempo que ocurre o sucede algo más
+estudiar,Aprender de manera sistemática o detallada un tema
+producto,Resultado de una acción o proceso
+respecto,En relación con o en consideración a algo
+entender,Comprender el significado o la intención de algo
+elaborar,Crear algo mediante un proceso detallado
+proponer,Presentar una idea plan para su consideración
+criterio,Conjunto de reglas para evaluar algo
+bastante,En gran medida o en una cantidad suficiente
+objetivo,Meta o propósito que se pretende alcanzar
+celebrar,Festejar un evento o logro de manera especial
+utilizar,Hacer uso de algo para un propósito específico
+provocar,Incitar una reacción o respuesta en alguien o algo
+zopilote,Tipo de ave carronera común en América
+inocente,Que no tiene culpa o responsabilidad en algo
+caliente,Con una temperatura elevada o que produce calor
+realidad,Existencia objetiva o lo que es verdadero o cierto
+impulsar,Promover/estimular el avance o desarrollo de algo
+esencial,Requerido para a existencia/funcionamiento de algo
+elemento,Parte o componente básico de algo
+corregir,Enmendar o rectificar un error o una falta
+requerir,Necesitar algo como condición o requisito
+original,Que es único innovador o no se basa en imitación
+expresar,Manifestar algo través de palabras/gestos/acciones
+integrar,Unir partes o elementos en un todo completo
+cualidad,Atributo distintivo de alguien o algo
+bullying,Acoso sistemático y repetido hacia una persona
+aparecer,Presentarse de repente o de forma visible
+consumir,Usar algo especialmente en relación con recursos
+material,Elemento que se utiliza para crear algo
+complejo,Compuesto partes interrelacionadas o complicadas
+desastre,Situación que causa gran destrucción o sufrimiento
+peculiar,Inusual en comparación con lo normal o típico
+recursos,Elementos disponibles para llevar cabo una acción
+problema,Cuestión que presenta dificultades a resolver
+personal,Relacionado con una persona o su individualidad
+conectar,Establecer una conexión entre dos o más cosas
+preparar,Hacer los arreglos necesarios para algo
+sensible,Propenso a percibir o sentir emociones o estímulos
+progreso,Avance gradual hacia un estado o condición mejor
+sencillo,Fácil de entender realizar o manejar
+mantener,Conservar algo en una determinada condición
+examinar,Inspeccionar o investigar algo detalladamente
+escuchar,Oír con atencion
+igualdad,Estado de ser igual en derechos/oportunidades
+concreto,Específico o definido de manera clara y precisa
+esconder,Ocultar o mantener algo fuera de la vista de otros
+comenzar,Iniciar o dar inicio a algo
+declarar,Afirmar o expresar algo de manera clara y precisa
+conocido,Reconocido por haber sido visto/xperimentado antes
+servicio,Acción realizada para satisfacer a otras personas
+producir,Crear algo mediante un proceso de generación
+reiterar,Volver a decir algo para enfatizar o confirmar
+distinto,Diferente o no igual a algo o alguien más
+ambiente,Entorno que rodea a un organismo o a una situación
+difundir,Propagar algo para que sea conocido por otros
+imaginar,Formar una imagen mental/concebir algo en la mente
+fomentar,Promover el desarrollo o crecimiento de algo
+advertir,Informar una situación o peligro potencial
+empleado,Persona que trabaja para una organización/empresa
+creativo,Que tiene la capacidad de generar ideas originales
+ostentar,Exhibir algo con orgullo o ostentación
+edificio,Estructura utilizada con un propósito específico
+valiente,Que muestra valentía ante situaciones difíciles
+promover,Fomentar activamente la realización de algo
+insistir,Mantener una opinión o petición con firmeza
+iluminar,Proporcionar luz a un espacio o situación
+historia,Relato de eventos pasados o sucesos importantes
+sustrato,Sustancia sobre la cual algo crece o se desarrolla
+concebir,Imaginar o crear algo en la mente
+voluntad,Determinación o intención de hacer algo
+alimento,Sustento nutritivo para los seres vivos
+aprender,Adquirir conocimientos a través de un medio
+contexto,Conjunto de información que rodea un evento
+implicar,Tener como consecuencia o implicación lógica algo
+publicar,Compartir información de manera oficial
+asustado,Asustado alarmado o temeroso
+ordenado,Organizado de manera sistemática o estructurada
+ausencia,Estado de estar ausente o no estar presente
+detectar,Descubrir algo a través de la observación/análisis
+detallar,Describir algo de manera minuciosa o exhaustiva
+violento,Que se caracteriza por la fuerza la agresividad
+intentar,Hacer un esfuerzo para lograr un resultado deseado
+temprano,Que ocurre antes de lo habitual o esperado
+presente,Que está ocurriendo o existiendo en este momento
+empapado,Totalmente mojado o saturado de líquido
+arreglar,Reparar algo que está roto
+silencio,Estado o condición de ausencia de sonido o ruido
+apartado,Aislado o separado de algo o alguien más
+respetar,Demostrar consideración hacia alguien o algo
+percibir,Ser consciente de algo a través de los sentidos
+adecuado,Apropiado para satisfacer una necesidad
+ascender,Subir a una posición o nivel más alto
+destacar,Sobresalir debido a características especiales
+proteger,Preservar algo de algun mal o deterioro
+trabajar,Realizar tareas para lograr un objetivo
+adquirir,Obtener algo mediante el esfuerzo o la adquisición
+resolver,Encontrar una solución a un problema o conflicto
+flexible,Capaz de doblarse fácilmente sin romperse
+castigar,Imponer una consecuencia negativa
+importar,Tener importancia o relevancia para alguien o algo
+combinar,Mezclar diferentes elementos para formar un todo
+racional,Basado en la razón o el pensamiento lógico
+asimilar,Incorporar conocimiento nuevo a lo que ya se sabe
+moderado,No extremo o excesivo equilibrado o prudente
+resaltar,Destacar o enfatizar algo de manera notable
+conjunto,Grupo que forma una unidad o entidad
+riguroso,Exacto en términos de calidad o estándares
+poderoso,Que tiene una gran influencia fuerza o capacidad
+protesta,Expresión de descontento o desacuerdo hacia algo
+soportar,Tolerar o resistir una carga presión o dificultad
+orientar,Guiar a alguien en una dirección o camino
+competir,Participar en una competencia
+aprendiz,Persona que está en camino a adquirir habilidades
+concepto,Idea que representa una categoría
+registro,Documento que contiene información sobre algo
+terminar,Finalizar o completar algo que se ha comenzado
+criticar,Hacer evaluaciones negativas sobre algo o alguien
+combatir,Enfrentar algo o alguien en un conflicto o batalla
+delicado,Que requiere cuidado o atención especial
+disponer,Tener a disposición algo esté disponible para uso
+italiano,Relacionado con Italia o el idioma italiano
+informar,Comunicar información o noticias a alguien
+inspirar,Evocar una emoción de admiración a alguien
+reflejar,Mostrar una imagen pensamiento o cualidad
+aumentar,Hacer que algo aumente en cantidad o intensidad
+continuo,Que no tiene interrupción o pausa
+relativo,En relación o comparación con algo más
+concluir,Finalizar algo llegar a una conclusión o deducción
+asociado,Relacionado con algo o alguien en particular
+cultivar,Producir y cuidar plantas o alimentos
+positivo,Que es constructivo favorable o optimista
+terrible,Muy malo o que provoca gran miedo o horror
+afectado,Influenciado/impactado de manera negativa por algo

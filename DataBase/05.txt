@@ -6,7 +6,7 @@ hacer,Realizar una acción o llevar a cabo algo
 nuevo,Reciente o recién creado
 deseo,Anhelo o aspiración
 apoyo,Ayuda o respaldo hacia alguien o algo
-valor,Importancia o coraje frente a situaciones difíciles
+valor,Coraje frente a situaciones difíciles
 poder,Capacidad o facultad para hacer algo
 crear,Generar o producir algo nuevo
 miedo,Sensación de temor o angustia
@@ -22,16 +22,16 @@ pedir,Solicitar algo a alguien
 sacar,Extraer o retirar algo de un lugar
 poner,Colocar o ubicar algo en algún sitio
 causa,Motivo o razón que origina algo
-amigo,Persona con la cual se tiene una relación de afecto y camaradería
+amigo,Persona con la cual se tiene una relación amistad
 bajar,Descender o moverse hacia abajo
 mujer,Ser humano de sexo femenino
-karma,Ley de causa y efecto en algunas religiones y filosofías
+karma,Ley de causa y efecto
 armar,Montar o ensamblar algo
 parte,Porción o segmento de un todo
 mundo,Planeta Tierra y todo lo que existe en él
 nivel,Grado o categoría de algo
 mejor,Superior o de mayor calidad
-grupo,Conjunto de personas o cosas que comparten características comunes
+grupo,Conjunto de personas que comparten características
 feliz,Estado de alegría o satisfacción
 donde,Lugar o posición en el que algo se encuentra
 hecho,Acción o suceso que ha ocurrido
@@ -46,7 +46,7 @@ mayor,De mayor tamano edad o importancia
 luego,Después o más tarde
 snack,Pequena porción de comida para picar
 bueno,De calidad satisfactoria o positivo
-regla,Norma o principio que guía una acción o comportamiento
+regla,Norma que guía una acción o comportamiento
 lugar,Sitio o espacio físico
 etapa,Periodo o fase de desarrollo o progreso
 sabio,Persona con conocimientos y sabiduría
@@ -69,47 +69,47 @@ dicha,Felicidad o alegría intensa
 lleno,Que está ocupado o completo
 hueco,Espacio vacío o cavidad
 tanto,Cantidad indeterminada o en gran medida
-campo,Área de tierra destinada a la agricultura o actividad específica
+campo,Área de tierra para la agricultura/ganaderia
 nunca,En ningún momento o de ninguna manera
-papel,Material en forma de hoja utilizado para escribir o imprimir
+papel,Material utilizado para escribir o imprimir
 girar,Dar vueltas alrededor de un eje
 frase,Conjunto de palabras con sentido completo
 suave,De textura delicada o de poca dureza
-punto,Marca o signo gráfico que indica un lugar específico
+punto,Signo gráfico que indica un lugar específico
 libro,Obra escrita y encuadernada
-volar,Desplazarse en el aire mediante el uso de alas o algún medio de vuelo
+volar,Acción de desplazarse en el aire
 lento,Que se mueve o realiza acciones con poca velocidad
 salud,Estado de bienestar físico mental y social
 dotar,Proveer o equipar con algo necesario o deseado
 tarde,Después del tiempo esperado o habitual
 libre,Sin restricciones o limitaciones
-culpa,Responsabilidad o cargo de haber cometido algo incorrecto
+culpa,Responsabilidad haber cometido algo incorrecto
 pasar,Moverse o desplazarse de un lugar a otro
-dolor,Sensación desagradable producida por una lesión o enfermedad
+dolor,Sensación desagradable/molesta de malestar fisico
 breve,De corta duración o extensión
 yerno,Esposo de la hija en relación al padre o madre
 flujo,Movimiento constante o continuo de algo
 lindo,Bonito o atractivo a la vista
 capaz,Competente o habilidoso para realizar algo
-venta,Acción de comercializar o intercambiar bienes o servicios por dinero
+venta,Acción de comercializar bienes/servicios x dinero
 cielo,Espacio celeste sobre la Tierra
 haber,Existir o poseer algo
-traer,Llevar algo o alguien hacia el lugar donde se encuentra el hablante
+traer,Llevar algo hacia el lugar donde se encuentra uno
 pluma,Instrumento de escritura con tinta
 abrir,Hacer que algo deje de estar cerrado o tapado
 viejo,De edad avanzada o de largo tiempo de existencia
 matar,Causar la muerte de alguien o algo
 banal,Sin interés o trivial
-local,Perteneciente o relacionado con un lugar específico
+local,Perteneciente de un lugar específico
 icono,Símbolo gráfico que representa algo o alguien
 flaco,Delgado o de complexión física delgada
 oveja,Animal mamífero de la familia de los bóvidos
-labor,Trabajo o actividad realizada para lograr un objetivo
-rumbo,Dirección o trayectoria hacia donde se dirige algo o alguien
-globo,Objeto redondeado y lleno de aire utilizado como adorno o juguete
+labor,Trabajo realizada para lograr un objetivo
+rumbo,Dirección hacia donde se dirige algo o alguien
+globo,Objeto lleno de aire utilizado como adorno
 total,Completo o sin faltantes
 grito,Voz fuerte y aguda emitida con fuerza
-spray,Envase presurizado que expulsa líquido en forma de aerosol
+spray,Envase que expulsa líquido en forma de aerosol
 firme,Estable o sólido
 denso,Compacto o de alta densidad
 pobre,Que tiene escasos recursos o carece de riquezas
@@ -123,7 +123,7 @@ senda,Camino estrecho o sendero
 chico,Joven o de corta edad
 ciego,Que carece de visión o capacidad de ver
 vasto,Amplio o extenso en tamano o alcance
-clase,Grupo de estudiantes que reciben ensenanza sobre un tema específico
+clase,Grupo que recibe ensenanza sobre un tema
 temor,Sensación de miedo o inquietud
 parar,Dejar de moverse o detenerse
 pagar,Entregar dinero o realizar un pago por algo
@@ -132,9 +132,9 @@ serio,Formal o que muestra seriedad
 veloz,Rápido o que se mueve con gran velocidad
 lejos,A una distancia considerable o remota
 mismo,Identico o de la misma naturaleza
-honor,Respeto o reconocimiento por la integridad o méritos de alguien
+honor,Respeto por la integridad o méritos de alguien
 optar,Elegir entre varias opciones o alternativas
 sobre,Encima o en la parte superior de algo
 morir,Dejar de vivir o perder la vida
 medio,Situado entre dos extremos o partes
-audaz,Valiente o intrépido en la realización de acciones desafiantes
+audaz,Valiente en la realización de acciones desafiantes

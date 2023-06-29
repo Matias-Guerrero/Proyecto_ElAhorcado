@@ -1,9 +1,9 @@
-pensar,Proceso mental de generar ideas reflexionar o formar opiniones
+pensar,Proceso mental de generar ideas
 soltar,Dejar ir o liberar algo que se tenía agarrado
 grande,De tamano o magnitud considerable
 cambio,Acción de modificar o alterar algo
 fuerte,Que tiene gran resistencia o poder
-equipo,Grupo de personas trabajando juntas hacia un objetivo común
+equipo,Grupo de personas trabajando juntas
 suelta,Estado de algo que no está sujeto o atado
 muerte,Cese irreversible de la vida
 origen,Punto de partida o procedencia de algo
@@ -14,7 +14,7 @@ quitar,Remover o eliminar algo de su lugar
 zapato,Calzado que cubre el pie
 dinero,Medio de intercambio o medida de valor
 alegre,Sentimiento de felicidad o satisfacción
-dormir,Estado de reposo en el que se suspenden las funciones conscientes
+dormir,Estado de reposo y descanso
 medida,Cantidad o dimensión de algo
 hombre,Ser humano adulto de género masculino
 eterno,Sin fin o que perdura para siempre
@@ -22,20 +22,20 @@ camino,Vía o ruta que conduce de un lugar a otro
 cuidar,Atender o proteger algo o alguien
 formar,Dar forma o estructura a algo
 crecer,Aumentar de tamano o desarrollarse
-objeto,Cosa material que puede ser percibida por los sentidos
-blanco,Color que refleja todas las longitudes de onda de la luz
+objeto,Cosa material que puede ser percibida
+blanco,Color que refleja todas las longitudes de la luz
 perder,Dejar de tener algo o no poder encontrarlo
 enviar,Enviar algo a un destinatario específico
-factor,Elemento o variable que contribuye a un resultado o situación
+factor,Elemento que contribuye a un resultado o situación
 pintar,Aplicar pintura o pigmento sobre una superficie
 poseer,Tener algo en posesión o propiedad
 lograr,Alcanzar o conseguir un objetivo deseado
 servir,Proporcionar ayuda o cumplir una función
 cuenta,Registro o recuento de información o cantidad
-tiempo,Medida de la duración de los eventos y el transcurso de las cosas
+tiempo,Medida de la duración del transcurso de las cosas
 fuerza,Capacidad de realizar trabajo o generar movimiento
 porque,Indica la razón o causa de algo
-imitar,Reproducir o copiar el comportamiento o apariencia de alguien o algo
+imitar,Reproducir el comportamiento o apariencia de algo
 relato,Narración de una historia o suceso
 cuerpo,Estructura física de un ser vivo
 volver,Regresar o retornar a un lugar o estado previo
@@ -45,18 +45,18 @@ prueba,Evidencia o demostración de algo
 sentir,Experimentar emociones o sensaciones físicas
 sector,Área o división de una actividad o territorio
 asunto,Tema o materia de la que se habla o se trata
-saltar,Elevarse en el aire mediante un impulso o movimiento brusco de las piernas
+saltar,Elevar en el aire por un movimiento de las piernas
 fuente,Origen o causa de algo
 efecto,Resultado o consecuencia de una causa
 ayudar,Dar asistencia o apoyo a alguien
 avance,Progreso o movimiento hacia adelante
-maleta,Bolso o equipaje utilizado para transportar pertenencias
+maleta,Bolso utilizado para transportar pertenencias
 centro,Punto medio o lugar de convergencia
-evocar,Provocar la aparición o recuerdo de algo en la mente
+evocar,Provocar la aparición/recuerdo de algo en la mente
 humano,Relacionado con los seres humanos
 arriba,En una posición superior o hacia un lugar elevado
-asumir,Aceptar la responsabilidad o suponer algo como cierto
-propio,Que pertenece a uno mismo o característico de alguien o algo
+asumir,Aceptar la responsabilidad/suponer como cierto
+propio,Que pertenece a uno mismo 
 oferta,Propuesta o posibilidad de adquirir algo
 salida,Acción de abandonar o dejar un lugar
 tratar,Lidiar o ocuparse de algo o alguien
@@ -67,7 +67,7 @@ oscuro,Falta de luz o de claridad
 enigma,Misterio o problema difícil de resolver
 vender,Intercambiar bienes o servicios por dinero
 triste,Sentimiento de melancolía o pena
-evitar,Esquivar o eludir algo para evitar un problema o peligro
+evitar,Esquivar algo para evitar un problema o peligro
 aludir,Hacer referencia indirecta a algo o alguien
 mandar,Dar órdenes o instrucciones a alguien
 afable,Amable o agradable en el trato con los demás
@@ -76,67 +76,67 @@ emanar,Provenir o desprenderse de algo
 cubrir,Poner algo encima para protegerlo o esconderlo
 acoger,Recibir o aceptar a alguien o algo
 mejora,Acción o proceso de hacer algo mejor o superior
-pueblo,Comunidad de personas que habitan en una localidad o región
+pueblo,Comunidad de personas que habitan en una región
 debido,Adecuado o necesario en una situación determinada
 llevar,Transportar o llevar algo de un lugar a otro
-alumno,Estudiante o persona que recibe ensenanza en una institución educativa
+alumno,Estudiante que recibe ensenanza en una institución
 regalo,Obsequio o presente que se da a alguien
-hablar,Comunicarse verbalmente o expresar ideas y opiniones
+hablar,Comunicarse verbalmente
 divino,Relacionado con lo sagrado o lo celestial
 evento,Suceso o acontecimiento de importancia
 virtud,Cualidad positiva o excelencia moral
-doctor,Persona con un título académico superior en una disciplina
-excusa,Razón o justificación que se da para justificar o disculpar algo
+doctor,Con un título académico superior en una disciplina
+excusa,Justificación que se da para disculpar algo
 manera,Forma o estilo de hacer algo
 activo,Enérgico o que realiza acciones con diligencia
-social,Relacionado con la sociedad o las interacciones entre las personas
+social,Relacionado con las interacciones entre la gente
 hallar,Encontrar o descubrir algo
 surgir,Aparecer o manifestarse de repente o gradualmente
-estado,Situación o condición en la que se encuentra algo o alguien
+estado,Situación en la que se encuentra algo o alguien
 desear,Sentir anhelo o ansiar algo
 elevar,Subir o elevar algo a una posición más alta
 padres,Progenitores o personas que han dado origen a alguien
-niebla,Masa de partículas de agua suspendidas en el aire que reduce la visibilidad
+niebla,Ambiente del juego "Silent Hill"
 cantar,Producir sonidos melodiosos con la voz
 seguir,Continuar o continuar con algo
 unidad,Estado de ser uno o estar unido
-puente,Estructura que permite cruzar un obstáculo como un río o un valle
+puente,Estructura que permite cruzar un río
 faltar,No estar presente o ausentarse de un lugar
 adenda,Apéndice o agregado a un documento
 debate,Discusión o intercambio de opiniones sobre un tema
 cierto,Verdadero o indudable
-educar,Ensenar o instruir a alguien en conocimientos y valores
+educar,Instruir a alguien en conocimientos y valores
 querer,Desear o tener afecto hacia alguien o algo
 entrar,Ingresar o introducirse en un lugar
 huella,Rastro o marca dejada por algo o alguien
 crisis,Situación de peligro conflicto o dificultad grave
-pronto,En un corto período de tiempo o en un futuro cercano
-coraje,Valor o valentía para enfrentar situaciones difíciles
+pronto,En un corto período de tiempo
+coraje,Valor para enfrentar situaciones difíciles
 astuto,Ingenioso o sagaz en la resolución de problemas
-rostro,Parte frontal de la cabeza donde están los ojos la nariz y la boca
+rostro,Parte frontal de la cabeza
 bonito,Atractivo o agradable a la vista
-agente,Persona que actúa en nombre de otra o realiza una tarea específica
+agente,Persona que actúa en nombre de otra
 ocioso,Que no tiene ocupación o actividad
-ciudad,Área urbana con una alta densidad de población y una infraestructura desarrollada
+ciudad,Área urbana con una alta densidad de población
 delito,Acción ilegal o infracción de la ley
 raspar,Frotar o rascar una superficie con fuerza
 motivo,Razón o causa que impulsa a hacer algo
-elogio,Expresión de admiración o aprobación hacia alguien o algo
-vereda,Camino estrecho para peatones a lo largo de una calle
+elogio,Expresión de admiración/aprobación hacia alguien
+vereda,Camino estrecho para peatones
 correr,Moverse rápidamente usando las piernas
 enorme,De gran tamano o magnitud
-cerrar,Sujetar o cubrir algo para impedir que se abra o se escape
-anotar,Registrar o escribir información en un documento o papel
+cerrar,Sujetar algo para impedir que se abra o se escape
+anotar,Registrar información en un documento o papel
 pasado,Tiempo que ha transcurrido antes del presente
-apoyar,Brindar respaldo ayuda o asistencia a alguien o algo
-oficio,Trabajo o profesión que se realiza de manera habitual o experta
-lluvia,Precipitación de agua en forma de gotas que cae de las nubes
+apoyar,Brindar respaldo o asistencia a alguien o algo
+oficio,Trabajo que se realiza de manera habitual/experta
+lluvia,Precipitación de agua en forma de gotas
 sumiso,Que muestra obediencia o sumisión hacia alguien
-adorar,Sentir un amor profundo o reverencia hacia alguien o algo
+adorar,Sentir un amor profundo hacia alguien o algo
 limpio,Libre de suciedad impurezas o manchas
-eficaz,Que produce el efecto deseado o logra resultados positivos
+eficaz,Que produce el efecto deseado resultados positivos
 elegir,Seleccionar o escoger algo entre varias opciones
 innato,Que es inherente o se posee desde el nacimiento
-mentor,Persona que guía o aconseja a alguien con menos experiencia
-reunir,Juntar o agrupar cosas o personas en un mismo lugar
-examen,Evaluación o prueba para evaluar los conocimientos o habilidades de alguien
+mentor,Persona que guía a alguien con menos experiencia
+reunir,Juntar cosas o personas en un mismo lugar
+examen,Prueba para evaluar los conocimientos de alguien

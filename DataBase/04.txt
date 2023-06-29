@@ -94,7 +94,7 @@ alba,Amanecer o primera luz del día
 solo,Sin companía o único
 rifa,Sorteo de premios
 apto,Capaz o idóneo
-mano,Parte del cuerpo humano que está al final del brazo
+mano,Parte del ser humano que está al final del brazo
 olla,Recipiente para cocinar alimentos
 nota,Escrito breve que comunica algo
 boda,Ceremonia de matrimonio
@@ -131,7 +131,7 @@ vano,Presumido o engreído
 odre,Recipiente de piel para líquidos
 capa,Prenda de abrigo que cubre el cuerpo
 flor,Estructura reproductiva de las plantas
-yugo,Instrumento de madera para sujetar animales de tiro
+yugo,Instrumento para sujetar animales de tiro
 dato,Información o elemento de un conjunto
 asno,Animal mamífero de la familia de los équidos
 dios,Ser supremo en muchas religiones
