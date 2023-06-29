@@ -143,3 +143,18 @@ Finalmente, el programa devuelve 0 para indicar que se ha ejecutado correctament
 
 Funciones Implementadas
 ----
+- **Nueva Partida :** `void nuevaPartida(Jugador *jugador, TreeMap* arbol_puntajes)`.
+  
+  La función nuevaPartida() se encarga de iniciar un nuevo juego en el programa del juego del Ahorcado. Recibe dos argumentos: un puntero a la estructura Jugador y un   puntero al árbol binario de búsqueda de puntajes (arbol_puntajes).
+
+  La función comienza por limpiar la pantalla del menú y crear una variable llamada "nombre" para almacenar el nombre del jugador. Luego, se muestra el cursor y se solicita al jugador que ingrese su nombre utilizando la función scanf().
+
+  Después de leer el nombre, se oculta el cursor y se guarda el nombre ingresado en el campo "nombre" de la estructura Jugador. A continuación, se limpia la línea anterior y se inicializan el nivel y los puntos del jugador.
+
+  Luego, se cambia el color de la consola a amarillo para mostrar un mensaje de bienvenida en función del idioma seleccionado por el jugador. Este mensaje se muestra utilizando la función printf() y se pasa el nombre del jugador como argumento.
+
+  Después de mostrar el mensaje de bienvenida, se muestra un mensaje de pausa utilizando la función pause(). Esta función muestra un mensaje en una posición específica de la pantalla y espera a que el jugador presione la tecla Enter para continuar.
+
+  Una vez que el jugador ha presionado Enter, se restaura el color de la consola y se llama a la función cargando() para mostrar una animación de carga durante 2 segundos.
+
+  Finalmente, se llama a la función jugar() para comenzar el juego del Ahorcado, pasando como argumentos el puntero al jugador y el puntero al árbol de puntajes.
