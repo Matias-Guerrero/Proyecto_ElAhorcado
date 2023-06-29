@@ -158,3 +158,19 @@ Funciones Implementadas
   Una vez que el jugador ha presionado Enter, se restaura el color de la consola y se llama a la función cargando() para mostrar una animación de carga durante 2 segundos.
 
   Finalmente, se llama a la función jugar() para comenzar el juego del Ahorcado, pasando como argumentos el puntero al jugador y el puntero al árbol de puntajes.
+
+- **Cargar Partida :** `void cargarPartidaFE(Jugador *jugador, TreeMap* arbol_puntajes)`.
+  
+   La función `cargarPartidaFE()` se encarga de cargar una partida guardada en el programa del juego del Ahorcado. Recibe dos argumentos: un puntero a la estructura `Jugador` y un puntero al árbol binario de búsqueda de puntajes (`arbol_puntajes`).
+
+   La función comienza mostrando un mensaje de carga utilizando la función `cargando()`. Luego, se limpia la pantalla y se muestra el título del juego utilizando la función `mostrarTitulo()`. A continuación, se imprime un mensaje en función del idioma seleccionado por el jugador.
+
+   Después de imprimir el mensaje, se crea un cuadro en la pantalla para mostrar las partidas guardadas utilizando la función `cuadro()`. Luego, se crea un ArrayList llamado `jugadores` para guardar los jugadores y se llama a la función `obtenerJugadores()` para obtener los jugadores guardados.
+
+   A continuación, se crea una variable llamada `opcionSeleccionada` para almacenar la opción seleccionada por el jugador. Se inicia un bucle while que se ejecuta hasta que el jugador seleccione una opción válida. Dentro del bucle, se verifica si la opción seleccionada cambió de rango y se muestra la lista de jugadores en el cuadro utilizando la función `mostrarJugadores()`. Esto se repite hasta que el jugador seleccione una opción válida.
+
+   Después de salir del bucle, se obtiene el jugador seleccionado utilizando la función `get()` y se guarda en la variable `jugadorSeleccionado`. Luego, se copia la información del jugador seleccionado al jugador actual, actualizando el nombre, el nivel y los puntos.
+
+   A continuación, se muestra un mensaje de pausa utilizando la función `pause()`, que espera a que el jugador presione la tecla Enter para continuar. Después de la pausa, se muestra nuevamente el mensaje de carga y se llama a la función `jugar()` para iniciar el juego con el jugador actual y el árbol de puntajes.
+
+
