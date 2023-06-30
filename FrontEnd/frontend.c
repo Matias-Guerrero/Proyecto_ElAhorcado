@@ -310,7 +310,7 @@ void mostrarTitulo(int x, int y, int opcion, Jugador* jugador)
             gotoxy(x, y + 1); printf("\\______   \\__ __  _____/  |______      |__| ____   ______");
             gotoxy(x, y + 2); printf("|     ___/  |  \\/    \\   __\\__  \\     |  |/ __ \\ /  ___/");
             gotoxy(x, y + 3); printf("|    |   |  |  /   |  \\  |  / __ \\_   |  \\  ___/ \\___ \\ ");
-            gotoxy(x, y + 4); printf(" |____|   |____/|___|  /__| (____  /\\__|  |\\___  >____  >");
+            gotoxy(x, y + 4); printf("|____|   |____/|___|  /__| (____  /\\__|  |\\___  >____  >");
             gotoxy(x, y + 5); printf("                    \\/          \\/\\______|    \\/     \\/ ");
         }
 

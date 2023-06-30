@@ -5,8 +5,8 @@
 #include "../DataStructures/Map/Map.h"
 
 typedef struct {
-    char palabra[50];
-    char pista[50];
+    char palabra[25];
+    char pista[100];
     int nivel;
 } Palabra;
 
