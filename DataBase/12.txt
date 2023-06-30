@@ -1,143 +1,142 @@
-conocimiento,entendimiento o información adquirida sobre un tema o área específica.
-concientizar,crear conciencia o promover el conocimiento y la comprensión de un tema.
-tranquilidad,estado de calma paz o serenidad.
-ambivalencia,coexistencia o sentimiento contradictorio hacia algo o alguien.
-consecuencia,resultado o efecto que se deriva de una acción o situación.
-espectacular,impresionante grandioso o que causa asombro o admiración.
-proporcionar,suministrar proveer o facilitar algo a alguien.
-cumplimiento,acción de cumplir o llevar a cabo una obligación o compromiso.
-mejoramiento,proceso de hacer algo mejor mejorar o perfeccionar.
-considerando,teniendo en cuenta o tomando en consideración algo.
-complementar,anadir completar o mejorar algo para que sea más completo o efectivo.
-sensibilizar,generar conciencia empatía o sensibilidad hacia un tema o situación.
-transparente,claro evidente o que se puede ver o comprender fácilmente.
-indiferencia,falta de interés atención o preocupación hacia algo o alguien.
-caracterizar,definir describir o atribuir características distintivas a algo o alguien.
-inteligencia,capacidad de comprender razonar aprender y adaptarse a nuevas situaciones.
-sorprendente,que causa sorpresa asombro o admiración.
-credibilidad,cualidad de ser creíble confiable o digno de confianza.
-corresponder,ser adecuado apropiado o equivalente a algo.
-comprometido,comprometido dedicado o involucrado de manera activa en algo.
-controversia,disputa debate o conflicto en torno a un tema o cuestión.
-obligaciones,deberes responsabilidades o compromisos que se deben cumplir.
-experimentar,vivir sentir o pasar por una experiencia o situación.
-confeccionar,elaborar crear o producir algo especialmente de manera manual.
-perfeccionar,mejorar o hacer algo más perfecto preciso o completo.
-confidencial,que se mantiene en secreto o se comparte de manera privada.
-extravagante,extravagante peculiar o fuera de lo común.
-inconsciente,que ocurre sin conciencia conocimiento o intención.
-desencadenar,iniciar provocar o dar lugar a algo especialmente de manera abrupta.
-flexibilidad,capacidad de adaptarse cambiar o ceder fácilmente en diferentes situaciones.
-determinante,que tiene un efecto decisivo o crucial en algo.
-menospreciar,subestimar desvalorizar o considerar algo de poco valor o importancia.
-convergencia,reunión encuentro o unión de diferentes elementos o personas.
-departamento,división sección o área de una organización o institución.
-procrastinar,posponer o aplazar una tarea o actividad para otro momento.
-interminable,que no tiene fin infinito o que parece no tener un final.
-nomenclatura,conjunto de términos o nombres utilizados en un campo o área específica.
-autenticidad,cualidad de ser auténtico genuino o verdadero.
-superioridad,estado o condición de ser superior mejor o más elevado en algún aspecto.
-desobediente,que no sigue las reglas órdenes o instrucciones establecidas.
-personalizar,adaptar o ajustar algo según las preferencias o características personales.
-sistematizar,organizar o estructurar algo de manera sistemática o metódica.
-predispuesto,inclinado o propenso a tener una actitud o disposición particular hacia algo.
-insuficiente,que no es adecuado satisfactorio o completo en cantidad o calidad.
-protagonista,personaje principal o central en una obra literaria película etc.
-desconfianza,falta de confianza sospecha o duda hacia algo o alguien.
-desarrollado,que ha sido desarrollado ampliado o mejorado.
-materializar,hacer realidad concretar o convertir en algo tangible o palpable.
-consiguiente,resultado o consecuencia directa de algo.
-perseverante,que persiste persevera o persevera en la realización de una tarea o objetivo.
-convencional,tradicional habitual o conforme a las prácticas comunes o establecidas.
-persistencia,cualidad de persistir o mantenerse firme en una tarea o propósito.
-generalmente,habitualmente comúnmente o en la mayoría de los casos.
-desacreditar,desprestigiar o hacer que algo o alguien pierda credibilidad o reputación.
-participante,persona o entidad que participa o toma parte en un evento o actividad.
-cuantitativo,que se basa en la cantidad o se puede medir numéricamente.
-exclusividad,estado o condición de ser exclusivo o limitado a un grupo o persona.
-considerable,significativo importante o de gran tamano importancia o valor.
-misericordia,compasión clemencia o perdón hacia los que sufren o están en desgracia.
-desagradable,molesto incómodo o que causa disgusto o aversión.
-descerebrado,estúpido tonto o que carece de inteligencia o buen juicio.
-malentendido,error de interpretación o comprensión equivocada de algo.
-personalidad,conjunto de rasgos características o comportamientos distintivos de una persona.
-seguidamente,inmediatamente después o en sucesión inmediata.
-coincidencia,encuentro fortuito o correspondencia entre diferentes elementos o sucesos.
-deslumbrante,deslumbrante deslumbrante o que causa asombro o admiración.
-convocatoria,llamado o invitación para participar en un evento reunión o actividad.
-directamente,de manera directa sin intermediarios o sin rodeos.
-investigador,persona que realiza investigaciones o estudios en un campo específico.
-contingencia,posibilidad de que algo ocurra o suceda en el futuro.
-inspeccionar,examinar observar o revisar algo en detalle o minuciosamente.
-discrepancia,diferencia desacuerdo o contradicción entre diferentes elementos o opiniones.
-metamorfosis,cambio o transformación completa y profunda en la apariencia o naturaleza de algo.
-arrendatario,persona que alquila o arrienda una propiedad o bien a otra persona.
-intensificar,aumentar en intensidad fuerza o grado.
-concordancia,acuerdo armonía o correspondencia entre diferentes elementos o ideas.
-desfavorable,adverso desventajoso o que no favorece a algo o alguien.
-singularidad,cualidad de ser único extraordinario o particular.
-entusiasmado,emocionado animado o lleno de entusiasmo o emoción.
-indisociable,que no se puede separar o dividir.
-incomparable,que no se puede comparar igualar o equiparar con otro.
-rentabilidad,capacidad de generar beneficios económicos o ganancias.
-desavenencia,desacuerdo conflicto o discordia entre personas o grupos.
-estandarizar,establecer o seguir un estándar o norma común.
-inmensurable,que no se puede medir evaluar o comprender completamente.
-vanguardista,innovador avanzado o que introduce nuevas ideas técnicas o estilos.
-tranquilizar,calmar apaciguar o proporcionar tranquilidad o paz a alguien.
-eventualidad,posibilidad o probabilidad de que algo ocurra en el futuro.
-ayuntamiento,gobierno local de un municipio o ciudad.
-convulsionar,agitar perturbar o causar convulsiones o trastornos.
-entrometerse,interferir intervenir o involucrarse en los asuntos de otros sin ser invitado o necesario.
-recomendable,aconsejable aprobado o que se recomienda hacer o utilizar.
-impertinente,inapropiado irrelevante o que carece de pertinencia o relevancia.
-desaparecido,persona que ha desaparecido o se ha perdido sin dejar rastro.
-involuntario,que se hace sin intención o voluntad consciente.
-recordatorio,algo que se utiliza para recordar o recordar algo.
-originalidad,cualidad de ser original único o novedoso.
-consistencia,coherencia solidez o firmeza en una estructura o contenido.
-contratiempo,contrariedad obstáculo o dificultad inesperada que impide o retrasa algo.
-concerniente,relevante pertinente o relacionado con algo.
-concomitante,que ocurre o se produce al mismo tiempo que otra cosa.
-impenetrable,que no se puede penetrar atravesar o comprender.
-peculiaridad,rasgo o característica distintiva de algo o alguien.
-especialidad,área o campo específico en el que una persona tiene habilidades o conocimientos.
-descomprimir,liberar o aliviar la presión o tensión de algo.
-especialista,experto o profesional en un campo o área específica.
-proporcional,que guarda una relación o proporción adecuada entre diferentes elementos.
-herramientas,instrumentos o dispositivos utilizados para realizar o facilitar una tarea.
-inconcebible,que no se puede concebir imaginar o comprender.
-probabilidad,posibilidad o chance de que algo ocurra o suceda.
-diversificar,variar ampliar o expandir la gama o variedad de algo.
-trascendente,que va más allá de lo común o cotidiano y tiene un significado o importancia profunda.
-exteriorizar,expresar o manifestar sentimientos pensamientos o emociones de manera visible o audible.
-comprensible,que se puede entender comprender o interpretar fácilmente.
-padecimiento,sufrimiento enfermedad o dolencia física o emocional.
-desconsolado,muy triste afligido o abatido.
-contabilidad,registro análisis y control de las transacciones financieras de una empresa o entidad.
-subsistencia,acción de subsistir o mantenerse con vida o con los medios básicos para sobrevivir.
-desvalorizar,disminuir o reducir el valor importancia o precio de algo.
-periodicidad,frecuencia o regularidad con la que algo ocurre o se repite.
-predominante,que prevalece domina o es más importante que otros.
-descendencia,hijos o sucesores de una persona o generación anterior.
-extrovertido,sociable abierto o que se siente cómodo en situaciones sociales y expresa sus emociones.
-privilegiado,que tiene ventajas beneficios o derechos especiales.
-zigzagueante,que se mueve en zigzag en línea curva o de manera irregular.
-sensibilidad,capacidad de percibir sentir o responder emocionalmente a estímulos o situaciones.
-constructivo,que contribuye positivamente que ayuda a construir o mejorar algo.
-obstaculizar,dificultar impedir o entorpecer el progreso o desarrollo de algo.
-displicencia,indiferencia falta de interés o menosprecio hacia algo o alguien.
-beneficiarse,obtener beneficios ventajas o ganancias a partir de algo.
-escepticismo,actitud o postura de duda incredulidad o desconfianza hacia algo.
-ejemplificar,ilustrar o mostrar un ejemplo para explicar o demostrar algo.
-desperdiciar,malgastar o usar algo de manera innecesaria o sin provecho.
-circunspecto,cauteloso prudente o que actúa con reserva o cautela.
-acercamiento,acción de acercarse o aproximarse a algo o alguien.
-discapacidad,condición física mental o sensorial que limita la capacidad de una persona para realizar ciertas actividades.
-atrevimiento,valentía audacia o acción de hacer algo arriesgado o desafiante.
-imperecedero,que no se deteriora envejece o pierde su calidad con el tiempo.
-salvaguardar,proteger preservar o garantizar la seguridad de algo o alguien.
-insoportable,intolerable inaguantable o que no se puede soportar.
-prerrogativa,privilegio derecho o ventaja exclusiva de una persona o grupo.
-significante,que tiene un significado o importancia especial.
-desprotegido,vulnerable sin protección o en situación de riesgo.
+conocimiento,Información adquirida sobre un tema 
+concientizar,Promover el conocimiento y comprensión de un tema
+tranquilidad,estado de calma paz o serenidad
+ambivalencia,Sentimiento contradictorio hacia algo
+consecuencia,resultado que se deriva de una acción o situación
+espectacular,impresionante-que causa asombro o admiración
+proporcionar,suministrar proveer o facilitar algo a alguien
+cumplimiento,acción de cumplir  una obligación o compromiso
+mejoramiento,proceso de hacer algo mejor o perfeccionar
+considerando,teniendo en cuenta o tomando en consideración algo
+complementar,Completar algo para que sea más efectivo
+sensibilizar,generar conciencia hacia un tema o situación
+transparente,claro-que se puede ver o comprender fácilmente
+indiferencia,falta de interés o preocupación hacia algo
+caracterizar,definir características distintivas a algo
+inteligencia,Capacidad mental para aprender y razonar
+sorprendente,que causa sorpresa asombro o admiración
+credibilidad,cualidad de ser confiable o digno de confianza
+corresponder,ser adecuado apropiado o equivalente a algo
+comprometido,comprometido/involucrado de manera activa en algo
+controversia,disputa debate en torno a un tema o cuestión
+obligaciones,deberes o responsabilidades que se deben cumplir
+experimentar,vivir o pasar por una experiencia
+confeccionar,elaborar o producir algo de manera manual
+perfeccionar,mejorar/hacer algo más perfecto preciso o completo
+confidencial,que es secreto/se comparte de en privado
+extravagante,extravagante peculiar o fuera de lo común
+inconsciente,que ocurre sin conciencia conocimiento o intención
+desencadenar,iniciar algo especialmente de manera abrupta
+flexibilidad,capacidad de adaptarse o ceder fácilmente
+determinante,que tiene un efecto decisivo o crucial en algo
+menospreciar,subestimar o considerar algo de poco valor
+convergencia,reunión de diferentes elementos o personas
+departamento,división o sección de una organización
+procrastinar,posponer una tarea o actividad para otro momento
+interminable,que no tiene fin o que parece no tenerlo
+nomenclatura,conjunto de términos utilizados en un área
+autenticidad,cualidad de ser auténtico genuino o verdadero
+superioridad,estado de ser superior-mejor
+desobediente,que no sigue las reglas o órdenes
+personalizar,adaptar algo según las preferencias personales
+sistematizar,organizar algo de manera sistemática o metódica
+predispuesto,Propenso a tener una actitud particular hacia algo
+insuficiente,que no es adecuado/completo en cantidad o calidad
+protagonista,personaje principal en una obra
+desconfianza,falta de confianza o duda hacia algo
+desarrollado,que ha sido desarrollado ampliado o mejorado
+materializar,hacer realidad o convertir en algo tangible
+consiguiente,resultado o consecuencia directa de algo
+perseverante,que persiste en la realización de una tarea
+convencional,tradicional o conforme a las prácticas comunes
+persistencia,cualidad de mantenerse firme en un propósito
+generalmente,habitualmente o en la mayoría de los casos
+desacreditar,desprestigiar/hacer que algo  pierda credibilidad
+participante,persona que participa en un evento o actividad
+cuantitativo,que se basa en la cantidad
+exclusividad,estado de ser exclusivo o limitado
+considerable,significativo o de gran tamano-importancia
+misericordia,compasión o perdón hacia los que sufren
+desagradable,molesto o que causa disgusto o aversión
+descerebrado,estúpido o que carece de inteligencia/buen juicio
+malentendido,error de interpretación
+personalidad,conjunto de rasgos distintivos de una persona
+seguidamente,inmediatamente-después o en sucesión inmediata
+coincidencia,Correspondencia entre diferentes sucesos
+deslumbrante,Que causa asombro o admiración
+convocatoria,llamado para participar en un evento
+directamente,de manera directa-sin rodeos
+investigador,persona que realiza estudios en un área específica
+contingencia,posibilidad de que algo ocurra/suceda en el futuro
+inspeccionar,examinar o revisar algo en detalle
+discrepancia,Desacuerdo entre diferentes elementos o opiniones
+metamorfosis,Transformación completa en la apariencia de algo
+arrendatario,persona que alquila una propiedad
+intensificar,aumentar en intensidad fuerza o grado
+concordancia,acuerdo entre diferentes elementos o ideas
+desfavorable,adverso o que no favorece a algo o alguien
+singularidad,cualidad de ser único extraordinario o particular
+entusiasmado,emocionado animado o lleno de entusiasmo o emoción
+indisociable,que no se puede separar o dividir
+incomparable,que no se puede comparar igualar/equiparar con otro
+rentabilidad,capacidad de generar beneficios económicos
+desavenencia,desacuerdo o discordia entre personas o grupos
+estandarizar,establecer o seguir un estándar o norma común
+inmensurable,que no se puede medir o comprender completamente
+vanguardista,innovador o que introduce nuevas ideas o técnicas
+tranquilizar,calmar o proporcionar tranquilidad a alguien
+eventualidad,posibilidad de que algo ocurra en el futuro
+ayuntamiento,gobierno local de un municipio o ciudad
+convulsionar,agitar/perturbar/causar convulsiones o trastornos
+entrometerse,interferir en los asuntos sin ser invitado
+recomendable,aconsejableo que se recomienda hacer o utilizar
+impertinente,inapropiado o que carece de pertinencia
+desaparecido,Se ha perdido sin dejar rastro
+involuntario,que se hace sin intención o voluntad consciente
+recordatorio,algo que se utiliza para recordar o recordar algo
+originalidad,cualidad de ser original único o novedoso
+consistencia,coherencia o firmeza en una estructura o contenido
+contratiempo,Dificultad inesperada que impide o retrasa algo
+concerniente,relevante pertinente o relacionado con algo
+concomitante,que se produce al mismo tiempo que otra cosa
+impenetrable,que no se puede penetrar atravesar o comprender
+peculiaridad,rasgo/característica distintiva de algo o alguien
+especialidad,área en el que una persona tiene conocimientos
+descomprimir,liberar o aliviar la presión o tensión de algo
+especialista,experto/profesional en un campo o área específica
+proporcional,que guarda una relación entre diferentes elementos
+herramientas,instrumentos utilizados para realizar una tarea
+inconcebible,que no se puede concebir imaginar o comprender
+probabilidad,posibilidad o chance de que algo ocurra o suceda
+diversificar,variar ampliar/expandir la gama o variedad de algo
+trascendente,Va más allá de lo común-tiene significado profundo
+exteriorizar,expresar sentimientos de manera visible o audible
+comprensible,que se puede entender interpretar fácilmente
+padecimiento,sufrimiento enfermedad/dolencia física o emocional
+desconsolado,muy triste afligido o abatido
+contabilidad,registro-control de las transacciones financieras
+subsistencia,Mantenerse con los medios básicos para sobrevivir
+desvalorizar,disminuir el valor importancia o precio de algo
+periodicidad,Regularidad con la que algo ocurre o se repite
+predominante,que prevalece domina o es más importante que otros
+descendencia,hijos de una persona o generación anterior
+extrovertido,sociable-cómodo en situaciones sociales
+privilegiado,que tiene ventajas o derechos especiales
+zigzagueante,que se mueve en zigzag
+sensibilidad,capacidad de percibir emocionalmente a estímulos
+constructivo,que contribuye positivamente o mejorar algo
+obstaculizar,dificultar el progreso o desarrollo de algo
+displicencia,indiferencia o menosprecio hacia algo o alguien
+beneficiarse,obtener ventajas o ganancias a partir de algo
+escepticismo,actitud de duda o incredulidad hacia algo
+ejemplificar,ilustrar un ejemplo para explicar o demostrar algo
+desperdiciar,malgastar algo
+circunspecto,cauteloso o que actúa con reserva o cautela
+acercamiento,acción de acercarse o aproximarse a algo o alguien
+atrevimiento,valentía o acción de hacer algo arriesgado
+imperecedero,No se deteriora o pierde su calidad con el tiempo
+salvaguardar,proteger o garantizar la seguridad de algo
+insoportable,intolerable o que no se puede soportar
+prerrogativa,privilegio o ventaja exclusiva de una persona
+significante,que tiene un significado o importancia especial
+desprotegido,vulnerable sin protección o en situación de riesgo

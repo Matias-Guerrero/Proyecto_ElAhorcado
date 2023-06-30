@@ -86,7 +86,7 @@ volleyball,a team game played with a ball in which players hit the ball over a n
 vocabulary,the body of words used in a particular language.
 vegetarian,a person who does not eat meat.
 vegetation,plants considered collectively, especially those found in a particular area or habitat.
-weathering,wear away or change the appearance or texture of (something) by long exposure to the atmosphere.
+weathering,change the appearance of something by exposure to the atmosphere
 waterproof,impervious to water.
 winchester,a repeating rifle.
 wellspring,a source of continual supply.
@@ -97,4 +97,4 @@ youngstown,a city in northeast Ohio, United States.
 zoographer,a person who studies or writes about animals.
 zoological,relating to the study of animals.
 zoophysics,the branch of physics that deals with the properties and behavior of animals.
-zincograph,a printing plate used in zincography.
+zincograph,a printing plate used in zincography

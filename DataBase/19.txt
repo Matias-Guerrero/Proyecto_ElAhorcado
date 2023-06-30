@@ -1,10 +1,10 @@
-administrativamente,Relacionado con la gestión o dirección de una organización.
-auriculoventricular,Relativo a la conexión entre las aurículas y los ventrículos del corazón.
-contrabalancearemos,Compensar o contrarrestar un efecto o influencia.
-descongestionaremos,Aliviar o eliminar la congestión en alguna parte del cuerpo.
-fotosensibilizadora,Que produce una reacción sensible a la luz.
-indiscriminadamente,De manera aleatoria o sin hacer distinciones.
-internacionalizaron,Hacer que algo se vuelva internacional o se expanda a nivel mundial.
-magnetorresistencia,Propiedad de ciertos materiales para cambiar su resistencia eléctrica bajo la influencia de un campo magnético.
-misericordiosamente,De manera compasiva o indulgente.
-sobreabundantemente,En gran exceso o con una cantidad excesiva.
+administrativamente,Relacionado con la gestión de una organización
+auriculoventricular,Conexión entre las aurículas y los ventrículos
+contrabalancearemos,Compensar o contrarrestar un efecto o influencia
+descongestionaremos,Aliviar la congestión en alguna parte del cuerpo
+fotosensibilizadora,Que produce una reacción sensible a la luz
+indiscriminadamente,De manera aleatoria o sin hacer distinciones
+internacionalizaron,Hacer que algo se expanda a nivel mundial
+magnetorresistencia,Materiales capaces de cambiar su resistencia
+misericordiosamente,De manera compasiva o indulgente
+sobreabundantemente,En gran exceso o con una cantidad excesiva

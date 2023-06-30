@@ -4,7 +4,7 @@ ego,Yo mismo
 amo,Verbo amar en primera persona
 ana,Nombre femenino
 aro,Objeto circular utilizado en deportes
-aun,Incluso, todavía
+aun,Incluso-todavía
 ave,Animal volador
 bar,Establecimiento para tomar algo
 bus,Medio de transporte público

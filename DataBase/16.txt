@@ -4,22 +4,22 @@ aristocratizaban,hacían parte de la nobleza o clase alta
 artificiosamente,de forma artificial o creada
 atrincheramiento,acción de guarecerse o protegerse en un lugar
 atropelladamente,de manera apresurada o desordenada
-audioconferencia,reunión o comunicación por medios auditivos a distancia
+audioconferencia,reunión por medios auditivos a distancia
 autocompadecemos,sentir lástima o compasión por uno mismo
-autocriticaremos,evaluar o juzgar negativamente nuestras propias acciones
+autocriticaremos,evaluar negativamente nuestras propias acciones
 autolesionaremos,causar dano o heridas a nosotros mismos
-caballerosamente,de manera cortés, noble o educada
+caballerosamente,de manera cortés-noble o educada
 ciberdelincuente,delincuente que comete crímenes informáticos
 cinematografiado,grabado o filmado en una película
 clandestinamente,de manera secreta o oculta
 cuestionabilidad,característica de ser dudoso o incierto
 dactilografiaban,escribían a máquina o mecanografiaban
 desacomodamiento,acción de perder la comodidad o adaptación
-desacostumbraban,dejar de hacer algo a lo que se estaba acostumbrado
+desacostumbraban,dejar de hacer algo a lo que estaba acostumbrado
 desatentadamente,de manera distraída o descuidada
 desbaratadamente,de forma desordenada o caótica
 descatalogaremos,excluir o eliminar de un catálogo o lista
-diagnosticaremos,determinar o identificar una enfermedad o problema
+diagnosticaremos,Identificar una enfermedad o problema
 dificultosamente,con dificultad o de manera complicada
 disfuncionalidad,falta de funcionamiento o armonía en algo
 diversificaremos,ampliar o variar las opciones o variedades
@@ -28,77 +28,77 @@ empoltronecieran,acomodarse de manera cómoda o perezosa
 enclaustramiento,estado de estar recluido o aislado en un lugar
 enflaquecimiento,acción de perder peso o adelgazar
 enloquecidamente,de manera desquiciada o fuera de control
-esclarecidamente,de manera clara, comprensible o evidente
+esclarecidamente,de manera clara-comprensible o evidente
 excepcionalmente,de manera extraordinaria o fuera de lo común
 externalizaremos,delegar o transferir tareas o funciones a terceros
 facultativamente,de manera opcional o sujeta a elección
-fisicoculturista,persona que se dedica al culturismo o levantamiento de pesas
+fisicoculturista,persona que se dedica al levantamiento de pesas
 fotolitografiado,reproducido o impreso mediante fotolitografía
-fotosensibilidad,sensibilidad o reacción a la luz o a los estímulos visuales
+fotosensibilidad,sensibilidad a la luz o a los estímulos visuales
 fundamentalmente,principalmente o esencialmente
-gastrointestinal,relacionado con el sistema digestivo o el tracto gastrointestinal
+gastrointestinal,relacionado con el sistema digestivo
 geolocalizaremos,determinar o identificar la ubicación geográfica
 guardamateriales,lugar para almacenar o guardar materiales
 helitransportado,transportado por medio de un helicóptero
 hispanoamericana,relacionada con las culturas hispanas en América
-hispanoamericano,relacionado con personas de origen hispano en América
+hispanoamericano,Personas de origen hispano en América
 importunadamente,de manera molesta o insistente
 inalterablemente,de forma inmutable o que no cambia
 individualizador,que distingue o diferencia a cada individuo
 infortunadamente,desafortunadamente o de manera desdichada
 innecesariamente,de forma no necesaria o prescindible
 innumerablemente,en gran cantidad o sin poder ser contado
-inseparablemente,de manera indivisible o que no puede ser separado
-instrumentalidad,cualidad o característica de ser un instrumento o medio
+inseparablemente,de manera indivisible/que no puede ser separado
+instrumentalidad,cualidad de ser un instrumento o medio
 intelectualmente,relacionado con la inteligencia o el intelecto
-intercontinental,entre continentes o que abarca diferentes continentes
+intercontinental,entre continentes
 interdependencia,dependencia mutua o conexión recíproca
 justificadamente,de manera razonable o con base válida
-limpiaparabrisas,dispositivo para limpiar el parabrisas de un vehículo
+limpiaparabrisas,usado para limpiar el parabrisas de un vehículo
 maldicientemente,de manera ofensiva o insultante
 malinterpretando,entender o interpretar erróneamente algo
 maravillosamente,de manera asombrosa o extraordinaria
 menospreciaremos,desvalorizar o subestimar a alguien o algo
-micromanipulador,dispositivo utilizado para manipular objetos a escala microscópica
+micromanipulador,Utilizado para manipular objetos microscópicamente
 militarizaríamos,convertir en militar o someter a control militar
-ministerialmente,relacionado con el ámbito ministerial o gubernamental
-monumentalizaban,hacer que algo se convierta en un monumento o sea monumental
+ministerialmente,relacionado con el ámbito ministerial
+monumentalizaban,hacer que algo se convierta en un monumento
 multiconferencia,reunión o conferencia con múltiples participantes
-multidisciplinar,que abarca o involucra varias disciplinas o áreas de conocimiento
-neurotransmisora,relacionado con la transmisión de senales en el sistema nervioso
-nutricionalmente,relacionado con la nutrición o el valor nutricional
+multidisciplinar,Involucra varias disciplinas/áreas de conocimiento
+neurotransmisora,relacionado con la transmisión de senales en "SN"
+nutricionalmente,relacionado con la nutrición/el valor nutricional
 omnipotentemente,con poder absoluto o capacidad ilimitada
 perceptiblemente,de manera evidente o claramente perceptible
 perfeccionaremos,mejorar o hacer algo más perfecto
 perjudicialmente,de manera danina o perjudicial
 pluridimensional,que tiene múltiples dimensiones o aspectos
-precalentamiento,acción de calentar previamente o preparar para el uso
+precalentamiento,acción de calentar antes/preparar para el uso
 precipitadamente,de manera apresurada o sin pensar
 preestablecieran,establecer de antemano o previamente
 preuniversitario,relacionado con la preparación para la universidad
 procrastinaremos,posponer o retrasar una acción o tarea
 profesionalmente,de manera experta o relacionada con una profesión
 propietariamente,relacionado con la propiedad o ser dueno de algo
-proporcionalidad,relación de proporción o correspondencia entre elementos
+proporcionalidad,relación de proporción
 provisionalmente,de manera temporal o transitoria
-quebrantapiedras,planta medicinal que se utiliza para disolver cálculos renales
-reacondicionaban,reparar o renovar algo para que funcione correctamente
-rejuvenecimiento,hacer que algo o alguien parezca más joven o renovado
-relampaguearemos,emitir o producir destellos de luz como un relámpago
+quebrantapiedras,planta medicinal para disolver cálculos renales
+reacondicionaban,reparar algo para que funcione correctamente
+rejuvenecimiento,hacer que algo parezca más joven o renovado
+relampaguearemos,emitir destellos de luz como un relámpago
 resplandeceremos,brillar intensamente o destacar con luminosidad
-responsablemente,de manera responsable o consciente de las consecuencias
+responsablemente,de manera responsable
 restrictivamente,de forma limitada o con restricciones
 retractilaríamos,retraer o encoger algo
-sacramentalmente,relacionado con los sacramentos o rituales religiosos
+sacramentalmente,relacionado con los sacramentos
 salvaguardaremos,proteger o preservar de danos o peligros
 sentenciosamente,de manera enfática o con aires de autoridad
-sentimentalmente,de manera emotiva o relacionada con los sentimientos
-sobredimensionar,aumentar o ampliar algo más allá de sus dimensiones normales
+sentimentalmente,de manera emotiva/relacionada con los sentimientos
+sobredimensionar,aumentar algo más allá de sus dimensiones normales
 sobredimensiones,dimensiones o magnitudes mayores a las habituales
 superficialmente,de manera poco profunda o sin profundidad
 tempestuosamente,de forma violenta o con intensidad
 territorialmente,relacionado con el territorio o área geográfica
 tradicionalmente,de manera conforme a las costumbres o tradiciones
-transcontinental,que atraviesa o se extiende a través de continentes
-trasportabilidad,capacidad de ser transportado o movido de un lugar a otro
-videoconferencia,reunión o comunicación por medios audiovisuales a distancia
+transcontinental,que atraviesa/se extiende a través de continentes
+trasportabilidad,capacidad de ser transportado de un lugar a otro
+videoconferencia,reunión por medios audiovisuales a distancia

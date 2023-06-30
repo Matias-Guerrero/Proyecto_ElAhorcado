@@ -1,5 +1,5 @@
-contrarrevolucionaria,Que se opone o se enfrenta a una revolución o movimiento revolucionario.
-contrarrevolucionario,Persona o cosa que se opone o se enfrenta a una revolución o movimiento revolucionario.
-desindustrializaremos,Proceso de reducir o eliminar la industria en una región o país.
-institucionalizaremos,Establecer o incorporar algo como parte de una institución.
-internacionalizaremos,Hacer que algo adquiera un alcance o carácter internacional.
+contrarrevolucionaria,Persona que se opone a una revolución-femenino
+contrarrevolucionario,Persona que se opone a una revolución-masculino
+desindustrializaremos,Proceso de reducir la industria en una región
+institucionalizaremos,Establecer algo como parte de una institución
+internacionalizaremos,Hacer que algo adquiera un alcance internacional

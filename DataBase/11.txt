@@ -1,135 +1,133 @@
-resiliencia,capacidad de adaptarse y recuperarse frente a situaciones difíciles o adversidades.
-identificar,reconocer distinguir o establecer la identidad o características de algo o alguien.
-prevalencia,frecuencia o grado de aparición de algo en una población o contexto determinado.
-responsable,persona o entidad que tiene la obligación o el deber de cumplir con ciertas tareas o tomar decisiones adecuadas.
-herramienta,instrumento o utensilio utilizado para llevar a cabo una tarea específica.
-implementar,poner en práctica o ejecutar un plan proyecto o acción.
-inteligente,dotado de capacidad mental habilidad o aptitud para comprender aprender y resolver problemas.
-sentimiento,estado emocional o afectivo que experimenta una persona en respuesta a una situación o estímulo.
-desarrollar,hacer crecer evolucionar o mejorar algo a través de acciones procesos o esfuerzos.
-actualmente,en el presente en este momento o en la actualidad.
-profesional,relacionado con una ocupación oficio o actividad que requiere conocimientos especializados.
-instrumento,herramienta o medio utilizado para lograr un fin específico.
-susceptible,propenso o vulnerable a ser afectado o influenciado por algo.
-perspectiva,punto de vista o enfoque desde el cual se considera analiza o interpreta una situación o tema.
-competencia,habilidad capacidad o destreza para realizar una tarea o actividad de manera eficiente.
-reflexionar,pensar o meditar sobre algo de manera profunda o cuidadosa.
-posibilidad,opción probabilidad o capacidad de que algo ocurra o sea posible.
-representar,presentar o simbolizar algo actuar en nombre de alguien o algo.
-importancia,valor relevancia o significado que se le atribuye a algo.
-hiperactivo,que presenta una actividad o movimiento excesivo o anormalmente intenso.
-tratamiento,conjunto de medidas o acciones para curar aliviar o prevenir una enfermedad o trastorno.
-persistente,que se mantiene o continúa de manera constante o prolongada en el tiempo.
-experiencia,conocimiento o vivencia adquiridos a través de la participación en situaciones o eventos.
-desaparecer,dejar de existir estar presente o ser perceptible.
-fundamental,básico esencial o imprescindible en una situación proceso o sistema.
-resistencia,capacidad de oponerse defenderse o superar obstáculos o adversidades.
-transformar,cambiar o alterar la forma naturaleza o apariencia de algo.
-alternativa,opción o posibilidad diferente a la convencional o habitual.
-determinado,decidido resuelto o firme en alcanzar una meta o llevar a cabo una acción.
-especificar,detallar o precisar de manera clara y precisa algo.
-creatividad,capacidad de generar ideas soluciones o productos originales y novedosos.
-categorizar,clasificar o agrupar algo en categorías o clases según sus características comunes.
-multiplicar,aumentar o incrementar la cantidad o el número de algo.
-concienciar,generar conciencia o sensibilización sobre un tema problema o situación.
-comprometer,obligarse o comprometerse a realizar una acción o cumplir con una responsabilidad.
-oportunidad,momento adecuado o favorable para realizar algo o aprovechar una situación.
-sorprendido,asombrado maravillado o impactado por algo inesperado o extraordinario.
-diferenciar,distinguir o establecer las diferencias entre personas cosas o conceptos.
-inhabilidad,falta de habilidad capacidad o destreza para realizar algo.
-pensamiento,actividad mental que involucra la formación organización o procesamiento de ideas.
-interpretar,dar sentido comprender o explicar el significado o sentido de algo.
-suministrar,proveer abastecer o proporcionar algo necesario o requerido.
-maravilloso,extraordinario sorprendente o admirable por sus cualidades o características.
-eternamente,infinitamente sin fin o de manera ilimitada en el tiempo.
-expectativa,esperanza previsión o pronóstico sobre algo que se espera que suceda.
-preferencia,elección o inclinación por algo o alguien en particular.
-beneficioso,que proporciona beneficios ventajas o mejoras en alguna área o aspecto.
-interesante,atractivo llamativo o que despierta interés o curiosidad.
-propietario,dueno o poseedor legítimo de algo.
-indulgencia,actitud o disposición de ser tolerante benevolente o condescendiente hacia otros.
-concentrado,centrado enfocado o atento en algo específico.
-aprendizaje,proceso de adquirir conocimientos habilidades o competencias a través de la experiencia.
-desconocido,que no es conocido familiar o reconocido.
-evolucionar,desarrollarse o cambiar gradualmente a lo largo del tiempo.
-administrar,gestionar dirigir o controlar los recursos procesos o actividades de algo.
-intelectual,relacionado con el pensamiento la razón o el conocimiento.
-crecimiento,aumento o desarrollo en tamano cantidad o importancia.
-incrementar,aumentar o hacer crecer algo en cantidad grado o intensidad.
-conformidad,estado de acuerdo aceptación o cumplimiento de normas reglas o estándares.
-conveniente,adecuado oportuno o apropiado para una situación o propósito.
-obligatorio,que es necesario exigido o requerido por ley norma o deber.
-irreverente,que falta al respeto o desafía la autoridad las normas o las convenciones establecidas.
-repositorio,lugar o sistema donde se almacenan y organizan datos información o recursos.
-contradecir,negar refutar o decir lo contrario de algo.
-divergencia,desviación separación o diferencia entre dos o más cosas.
-posibilitar,hacer posible o factible algo que antes no lo era.
-jerarquizar,organizar o clasificar algo en una jerarquía o escala de importancia.
-irrelevante,que no es relevante importante o significativo en un contexto dado.
-trayectoria,camino ruta o recorrido seguido por alguien o algo en el tiempo.
-preocuparse,sentir inquietud intranquilidad o interés por algo o alguien.
-impedimento,obstáculo dificultad o limitación que dificulta o impide el logro de algo.
-estabilidad,estado de equilibrio solidez o consistencia en una situación o sistema.
-monitorizar,supervisar vigilar o controlar de manera continua o sistemática algo.
-iconoclasta,que desafía o cuestiona las creencias tradiciones o normas establecidas.
-diseccionar,analizar o examinar detalladamente algo en sus partes o componentes.
-colaborador,persona que trabaja en colaboración o cooperación con otros.
-relacionado,conectado vinculado o asociado con algo o alguien.
-fundamentar,basar sustentar o justificar algo en razones pruebas o argumentos sólidos.
-fuertemente,con gran intensidad firmeza o determinación.
-indiferente,que no muestra interés preocupación o preferencia por algo o alguien.
-outsourcing,subcontratación o externalización de servicios o actividades a terceros.
-vertiginoso,rápido acelerado o que produce vértigo o mareo.
-seguimiento,acción de seguir monitorear o supervisar el progreso o desarrollo de algo.
-desmesurado,excesivo desproporcionado o fuera de límites en cantidad o grado.
-consecuente,coherente lógico o que se deriva o sigue de algo anteriormente mencionado.
-antecedente,hecho evento o circunstancia que precede o se produce antes de otro.
-seleccionar,escoger elegir o optar por algo o alguien entre varias opciones.
-significado,sentido o interpretación atribuido a algo palabra o concepto.
-condiciones,circunstancias o requisitos necesarios para que algo suceda o sea posible.
-subordinado,persona o entidad que está bajo la autoridad mando o dependencia de otra.
-deteriorado,danado debilitado o en mal estado debido al desgaste el uso o el paso del tiempo.
-procedencia,origen fuente o lugar de donde proviene algo o alguien.
-encontrarse,estar ubicado o situado en un lugar o situación determinada.
-excepcional,extraordinario sobresaliente o que se aparta de lo común o esperado.
-reivindicar,reclamar demandar o defender algo como justo legítimo o merecido.
-polivalente,versátil capaz de desempenar varias tareas o funciones.
-performance,rendimiento o actuación en una actividad tarea o espectáculo.
-sufrimiento,dolor angustia o malestar físico o emocional.
-transportar,llevar trasladar o mover algo o alguien de un lugar a otro.
-pronosticar,predecir anticipar o estimar el resultado o desarrollo futuro de algo.
-emocionante,que produce emoción entusiasmo o excitación intensa.
-permanencia,estado o condición de permanecer o durar en un lugar o situación.
-aislamiento,estado de estar separado apartado o solo alejado de otros.
-transcurrir,pasar o transcurrir el tiempo de manera gradual o progresiva.
-consistente,coherente sólido o que mantiene una misma forma naturaleza o calidad.
-considerado,amable atento o respetuoso con los sentimientos y necesidades de otros.
-tradicional,que sigue o se adhiere a prácticas costumbres o valores convencionales.
-conservador,que se inclina hacia la preservación de lo tradicional o establecido.
-perceptible,que se puede percibir notar o detectar mediante los sentidos.
-confortable,cómodo agradable o que proporciona bienestar físico o emocional.
-medicamento,sustancia o preparado utilizado para prevenir aliviar o curar enfermedades.
-interrumpir,detener o suspender algo temporalmente o de manera abrupta.
-surgimiento,aparición inicio o nacimiento de algo de manera notable o prominente.
-negligencia,falta de cuidado atención o diligencia debida en la realización de una tarea.
-simplemente,de manera sencilla básica o sin complicaciones.
-discriminar,tratar de manera injusta o diferenciada a personas o grupos basándose en ciertas características.
-profundizar,ahondar indagar o explorar más a fondo en un tema idea o situación.
-intercambio,acción de dar recibir o compartir algo con otra persona o entidad.
-superficial,que se encuentra en la superficie o carece de profundidad o sustancia.
-generosidad,cualidad de ser generoso desprendido o altruista en la ayuda o donación a otros.
-rendimiento,resultado eficacia o productividad en la realización de una actividad o tarea.
-repugnancia,aversión asco o rechazo intenso hacia algo o alguien.
-perjudicial,danino nocivo o que causa perjuicio o dano.
-inigualable,incomparable único o que no tiene igual o equivalente.
-estructurar,organizar ordenar o dar forma a algo de manera sistemática o coherente.
-comprensivo,tolerante compasivo o que muestra empatía y entendimiento hacia otros.
-complemento,algo que se anade o une a otra cosa para mejorarla o completarla.
-congruencia,acuerdo correspondencia o coherencia entre diferentes elementos o aspectos.
-contingente,sujeto a circunstancias o eventos inciertos o imprevistos.
-desigualdad,falta de igualdad o equidad en el trato oportunidades o derechos.
-displicente,indiferente desinteresado o despreocupado ante algo o alguien.
-competitivo,que tiene una actitud o propensión a competir o superar a otros.
-solidaridad,apoyo mutuo cooperación o ayuda entre personas en situaciones difíciles.
-pertinencia,relevancia adecuación o aplicabilidad de algo a una situación o contexto.
-omnisciente,que lo sabe o lo comprende todo posee un conocimiento total y absoluto.
+resiliencia,adaptarse frente a situaciones difíciles
+identificar,reconocer la identidad de algo o alguien
+prevalencia,frecuencia de algo en una población
+responsable,persona que tiene el deber de cumplir con tareas
+herramienta,Utensilio utilizado para llevar a cabo una tarea
+implementar,poner en práctica/ejecutar un plan proyecto/acción
+inteligente,dotado de capacidad mental
+sentimiento,estado emocional que experimenta una persona
+desarrollar,hacer crecer algo a través de acciones
+actualmente,en el presente en este momento o en la actualidad
+profesional,persona-una ocupación que requiere conocimientos
+instrumento,herramienta utilizada para lograr un fin
+susceptible,propenso a ser afectado o influenciado por algo
+perspectiva,punto de vista desde el que considera un tema
+competencia,habilidad para realizar una tarea eficientemente
+reflexionar,pensar sobre algo de manera profunda o cuidadosa
+posibilidad,probabilidad de que algo ocurra o sea posible
+representar,presentar algo actuar en nombre de alguien o algo
+importancia,relevancia o significado que se le atribuye a algo
+hiperactivo,que presenta un movimiento excesivo
+tratamiento,conjunto de medidas para curar una enfermedad
+persistente,que se mantiene de manera constante en el tiempo
+experiencia,conocimiento ganados a través del estar en eventos
+desaparecer,dejar de existir estar presente o ser perceptible
+fundamental,esencial o imprescindible en una situación
+resistencia,capacidad de superar obstáculos o adversidades
+transformar,alterar la forma o apariencia de algo
+alternativa,opción diferente a la convencional o habitual
+determinado,decidido o firme en alcanzar una meta
+especificar,detallar o precisar de manera clara y precisa algo
+creatividad,capacidad de generar ideas originales y novedosas
+categorizar,clasificar algo según sus características
+multiplicar,aumentar o incrementar la cantidad de algo
+concienciar,generar conciencia sobre un tema problema
+comprometer,comprometerse a realizar una acción
+oportunidad,momento adecuado para realizar algo
+sorprendido,asombrado por algo inesperado o extraordinario
+diferenciar,distinguir las diferencias entre cosas
+inhabilidad,falta de habilidad para realizar algo
+pensamiento,actividad mental-involucra la formación de ideas
+interpretar,dar sentido o explicar el significado de algo
+suministrar,proveer o proporcionar algo necesario o requerido
+maravilloso,extraordinario o admirable por sus cualidades
+eternamente,infinitamente o de manera ilimitada en el tiempo
+expectativa,pronóstico sobre algo que se espera que suceda
+preferencia,inclinación por algo o alguien en particular
+beneficioso,que proporciona beneficios/mejoras en alguna área
+interesante,atractivo llamativo o que despierta interés
+propietario,dueno o poseedor legítimo de algo
+indulgencia,actitud de ser tolerante o condescendiente
+concentrado,centrado enfocado o atento en algo específico
+aprendizaje,adquirir conocimientos a través de la experiencia
+desconocido,que no es conocido familiar o reconocido
+evolucionar,desarrollarse a lo largo del tiempo
+administrar,gestionar los recursos o actividades de algo
+intelectual,relacionado con el pensamiento o el conocimiento
+crecimiento,aumento/desarrollo en tamano cantidad/importancia
+incrementar,aumentar o hacer crecer algo en cantidad o grado
+conformidad,estado aceptación de normas reglas o estándares
+conveniente,adecuado o apropiado para una situación
+obligatorio,que es necesario exigido o requerido por ley
+irreverente,que falta al respeto o desafía la autoridad
+repositorio,lugar donde se almacenan y organizan datos
+contradecir,negar refutar o decir lo contrario de algo
+divergencia,desviación o diferencia entre dos o más cosas
+posibilitar,hacer posible o factible algo que antes no lo era
+jerarquizar,organizar algo en una escala de importancia
+irrelevante,que no es relevante en un contexto dado
+trayectoria,camino seguido por alguien o algo en el tiempo
+preocuparse,sentir inquietud o interés por algo o alguien
+impedimento,obstáculo que dificulta o impide el logro de algo
+estabilidad,estado de equilibrio en una situación o sistema
+monitorizar,supervisar de manera continua o sistemática algo
+iconoclasta,que desafía las creencias tradiciones
+diseccionar,analizar detalladamente algo en sus componentes
+colaborador,persona que trabaja en colaboración con otros
+relacionado,conectado vinculado o asociado con algo o alguien
+fundamentar,basar algo en razones pruebas o argumentos sólidos
+fuertemente,con gran intensidad firmeza o determinación
+indiferente,que no muestra interés o preferencia por algo
+outsourcing,externalización de servicios a terceros
+vertiginoso,rápido acelerado o que produce vértigo o mareo
+seguimiento,acción de monitorear el progreso de algo
+desmesurado,excesivo o fuera de límites en cantidad o grado
+consecuente,que se deriva o sigue de algo ya mencionado
+antecedente,hecho que precede o se produce antes de otro
+seleccionar,escoger algo o a alguien entre varias opciones
+significado,sentido atribuido a algun concepto
+condiciones,circunstancias necesarias para que algo suceda
+subordinado,persona que está bajo la autoridad de otra
+deteriorado,debilitado o en mal estado debido al desgaste
+procedencia,origen o lugar de donde proviene algo o alguien
+encontrarse,estar ubicado en un lugar o situación determinada
+excepcional,sobresaliente/que se aparta de lo común o esperado
+reivindicar,reclamar algo como justo legítimo o merecido
+polivalente,versátil capaz de desempenar varias tareas
+performance,rendimiento en un espectáculo
+sufrimiento,dolor o malestar físico o emocional
+transportar,llevar o mover algo o alguien de un lugar a otro
+pronosticar,predecir o estimar el resultado de algo
+emocionante,que produce emoción o entusiasmo
+permanencia,estado o condición de permanecer
+aislamiento,estado de estar separado de otros
+transcurrir,pasar o transcurrir el tiempo de manera gradual
+consistente,coherente o que mantiene una misma forma
+considerado,amable o respetuoso con los sentimientos
+tradicional,que sigue prácticas tradicionales
+perceptible,que se puede detectar mediante los sentidos
+confortable,cómodo o que proporciona bienestar
+medicamento,sustancia utilizada para aliviar enfermedades
+interrumpir,detener algo temporalmente o de manera abrupta
+surgimiento,aparición de algo de manera notable o prominente
+negligencia,falta de cuidado en la realización de una tarea
+simplemente,de manera sencilla
+profundizar,ahondar más a fondo en un tema idea o situación
+intercambio,acción de dar o compartir algo con otra persona
+superficial,que se encuentra en la superficie
+generosidad,cualidad de ser generoso o altruista
+rendimiento,productividad en la realización de una tarea
+repugnancia,aversión o rechazo intenso hacia algo o alguien
+perjudicial,danino nocivo o que causa perjuicio o dano
+inigualable,incomparable o que no tiene igual o equivalente
+estructurar,organizar o dar forma a algo de manera sistemática
+comprensivo,tolerante o que muestra empatía hacia otros
+complemento,algo que une a otra cosa para mejorarla
+congruencia,acuerdo entre diferentes elementos o aspectos
+contingente,sujeto a circunstancias o eventos inciertos
+desigualdad,falta de igualdad o equidad en el trato
+displicente,indiferente o despreocupado ante algo o alguien
+competitivo,que tiene una actitud o propensión a competir
+solidaridad,ayuda entre personas en situaciones difíciles
+pertinencia,relevancia de algo a una situación o contexto
+omnisciente,que lo sabe todo posee un conocimiento total
