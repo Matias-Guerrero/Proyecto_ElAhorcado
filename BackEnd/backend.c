@@ -332,11 +332,23 @@ void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
             // Se elimina el salto de linea
             buffer[strlen(buffer) - 1] = '\0';
 
+            // Se separa la palabra hasta la coma
+            char *token = strtok(buffer, ",");
+
+            // Se obtiene la pista hasta el salto de linea
+            char *pista = strtok(NULL, "\n");
+
+            // Se quitan las tildes de la pistas
+            pista = quitar_tildes(pista);
+
             // Se crea una struct para almacenar la palabra
             Palabra *palabra = (Palabra *) malloc(sizeof(Palabra));
 
             // Se asigna la palabra a la struct
-            strcpy(palabra->palabra, buffer);
+            strcpy(palabra->palabra, token);
+
+            // Se asigna la pista a la struct
+            strcpy(palabra->pista, pista);
 
             // Se asigna el nivel a la struct
             palabra->nivel = jugador->nivel;
@@ -350,6 +362,9 @@ void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
                 // Se asigna la palabra secreta
                 strcpy(nivel->palabraSecreta, buffer);
 
+                // Se asigna la pista
+                strcpy(nivel->pista, pista);
+
                 break;
             }
             else
@@ -361,8 +376,7 @@ void agregarPalabraAleatoria(Jugador *jugador, Nivel *nivel)
 
         // Se cierra el archivo
         fclose(file);
-        }
-    
+    }
 }
 
 void sobrescribirLinea(char* nombreArchivo, int numeroLinea, const char* nuevaLinea) {

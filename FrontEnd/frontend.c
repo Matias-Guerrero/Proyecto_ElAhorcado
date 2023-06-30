@@ -107,6 +107,8 @@ void pause(int x, int y, char *mensaje)
         printf("%s", mensaje);
     }
 
+    PlaySound("Sounds/confirm.wav", NULL, SND_FILENAME | SND_ASYNC);
+
     // Largo del mensaje
     int largo = strlen(mensaje);
 
@@ -668,11 +670,13 @@ bool cambiarOpcion(int * opcion, int maxOpcion)
     }
 
     // Si maxOpcion es mayor a 4, se verifica si se priona derecha o izquierda
-    if(maxOpcion >= 4)
+    if(maxOpcion > 5)
     {
         if( GetAsyncKeyState(VK_LEFT) )
         {
             *opcion -= 3;
+
+            PlaySound("Sounds/sound.wav", NULL, SND_FILENAME | SND_ASYNC);
 
             if(*opcion < 1)
             {
@@ -683,10 +687,27 @@ bool cambiarOpcion(int * opcion, int maxOpcion)
         {
             *opcion += 3;
 
+            PlaySound("Sounds/sound.wav", NULL, SND_FILENAME | SND_ASYNC);
+
             if(*opcion > maxOpcion)
             {
                 *opcion = maxOpcion;
             }
+        }
+    }
+    else
+    {
+        if( GetAsyncKeyState(VK_LEFT) )
+        {
+            *opcion = 1;
+
+            PlaySound("Sounds/sound.wav", NULL, SND_FILENAME | SND_ASYNC);
+        }
+        if( GetAsyncKeyState(VK_RIGHT) )
+        {
+            *opcion = maxOpcion;
+
+            PlaySound("Sounds/sound.wav", NULL, SND_FILENAME | SND_ASYNC);
         }
     }
 
@@ -1089,6 +1110,8 @@ void teclaPresionada(int x, int y, char* letra, Nivel *nivel, Jugador *jugador)
                     {
                         gotoxy(50, 20); printf("The letter has already been entered");
 
+                        PlaySound("Sounds/alerta.wav", NULL, SND_FILENAME | SND_ASYNC);
+
                         ocultarCursor();
 
                         // Se muestra el mensaje de pausa
@@ -1130,6 +1153,8 @@ void teclaPresionada(int x, int y, char* letra, Nivel *nivel, Jugador *jugador)
 
                 // Se limpia la variable letra
                 *letra = '\0';
+
+                gotoxy(x, y); 
 
                 // Se cambia el estado de la variable
                 teclaPresionada = false;
@@ -1244,6 +1269,8 @@ void mostrarPuntajes(int x, int y, TreeMap *tabla_puntajes, Jugador *jugador)
 // Funcion para mostrar el menu de nivel
 void menuNivel(Jugador *jugador)
 {
+    PlaySound("Sounds/win.wav", NULL, SND_FILENAME | SND_ASYNC | SND_LOOP | SND_NOWAIT);
+
     // Se crea la variable para guardar la opcion seleccionada
     int opcionSeleccionada = 1;
 
@@ -1915,7 +1942,7 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
             if(limpiarLetra)
             {
                 // Se limpia la letra ingresada
-                limpiarLinea(85, 17, 1);
+                limpiarLinea(85, 14, 1);
             }
 
             // Se muestra el titulo
@@ -1937,18 +1964,18 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
             SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
 
             // Se muestra la pista de la palabra
-            mostrarPista(65, 14, nivel, jugador);
+            mostrarPista(50, 17, nivel, jugador);
 
             // Se cambia el color de la letra blanca
             SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 
             // Se pregunta por la letra
-            gotoxy(65, 17); printf("Ingrese una letra:  ");
+            gotoxy(65, 14); printf("Ingrese una letra:  ");
 
             mostrarCursor(); // Se muestra el cursor
 
             // Se llama a la funcion que verifica que letra se ha ingresado
-            teclaPresionada(85, 17, &letra, nivel, jugador);
+            teclaPresionada(85, 14, &letra, nivel, jugador);
 
             ocultarCursor(); // Se oculta el cursor
 
@@ -2013,6 +2040,8 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
         }
         else
         {
+            PlaySound("Sounds/gameover.wav", NULL, SND_FILENAME | SND_ASYNC);
+
             // Se muestra el mensaje de perdiste
             gotoxy(50, 20); printf("PERDISTE!!!!!!!");
 
@@ -2089,7 +2118,7 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
             if(limpiarLetra)
             {
                 // Se limpia la letra ingresada
-                limpiarLinea(85, 17, 1);
+                limpiarLinea(82, 14, 1);
             }
 
             // Se muestra el titulo
@@ -2102,18 +2131,27 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
             mostrarAhorcado(45, 6, nivel->intentosRestantes);
 
             // Se muestra las letras usadas
-            mostrarLetras(85, 6, nivel, jugador);
+            mostrarLetras(90, 6, nivel, jugador);
 
             // Se muestra la palabra actual con los guiones bajos saltando un espacion por guion
-            mostrarPalabra(65, 12, nivel, jugador);
+            mostrarPalabra(67, 9, nivel, jugador);
+
+            // Se cambia el color de la letra roja
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 12);
+
+            // Se muestra la pista de la palabra
+            mostrarPista(50, 17, nivel, jugador);
+
+            // Se cambia el color de la letra blanca
+            SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 
             // Se pregunta por la letra
-            gotoxy(65, 17); printf("Enter a letter:  ");
+            gotoxy(65, 14); printf("Enter a letter:  ");
 
             mostrarCursor(); // Se muestra el cursor
 
             // Se llama a la funcion que verifica que letra se ha ingresado
-            teclaPresionada(85, 17, &letra, nivel, jugador);
+            teclaPresionada(82, 14, &letra, nivel, jugador);
 
             ocultarCursor(); // Se oculta el cursor
 
@@ -2145,6 +2183,9 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
         // Se verifica si se ha ganado el juego
         if(ganar)
         {
+            // Se muestra la ultima letra ingresada
+            mostrarPalabra(67, 9, nivel, jugador);
+
             // Se aumenta los puntos del jugador
             jugador->puntos += nivel->puntosNivel;
 
@@ -2175,6 +2216,8 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
         }
         else
         {
+            PlaySound("Sounds/gameover.wav", NULL, SND_FILENAME | SND_ASYNC);
+
             // Se muestra el mensaje de perdiste
             gotoxy(50, 20); printf("YOU LOST!!!!!!!");
 
