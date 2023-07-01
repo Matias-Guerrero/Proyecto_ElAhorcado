@@ -1,6 +1,8 @@
 #ifndef STRUCTS_H
 #define STRUCTS_H
 
+#include <stdbool.h>
+
 #include "../DataStructures/List/list.h"
 #include "../DataStructures/Map/Map.h"
 
@@ -25,6 +27,8 @@ typedef struct {
     int puntos;
     int nivel;
     int idioma;
+    int puntosSubirNivel;
+    bool flagSubirNivel;
     Map *palabrasJugadas;
 } Jugador;
 

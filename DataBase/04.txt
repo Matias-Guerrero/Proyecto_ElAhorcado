@@ -10,7 +10,7 @@ tema,Asunto o idea central de algo
 idea,Concepto o pensamiento
 olor,Percepción olfativa
 pero,Sin embargo no obstante
-guía,Persona que muestra el camino o dirige
+guia,Persona que muestra el camino o dirige
 fiel,Leal y confiable
 duro,Resistente o difícil
 ropa,Prendas de vestir

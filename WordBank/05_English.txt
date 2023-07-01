@@ -1,170 +1,123 @@
-about,concerning; on the subject of.
-alert,quick to notice and respond to danger or unusual circumstances.
-argue,give reasons or cite evidence in support of an idea, action, or theory.
-beach,a pebbly or sandy shore, especially by the ocean between high- and low-water marks.
-above,at a higher level or position than something else.
-alike,similar in nature or character; in the same or a similar manner.
-among,surrounded by; in the company of.
-avoid,keep away from or stop oneself from doing (something).
-billy,a male given name; a billy club, a type of baton.
-after,following in time or place; later than.
-anger,a strong feeling of displeasure or annoyance.
-award,give or order the giving of (something) as an official payment, compensation, or prize to (someone).
-birth,the emergence of a baby or other young from the body of its mother; the start or beginning of something.
-again,once more; another time.
-angle,the space (usually measured in degrees) between two intersecting lines or surfaces at or close to the point where they meet.
-aware,having knowledge or perception of a situation or fact.
-black,of the very darkest color; the opposite of white.
-agent,a person who acts on behalf of another person or group.
-angry,feeling or showing strong annoyance, displeasure, or rage.
-badly,to a severe or serious degree.
-blame,feel or declare that (someone or something) is responsible for a fault or wrong.
-agree,have the same opinion about something; concur.
-apart,separated by a distance; at a specified distance from each other in time or space.
-baker,a person who makes and sells bread, cakes, and pastries.
-blind,unable to see; lacking the sense of sight.
-ahead,in or toward the front; in advance.
-apple,a round fruit with crisp, juicy flesh and a core containing seeds.
-bases,the lowest part or edge of something, especially the part on which it rests or is supported.
-block,a large solid piece of hard material, especially rock, stone, or wood.
-alarm,an anxious awareness of danger; a warning sound or device.
-apply,make a formal application or request.
-basic,forming an essential foundation or starting point; fundamental.
-blood,the red liquid that circulates in the arteries and veins, carrying oxygen to and carbon dioxide from the tissues of the body.
-album,a collection of recordings issued as a single item on CD, record, or another medium.
-arena,a level area surrounded by seating, in which sports, entertainments, and other public events are held.
-basis,the underlying support or foundation for an idea, argument, or process.
-board,a long, thin, flat piece of wood or other hard material used for floors or other building purposes.
-boost,help or encourage (something) to increase or improve.
-buyer,a person who purchases goods or services.
-cause,a person or thing that gives rise to an action, phenomenon, or condition.
-clean,free from dirt, marks, or unwanted matter.
-cross,a mark, object, or figure formed by two short intersecting lines or pieces (+ or ×).
-break,separate into pieces as a result of a blow, shock, or strain.
-chain,a series of connected metal links used for fastening or securing objects.
-clear,easy to perceive, understand, or interpret; obvious.
-crowd,a large number of people gathered together in a disorganized or unruly way.
-breed,(of animals) mate and then produce offspring.
-chair,a separate seat for one person, typically with a back and four legs.
-click,make or cause to make a short, sharp sound.
-crown,a circular ornamental headdress worn by a monarch as a symbol of authority.
-brief,of short duration; not lasting for long.
-chart,a sheet of information in the form of a table, graph, or diagram.
-clock,a mechanical or electrical device for measuring time, indicating hours, minutes, and sometimes seconds.
-curve,a line or outline that gradually deviates from being straight for some or all of its length.
-bring,come to a place with (someone or something).
-chase,pursue in order to catch or catch up with.
-close,only a short distance away or apart in space or time.
-cycle,a series of events that are regularly repeated in the same order.
-broad,having a width larger than usual.
-cheap,low in price, especially in relation to similar items or services.
-could,used to indicate possibility or ability in the past.
-grown,past participle of the verb "grow."
-depth,the distance from the top or surface to the bottom of something.
-error,a mistake.
-forum,a place, meeting, or medium where ideas and views on a particular issue can be exchanged.
-guard,a person who protects something or keeps watch over it.
-doing,an action or activity.
-event,a thing that happens, especially one of importance.
-found,past tense and past participle of the verb "find."
-guess,estimate or suppose (something) without sufficient information to be sure of being correct.
-faith,complete trust or confidence in someone or something.
-front,the side or part of an object that presents itself to view or that is normally seen or used first; the forward-facing part.
-heart,the central or innermost part of something.
-dream,a series of thoughts, images, and sensations occurring in a person's mind during sleep.
-false,not according with truth or fact; incorrect.
-fruit,the sweet or savory edible part of a plant that contains seeds.
-heavy,of great weight; difficult to lift or move.
-dress,put on one's clothes.
-fault,responsibility for an accident or misfortune.
-fully,completely or entirely; to the greatest extent or degree.
-hence,as a consequence; for this reason.
-drill,a tool or machine with a rotating cutting tip or reciprocating hammer or chisel, used for making holes.
-fiber,a thread or filament from which a vegetable tissue, mineral substance, or textile is formed.
-funny,causing laughter or amusement; humorous.
-night,the period of darkness in each twenty-four hours; the time from sunset to sunrise.
-drink,take (a liquid) into the mouth and swallow.
-field,an area of open land, especially one planted with crops or pasture.
-giant,a person or thing of unusually great size, power, importance, or achievement.
-horse,a large plant-eating domesticated mammal with solid hoofs and a flowing mane and tail, used for riding, racing, and to carry and pull loads.
-drive,operate and control the direction and speed of a motor vehicle.
-fifth,constituting number five in a sequence; 5th.
-given,past participle of the verb "give."
-hotel,an establishment providing accommodations, meals, and other services for travelers and tourists.
-drove,past tense of the verb "drive."
-fifty,the number equivalent to the product of five and ten; ten less than sixty.
-glass,a hard, brittle substance, typically transparent or translucent, made by fusing sand with soda and lime and cooling rapidly.
-house,a building for human habitation, especially one that consists of a ground floor and one or more upper stories.
-dying,approaching death; gradually ceasing to exist or function.
-fight,take part in a violent struggle involving physical force or weapons.
-globe,the earth.
-human,relating to or characteristic of people or human beings.
-eager,wanting to do or have something very much.
-final,coming at the end of a series; last.
-going,the act of leaving or departing.
-ideal,satisfying one's conception of what is perfect; most suitable.
-early,happening or done before the usual or expected time.
-first,coming before all others in time or order; earliest.
-grace,smoothness and elegance of movement.
-image,a representation of the external form of a person or thing in art.
-earth,the planet on which we live; the world.
-fixed,fastened securely in position.
-grade,a particular level of rank, quality, proficiency, or value.
-index,an alphabetical list of names, subjects, etc., with reference to the pages on which they are mentioned.
-eight,equivalent to the product of two and four; one more than seven, or two less than ten; 8.
-flash,shine or produce a bright light suddenly and briefly.
-grand,magnificent or splendid.
-inner,situated inside or further in; internal.
-elite,a select group that is superior in terms of ability or qualities to the rest of a group or society.
-fleet,a group of ships sailing together, engaged in the same activity, or under the same ownership.
-grant,agree to give or allow (something requested) to.
-gross,unattractively large or bloated.
-joint,a point at which parts of an artificial structure are joined.
-judge,a public official appointed to decide cases in a court of law.
-metal,a solid material that is typically hard, shiny, malleable, fusible, and ductile.
-loose,not firmly or tightly fixed in place; detached or able to be detached.
-minus,with the subtraction of.
-noted,well known or famous.
-laser,a device that generates an intense beam of coherent monochromatic light.
-lower,situated not far above the ground, the horizon, or sea level.
-mixed,combine or put together to form one substance or mass.
-novel,a fictitious prose narrative of book length, typically representing character and action with some degree of realism.
-later,happening or done after the usual or expected time.
-lucky,having, bringing, or resulting from good luck.
-model,a three-dimensional representation of a person or thing or of a proposed structure, typically on a smaller scale than the original.
-nurse,a person trained to care for the sick or infirm, especially in a hospital.
-laugh,make the spontaneous sounds and movements of the face and body that are the instinctive expressions of lively amusement and sometimes also of contempt or derision.
-lunch,a meal eaten in the middle of the day.
-money,a current medium of exchange in the form of coins and banknotes; coins and banknotes collectively.
-occur,happen; take place.
-layer,a sheet, quantity, or thickness of material, typically one of several, covering a surface or body.
-lying,not telling the truth.
-month,each of the twelve named periods into which a year is divided.
-ratio,the quantitative relation between two amounts, typically expressed as a quotient of one divided by the other.
-shall,used to indicate the future tense.
-plate,a flat dish, typically circular and made of china, from which food is eaten or served.
-shirt,a garment worn on the upper body, typically having a collar, sleeves, and buttons down the front.
-spent,past tense and past participle of the verb "spend."
-sweet,having the pleasant taste characteristic of sugar or honey; not salt, sour, or bitter.
-topic,a matter dealt with in a text, discourse, or conversation; a subject.
-shock,a sudden upsetting or surprising event or experience.
-taxes,a compulsory contribution to state revenue, levied by the government on workers' income and business profits, or added to the cost of some goods, services, and transactions.
-tower,a tall, narrow building or part of a building that rises high above the ground.
-sight,the faculty or power of seeing.
-stage,a raised floor or platform, typically in a theater, on which actors, entertainers, or speakers perform.
-stone,a hard, solid nonmetallic mineral matter of which rock is made, especially as a building material.
-thick,with opposite sides or surfaces that are a great or relatively great distance apart.
-trust,believe in the reliability, truth, or ability of.
-smith,a person who makes things, especially metal objects, by hand.
-whose,used to indicate possession by a specified person or people.
-watch,look at or observe attentively over a period of time.
-write,mark (letters, words, or other symbols) on a surface, typically paper, with a pen, pencil, or similar implement.
-usage,the action of using something or the fact of being used.
-woman,an adult human female.
-water,a colorless, transparent, odorless liquid that forms the seas, lakes, rivers, and rain and is the basis of the fluids of living organisms.
-white,of the color of milk or fresh snow, due to the reflection of all visible rays of light.
-worth,equivalent in value to the sum or item specified.
-visit,go to see and spend time with (someone) socially.
-would,used to indicate the consequence or conditional result of an imagined event or situation.
-vital,absolutely necessary or important; essential.
-voice,the sound produced in a person's larynx and uttered through the mouth, as speech or song.
+about,concerning or regarding something
+alert,fully aware and attentive; watchful
+beach,a pebbly or sandy shore, especially by the ocean between high- and low-water marks
+above,at a higher level or layer than
+alike,similar in nature or character
+among,surrounded by; in the company of
+avoid,to keep away from or prevent from happening
+billy,a male goat
+after,following in time or place; afterward
+anger,a strong feeling of displeasure or annoyance
+award,a prize or other mark of recognition given in honor of an achievement
+again,another time; once more
+aware,having knowledge or perception of a situation or fact
+angry,having a strong feeling of displeasure or annoyance
+badly,in an unsatisfactory, inadequate, or unsuccessful way
+blame,to assign responsibility for a fault or wrong
+agree,to have the same opinion or be in harmony or accord
+apart,separated by a distance; at a specified distance from each other in time or space
+baker,a person who bakes and sells bread, cakes, pastries, etc.
+blind,unable to see; lacking the sense of sight
+ahead,in or toward the front; in advance
+apple,a round fruit with firm, crisp flesh and a green or red skin
+bases,the bottom support of a structure
+block,a large solid piece of hard material, especially rock, stone, or wood
+alarm,an anxious awareness of danger
+apply,to make a formal application or request
+basic,forming an essential foundation or starting point; fundamental
+album,a blank book for the insertion of photographs, stamps, or pictures
+basis,the underlying support or foundation for an idea, argument, or process
+buyer,a person who purchases goods or services
+cause,a person or thing that gives rise to an action, phenomenon, or condition
+clean,free from dirt, marks, or stains
+cross,to move or travel across from one side to another
+break,to separate into pieces as a result of a blow, shock, or strain
+clear,easy to perceive, understand, or interpret
+crowd,a large number of people gathered together in a disorganized or unruly way
+chair,a separate seat for one person, typically with a back and four legs
+click,make or cause to make a short, sharp sound or series of sounds
+brief,of short duration; not lasting for long
+chart,a sheet of information in the form of a table, graph, or diagram
+clock,a mechanical or electrical device for measuring time
+curve,a line or outline that gradually deviates from being straight or flat
+bring,to carry, convey, or take (someone or something) to a place or person
+chase,to pursue or run after (someone or something) in order to catch or capture them
+close,to move or cause to move so as to cover an opening
+cycle,a series of events that are regularly repeated in the same order
+broad,having a wide extent from side to side
+cheap,low in price, especially in relation to similar items or services
+could,used to indicate possibility or ability in the past
+depth,the distance from the top or surface to the bottom of something
+error,a mistake
+forum,a place, meeting, or medium where ideas and views on a particular issue can be exchanged
+guard,a person who keeps watch, protects, or supervises others
+doing,the performance of an action or activity
+event,a thing that happens, especially one of importance or significance
+faith,complete trust or confidence in someone or something
+heart,the central or innermost part of something
+dream,a series of thoughts, images, or emotions occurring during sleep
+false,not according with truth or fact; incorrect or mistaken
+fruit,the sweet or savory edible product of a plant or tree, containing seeds and flesh or pulp
+heavy,of great weight; difficult to lift or move
+dress,to put on one's clothes
+fault,responsibility for an accident or misfortune
+fully,completely or entirely; to the greatest extent or degree
+hence,as a consequence; for this reason
+funny,causing laughter or amusement; humorous
+night,the period of darkness in each twenty-four hours; the time from sunset to sunrise
+drink,to take (a liquid) into the mouth and swallow
+giant,an imaginary or mythical being of human form but superhuman size
+drive,to operate and control the direction and speed of a motor vehicle
+fifth,constituting number five in a sequence; 5th
+drove,past tense of "drive," to operate and control the direction and speed of a motor vehicle
+fifty,the number equivalent to the product of five and ten; ten less than sixty; 50
+dying,approaching death; gradually ceasing to exist or function
+globe,the earth
+human,of, relating to, or characteristic of people or human beings
+eager,having or showing keen interest or intense desire
+final,coming at the end of a series
+going,the action of leaving a place
+ideal,satisfying one's conception of what is perfect; most suitable
+early,happening or done before the usual or expected time
+first,coming before all others in order or importance
+grace,smoothness and elegance of movement
+image,a representation of the external form of a person or thing in art
+earth,the planet on which we live
+fixed,fastened securely in position; stationary
+grade,a particular level of rank, quality, proficiency, or value
+eight,the number equivalent to the sum of one and seven; one more than seven; 8
+flash,a sudden brief burst of bright light or a sudden brief display of a quality or emotion
+grand,magnificent and imposing in appearance, size, or style
+inner,situated inside or further in; internal
+grant,agree to give or allow (something requested) to
+gross,(of income, profit, or interest) without deduction of tax or other contributions; total
+joint,a point at which parts of an artificial structure are joined
+judge,a public officer appointed to decide cases in a court of law
+loose,not firmly or tightly fixed in place; detached or able to be detached
+minus,with the subtraction of
+noted,well known or remarkable
+lower,situated not far above the ground, the horizon, or sea level
+mixed,combining different qualities, ideas, or things
+later,happening or done after the usual or expected time
+lucky,having, bringing, or resulting from good luck
+nurse,a person trained to care for the sick or infirm, especially in a hospital
+lunch,a meal eaten in the middle of the day
+occur,happen; take place
+lying,not telling the truth
+month,each of the twelve named periods into which a year is divided
+shall,used to indicate future action
+plate,a flat dish, typically circular and made of china, from which food is eaten or served
+sweet,having the pleasant taste characteristic of sugar or honey; not salt, sour, or bitter
+topic,a matter dealt with in a text, discourse, or conversation; a subject
+shock,a sudden upsetting or surprising event or experience
+sight,the faculty or power of seeing
+thick,with opposite sides or surfaces that are far apart or relatively far apart
+trust,firm belief in the reliability, truth, ability, or strength of someone or something
+smith,a person who makes things in metal, especially by hammering it when it is hot and soft
+whose,belonging to or associated with which person
+watch,a small timepiece worn typically on a strap on one's wrist
+usage,the action of using something or the fact of being used
+woman,an adult human female
+worth,equivalent in value to the sum or item specified
+visit,go to see and spend time with (someone) socially
+would,expressing the conditional mood

@@ -1,4 +1,6 @@
-TWar1,4300,4
-TWarrior,11000,7
-Mati,1400,2
-Matias,10700,7
+Tipo1,2000,2
+Tipo2,5000,3
+Tipo3,9000,4
+Tipo4,2100,2
+Tipo5,4900,3
+Tipo6,9100,4

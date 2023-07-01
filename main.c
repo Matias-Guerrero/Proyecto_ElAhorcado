@@ -41,6 +41,9 @@ int main(int argc, const char * argv[])
     // Se inicializa el idioma en español
     jugador->idioma = 1;
 
+    // Se inicializa la bandera de subir nivel en falso
+    jugador->flagSubirNivel = false;
+
     //====================================================================================================
     // SE INICIA UN ARBOL Y SE LEEN LOS PUNTAJES YA EXISTENTES
     //====================================================================================================

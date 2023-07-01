@@ -108,8 +108,8 @@ Para esto definimos la siguiente struct en c:
 
   ````c
   typedef struct {
-      char palabra[50];
-      char pista[50];
+      char palabra[25];
+      char pista[100];
       int nivel;
   } Palabra;
   ````
@@ -136,6 +136,8 @@ Para esto definimos la siguiente struct en c:
     int puntos;
     int nivel;
     int idioma;
+    int puntosSubirNivel;
+    bool flagSubirNivel;
     Map *palabrasJugadas;
   } Jugador;
   ````

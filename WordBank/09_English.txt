@@ -8,7 +8,6 @@ beautiful,pleasing to the senses or mind, often associated with aesthetic appeal
 brilliant,exceptionally intelligent or talented; shining brightly.
 injection,the act of introducing a substance into the body using a needle and syringe.
 beginning,the point in time or space at which something starts.
-community,a group of people living in the same area or having a particular characteristic in common.
 celebrity,a famous or well-known person.
 complaint,an expression of dissatisfaction or discontentment.
 confident,feeling or showing assurance and self-assurance.
@@ -34,10 +33,8 @@ historian,an expert in or student of history.
 happiness,the state of being happy or feeling pleasure.
 hairstyle,a particular way in which a person's hair is cut or arranged.
 important,of great significance or value; notable.
-influence,the capacity to have an effect on the character, development, or behavior of someone or something.
 intensity,the quality of being intense; the degree or amount of strength or force.
 intention,a thing intended; an aim or plan.
-jellyfish,a free-swimming marine animal with a jelly-like bell or umbrella-shaped body and tentacles.
 judgment,the ability to make considered decisions or come to sensible conclusions.
 justified,having, done for, or marked by a good or legitimate reason.
 juridical,relating to the administration of justice or the law.
@@ -45,11 +42,8 @@ knowledge,facts, information, and skills acquired through experience, education,
 kilometer,a unit of length equal to 1,000 meters.
 kidnapped,taken away or captured by force, often for ransom.
 kiloliter,a unit of volume equal to 1,000 liters.
-sabotaged,deliberately destroy, damage, or obstruct (something), especially for political or military advantage.
 lifestyle,the way in which a person or group lives.
-landscape,all the visible features of an area of land, often considered in terms of their aesthetic appeal.
 legendary,remarkable enough to be famous; very well known.
-landscape,all the visible features of an area of land,often considered in terms of their aesthetic appeal.
 mechanism,a system or process that is used to achieve a particular result.
 marketing,the action or business of promoting and selling products or services.
 masculine,having qualities or appearance traditionally associated with men.
@@ -61,7 +55,6 @@ nutrition,the process of providing or obtaining the food necessary for health an
 otherwise,in circumstances different from those present or considered.
 operation,the action of functioning or the fact of being active or in effect.
 offensive,causing someone to feel deeply hurt, upset, or angry.
-principle,a fundamental truth or proposition that serves as the foundation for a system of belief or behavior.
 permanent,lasting or intended to last or remain unchanged indefinitely.
 procedure,a series of actions conducted in a certain order or manner.
 potential,having the capacity to become or develop into something in the future.
@@ -90,7 +83,6 @@ visualize,form a mental image of; imagine.
 factorize,resolve (a mathematical expression or equation) into factors.
 wonderful,inspiring delight, pleasure, or admiration; extremely good.
 worthless,having no real value or use.
-waterfall,a cascade of water falling from a height, formed when a river or stream flows over a precipice or steep incline.
 worldwide,extending or reaching throughout the world.
 yesterday,on the day before today.
 youngster,a young person, typically a child or teenager.

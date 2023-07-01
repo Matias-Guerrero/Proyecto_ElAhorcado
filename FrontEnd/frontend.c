@@ -1174,7 +1174,7 @@ void mostrarInstrucciones(int x, int y, Jugador *jugador)
         gotoxy(x, y); printf("Instrucciones:");
         gotoxy(x, y+2); printf("1. Adivina la palabra oculta en el menor numero de intentos posible.");
         gotoxy(x, y+3); printf("2. Cada nivel tiene una palabra de longitud especifica, aumentando en un caracter por nivel.");
-        gotoxy(x, y+4); printf("3. Necesitas alcanzar 1000 puntos por nivel para avanzar.");
+        gotoxy(x, y+4); printf("3. Para subir de nivel se necesita una cantidad de puntos especifica segun el nivel.");
         gotoxy(x, y+5); printf("4. Cada intento fallido disminuye tu puntaje base.");
         gotoxy(x, y+6); printf("5. Selecciona la opcion correspondiente para adivinar una letra de la palabra oculta.");
         gotoxy(x, y+7); printf("6. Si adivinas correctamente, se revelaran las apariciones de la letra en la palabra.");
@@ -1186,7 +1186,7 @@ void mostrarInstrucciones(int x, int y, Jugador *jugador)
         gotoxy(x, y); printf("Instruction:");
         gotoxy(x, y+2); printf("1. Guess the hidden word in the least number of attempts possible.");
         gotoxy(x, y+3); printf("2. Each level has a word of specific length, increasing by one character per level.");
-        gotoxy(x, y+4); printf("3. You need to reach 1000 points per level to advance.");
+        gotoxy(x, y+4); printf("3. To level up you need a specific amount of points according to the level.");
         gotoxy(x, y+5); printf("4. Each failed attempt decreases your base score.");
         gotoxy(x, y+6); printf("5. Select the corresponding option to guess a letter of the hidden word.");
         gotoxy(x, y+7); printf("6. If you guess correctly, the appearances of the letter in the word will be revealed.");
@@ -2019,8 +2019,22 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
             // Se muestra el mensaje de pausa
             pause(50, 22, "Presione enter para continuar...");
 
+            if(jugador->nivel == 1)
+            {
+                jugador->puntosSubirNivel = 2000;
+            }
+            else
+            {
+                if(jugador->flagSubirNivel == false)
+                {
+                    jugador->puntosSubirNivel = jugador->puntosSubirNivel + (1000 * (jugador->nivel + 1));
+                    
+                    jugador->flagSubirNivel = true;
+                }
+            }
+
             // Se verifica la cantidad de puntos del jugador para subir de nivel
-            if(jugador->puntos >= 1000 * jugador->nivel + (500 * (jugador->nivel - 1)))
+            if(jugador->puntos >= jugador->puntosSubirNivel)
             {
                 // Se aumenta el nivel del jugador
                 jugador->nivel++;
@@ -2051,6 +2065,9 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
             // Se muestra el mensaje de pausa
             pause(50, 22, "Presione enter para continuar...");
 
+            // Se guarda el puntaje del jugador
+            guardarPuntaje(arbol_puntajes, jugador);
+
             // Se sale de la funcion
             return;
         }
@@ -2066,6 +2083,9 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
         {
             // Se llama a la funcion si se subio de nivel
             menuNivel(jugador);
+
+            // Se cambia el valor de la variable subirNivel
+            jugador->flagSubirNivel = false;
         }
 
         // Se llama a la funcion jugar
@@ -2195,8 +2215,22 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
             // Se muestra el mensaje de pausa
             pause(50, 22, "Press enter to continue...");
 
+            if(jugador->nivel == 1)
+            {
+                jugador->puntosSubirNivel = 2000;
+            }
+            else
+            {
+                if(jugador->flagSubirNivel == false)
+                {
+                    jugador->puntosSubirNivel = jugador->puntosSubirNivel + (1000 * (jugador->nivel + 1));
+
+                    jugador->flagSubirNivel = true;
+                }
+            }
+
             // Se verifica la cantidad de puntos del jugador para subir de nivel
-            if(jugador->puntos >= 1000 * jugador->nivel + (500 * (jugador->nivel - 1)))
+            if(jugador->puntos >= jugador->puntosSubirNivel)
             {
                 // Se aumenta el nivel del jugador
                 jugador->nivel++;
@@ -2227,6 +2261,9 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
             // Se muestra el mensaje de pausa
             pause(50, 22, "Press enter to continue...");
 
+            // Se guarda el puntaje del jugador
+            guardarPuntaje(arbol_puntajes, jugador);
+
             // Se sale de la funcion
             return;
         }
@@ -2242,6 +2279,9 @@ void jugar(Jugador *jugador, TreeMap* arbol_puntajes)
         {
             // Se llama a la funcion si se subio de nivel
             menuNivel(jugador);
+
+            // Se cambia el valor de la variable subirNivel
+            jugador->flagSubirNivel = false;
         }
 
         // Se llama a la funcion jugar

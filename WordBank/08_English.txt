@@ -37,12 +37,10 @@ advocate,a person who publicly supports or recommends a particular cause or poli
 catching,infecting or spreading easily.
 creation,the act or process of bringing something into existence.
 affected,influenced or changed by something.
-category,a class or division of people or things regarded as having particular shared characteristics.
 creative,involving the use of imagination or original ideas to create something.
 aircraft,a vehicle that can fly, such as an airplane or helicopter.
 catholic,relating to the Roman Catholic Church.
 criminal,a person who has committed a crime.
-alliance,a union or association formed for mutual benefit, especially between countries or organizations.
 cautious,careful to avoid potential problems or dangers.
 critical,expressing adverse or disapproving comments or judgments.
 although,despite the fact that; however.
@@ -99,9 +97,7 @@ designer,a person who plans the form, look, or workings of something before it i
 attorney,a person appointed to act for another in business or legal matters.
 complete,having all the necessary or appropriate parts.
 detailed,involving many details or small particulars.
-audience,the assembled spectators or listeners at a public event, such as a play, movie, concert, or meeting.
 composed,calm and in control of one's emotions.
-diabetes,a disease in which the body's ability to produce or respond to the hormone insulin is impaired.
 autonomy,the right or condition of self-government.
 compound,a thing that is composed of two or more separate elements.
 dialogue,conversation between two or more people as a feature of a book, play, or movie.
@@ -112,7 +108,6 @@ eventual,occurring or existing at a later time or as a result.
 doctrine,a belief or set of beliefs held and taught by a church, political party, or other group.
 facility,a place, amenity, or piece of equipment provided for a particular purpose.
 everyday,ordinary; commonplace.
-document,a piece of written, printed, or electronic matter that provides information or evidence or that serves as an official record.
 forecast,predict or estimate (a future event or trend).
 flexible,capable of bending easily without breaking.
 extended,lasting longer than is usual or expected.
@@ -158,7 +153,6 @@ wherever,in or to whatever place.
 volatile,liable to change rapidly and unpredictably.
 vertical,at right angles to a horizontal plane; upright.
 wildlife,wild animals collectively; the native fauna of a region.
-warranty,a written guarantee that a product or service will be repaired or replaced if necessary within a specified period.
 victoria,a light four-wheeled horse-drawn carriage with a collapsible hood.
 wireless,using radio, microwaves, or infrared signals to transmit data or communicate.
 violence,behavior involving physical force intended to hurt, damage, or kill someone or something.

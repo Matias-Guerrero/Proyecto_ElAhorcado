@@ -2,7 +2,6 @@ accomplish,achieve or complete successfully.
 appearance,the way someone or something looks or seems.
 appreciate,recognize the full worth of; understand fully; be grateful for.
 additional,added or extra; supplementary to what is already present or available.
-background,the circumstances or situation prevailing at a particular time or underlying a particular event.
 blackberry,a small edible fruit that is typically dark purple when ripe.
 backbiting,the action of making spiteful or defamatory remarks about someone.
 babysitter,a person employed to care for children in the absence of their parents.
@@ -11,10 +10,8 @@ commitment,the state or quality of being dedicated to a cause, activity, etc.
 collective,done by people acting as a group; involving all members of a group.
 contribute,give (something, especially money) in order to help achieve or provide something.
 discipline,the practice of training people to obey rules or a code of behavior.
-discussion,the action or process of talking about something in order to reach a decision or to exchange ideas.
 difficulty,the state or condition of being difficult.
 distribute,give a share or a unit of (something) to each of a number of recipients.
-efficiency,the state or quality of being efficient; the ability to accomplish something with the least waste of time and effort.
 experience,practical contact with and observation of facts or events.
 everything,all things; all possible items or elements.
 especially,used to single out one person, thing, or situation over all others.
@@ -34,7 +31,6 @@ impossible,not able to occur, exist, or be done.
 investment,the action or process of investing money for profit.
 initiative,the ability to assess and initiate things independently.
 industrial,relating to or characterized by industry.
-journalist,a person who writes for newspapers, magazines, or news websites or prepares news to be broadcast.
 justifying,show or prove to be right or reasonable.
 judgmental,having or displaying an excessively critical point of view.
 journalize,record (an event or situation) in a diary or journal.
@@ -47,11 +43,8 @@ leadership,the action of leading a group of people or an organization.
 loveliness,the quality of being beautiful or attractive.
 limitation,a limiting rule or circumstance; a restriction.
 membership,the state of belonging to or being a part of a group or organization.
-moderation,the avoidance of excess or extremes, especially in one's behavior or political opinions.
 management,the process of dealing with or controlling things or people.
-meditation,the practice of focusing one's mind for a period of time, in silence or with the aid of chanting, for religious or spiritual purposes or as a method of relaxation.
 narcissist,a person who has an excessive interest in or admiration of themselves.
-navigation,the process or activity of accurately ascertaining one's position and planning and following a route.
 nomination,the action of recommending someone for a position, office, or honor.
 negotiable,able to be discussed in order to reach an agreement.
 occupation,a job or profession.
@@ -60,13 +53,10 @@ opposition,resistance or dissent, expressed in action or argument.
 overspread,spread or cover over a surface or area.
 previously,before the time in question; earlier.
 perception,the ability to see, hear, or become aware of something through the senses.
-profession,a paid occupation, especially one that involves prolonged training and a formal qualification.
 permission,the action of officially allowing someone to do a particular thing.
-quarantine,a state, period, or place of isolation in which people or animals that have arrived from elsewhere or been exposed to infectious or contagious disease are placed.
 qualifying,serving to qualify a statement or action; conditional.
 quarreling,having an angry argument or disagreement.
 quaternary,consisting of or relating to four units or components.
-researcher,a person who carries out systematic investigation to establish facts or principles or to collect information on a subject.
 revolution,a forcible overthrow of a government or social order, in favor of a new system.
 reputation,the beliefs or opinions that are generally held about someone or something.
 regulation,a rule or directive made and maintained by an authority.
@@ -81,8 +71,6 @@ thoughtful,showing consideration for the needs of other people.
 understand,perceive the intended meaning of (words, a language, or a speaker).
 underworld,the criminal or organized world beneath respectable society.
 underwater,situated, occurring, or done beneath the surface of the water.
-upbringing,the treatment and instruction received by a child from its parents throughout its childhood.
-volleyball,a team game played with a ball in which players hit the ball over a net using their hands or arms.
 vocabulary,the body of words used in a particular language.
 vegetarian,a person who does not eat meat.
 vegetation,plants considered collectively, especially those found in a particular area or habitat.
