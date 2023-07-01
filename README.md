@@ -9,7 +9,7 @@ Juego el ahorcado con Estructuras de datos y TDAs.
 **Preparacion y configuracion del Repositorio**
 
 *   Usamos la aplicación `GitHub Desktop` para crear y actualizar nuestro repositorio local, para evitar usar lo comandos `git fetch` y `git pull`, ya que estos estan integrados en la app.
-*   Creamos un `repositorio remoto` en GitHub, el link es el siguiente: 
+*   Creamos un `repositorio remoto` en GitHub, el link es el siguiente: https://github.com/Matias-Guerrero/Proyecto_ElAhorcado
 *   Utilizamos Visual Studio Code para que cada uno de los integrantes clonara el repositorio en sus computadores.
 *   Para subir cada commit usamos los siguiente comandos en la terminal git bash, como: `git status`, `git add .`, `git commit -m "[Message]"` y `git push`.
 *   Para compilar la aplicacion se creo un script en bash llamado `compiler.sh`, el cual compila el codigo en c y crea un archivo ejecutable `.exe` con el nombre que uno ingrese.
